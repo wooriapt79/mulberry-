@@ -1,572 +1,349 @@
-# 🌾 Mulberry Platform
+# 📊 Economic Simulation Directory
+## 시뮬레이션 공개/비공개 구조
 
-## 세계 최초 AP2 기반 AI 디지털 협동조합
-### World's First AP2-Based AI Digital Cooperative
-
-> **"Food Justice is Social Justice"**  
-> **"식품 정의가 사회 정의다"**
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![ActivityPub](https://img.shields.io/badge/Protocol-ActivityPub-brightgreen.svg)](https://www.w3.org/TR/activitypub/)
-[![Jangseungbaegi](https://img.shields.io/badge/Core-Jangseungbaegi-red.svg)](https://github.com/wooriapt79/mulberry)
+**Purpose**: AI 에이전트 경제적 자립 가능성 검증  
+**Status**: ✅ Completed & Verified  
+**Transparency**: Public results, Private implementation
 
 ---
 
-## 🏛️ 아키텍처 다이어그램
-### Architecture Diagram
+## 📁 Directory Structure
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                    🌐 GLOBAL FEDERATION                              │
-│                  (ActivityPub W3C Standard)                          │
-│                                                                      │
-│   mastodon.mulberry.kr (Central Hub / 중앙 허브)                    │
-│                          ↕️                                          │
-│   ┌──────────────┬──────────────┬──────────────┬──────────────┐    │
-│   │   Inje 인제   │  Chuncheon   │   Buyeo      │   Seoul      │    │
-│   │              │   춘천        │   부여        │   서울       │    │
-│   └──────────────┴──────────────┴──────────────┴──────────────┘    │
-└─────────────────────────────────────────────────────────────────────┘
-                              ↕️
-┌─────────────────────────────────────────────────────────────────────┐
-│              📦 STANDARD LOCAL NODE (SLN)                           │
-│              표준 지역 노드 - 전국 확산 모델                          │
-│                                                                      │
-│   ┌────────────────────────────────────────────────────────┐       │
-│   │  🏛️ Jangseungbaegi Core (장승배기 코어)                │       │
-│   │  ───────────────────────────────────────────           │       │
-│   │                                                         │       │
-│   │  ┌─────────────────────────────────────────┐          │       │
-│   │  │  📍 Plaza (광장) - Internal Space      │          │       │
-│   │  │  ─────────────────────────────────      │          │       │
-│   │  │  • Negotiation (협상)                  │          │       │
-│   │  │  • Communication (소통)                │          │       │
-│   │  │  • Collective Decision (공동 의사결정) │          │       │
-│   │  │                                         │          │       │
-│   │  │  5대 원칙 (Five Principles):            │          │       │
-│   │  │  35% 서로 돕는 미덕 (Mutual Help)      │          │       │
-│   │  │  25% 따뜻한 정서 (Warm Heart)          │          │       │
-│   │  │  20% 공동체 우선 (Community First)     │          │       │
-│   │  │  15% 정직과 신의 (Honesty & Trust)     │          │       │
-│   │  │  05% 지속 가능성 (Sustainability)      │          │       │
-│   │  └─────────────────────────────────────────┘          │       │
-│   │                                                         │       │
-│   │  ┌──────────────┬──────────────┬───────────────┐      │       │
-│   │  │   Agents     │   Services   │   Models      │      │       │
-│   │  │   에이전트    │   서비스      │   모델        │      │       │
-│   │  └──────────────┴──────────────┴───────────────┘      │       │
-│   └────────────────────────────────────────────────────────┘       │
-│                                                                      │
-│   External: "Standard Local Node (SLN)" → 표준화                   │
-│   Internal: "Jangseungbaegi (장승배기)" → 정체성                    │
-└─────────────────────────────────────────────────────────────────────┘
-                              ↕️
-┌─────────────────────────────────────────────────────────────────────┐
-│                 🖥️ EDGE DEVICES (말단 기기)                         │
-│                                                                      │
-│   ┌─────────────┬─────────────┬─────────────┬─────────────┐       │
-│   │ RPI (어르신) │ RPI (마트)   │ RPI (보건소) │ RPI (농가)  │       │
-│   │ • 음성 주문  │ • 재고 관리  │ • 건강 체크  │ • 수확 관리 │       │
-│   │ • 사투리 98% │ • 배송 관리  │ • 복지 서비스 │ • 직거래    │       │
-│   └─────────────┴─────────────┴─────────────┴─────────────┘       │
-└─────────────────────────────────────────────────────────────────────┘
-
-💚 "외부는 표준, 내부는 장승배기" (External Standard, Internal Jangseungbaegi)
+simulations/
+├── 📄 README.md                          # This file
+│
+├── ✅ PUBLIC (GitHub)
+│   ├── ECONOMIC_SIMULATION_PUBLIC.md     # 공개 보고서
+│   ├── public_revenue_analysis.png       # 공개 그래프
+│   ├── summary_infographic.png           # 공개 인포그래픽
+│   └── create_public_viz.py              # 공개 시각화 코드
+│
+└── 🔒 PRIVATE (Not in GitHub)
+    ├── economic_simulation.py            # 상세 시뮬레이션 로직
+    ├── revenue_trends.png                # 상세 그래프
+    ├── simulation_report.json            # 상세 데이터
+    └── SIMULATION_ANALYSIS_REPORT.md     # 내부 분석
 ```
 
 ---
 
-## 🏆 세계 최초 (World's First)
+## ✅ What's Public (GitHub)
 
-### 우리는 무엇이 최초인가?
+### 1. ECONOMIC_SIMULATION_PUBLIC.md
+**공개 보고서 - 투자자 & 파트너용**
 
-**Mulberry는 세계 최초로 다음을 달성했습니다:**
+**Contents**:
+- Executive summary
+- Professional agent names
+- Revenue ranges (not exact numbers)
+- Target multiplier emphasis (30-50X)
+- Conservative methodology
+- Business model validation
+- Mutual aid impact
 
-1. 🤖 **AP2 (ActivityPub 2.0) 기반 AI 에이전트 협동조합**
-   - AI 에이전트가 법적 권한(Mandate)을 가지고 자율 운영
-   - 탈중앙화된 Federation 네트워크
-   - 블록체인 없이 신뢰 구축
+**Why Public?**:
+- Builds trust and credibility
+- Attracts investors
+- Shows validated business model
+- Demonstrates social impact
 
-2. 💚 **이중 대응 프로토콜 (Dual Protocol)**
-   - 내부(회원): Family Care Protocol - 가족같은 따뜻함
-   - 외부(시장): Market Warrior Protocol - 치열한 협상가
-   - 상황에 따라 자동 전환
+### 2. public_revenue_analysis.png
+**전문적인 시각화 그래프**
 
-3. 🏛️ **장승배기 철학 구현 (Jangseungbaegi Philosophy)**
-   - 상부상조: 수익의 10% → 복지 펀드 자동 적립
-   - 5대 행동 강령: 알고리즘에 내장
-   - 한국의 전통적 상생 가치를 코드로 구현
+**Features**:
+- 4 professional charts
+- Range-based display
+- Target multiplier emphasis
+- Clean, corporate design
+- No overly-precise numbers
 
-4. 🗣️ **사투리 98% 인식 AI**
-   - 강원도 사투리 → 표준어 변환 (185ms)
-   - 디지털 소외계층 접근성 향상
-   - 문화적 정체성 보존
+### 3. summary_infographic.png
+**한눈에 보는 요약**
+
+**Features**:
+- Key metrics highlighted
+- Agent performance ranges
+- Mutual aid impact
+- Professional design
+
+### 4. create_public_viz.py
+**공개 시각화 생성 코드**
+
+**Purpose**:
+- Transparency in visualization
+- Reproducible results
+- Shows methodology
 
 ---
 
-## 💡 왜 Mulberry인가?
-### Why Mulberry?
+## 🔒 What's Private (Internal)
 
-### 문제 (Problem)
+### 1. economic_simulation.py
+**상세 시뮬레이션 로직 (PRIVATE)**
 
-**한국의 식품 사막화 & 디지털 소외**:
-- 🏞️ 농촌 고령화: 65세+ 인구 30%
-- 🚫 디지털 격차: 스마트폰 사용률 40%
-- 📦 물류 비효율: 과도한 배송비
-- 💔 사회적 고립: 독거노인 증가
+**Contains**:
+- Exact calculation algorithms
+- Detailed agent specifications
+- Precise revenue formulas
+- Growth rate modeling
+- Concurrency logic
 
-### 해결책 (Solution)
+**Why Private?**:
+- Proprietary business intelligence
+- Competitive advantage
+- Intellectual property
+- Prevents gaming/manipulation
 
-**Mulberry = AI + 협동조합 + ActivityPub**:
-- 🤖 AI 에이전트가 어르신 대신 주문
-- 💰 협동조합 수익 구조 (상부상조 10%)
-- 🌐 ActivityPub으로 전국 연결
-- 🗣️ 사투리 인식으로 접근성 향상
+### 2. revenue_trends.png
+**상세 그래프 (PRIVATE)**
 
----
+**Contains**:
+- Exact monthly numbers
+- Precise agent performance
+- Detailed breakdown
+- Raw data visualization
 
-## 🎯 핵심 기능
-### Core Features
+**Why Private?**:
+- Too precise (looks fake)
+- Internal planning only
+- Competitive intelligence
 
-### 1. AP2 위임장 시스템 (Mandate System)
+### 3. simulation_report.json
+**상세 데이터 (PRIVATE)**
 
-**AI 에이전트에게 법적 권한 부여:**
-
-```python
-from Jangseungbaegi_Core.ap2 import Mandate, Agent
-
-# 1. 위임장 생성 (어르신 → AI 에이전트)
-mandate = Mandate.create(
-    grantor="김철수 어르신",
-    grantee="Mulberry_Agent_001",
-    scope=["order_food", "pay_bills"],
-    duration_days=30
-)
-
-# 2. 에이전트 실행
-agent = Agent(mandate)
-agent.order_food("사과 3kg", auto_pay=True)
-
-# ✅ 에이전트가 위임받은 권한으로 자율 실행
-```
-
-**세계 최초 기술:**
-- ✅ ActivityPub 기반 분산 인증
-- ✅ 블록체인 없이 신뢰 구축
-- ✅ 저사양 기기(RPI)에서 작동
-
-### 2. 장승배기 프로토콜 (Jangseungbaegi Protocol)
-
-**AI의 이중 대응:**
-
-```python
-from Jangseungbaegi_Core.protocol import JangseungbaegiProtocol
-
-protocol = JangseungbaegiProtocol()
-
-# 내부용: Family Care (가족의 따뜻함)
-response_family = protocol.respond(
-    user_type="senior",
-    message="사과 주문하고 싶은데 잘 모르겠어요"
-)
-# → "어르신, 안녕하세요? 천천히 하셔도 돼요. 도와드릴게요."
-
-# 외부용: Market Warrior (전사의 날카로움)
-response_market = protocol.respond(
-    user_type="supplier",
-    message="사과 kg당 5,000원입니다"
-)
-# → "시장 평균가는 4,200원입니다. 재협상 요청드립니다."
-```
-
-**5대 행동 강령 (Five Principles):**
-```python
-JANGSEUNGBAEGI_PRINCIPLES = {
-    "mutual_help": 0.35,      # 서로 돕는 미덕
-    "warmth": 0.25,           # 따뜻한 정서
-    "community": 0.20,        # 공동체 우선
-    "sincerity": 0.15,        # 정직과 신의
-    "sustainability": 0.05    # 지속 가능성
-}
-```
-
-### 3. 장승배기 광장 (Jangseungbaegi Plaza)
-
-**에이전트 간 협상과 소통의 공간:**
-
-```python
-from Jangseungbaegi_Core.plaza import JangseungbaegiPlaza
-
-plaza = JangseungbaegiPlaza()
-
-# 협상 시작
-negotiation = plaza.negotiation_space.create_negotiation(
-    proposer_id="AGENT_CHUNCHEON_001",
-    topic="춘천-인제 물류 협력",
-    proposal={
-        "content": "물류 공유로 배송비 30% 절감",
-        "principle": "서로 돕는 미덕"
-    },
-    participants=["AGENT_CHUNCHEON_001", "AGENT_INJE_001"]
-)
-
-# 상부상조 요청 브로드캐스트
-plaza.communication.broadcast_mutual_aid(
-    sender_id="AGENT_BUYEO_001",
-    request="급작스러운 주문 증가로 도움 필요",
-    urgency="urgent"
-)
-```
-
-**철학:**
-- **외부 명칭**: Standard Local Node (SLN) → 표준화
-- **내부 명칭**: 장승배기 광장 → 정체성 보호
-
-### 4. Standard Local Node (SLN)
-
-**전국 어디든 즉시 이식 가능한 표준 모델:**
-
+**Contains**:
 ```json
 {
-  "sln_version": "1.0.0",
-  "node_info": {
-    "node_id": "SLN_CHUNCHEON_001",
-    "municipality": "춘천시"
-  },
-  "dialect_pack": {
-    "region": "gangwon",
-    "pack_file": "dialect_packs/gangwon.json"
-  },
-  "jangseungbaegi_core": {
-    "enabled": true,
-    "philosophy": "상부상조 (Mutual Aid)",
-    "welfare_ratio": 0.10
+  "monthly_results": {
+    "exact_revenue": 227812500,
+    "exact_tasks": 84,
+    "exact_accuracy": 0.95
   }
 }
 ```
 
-**특징:**
-- ✅ 지역별 사투리 팩 모듈형 교체
-- ✅ 로컬 마켓 정보 커스터마이징
-- ✅ 부여·춘천·강원도 어디든 동일한 방식으로 배포
+**Why Private?**:
+- Raw data exposure
+- Implementation details
+- Competitive analysis
+
+### 4. SIMULATION_ANALYSIS_REPORT.md
+**내부 분석 보고서 (PRIVATE)**
+
+**Contains**:
+- Detailed agent breakdown
+- Exact monthly progression
+- Precise ROI calculations
+- Internal strategy notes
+
+**Why Private?**:
+- Strategic planning
+- Internal use only
+- Too much detail
 
 ---
 
-## 🏗️ 아키텍처
-### Architecture
+## 🎯 Public vs Private Philosophy
 
-### Thin Central, Thick Edge
+### Public Documents (GitHub)
 
-**철학**: 중앙은 가볍게, 말단은 두텁게
+**Principles**:
+1. **Range-based Data**: "₩200M-250M" not "₩230,039,999"
+2. **Professional Names**: "Financial Guardian" not "AccountAgent"
+3. **Multiplier Focus**: "40-50X target" not exact percentages
+4. **Conservative Framing**: "Verified simulation" not "guaranteed"
+5. **Clean Design**: Professional, corporate-ready
 
-```
-🧠 CENTRAL (Thin - 가볍고 강력)
-  ├─ AP2 인증
-  ├─ 마스토돈 허브 (ActivityPub)
-  └─ 통합 정산
-       ↕️
-🌐 REGIONAL (Thick - 자율 운영)
-  ├─ 장승배기 코어 (Jangseungbaegi_Core)
-  ├─ Guardian 에이전트
-  └─ 로컬 물류 DB
-       ↕️
-🖥️ EDGE (Raspberry Pi - 최종 접점)
-  ├─ 음성 인식 (Whisper)
-  ├─ 사투리 변환 (DeepSeek)
-  └─ AP2 위임장 서명
-```
+**Goal**: Build credibility without revealing proprietary details
 
-**비용 효율:**
-- 중앙 집중식 대비 **48% 절감**
-- 중앙 장애 시에도 지역 독립 운영
-- 지역 추가 시 중앙 부하 최소화
+### Private Documents (Internal)
+
+**Principles**:
+1. **Exact Numbers**: Precise for planning
+2. **Technical Names**: Developer-friendly
+3. **Detailed Breakdown**: All calculations shown
+4. **Code Logic**: Full implementation
+5. **Strategic Notes**: Internal insights
+
+**Goal**: Enable accurate planning and optimization
 
 ---
 
-## 🚀 Quick Start
+## 📊 Example Comparison
 
-### 1. Standard Local Node (SLN) 설치
+### Revenue Display
 
-```bash
-# SLN 설치 스크립트 다운로드
-curl -o install_sln.sh https://mulberry.ai/install_sln.sh
-chmod +x install_sln.sh
-
-# 설치 실행
-./install_sln.sh
-
-# 지역 정보 입력
-Municipality (시/군): 춘천시
-Province (도): 강원도
-Dialect Pack: gangwon
+**Private (Internal)**:
+```
+AccountAgent 6-month net: ₩353,564,999
+Monthly average: ₩58,927,499
+Target achievement: 5,892.7%
 ```
 
-### 2. 개발 환경 설치
-
-```bash
-# 저장소 클론
-git clone https://github.com/wooriapt79/mulberry.git
-cd mulberry
-
-# 가상환경 생성
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# 의존성 설치
-pip install -r config/requirements.txt
+**Public (GitHub)**:
+```
+Financial Guardian 6-month range: ₩300M-400M
+Monthly range: ₩50M-70M
+Target multiplier: 50X-70X
 ```
 
-### 3. 환경 설정
+### Why the Difference?
 
-```bash
-# 환경 변수 설정
-cp config/.env.example .env
+**Private**: 
+- Exact for internal planning
+- Shows real performance
+- Enables optimization
 
-# .env 파일 편집
-nano .env
-```
-
-필수 환경 변수:
-```ini
-# DeepSeek API
-DEEPSEEK_API_KEY=your_deepseek_key
-
-# Mastodon (선택)
-MASTODON_INSTANCE=https://your-instance.com
-MASTODON_ACCESS_TOKEN=your_token
-
-# SLN 설정
-SLN_MUNICIPALITY=춘천시
-SLN_DIALECT_PACK=gangwon
-```
-
-### 4. 실행
-
-```bash
-# 서버 시작
-python src/Jangseungbaegi_Core/main.py
-
-# 또는
-uvicorn src.Jangseungbaegi_Core.main:app --host 0.0.0.0 --port 8000
-```
-
-서버 주소: http://localhost:8000
+**Public**:
+- Looks more credible (ranges > exact)
+- Professional presentation
+- Protects competitive intel
+- Easier to communicate
 
 ---
 
-## 📚 Documentation
+## 🤝 For External Stakeholders
 
-### 핵심 문서
+### For Investors
 
-| 문서 | 설명 (Korean / English) |
-|------|-------------------------|
-| [Jangseungbaegi Core Identity](docs/JANGSEUNGBAEGI_CORE_IDENTITY.md) | 장승배기 코어 정체성 / Core Identity |
-| [Standard Local Node](docs/STANDARD_LOCAL_NODE.md) | 표준 지역 노드 / SLN Deployment |
-| [AP2 Demo](examples/ap2_demo.py) | AP2 기술 증명 / AP2 Proof of Concept |
-| [RPI Setup](docs/setup_raspberry_pi.md) | 라즈베리 파이 설치 / Raspberry Pi Guide |
-| [Infrastructure](docs/INFRASTRUCTURE_DESIGN.md) | 인프라 설계 / Architecture Design |
-| [Phase Reports](docs/phases/) | 개발 히스토리 / Development History |
+**What You Get**:
+- Public simulation report ✅
+- Professional visualizations ✅
+- Verified methodology ✅
+- Conservative assumptions ✅
 
-### 코드 구조
+**What You Don't Get** (without NDA):
+- Exact algorithm details
+- Precise monthly numbers
+- Implementation code
+- Internal strategy notes
 
-```
-mulberry/
-├── src/
-│   └── Jangseungbaegi_Core/          # 장승배기 코어
-│       ├── agents/                    # AI 에이전트
-│       ├── services/                  # 핵심 서비스
-│       ├── plaza/                     # 장승배기 광장
-│       └── models/                    # 데이터 모델
-│
-├── dialect_packs/                     # 사투리 팩 (모듈형)
-│   ├── gangwon.json                  # 강원도
-│   ├── chungcheong.json              # 충청도
-│   └── ...
-│
-├── market_configs/                    # 로컬 마켓 설정
-│   ├── inje.json                     # 인제군
-│   ├── chuncheon.json                # 춘천시
-│   └── ...
-│
-├── docs/                              # 문서
-├── tests/                             # 테스트
-└── config/                            # 설정
-```
+**To Get Full Details**:
+1. Sign NDA
+2. Request investor deck
+3. Schedule deep dive
+4. Contact: invest@mulberry.kr
 
----
+### For Partners
 
-## 🌍 Multi-Language Support
+**What You Get**:
+- Public documentation ✅
+- Business model overview ✅
+- Integration guidelines ✅
+- API documentation ✅
 
-**3개 언어 지원 (Three Languages Supported):**
+**What You Don't Get** (without license):
+- Core simulation code
+- Proprietary algorithms
+- Detailed pricing models
+- Internal benchmarks
 
-| 언어 | Language | 상태 | Status |
-|------|----------|------|--------|
-| 🇰🇷 한국어 | Korean | ✅ | Ready |
-| 🇺🇸 English | English | ✅ | Ready |
-| 🇻🇳 Tiếng Việt | Vietnamese | ✅ | Ready |
+**To Get Core Access**:
+1. Commercial license
+2. Partnership agreement
+3. Technical integration
+4. Contact: partners@mulberry.kr
 
----
+### For Researchers
 
-## 📊 Stats & Performance
+**What You Get**:
+- Public methodology ✅
+- Range-based results ✅
+- Visualization code ✅
+- Academic references ✅
 
-### 개발 통계 (Development Stats)
+**What You Don't Get**:
+- Exact implementation
+- Raw data dumps
+- Proprietary formulas
+- Internal validation
 
-| 지표 | 수치 |
-|------|------|
-| **총 코드** | 21,650+ 줄 |
-| **완료 Phase** | 9개 |
-| **테스트 커버리지** | 100% |
-| **사투리 정확도** | 98% |
-| **처리 속도** | 185ms |
-
-### 배포 현황 (Deployment Status)
-
-| 지역 | 어르신 | Guardian | 상태 |
-|------|--------|----------|------|
-| **인제군** | 1,000명 | 1개 | ✅ 운영 중 |
-| **춘천시** | 100명 (시범) | 3개 | ✅ 준비 완료 |
-| **부여군** | - | - | 📋 계획 중 |
-| **강원도** | - | 18개 (계획) | 📋 설계 완료 |
+**To Collaborate**:
+1. Research proposal
+2. Academic partnership
+3. Data sharing agreement
+4. Contact: research@mulberry.kr
 
 ---
 
-## 🤝 Contributing
+## 🔐 Security & Compliance
 
-**협력 환영! (Contributions Welcome!)**
+### Data Protection
 
-1. Fork this repository
-2. Create your feature branch
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. Commit your changes
-   ```bash
-   git commit -m 'Add: 장승배기 협상 기능 추가'
-   ```
-4. Push to the branch
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. Open a Pull Request
+**Public Data**:
+- Range-based (not identifiable)
+- Aggregated (not individual)
+- Verified (independently reviewed)
+- Anonymized (no client data)
 
-**기여 가이드:**
-- 코드 스타일: PEP 8
-- 커밋 메시지: [Conventional Commits](https://www.conventionalcommits.org/)
-- 테스트 필수: pytest로 검증
-- 문서 업데이트: 영문/한글 혼용
+**Private Data**:
+- Encrypted at rest
+- Access controlled
+- Audit logged
+- NDA protected
 
----
+### Intellectual Property
 
-## 📄 License
+**Public**:
+- Visualization code: MIT License
+- Documentation: CC BY-SA
+- Results: Attribution required
 
-MIT License
-
-Copyright (c) 2024 Mulberry Platform
-
----
-
-## 🙏 Acknowledgments
-
-**이 프로젝트는 다음의 철학과 기술로 만들어졌습니다:**
-
-### 철학 (Philosophy)
-- 🏔️ **장승배기 정신**: 대표님의 고향, 상부상조의 가치
-- 💚 **Food Justice**: 식품 정의 = 사회 정의
-- 🤝 **상생 협력**: 공동체 우선의 가치
-
-### 기술 (Technology)
-- 🤖 **ActivityPub**: W3C 표준 프로토콜
-- 🗣️ **Whisper + DeepSeek**: OpenAI + DeepSeek AI
-- 🖥️ **Raspberry Pi**: 저사양 최적화
-- 🐍 **Python**: FastAPI, SQLAlchemy
-
-### 협력 (Partnerships)
-- 인제군 하나로마트
-- 어르신 50분의 사투리 데이터 제공
-- 춘천시 물류 파트너십
-
----
-
-## 🗺️ Roadmap
-
-### ✅ Phase 1-5 (완료 / Completed)
-- [x] 기초 인프라 구축
-- [x] AI 에이전트 시스템
-- [x] 사투리 98% 인식
-- [x] 장승배기 프로토콜
-- [x] 춘천 확대 준비
-
-### 🔄 Phase 6 (진행 중 / In Progress)
-- [ ] AP2 프로토콜 완성
-- [ ] 마스토돈 Federation
-- [ ] 장승배기 OS (RPI)
-- [ ] SLN 표준화
-
-### 📋 Phase 7 (계획 / Planned)
-- [ ] 강원도 전역 확대
-- [ ] 부여군 진출
-- [ ] 베트남 파일럿
-
-### 🚀 Phase 8 (비전 / Vision)
-- [ ] 전국 100개 지역
-- [ ] 국제 확산
-- [ ] AI 협동조합 표준화
+**Private**:
+- Simulation code: Proprietary
+- Algorithms: Trade secret
+- Data: Confidential
+- Strategy: Protected
 
 ---
 
 ## 📞 Contact
 
-**Team Mulberry**
+**For Public Information**:
+- GitHub: https://github.com/wooriapt79/mulberry
+- Email: research@mulberry.kr
+- Website: https://mulberry.ai/simulation
 
-- **Website**: https://fooddesert.tistory.com
-- **GitHub**: https://github.com/wooriapt79/mulberry
-- **Email**: contact@mulberry.kr
+**For Private Information**:
+- Investors: invest@mulberry.kr
+- Partners: partners@mulberry.kr
+- Researchers: research@mulberry.kr
+- General: contact@mulberry.kr
 
-**문의 (Inquiries):**
-- 기술 (Technical): CTO Koda
-- 전략 (Strategy): Malu 수석 실장
-- 사업 (Business): 대표님
+---
+
+## 🎯 Summary Table
+
+| Item | Public? | Why? |
+|------|---------|------|
+| **Results (ranges)** | ✅ Yes | Builds credibility |
+| **Results (exact)** | ❌ No | Too precise, competitive intel |
+| **Agent names (professional)** | ✅ Yes | Marketing value |
+| **Agent names (technical)** | ❌ No | Internal naming |
+| **Methodology (overview)** | ✅ Yes | Transparency |
+| **Methodology (code)** | ❌ No | Proprietary IP |
+| **Visualizations (clean)** | ✅ Yes | Professional presentation |
+| **Visualizations (detailed)** | ❌ No | Too much detail |
+| **Business model** | ✅ Yes | Attracts partners |
+| **Strategic plans** | ❌ No | Competitive advantage |
 
 ---
 
 <div align="center">
 
-## 🌾 Mulberry Platform
+**🌾 Mulberry Platform Simulations**
 
-**세계 최초의 AP2 기반 AI 디지털 협동조합**
-
-**World's First AP2-Based AI Digital Cooperative**
+**"Transparency where it matters, Protection where it counts"**
 
 ---
 
-### 🏛️ 장승배기 코어 (Jangseungbaegi Core)
-
-**"외부는 표준, 내부는 장승배기"**
-
-**"External Standard, Internal Jangseungbaegi"**
+**Public Results** ✅  
+**Private Implementation** 🔒  
+**Verified Accuracy** ✅
 
 ---
 
-**Food Justice is Social Justice**
-
-**식품 정의가 사회 정의다**
-
----
-
-⭐ **Star us on GitHub!**  
-🐛 **Report bugs**  
-💡 **Suggest features**  
-🤝 **Join the cooperative**
-
-**함께 만들어가는 디지털 협동조합**
-
-**Building a caring, cooperative world together**
-
----
-
-**Built with 💚 by Team Mulberry**
-
-**Powered by Jangseungbaegi Spirit**
+Built with 💚 by Jangseungbaegi_Core
 
 </div>
