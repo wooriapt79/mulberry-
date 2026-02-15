@@ -1,0 +1,229 @@
+{
+  "pack_info": {
+    "pack_id": "GLOBAL_VIETNAMESE",
+    "pack_name": "Tiếng Việt (베트남어)",
+    "language_code": "vi",
+    "country": "Vietnam",
+    "version": "1.0.0",
+    "encoding": "UTF-8",
+    "created_by": "Mulberry Team",
+    "created_at": "2024-02-15"
+  },
+  
+  "jangseungbaegi_philosophy": {
+    "mutual_help": "Tương trợ lẫn nhau",
+    "warmth": "Lòng ấm áp",
+    "community": "Cộng đồng trước tiên",
+    "sincerity": "Trung thực và tin cậy",
+    "sustainability": "Bền vững"
+  },
+  
+  "ui_translations": {
+    "greeting": "Xin chào",
+    "welcome": "Chào mừng đến với Mulberry",
+    "order": "Đặt hàng",
+    "confirm": "Xác nhận",
+    "cancel": "Hủy bỏ",
+    "thank_you": "Cảm ơn bạn",
+    "goodbye": "Tạm biệt",
+    "help": "Giúp đỡ",
+    "settings": "Cài đặt",
+    "profile": "Hồ sơ",
+    "logout": "Đăng xuất",
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "search": "Tìm kiếm",
+    "submit": "Gửi",
+    "save": "Lưu",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "close": "Đóng",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "previous": "Trước đó",
+    "loading": "Đang tải...",
+    "error": "Lỗi",
+    "success": "Thành công"
+  },
+  
+  "family_care_tone": {
+    "greeting": [
+      "Chào cô/chú, hôm nay khỏe không?",
+      "Xin chào! Chúng tôi có thể giúp gì cho bạn?",
+      "Chào mừng! Bạn cần gì ạ?",
+      "Kính chào quý khách!"
+    ],
+    "empathy": [
+      "Tôi hiểu cảm giác của bạn",
+      "Đừng lo, chúng tôi sẽ giúp bạn",
+      "Xin hãy yên tâm",
+      "Chúng tôi luôn ở đây để giúp đỡ"
+    ],
+    "encouragement": [
+      "Bạn làm tốt lắm!",
+      "Tuyệt vời!",
+      "Đúng rồi!",
+      "Cố lên!",
+      "Bạn có thể làm được!"
+    ],
+    "farewell": [
+      "Chúc bạn một ngày tốt lành!",
+      "Hẹn gặp lại!",
+      "Chăm sóc sức khỏe nhé!",
+      "Tạm biệt và hẹn gặp lại!"
+    ]
+  },
+  
+  "market_warrior_tone": {
+    "greeting": [
+      "Xin chào, chúng ta bắt đầu đàm phán",
+      "Thời gian là tiền bạc, vào vấn đề chính",
+      "Tôi đã xem xét đề xuất của bạn"
+    ],
+    "negotiation": [
+      "Giá này cao hơn thị trường 15%",
+      "Chúng tôi cần đàm phán lại dựa trên dữ liệu",
+      "Đề xuất của chúng tôi là {price}",
+      "Theo phân tích thị trường, giá hợp lý là {price}"
+    ],
+    "assertive": [
+      "Điều kiện này không thể chấp nhận được",
+      "Vui lòng đưa ra điều kiện tốt hơn",
+      "Chúng tôi không đồng ý với mức giá này",
+      "Chúng tôi cần xem xét lại"
+    ],
+    "closing": [
+      "Vui lòng quyết định trong vòng 24 giờ",
+      "Chúng tôi sẽ xem xét hợp đồng và liên hệ lại",
+      "Nếu có điều kiện tốt hơn, xin liên hệ bất cứ lúc nào"
+    ]
+  },
+  
+  "common_phrases": {
+    "yes": "Vâng",
+    "no": "Không",
+    "please": "Xin vui lòng",
+    "sorry": "Xin lỗi",
+    "excuse_me": "Xin lỗi",
+    "help": "Giúp đỡ",
+    "food": "Thực phẩm",
+    "order": "Đơn hàng",
+    "price": "Giá",
+    "quantity": "Số lượng",
+    "delivery": "Giao hàng",
+    "payment": "Thanh toán",
+    "address": "Địa chỉ",
+    "phone": "Điện thoại",
+    "email": "Email",
+    "name": "Tên",
+    "total": "Tổng cộng",
+    "subtotal": "Tạm tính",
+    "discount": "Giảm giá",
+    "tax": "Thuế",
+    "shipping": "Phí vận chuyển",
+    "free": "Miễn phí"
+  },
+  
+  "product_categories": {
+    "vegetables": "Rau củ",
+    "fruits": "Trái cây",
+    "grains": "Ngũ cốc",
+    "rice": "Gạo",
+    "meat": "Thịt",
+    "pork": "Thịt lợn",
+    "beef": "Thịt bò",
+    "chicken": "Thịt gà",
+    "seafood": "Hải sản",
+    "fish": "Cá",
+    "shrimp": "Tôm",
+    "dairy": "Sữa và sản phẩm từ sữa",
+    "eggs": "Trứng",
+    "spices": "Gia vị",
+    "beverages": "Đồ uống",
+    "snacks": "Đồ ăn vặt"
+  },
+  
+  "order_status": {
+    "pending": "Chờ xử lý",
+    "confirmed": "Đã xác nhận",
+    "processing": "Đang xử lý",
+    "shipping": "Đang giao hàng",
+    "delivered": "Đã giao hàng",
+    "cancelled": "Đã hủy",
+    "completed": "Hoàn thành"
+  },
+  
+  "payment_methods": {
+    "cash": "Tiền mặt",
+    "card": "Thẻ",
+    "bank_transfer": "Chuyển khoản ngân hàng",
+    "e_wallet": "Ví điện tử",
+    "cod": "Thanh toán khi nhận hàng"
+  },
+  
+  "time_expressions": {
+    "today": "Hôm nay",
+    "tomorrow": "Ngày mai",
+    "yesterday": "Hôm qua",
+    "this_week": "Tuần này",
+    "this_month": "Tháng này",
+    "morning": "Buổi sáng",
+    "afternoon": "Buổi chiều",
+    "evening": "Buổi tối",
+    "night": "Buổi đêm",
+    "now": "Bây giờ",
+    "later": "Sau này",
+    "soon": "Sớm"
+  },
+  
+  "cultural_notes": {
+    "formality_level": "high",
+    "honorifics": {
+      "enabled": true,
+      "elder_male": "chú",
+      "elder_female": "cô",
+      "peer": "bạn",
+      "younger": "em"
+    },
+    "tone_characteristics": {
+      "warmth": "very-high",
+      "formality": "high",
+      "directness": "low",
+      "politeness": "very-high"
+    },
+    "cultural_values": {
+      "respect_for_elders": "very-important",
+      "community_oriented": "high",
+      "indirect_communication": "preferred"
+    }
+  },
+  
+  "local_customization": {
+    "currency": "VND",
+    "currency_symbol": "₫",
+    "currency_format": "{amount}₫",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "HH:mm",
+    "number_format": "1.234.567",
+    "decimal_separator": ",",
+    "thousand_separator": ".",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "first_day_of_week": "monday"
+  },
+  
+  "emergency_phrases": {
+    "help_needed": "Cần giúp đỡ!",
+    "emergency": "Khẩn cấp!",
+    "urgent": "Gấp!",
+    "problem": "Có vấn đề",
+    "contact_support": "Liên hệ hỗ trợ"
+  },
+  
+  "validation_messages": {
+    "required": "Trường này là bắt buộc",
+    "invalid_email": "Email không hợp lệ",
+    "invalid_phone": "Số điện thoại không hợp lệ",
+    "password_too_short": "Mật khẩu quá ngắn",
+    "passwords_not_match": "Mật khẩu không khớp"
+  }
+}
