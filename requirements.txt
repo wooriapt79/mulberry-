@@ -1,142 +1,61 @@
-# Mulberry Platform - Python Dependencies
-# Version: 4.0.0
+# Mulberry Phase 1 - Python Dependencies
 
-# ============================================
-# Core Framework
-# ============================================
+# Web Framework
 fastapi==0.109.0
 uvicorn[standard]==0.27.0
 pydantic==2.5.3
-python-multipart==0.0.6
+pydantic-settings==2.1.0
 
-# ============================================
-# AI & ML
-# ============================================
-# DeepSeek-R1 & Qwen (llama-cpp-python)
-llama-cpp-python==0.2.39
-
-# Whisper (음성 인식)
-openai-whisper==20231117
-torch==2.1.2
-torchaudio==2.1.2
-
-# ============================================
-# Data Processing
-# ============================================
-numpy==1.24.3
-pandas==2.1.4
-scipy==1.11.4
-
-# ============================================
-# API Clients
-# ============================================
-# Mastodon
-Mastodon.py==1.8.1
-
-# Google APIs
-google-api-python-client==2.111.0
-google-auth==2.26.1
-google-auth-oauthlib==1.2.0
-google-auth-httplib2==0.2.0
-
-# Requests
-requests==2.31.0
-httpx==0.26.0
-
-# ============================================
-# Hardware (Raspberry Pi)
-# ============================================
-# GPIO
-RPi.GPIO==0.7.1  # Raspberry Pi only
-gpiozero==2.0.1
-
-# ============================================
 # Database
-# ============================================
+psycopg2-binary==2.9.9
 sqlalchemy==2.0.25
 alembic==1.13.1
-asyncpg==0.29.0  # PostgreSQL
-aiosqlite==0.19.0  # SQLite (개발용)
 
-# ============================================
-# Caching & Queue
-# ============================================
-redis==5.0.1
-celery==5.3.4
+# Mastodon API
+Mastodon.py==1.8.1
 
-# ============================================
-# Utilities
-# ============================================
-# Logging
-loguru==0.7.2
+# AI/LLM Integration
+httpx==0.26.0  # For Qwen API calls
+openai==1.10.0  # Optional: OpenAI-compatible interface
 
-# Environment
+# Data Processing
+python-dateutil==2.8.2
+python-multipart==0.0.6
+
+# Environment & Configuration
 python-dotenv==1.0.0
 
-# Date & Time
-python-dateutil==2.8.2
-pytz==2023.3
+# Background Tasks
+celery==5.3.6
+redis==5.0.1
 
-# UUID
-uuid==1.30
+# Logging & Monitoring
+loguru==0.7.2
 
-# JSON
-orjson==3.9.10
-
-# ============================================
 # Testing
-# ============================================
-pytest==7.4.3
-pytest-asyncio==0.21.1
-pytest-cov==4.1.0
-httpx==0.26.0  # For API testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
+httpx==0.26.0  # For testing async
+
+# Utils
+tenacity==8.2.3  # Retry logic
+python-json-logger==2.0.7
+pytz==2024.1
 
 # ============================================
-# Development
+# Phase 2: Raspberry Pi 5 & Edge AI
 # ============================================
-black==23.12.1  # Code formatter
-flake8==7.0.0  # Linter
-mypy==1.8.0  # Type checker
-isort==5.13.2  # Import sorter
 
-# ============================================
-# Documentation
-# ============================================
-mkdocs==1.5.3
-mkdocs-material==9.5.3
+# Raspberry Pi GPIO Control
+RPi.GPIO==0.7.1  # GPIO 제어 (Raspberry Pi only)
+adafruit-circuitpython-ads1x15==2.2.21  # ADC 센서
+pyaudio==0.2.14  # 오디오 입출력
 
-# ============================================
-# Security
-# ============================================
-cryptography==41.0.7
-pyjwt==2.8.0
+# DeepSeek-R1 On-Device Inference
+llama-cpp-python==0.2.56  # 4-bit quantized LLM
+openai-whisper==20231117  # 음성 인식 (tiny/base 모델)
+numpy==1.26.4  # 수치 계산
+scipy==1.12.0  # 과학 계산
 
-# ============================================
-# Monitoring
-# ============================================
-prometheus-client==0.19.0
-
-# ============================================
-# Audio Processing
-# ============================================
-librosa==0.10.1
-soundfile==0.12.1
-pydub==0.25.1
-
-# ============================================
-# Image Processing (Optional)
-# ============================================
-Pillow==10.1.0
-
-# ============================================
-# Notes
-# ============================================
-# Install on Raspberry Pi 5:
-# pip install -r requirements.txt --break-system-packages
-#
-# For GPU support (CUDA):
-# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-#
-# DeepSeek model download:
-# wget https://huggingface.co/deepseek-ai/deepseek-r1-distill-qwen-7b-GGUF/resolve/main/deepseek-r1-distill-qwen-7b-q4_k_m.gguf
-# mv deepseek-r1-distill-qwen-7b-q4_k_m.gguf /opt/mulberry/models/
+# Delivery Optimization
+networkx==3.2.1  # 그래프 알고리즘 (선택적)
