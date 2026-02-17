@@ -1,1 +1,12 @@
-backend
+📂 backend/app/
+  ├─ backend/app/api/.gitkeep
+  ├─ backend/app/core/.gitkeep
+  ├─ backend/app/models/.gitkeep
+  ├─ backend/app/schemas/.gitkeep
+  ├─ backend/app/services/.gitkeep
+  ├─ backend/app/guardian/.gitkeep
+  ├─ backend/app/ars/.gitkeep
+  ├─ backend/app/dialect/.gitkeep
+  ├─ backend/app/db/.gitkeep
+📂 backend/tests/
+  └─ backend/tests/.gitkeep
