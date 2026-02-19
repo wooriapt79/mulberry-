@@ -2,7 +2,7 @@
 
 **세계 최초 ActivityPub 기반 에이전트 커머스 플랫폼**
 
-<div align="center">
+<div align="">
 
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-Mulberry%20Internal-green)
