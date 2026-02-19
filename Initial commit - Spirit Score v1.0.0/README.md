@@ -1,6 +1,6 @@
 # 🌾 Spirit Score 자동화 시스템
 
-<div align="center">
+<div align="">
 
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-Mulberry%20Internal-green)
