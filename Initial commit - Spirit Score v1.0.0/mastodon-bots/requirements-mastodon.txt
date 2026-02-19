@@ -1,0 +1,22 @@
+# Mulberry Mastodon Bot System - Requirements
+# CTO Koda
+
+# Mastodon API
+Mastodon.py==1.8.1
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Scheduling (for automated posts)
+APScheduler==3.10.4
+
+# Optional: Database integration
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.25
+
+# Optional: Redis for caching
+redis==5.0.1
+
+# Utilities
+requests==2.31.0
+python-dateutil==2.8.2
