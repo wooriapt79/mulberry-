@@ -1,4 +1,11 @@
 # 🌾 Mulberry Agent System
+# 🌾 Mulberry Agent System v2
+
+![Python](https://img.shields.io/badge/Python-3.11+-blue)
+![Lines](https://img.shields.io/badge/Lines-4.8K-green)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-success)
+
+Complete Integration: AP2 + Spirit Score + Jangseungbaegi
 
 **AI 에이전트 기반 오프라인 매장 자동화 시스템**
 
