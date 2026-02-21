@@ -54,8 +54,7 @@ Mulberry is open-source. Get involved today!
 👉 **For detailed technical documentation and APIs, please visit [mulberry-agent-system-v3](https://github.com/wooriapt79/mulberry-/tree/main/mulberry-agent-system-v3)!**
 
 ---
-
-*(Existing detailed content like the simulations/ directory remains below)*
+*[(Existing detailed content like the simulations/ directory remains below)](https://github.com/wooriapt79/mulberry-#-economic-simulation-directory)*
 ......
 
 ---
