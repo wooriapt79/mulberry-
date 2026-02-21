@@ -1,0 +1,43 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "debug": true
+  },
+  "database": {
+    "type": "sqlite",
+    "path": "data/mulberry.db",
+    "postgresql": {
+      "host": "localhost",
+      "port": 5432,
+      "database": "mulberry_agents",
+      "user": "mulberry",
+      "password": "your_password"
+    }
+  },
+  "agent_factory": {
+    "max_daily_agents": 10,
+    "training_hours": 1,
+    "auto_start_training": true
+  },
+  "terminal_matching": {
+    "auto_assign": false
+  },
+  "google_business": {
+    "api_key": "YOUR_GOOGLE_API_KEY_HERE",
+    "auto_respond_reviews": true
+  },
+  "ars": {
+    "enabled": true,
+    "auto_process_orders": true
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/mulberry.log",
+    "max_size_mb": 100
+  },
+  "security": {
+    "secret_key": "your-secret-key-change-this-in-production",
+    "token_expiry_hours": 24
+  }
+}
