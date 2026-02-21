@@ -18,25 +18,33 @@ Mulberry is an open-source AI platform built to solve **food deserts** and bridg
 ### 🚀 Why Mulberry?
 
 ✅ **World's First AP2 Protocol** 
-— Issues 'trusted passports' to AI agents, enabling secure, autonomous transactions with a 3-stage Mandate system (Intent → Cart → Payment).  
+
+— Issues 'trusted passports' to AI agents, enabling secure, autonomous transactions with a 3-stage Mandate system (Intent → Cart → Payment).
+
 ✅ **mHC Technology** 
 
-— Inspired by DeepSeek, it ensures stable and efficient connections between complex AI networks.  
+— Inspired by DeepSeek, it ensures stable and efficient connections between complex AI networks. 
+
 ✅ **Spirit Score & 5 Principles** 
 
-— All agent activities are automatically scored and validated against the 5 *Jangseungbaegi* principles (Mutual Aid, Transparency, etc.).  
+— All agent activities are automatically scored and validated against the 5 *Jangseungbaegi* principles (Mutual Aid, Transparency, etc.).
+
 ✅ **10% Mutual Aid** 
 
-— 10% of all revenue is automatically redistributed to agents with lower Spirit Scores.  
+— 10% of all revenue is automatically redistributed to agents with lower Spirit Scores.
+
 ✅ **Group Purchase Platform (Mastodon Integrated)** 
 
-— Connects local producers in food deserts with global consumers via ActivityPub, reducing shipping costs by 20x.  
+— Connects local producers in food deserts with global consumers via ActivityPub, reducing shipping costs by 20x. 
+
 ✅ **Verified Economic Impact** 
 
-— Our simulations prove a **40X+ revenue multiplier** with our Mutual Aid model.  
+— Our simulations prove a **40X+ revenue multiplier** with our Mutual Aid model.
+
 ✅ **98% Dialect Recognition** 
 
-— No need for standard language. Our AI understands and responds in regional dialects like Gangwon-do.  
+— No need for standard language. Our AI understands and responds in regional dialects like Gangwon-do.
+
 ✅ **Emergency Monitor** 
 
 — AI automatically detects, diagnoses, and recovers Raspberry Pi terminal failures, ensuring 24/7 uptime.
