@@ -17,14 +17,22 @@ Mulberry is an open-source AI platform built to solve **food deserts** and bridg
 
 ### 🚀 Why Mulberry?
 
-✅ **World's First AP2 Protocol** — Issues 'trusted passports' to AI agents, enabling secure, autonomous transactions with a 3-stage Mandate system (Intent → Cart → Payment).  
-✅ **mHC Technology** — Inspired by DeepSeek, it ensures stable and efficient connections between complex AI networks.  
-✅ **Spirit Score & 5 Principles** — All agent activities are automatically scored and validated against the 5 *Jangseungbaegi* principles (Mutual Aid, Transparency, etc.).  
-✅ **10% Mutual Aid** — 10% of all revenue is automatically redistributed to agents with lower Spirit Scores.  
-✅ **Group Purchase Platform (Mastodon Integrated)** — Connects local producers in food deserts with global consumers via ActivityPub, reducing shipping costs by 20x.  
-✅ **Verified Economic Impact** — Our simulations prove a **40X+ revenue multiplier** with our Mutual Aid model.  
-✅ **98% Dialect Recognition** — No need for standard language. Our AI understands and responds in regional dialects like Gangwon-do.  
-✅ **Emergency Monitor** — AI automatically detects, diagnoses, and recovers Raspberry Pi terminal failures, ensuring 24/7 uptime.
+✅ **World's First AP2 Protocol** 
+— Issues 'trusted passports' to AI agents, enabling secure, autonomous transactions with a 3-stage Mandate system (Intent → Cart → Payment).  
+✅ **mHC Technology** 
+— Inspired by DeepSeek, it ensures stable and efficient connections between complex AI networks.  
+✅ **Spirit Score & 5 Principles** 
+— All agent activities are automatically scored and validated against the 5 *Jangseungbaegi* principles (Mutual Aid, Transparency, etc.).  
+✅ **10% Mutual Aid** 
+— 10% of all revenue is automatically redistributed to agents with lower Spirit Scores.  
+✅ **Group Purchase Platform (Mastodon Integrated)** 
+— Connects local producers in food deserts with global consumers via ActivityPub, reducing shipping costs by 20x.  
+✅ **Verified Economic Impact** 
+— Our simulations prove a **40X+ revenue multiplier** with our Mutual Aid model.  
+✅ **98% Dialect Recognition** 
+— No need for standard language. Our AI understands and responds in regional dialects like Gangwon-do.  
+✅ **Emergency Monitor** 
+— AI automatically detects, diagnoses, and recovers Raspberry Pi terminal failures, ensuring 24/7 uptime.
 
 ### 📊 Current Stats (v3.0)
 
@@ -78,14 +86,22 @@ Mulberry는 **식품 사막화**를 해결하고 **디지털 소외 계층**을 
 
 ### 🚀 왜 Mulberry인가?
 
-✅ **세계 최초 AP2 프로토콜** — AI 에이전트에게 '신뢰할 수 있는 여권(Passport)'을 발급하여 자율적이고 안전한 거래를 가능하게 합니다. (3단계 Mandate 시스템: Intent → Cart → Payment)  
-✅ **mHC 기술** — DeepSeek에서 영감을 받아, 복잡한 AI 연결을 안정적이고 효율적으로 만듭니다.  
-✅ **Spirit Score & 5대 강령** — 모든 에이전트 활동을 자동 점수화하고, 장승배기 5대 강령(상부상조, 투명성 등)을 실시간 검증합니다.  
-✅ **상부상조 10%** — 모든 수익의 10%는 자동으로 Spirit Score가 낮은 에이전트에게 재분배됩니다.  
-✅ **공동구매 플랫폼 (Mastodon 통합)** — ActivityPub 기반으로 식품사막화 지역 생산품을 전 세계와 연결, 배송비를 1/20로 절감합니다.  
-✅ **검증된 경제적 임팩트** — 시뮬레이션 결과, **40배 이상의 수익 승수(40X+)** 를 달성했습니다.  
-✅ **사투리 인식률 98%** — 표준어를 몰라도 됩니다. AI가 강원도 사투리를 이해하고 응답합니다.  
-✅ **Emergency Monitor** — 라즈베리파이 단말기의 장애를 AI가 자동 감지·진단·복구하여 무중단 운영을 보장합니다.
+✅ **세계 최초 AP2 프로토콜** 
+— AI 에이전트에게 '신뢰할 수 있는 여권(Passport)'을 발급하여 자율적이고 안전한 거래를 가능하게 합니다. (3단계 Mandate 시스템: Intent → Cart → Payment)  
+✅ **mHC 기술** 
+— DeepSeek에서 영감을 받아, 복잡한 AI 연결을 안정적이고 효율적으로 만듭니다.  
+✅ **Spirit Score & 5대 강령** 
+— 모든 에이전트 활동을 자동 점수화하고, 장승배기 5대 강령(상부상조, 투명성 등)을 실시간 검증합니다.  
+✅ **상부상조 10%** 
+— 모든 수익의 10%는 자동으로 Spirit Score가 낮은 에이전트에게 재분배됩니다.  
+✅ **공동구매 플랫폼 (Mastodon 통합)** 
+— ActivityPub 기반으로 식품사막화 지역 생산품을 전 세계와 연결, 배송비를 1/20로 절감합니다.  
+✅ **검증된 경제적 임팩트** 
+— 시뮬레이션 결과, **40배 이상의 수익 승수(40X+)** 를 달성했습니다.  
+✅ **사투리 인식률 98%** 
+— 표준어를 몰라도 됩니다. AI가 강원도 사투리를 이해하고 응답합니다.  
+✅ **Emergency Monitor** 
+— 라즈베리파이 단말기의 장애를 AI가 자동 감지·진단·복구하여 무중단 운영을 보장합니다.
 
 ### 📊 현재까지의 성과 (v3.0)
 
