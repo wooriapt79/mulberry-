@@ -18,7 +18,6 @@ Mulberry is an open-source AI platform built to solve **food deserts** and bridg
 ### 🚀 Why Mulberry?
 
 ✅ **World's First AP2 Protocol** 
-
 — Issues 'trusted passports' to AI agents, enabling secure, autonomous transactions with a 3-stage Mandate system (Intent → Cart → Payment).  
 ✅ **mHC Technology** 
 
