@@ -9,7 +9,7 @@
 
 ---
 
-## 📖 Overview- 디렉토리/ 파일 정리
+## 📖 Overview
 
 **Mulberry** is a groundbreaking AI Agent investment platform that reverses the traditional charity model:
 
