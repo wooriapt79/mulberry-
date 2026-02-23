@@ -60,11 +60,12 @@ CSA의 역할은:
 - 기술·금융·정책 간 충돌을 사전에 제거하는 것입니다.
 
 CSA 디렉토리 구조
-/Mulberry CSA/
- ├─ README.md              ← (기존 README_CSA.md, 이름 변경)
- ├─ CSA_STATEMENT.md       ← 역할·책임 선언
- ├─ CSA_ARCHITECTURE.md    ← 시스템/ESG/정책 구조 (다음 스텝)
- ├─ CSA_PILOT_SUMMARY.md   ← 지자체/금융 전달용 요약
+
+/mulberry-
+ └─ Mulberry CSA/
+     ├─ README.md      ← ✅ 위치 동일
+     ├─ CSA_STATEMENT.md
+     └─ (기타 파일)
 
 ---
 
@@ -81,4 +82,5 @@ Mulberry는 다음이 아닙니다:
 - AI 기술 시연 프로젝트
 - 사용자 행동 교정 실험
 - 인력 대체형 소매 모델
+
 
