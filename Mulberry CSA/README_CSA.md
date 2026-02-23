@@ -1,8 +1,10 @@
 # Mulberry Project – Chief System Architect (CSA)
 
-**Role:** Chief System Architect (CSA)  
-**Signature:** CSA Kbin  
+This space documents the system architecture, risk controls,
+and policy alignment of the Mulberry Project.
 
+Role: Chief System Architect (CSA)  
+Signature: CSA Kbin
 ---
 
 ## [EN] Purpose of the CSA Space
@@ -74,3 +76,4 @@ Mulberry는 다음이 아닙니다:
 - AI 기술 시연 프로젝트
 - 사용자 행동 교정 실험
 - 인력 대체형 소매 모델
+
