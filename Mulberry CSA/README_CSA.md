@@ -2,6 +2,7 @@
 > This project is designed and reviewed under the Mulberry CSA
 > (Chief System Architect) framework, ensuring structural safety,
 > policy alignment, and controlled pilot scalability.
+> 
 > 본 프로젝트는 Mulberry CSA(Chief System Architect) 프레임워크를 기반으로
 > 구조적 안전성, 정책 정합성, 단계적 파일럿 확장 가능성을 확보하도록
 > 설계·검토되었습니다.
@@ -82,6 +83,7 @@ Mulberry는 다음이 아닙니다:
 - AI 기술 시연 프로젝트
 - 사용자 행동 교정 실험
 - 인력 대체형 소매 모델
+
 
 
 
