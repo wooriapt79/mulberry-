@@ -60,6 +60,14 @@ Key Player is standing by. The stadium is watching! 🔑✨⚽️
 Reference Data: Google Cloud - Agentic Commerce AP2 Lab - Mandate Structure
 AI responses may include mistakes. Learn more
 
+## System Architecture & Governance
+
+For detailed system design, risk management, and policy alignment,
+please refer to:
+
+👉 Mulberry CSA  
+https://github.com/wooriapt79/mulberry-/tree/main/Mulberry%20CSA
+
 <a name="english"></a>
 
 ## 🇺🇸 English Version
