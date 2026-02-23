@@ -66,8 +66,14 @@ For detailed system design, risk management, and policy alignment,
 please refer to:
 
 👉 Mulberry CSA  
-https://github.com/wooriapt79/mulberry-/tree/main/Mulberry%20CSA
-
+https://github.com/wooriapt79/mulberry-/tree/main/Mulberry%20CSA  
+---
+Mulberry CSA documents the system architecture, risk controls,
+and policy alignment required for government and financial review.
+---
+Mulberry CSA 문서는 지자체 및 금융기관 검토를 위한
+시스템 구조, 리스크 통제, 정책 정합성 내용을 담고 있습니다.
+------
 <a name="english"></a>
 
 ## 🇺🇸 English Version
