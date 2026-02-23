@@ -4,7 +4,35 @@
 **Signature:** CSA Kbin  
 
 ---
+# Mulberry CSA
+Chief System Architect (CSA)
 
+This directory serves as the official architectural and governance
+entry point for the Mulberry Project.
+
+The CSA is responsible for system coherence, risk boundaries,
+and alignment between technology, policy, and social impact.
+
+Role: Chief System Architect (CSA)  
+Signature: CSA Kbin
+
+---
+
+## 📌 CSA Documentation Navigation
+
+- **CSA Statement**  
+  → Defines the authority, responsibility, and accountability of the CSA  
+  (`CSA_STATEMENT.md`)
+
+- **CSA Policy & Pilot Context**  
+  → Materials prepared for local government and institutional review  
+  (to be expanded)
+
+- **System Architecture & Governance**  
+  → Structural overview of Mulberry OS and its cooperative model  
+  (to be expanded)
+
+---
 ## [EN] Purpose of the CSA Space
 
 The CSA Space exists to define, protect, and explain the **system-level logic** of the Mulberry Project.
@@ -82,5 +110,6 @@ Mulberry는 다음이 아닙니다:
 - AI 기술 시연 프로젝트
 - 사용자 행동 교정 실험
 - 인력 대체형 소매 모델
+
 
 
