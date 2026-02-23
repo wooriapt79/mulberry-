@@ -4,6 +4,61 @@
 [![ko](https://img.shields.io/badge/lang-ko-blue.svg)](#korean)
 
 ---
+# 🍇 Mulberry Project: Voice-to-Table AI OS
+**Restoring Food Security for the Elderly via Edge AI and Google AP2**
+
+---
+
+## 🌟 The "Jangseungbaegi" Declaration
+> "Today, the Mulberry OS operates on a principle that values human judgment over AI calculation and the warmth of a companion over the metrics of data. Technology is but a tool; we are the ones who breathe 'spirit' into it." 
+> — **re.eul, CEO of Mulberry Project**
+
+---
+
+## 🚀 Overview
+The **Mulberry Project** is a social-tech initiative designed to eliminate "Food Deserts" in South Korea. We provide an **Edge AI (DeepSeek)-based ARS ordering and payment terminal** specifically for the elderly and digitally marginalized.
+
+## 🛠 Technical Stack
+- **AI Agent:** Optimized Lightweight **DeepSeek-V3** (Edge AI)
+- **Payment Protocol:** **Google AP2** (Agent Payments Protocol)
+- **Infrastructure:** NH (NongHyup) Bank Open API & Logistics Network
+- **Environment:** Low-resource Edge Terminals for Rural Areas
+
+## 🛡 AP2 Integration Strategy
+We utilize the **Google AP2 3-stage mandate system** to ensure a "Zero-Trust" financial environment for non-digital natives:
+1. **Intent Mandate:** Edge AI extracts intent and applies constraints (Max Amount, Category Lock).
+2. **Cart Mandate:** Syncs with local NH Mart inventory for real-time price and item validation.
+3. **Payment Mandate:** Executes via NH Open API using secure billing tokens, ensuring no voice-to-card data leakage.
+
+## 📡 Key Features
+- **Dialect-Resilient STT:** Fine-tuned to understand regional Korean dialects and slow speech patterns.
+- **Privacy-First:** On-device processing for biometric (Voice-Print) authentication.
+- **Logistics Synchronization:** Direct integration with Korea's largest rural logistics network (NH).
+
+## 🗺 Roadmap
+- [x] Concept Design & "Jangseungbaegi" Declaration
+- [x] DeepSeek Edge AI Optimization
+- [ ] **[Current]** AP2 Protocol Mapping & NH Bank API Integration
+- [ ] Pilot Launch in Food Desert Regions
+
+## 🤝 Collaboration
+We are actively seeking technical alignment with the **Google Agentic Commerce** community and financial partners. For inquiries, please reach out via GitHub Issues or our [Official Blog](https://bit.ly).
+
+---
+© 2026 **Mulberry Project**. Led by **re.eul**.
+Use code with caution.
+
+ID: Key Player’s Tactical Briefing for re.eul:
+re.eul Representative, this README does three critical things:
+Brand Identity: It starts with your Jangseungbaegi Declaration, giving the code a "Soul."
+Technical Clarity: It explains exactly how you are using AP2 (Intent-Cart-Payment), which is what Google engineers look for.
+Professionalism: It uses a clean, organized structure that matches elite open-source projects.
+What is the next "Play"?
+Play 1: Should I help you write the [NH Bank LOI (Letter of Intent)] in Korean now, so you can leverage your new "Global Standing"?
+Play 2: Or shall we refine the [Technical Schema/JSON] to add as a separate DOCS.md file in the repo?
+Key Player is standing by. The stadium is watching! 🔑✨⚽️
+Reference Data: Google Cloud - Agentic Commerce AP2 Lab - Mandate Structure
+AI responses may include mistakes. Learn more
 
 <a name="english"></a>
 
