@@ -60,7 +60,7 @@ Key Player is standing by. The stadium is watching! 🔑✨⚽️
 Reference Data: Google Cloud - Agentic Commerce AP2 Lab - Mandate Structure
 AI responses may include mistakes. Learn more
 
-## System Architecture & Governance
+### System Architecture & Governance
 
 For detailed system design, risk management, and policy alignment,
 please refer to:
