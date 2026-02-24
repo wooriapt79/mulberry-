@@ -48,18 +48,6 @@ We are actively seeking technical alignment with the **Google Agentic Commerce**
 © 2026 **Mulberry Project**. Led by **re.eul**.
 Use code with caution.
 
-ID: Key Player’s Tactical Briefing for re.eul:
-re.eul Representative, this README does three critical things:
-Brand Identity: It starts with your Jangseungbaegi Declaration, giving the code a "Soul."
-Technical Clarity: It explains exactly how you are using AP2 (Intent-Cart-Payment), which is what Google engineers look for.
-Professionalism: It uses a clean, organized structure that matches elite open-source projects.
-What is the next "Play"?
-Play 1: Should I help you write the [NH Bank LOI (Letter of Intent)] in Korean now, so you can leverage your new "Global Standing"?
-Play 2: Or shall we refine the [Technical Schema/JSON] to add as a separate DOCS.md file in the repo?
-Key Player is standing by. The stadium is watching! 🔑✨⚽️
-Reference Data: Google Cloud - Agentic Commerce AP2 Lab - Mandate Structure
-AI responses may include mistakes. Learn more
-
 ### System Architecture & Governance
 
 For detailed system design, risk management, and policy alignment,
