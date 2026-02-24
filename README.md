@@ -42,7 +42,7 @@ We utilize the **Google AP2 3-stage mandate system** to ensure a "Zero-Trust" fi
 - [ ] Pilot Launch in Food Desert Regions
 
 ## 🤝 Collaboration
-We are actively seeking technical alignment with the **Google Agentic Commerce** community and financial partners. For inquiries, please reach out via GitHub Issues or our [Official Blog]((https://fooddesert.tistory.com/)).
+We are actively seeking technical alignment with the **Google Agentic Commerce** community and financial partners. For inquiries, please reach out via GitHub Issues or our [Official Blog][((https://fooddesert.tistory.com/))].
 
 ---
 © 2026 **Mulberry Project**. Led by **re.eul**.
