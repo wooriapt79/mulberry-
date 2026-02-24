@@ -1,0 +1,1 @@
+// Sample Mermaid.js architecture code
