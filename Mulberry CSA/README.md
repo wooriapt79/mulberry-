@@ -3,8 +3,7 @@
 ![Mulberry CSA Download Guide](summaries/download_guide.png)
 [![Download Guide](assets/summaries/download_guide.png)](https://github.com/wooriapt79/mulberry-/archive/refs/heads/main.zip)
 
-[![Download 01_AI_Agent_Delegation](assets/summaries/download_guide.png)]
-(https://github.com/wooriapt79/mulberry-/blob/main/Mulberry%20CSA/contracts/01_AI_Agent_Delegation.docx?raw=true)
+[![Download 01_AI_Agent_Delegation](assets/summaries/download_guide.png)]https://github.com/wooriapt79/mulberry-/blob/main/Mulberry%20CSA/contracts/01_AI_Agent_Delegation.docx?raw=true)
 ---
 
 ## 📦 패키지 개요
@@ -151,5 +150,6 @@ git push origin mulberry_csa_update
 **CSA Kbin | Mulberry Project**  
 
 > 이 README 하나로, 계약서 배포, 수정, ZIP 관리, GitHub 업로드까지 **모든 과정을 신뢰성 있게 관리 가능**
+
 
 
