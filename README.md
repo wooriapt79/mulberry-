@@ -42,7 +42,7 @@ We utilize the **Google AP2 3-stage mandate system** to ensure a "Zero-Trust" fi
 - [ ] Pilot Launch in Food Desert Regions
 
 ## 🤝 Collaboration
-We are actively seeking technical alignment with the **Google Agentic Commerce** community and financial partners. For inquiries, please reach out via GitHub Issues or our *** [[Official Blog]](https://fooddesert.tistory.com) 
+We are actively seeking technical alignment with the **Google Agentic Commerce** community and financial partners. For inquiries, please reach out via GitHub Issues or our ** [[Official Blog]](https://fooddesert.tistory.com) 
 
 ---
 © 2026 **Mulberry Project**. Led by **re.eul**.
@@ -53,13 +53,13 @@ Use code with caution.
 For detailed system design, risk management, and policy alignment,
 please refer to:
 
-👉 Mulberry CSA  
+### 👉 Mulberry CSA  
 https://github.com/wooriapt79/mulberry-/tree/main/Mulberry%20CSA  
 ---
-Mulberry CSA documents the system architecture, risk controls,
+### Mulberry CSA documents the system architecture, risk controls,
 and policy alignment required for government and financial review.
 ---
-Mulberry CSA 문서는 지자체 및 금융기관 검토를 위한
+### Mulberry CSA 문서는 지자체 및 금융기관 검토를 위한
 시스템 구조, 리스크 통제, 정책 정합성 내용을 담고 있습니다.
 ------
 <a name="english"></a>
