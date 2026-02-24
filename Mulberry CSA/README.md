@@ -28,6 +28,7 @@ Signature: CSA Kbin
   → Structural overview of Mulberry OS and its cooperative model  
   (to be expanded)
 
+![Mulberry CSA Download Guide](summaries/download_guide.png)
 ---
 ## [EN] Purpose of the CSA Space
 
@@ -106,6 +107,7 @@ Mulberry는 다음이 아닙니다:
 - AI 기술 시연 프로젝트
 - 사용자 행동 교정 실험
 - 인력 대체형 소매 모델
+
 
 
 
