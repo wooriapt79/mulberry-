@@ -1,82 +1,58 @@
-# Mulberry Project – Docs Index
+# Mulberry Project – Documentation Index
 
-This directory contains **all official documentation** for the Mulberry Project.  
-Each document is indexed below for governance, development, legal review, and external submission.
-
----
-
-## 📌 Index Overview
-
-### 1. Core Project Documents
-
-| File | Description |
-| --- | --- |
-| `overview.md` | Project vision, purpose, and social mission |
-| `mulberry_os.md` | Mulberry OS concept and Agentic Cooperative model |
+This is the **central index for all existing documentation files** in the `/docs/` directory of the Mulberry repository.  
+Files are organized by category for easy navigation.
 
 ---
 
-### 2. System & Architecture (CSA Domain)
+## 📌 Available Docs (as of now)
 
+### 📘 Core Documentation
 | File | Description |
-| --- | --- |
-| `architecture.md` | Overall system architecture |
-| `agent_system.md` | AI Agent roles, lifecycle, and passport |
-| `ap2_flow.md` | AP2 decision & payment control flow |
-| `dashboard.md` | Agent activity & revenue monitoring |
-
----
-
-### 3. Operations & Use Cases
-
-| File | Description |
-| --- | --- |
-| `use_cases.md` | 공동구매, 매장 주문, 판매 시나리오 |
-| `agent_sales.md` | AI Agent sales & optimization behavior |
-| `logistics.md` | NH / Hanaro Mart logistics linkage |
-
----
-
-### 4. Legal, Policy & Compliance
-
-| File | Description |
-| --- | --- |
-| `legal_overview.md` | Legal structure overview |
-| `contracts.md` | Contract types & relationships |
-| `government_submission.md` | Local government submission materials |
-| `vc_materials.md` | VC / Investor reference documents |
-
----
-
-### 5. Reports & Statements
-
-| File | Description |
-| --- | --- |
+|------|-------------|
 | `CSA_STATEMENT.md` | CSA official system statement |
-| `risk_review.md` | Risks, concerns, and mitigation |
+
+### 📜 Legal & Compliance
+| File | Description |
+|------|-------------|
+| `legal_overview.md` | High-level legal and compliance review |
+| `contracts.md` | Contract relationship overview |
+
+### 🔧 Development & Operation
+| File | Description |
+|------|-------------|
+| `dev-guide.md` | Developer guide and implementation notes |
+| `use-cases.md` | Example operational scenarios and use cases |
+
+### 🧠 System Design & Architecture
+| File | Description |
+|------|-------------|
+| `architecture.md` | System architecture overview |
+| `agent-system.md` | AI Agent system design and Passport model |
+
+### 📄 Miscellaneous
+| File | Description |
+|------|-------------|
+| `readme_old.md` | Legacy documentation |
+| `roadmap.md` | Project roadmap (if exists) |
 
 ---
 
 ## 🔁 Navigation
 
-- 🔙 Main Repository  
-  → `../README.md`
-  
-- 🧭 CSA Hub  
-  → `../Mulberry CSA/README.md`
-  
+- 🔙 Back to root repository → [`../README.md`](../README.md)  
+- 📌 CSA Hub (System Architecture & Governance) → [`../Mulberry CSA/README.md`](../Mulberry%20CSA/README.md)  
 
 ---
 
-## 🛠 Document Management Rules
+## 🛠 Notes
 
-- All docs must be written in **Markdown (.md)**
-- One concept = one file (no overloading)
-- Legal / policy docs must remain **human-readable**
-- Final authority on structure: **CSA**
+- This index reflects the **current files present in the `/docs/` folder**.  
+- New documents should be added to this index as soon as they are created.  
+- Maintain the documentation structure consistently to aid comprehension.
 
 ---
 
 **Maintained by**  
 Mulberry Project – Chief System Architect (CSA)  
-Signature: CSA Kbin
+Signature: **CSA Kbin**
