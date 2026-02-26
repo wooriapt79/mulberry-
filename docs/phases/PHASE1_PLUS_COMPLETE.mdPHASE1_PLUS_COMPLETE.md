@@ -1,4 +1,5 @@
 # Mulberry Platform - Phase 1+ 완성 보고서
+architecture / legal / CSA_STATEMENT
 
 ## 📋 프로젝트 정보
 
