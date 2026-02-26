@@ -79,4 +79,4 @@ Each document is indexed below for governance, development, legal review, and ex
 
 **Maintained by**  
 Mulberry Project – Chief System Architect (CSA)  
-Signature: **CSA Kbin
+Signature: CSA Kbin
