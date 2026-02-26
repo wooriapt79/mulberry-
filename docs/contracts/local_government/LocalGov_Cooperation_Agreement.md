@@ -1,0 +1,10 @@
+# Local Government Cooperation Agreement (Draft)
+
+## Article 1 (Purpose)
+## Article 2 (Definitions)
+## Article 3 (AI Agent Positioning in Public Context)
+## Article 4 (Operational Scope & Non-Financial Nature)
+## Article 5 (Transparency & Reporting)
+## Article 6 (Risk & Liability Allocation)
+## Article 7 (Termination)
+## Article 8 (Governing Law)
