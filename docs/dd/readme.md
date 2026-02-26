@@ -1,8 +1,3 @@
-좋습니다. **STEP A — DD 인덱스 초안** 바로 제시합니다.
-아래 내용은 그대로 **`docs/DD/README.md`** 로 생성하시면 됩니다.
-(VC·투자자·기관 실사 관점에 맞춰 설계된 **네비게이션 허브**입니다)
-
----
 
 # 📁 Mulberry Project — Due Diligence (DD) Index
 
