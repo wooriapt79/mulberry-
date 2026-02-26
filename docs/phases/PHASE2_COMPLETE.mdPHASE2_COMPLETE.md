@@ -1,5 +1,6 @@
 # 🚀 Mulberry Platform - Phase 2 완성 보고서
 architecture / legal / CSA_STATEMENT
+---
 **보고 대상**: 대표님, Malu 수석 실장  
 **보고 일시**: 2024년 2월 11일  
 **작업자**: Claude AI  
