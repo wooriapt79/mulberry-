@@ -22,6 +22,12 @@ Each section is maintained under the supervision of
 
 Signature: **CSA Kbin**
 
+### Existing Documents (Mapped)
+
+| Category | Document | Current Location |
+|--------|---------|----------------|
+| Technical | AP2 Payment Flow | /docs/ap2_flow.md |
+| Legal | Agent Payment Legal Review | /docs/legal_agent.md |
 ---
 
 ## 1️⃣ Technical Due Diligence
