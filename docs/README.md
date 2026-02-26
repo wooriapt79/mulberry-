@@ -105,3 +105,5 @@ All official phase completion reports are maintained in a dedicated directory.
 **Maintained by**  
 Mulberry Project – Chief System Architect (CSA)  
 Signature: **CSA Kbin**
+
+Architecture documents define non-negotiable system constraints.
