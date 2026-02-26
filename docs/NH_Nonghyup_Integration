@@ -1,0 +1,49 @@
+📑 [Technical Scenario] NH Nonghyup Open API Integration for mulberry-project
+
+1. 개요 (Overview)
+본 시나리오는 AI 에이전트(mulberry-Key Player)가 사용자의 자산을 자율적으로 관리하되, NH농협 오픈플랫폼의 보안 규격과 Malu 실장의 Zero-Trust 원칙을 준수하며 결제를 집행하는 실무 프로세스를 정의합니다.
+
+2. 핵심 연동 구성 요소 (Core Components)
+NH FintechApsno (핀테크이용번호): 사용자의 실제 계좌번호를 대체하는 가상 식별자 (보안 강화).
+Smart Mandate ID: 에이전트에게 부여된 암호화된 위임장 고유 번호.
+Malu’s Spirit Score: 에이전트의 신뢰도에 따른 동적 한도 제어 로직.
+MCC Code Lock: 업종 코드(예: 식료품 5411)를 통한 용도 외 지출 차단.
+
+3. 실무 연동 시나리오 (The 4-Step Scenario)
+
+Step 1: 권한 위임 및 환경 설정 (Mandate Issuance)
+사용자 액션: Slack/카카오톡 인터페이스에서 에이전트에게 결제 권한 부여.
+에이전트 액션: NH농협 API를 통해 FintechApsno를 조회하고, MandateManager를 통해 위임장을 생성합니다.
+데이터 바인딩: Mandate 내에 농협 이용번호와 Spirit Score 임계치, 허용 MCC 코드를 기록합니다.
+
+Step 2: 실시간 의도 검증 (Zero-Trust Validation)
+상황: 에이전트가 "식료품(Groceries) 구매를 위해 30,000원 결제"를 시도.
+검증 로직 (Malu's Rule):
+Spirit Score 체크: 현재 에이전트 점수가 기준치 이상인가?
+MCC 체크: 가맹점 코드가 '5411(식료품)'에 해당하나?
+한도 체크: 위임장 잔여 한도 내에 있는가?
+
+Step 3: 결제 실행 (NH API Call)
+API 호출: NH농협 ReceivedTransferAccount(수취계좌이체) 또는 CheckCardPayment 호출.
+페이로드 전송: FintechApsno와 결제 금액, 그리고 우리 시스템의 Mandate ID를 참조값으로 전송합니다.
+응답 수신: 농협으로부터 전송일시(TrsmDtm)와 승인번호(Rgno)를 수신합니다.
+
+Step 4: 불변의 감사 로그 생성 (Immutable Audit Trail)
+무결성 증명: [Mandate ID + NH 승인번호 + 구매 의도(Intent) + Spirit Score]를 하나의 해시값으로 묶어 저장합니다.
+사후 검증: 나중에 사용자가 내역을 조회할 때, 이 해시값을 통해 **"에이전트가 정말 허가된 의도로 결제했음"**을 기술적으로 증명합니다.
+
+4. 예상 API 데이터 구조 (Sample JSON)
+[Request to NH API with Mandate Context]
+{
+  "Header": {
+    "ApiNm": "ReceivedTransferAccount",
+    "Tsymd": "20260226",
+    "Trtm": "111700"
+  },
+  "FintechApsno": "12345678901234567890",
+  "Tram": "30000",
+  "DpsvNm": "Mulberry_Groceries_Vendor",
+  "MandateRef": "MND-UNIQUE-HASH-99", 
+  "Malu_Audit_Hash": "e3b0c44298fc1c149afbf4c8996fb..."
+}
+
