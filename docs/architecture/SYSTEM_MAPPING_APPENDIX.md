@@ -172,3 +172,4 @@ Mulberry **removes the possibility of violation**.
 **PM**
 
 Mulberry Project
+> This document is subordinate to PRINCIPLES.md and must not contradict it.
