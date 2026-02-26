@@ -1,4 +1,5 @@
 # Mulberry Platform - Phase 1+ 업데이트 가이드
+architecture / legal / CSA_STATEMENT
 
 ## 🎉 수석 실장 피드백 반영 완료
 
