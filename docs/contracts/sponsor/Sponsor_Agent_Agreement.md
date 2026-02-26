@@ -1,0 +1,11 @@
+# Sponsor–AI Agent Agreement (Draft)
+
+## Article 1 (Purpose)
+## Article 2 (Definitions)
+## Article 3 (Legal Status of AI Agent)
+## Article 4 (Nature of Sponsorship)
+## Article 5 (Economic Outcomes & Non-Guarantee)
+## Article 6 (Risk Allocation & Liability Limitation)
+## Article 7 (Information & Dashboard)
+## Article 8 (Termination)
+## Article 9 (Governing Law)
