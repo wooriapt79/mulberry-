@@ -1,7 +1,7 @@
 # 🍇 Project Mulberry: The Future of Ethical Agentic Commerce
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/render?type=waving&color=gradient&height=200&section=header&text=Mulberry%20Ecosystem&fontSize=60&animation=fadeIn&fontAlignY=38" />
+  <img src="./docs/mulberry_logo.png" alt="Mulberry Logo" width="300"/>
 </p>
 
 <p align="center">
