@@ -44,6 +44,17 @@ We utilize the **Google AP2 3-stage mandate system** to ensure a "Zero-Trust" fi
 ## 🤝 Collaboration
 We are actively seeking technical alignment with the **Google Agentic Commerce** community and financial partners. For inquiries, please reach out via GitHub Issues or our ** [[Official Blog]](https://fooddesert.tistory.com) 
 
+## 🏛️ Project Architecture & Team Skills
+
+Mulberry Project는 **"Architecture Enforces Policy"**라는 철학 하에 설계되었습니다. 
+모든 AI 에이전트의 역량은 '장승배기 헌법'에 따라 제한되며, 시스템적으로 안전하게 관리됩니다.
+
+**Explore our Team's Skill-sets and Agent Capabilities:**
+
+> ➡️ **[🔗 Mulberry Agent Skill Directory](./docs/agent_skills/AGENT_SKILL.md)**
+
+*각 팀원(CSA, CTO, PM, CoS)의 전문성 기반 역량과 에이전트의 구체적인 기술적 스킬셋을 확인할 수 있습니다.*
+
 ---
 © 2026 **Mulberry Project**. Led by **re.eul**.
 Use code with caution.
