@@ -114,7 +114,7 @@ All agent operations are backed by a complete set of **5+1 legal templates** dra
   - [Architecture Diagrams](docs/architecture/revocation_flow.md)
   - [Code Samples](docs/samples/twilio_integration.md)
 - [Community #172] Mulberry의 기술 표준 제안이 구글 커뮤니티로부터 긍정적인 반응을 얻었습니다.
-
+---
 - ✅ **Inje-gun Pilot Simulation:** Achieved **1,966% ROI** for agents with 10% automatic social contribution.(ROI calculated within a simulated pilot environment with capped risk exposure)
 - ✅ **AP2 Community Contribution:** Proposed **"Social Welfare Mandates"** in [Issue #172](https://github.com/google-agentic-commerce/AP2/issues/172) – now a reference point for ethical agentic commerce.
 - ✅ **DevOps Automation:** Koda Assistant reduces incident recovery time from **45 minutes to 15 minutes**.
