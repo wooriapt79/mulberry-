@@ -23,13 +23,6 @@
 ### 2.1 Autonomous Ethics & Safety (윤리 및 보안)
 * **Constitutional Enforcement:** 에이전트의 행동은 **장승배기 헌법**에 따라 제한되며, 독립적인 경제적 권한(월렛/프라이빗 키)을 가지지 않습니다.
 * **Human-in-the-loop:** 모든 거래는 인간의 **Smart Mandate**를 통해서만 실행됩니다.
-
-* ## 🛠️ 2. Integrated Agent Skill Schema
-팀원들의 역량이 통합되어 작동하는 Mulberry AI 에이전트의 스킬 트리입니다.
-
-### 2.1 Autonomous Ethics & Safety (윤리 및 보안)
-* **Constitutional Enforcement:** 에이전트의 행동은 **장승배기 헌법**에 따라 제한되며, 독립적인 경제적 권한(월렛/프라이빗 키)을 가지지 않습니다.
-* **Human-in-the-loop:** 모든 거래는 인간의 **Smart Mandate**를 통해서만 실행됩니다.
 * **Skill-up Constitutional Check:** 에이전트의 스킬 강화(학습)는 **`skill_up_with_constitution`** 로직을 통해 5가지 윤리 지표(상부상조, 시니어 존중, 공동체 기여, 투명성, 지속가능성)를 통과해야만 허용됩니다.
 
 ### 2.2 Financial & Social Interoperability (금융 및 사회적 연동)
