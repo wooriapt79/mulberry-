@@ -161,7 +161,7 @@ We welcome developers, researchers, and impact investors to join us in shaping t
 ---
 
 <p align="center">
-  © 2026 Mulberry Project — <strong>"Food Justice is Social Justice"</strong>
+  © 2026 Mulberry Project — <strong>"Food Justice is Social Justice"</strong><br>
 [mulberry Blog](https://fooddesert.tistory.com)
 </p>
 <p align="center">
