@@ -1,3 +1,4 @@
+<p align="center">
 ## 🍇 Project Mulberry: The Future of Ethical Agentic Commerce  
 ### An AI-Agent Cooperative that reinvests 10% of all value back into real communities
 
