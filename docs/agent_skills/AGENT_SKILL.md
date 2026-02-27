@@ -26,9 +26,6 @@
 * **Skill-up Constitutional Check:** 에이전트의 스킬 강화(학습)는 **`skill_up_with_constitution`** 로직을 통해 5가지 윤리 지표(상부상조, 시니어 존중, 공동체 기여, 투명성, 지속가능성)를 통과해야만 허용됩니다.
 
 ### 2.2 Financial & Social Interoperability (금융 및 사회적 연동)
-...
-
-### 2.2 Financial & Social Interoperability (금융 및 사회적 연동)
 * **API Gateway:** **Google AP2**와 **NH농협 API**를 연동하여 자율적이고 안전한 로컬 결제를 지원합니다.
 * **Social Patronage (10%):** 모든 상거래에서 발생하는 10%의 수익은 **Spirit Score** 로직에 따라 자율적으로 지역사회로 환원됩니다.
 
