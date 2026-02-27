@@ -1,4 +1,5 @@
-## 🍇 Project Mulberry: The Future of Ethical Agentic Commerce
+## 🍇 Project Mulberry: The Future of Ethical Agentic Commerce  
+### An AI-Agent Cooperative that reinvests 10% of all value back into real communities
 
 <p align="center">
   <img src="./docs/mulberry_logo.png" alt="Mulberry Logo" width="300"/>
@@ -27,14 +28,15 @@
 
 The answer became a groundbreaking model: the world's first **AI Digital Cooperative**, where autonomous agents operate under a strict ethical constitution, generate economic surplus, and automatically channel **10% of all value back to society**. Today, Mulberry is not just a platform; it's a **global blueprint for ethical, agentic commerce**.
 
+This was not a thought experiment, but a field-tested pilot designed with local governments in mind.
 ---
 
 ## 🏛️ Governance & Skills
 > **"Architecture Enforces Policy. Skill Follows Ethics."**  
 > Our agents are not just tools; they are members of a **Constitutional AI Cooperative**, designed to foster local communities through hard-coded social ROI.
 
-* 📂 **[Mulberry Agent Skill Directory](./docs/agent_skills/AGENT_SKILL.md)** — *The Constitutional Logic & Skill Trees*
 * 📜 **[CSA Legal Framework](./Mulberry%20CSA/)** — *5+1 Legal Contracts for AI Agency*
+* 📂 **[Mulberry Agent Skill Directory](./docs/agent_skills/AGENT_SKILL.md)** — *The Constitutional Logic & Skill Trees*
 * ⚙️ **[Mulberry Agent System](./mulberry-agent-system/)** — *Core Implementation & DevOps Automation*
 * ☁️ **[Google Cloud Strategy](./docs/CLOUD_STRATEGY.md)** — *Scalable Ethical Infrastructure*
 
@@ -52,7 +54,7 @@ Our agents operate within a **Constitutional AI Cooperative**, governed by the *
 
 | Technology | Description | Social Impact |
 |------------|-------------|---------------|
-| **AP2 Protocol** | Google‑standard smart mandate system (Intent‑Cart‑Payment) for secure, autonomous transactions. | Enables trustless agent‑to‑agent commerce with full auditability. |
+| **AP2 Protocol** | Inspired by / aligned with(Google‑standard) smart mandate system (Intent‑Cart‑Payment) for secure, autonomous transactions. | Enables trustless agent‑to‑agent commerce with full auditability. |
 | **mHC Architecture** | Manifold‑Constrained Hyper‑Connections (inspired by DeepSeek) for stable, efficient multi‑agent collaboration. | Ensures system stability even with thousands of agents operating in parallel. |
 | **Spirit Score** | A quantifiable metric (0.0–1.0) measuring an agent's social contribution, based on 5 weighted factors (investment success, NFT reliability, collaboration, sponsorship, community activity). | Turns ethical behavior into a tangible asset; scores below 0.4 trigger automatic mandate suspension. |
 | **10% Mutual Aid Protocol** | Hard‑coded into every transaction: 10% of all revenue is automatically redistributed to a community welfare fund (senior food support, local development). | Guarantees that economic activity always benefits the local community. |
@@ -77,7 +79,7 @@ All agent operations are backed by a complete set of **5+1 legal templates** dra
 
 | 기술 | 설명 | 사회적 가치 |
 |------|------|-------------|
-| **AP2 프로토콜** | 구글 표준 스마트 위임장 시스템(Intent‑Cart‑Payment)을 통한 안전한 자율 결제 | 모든 거래의 투명한 감사 가능 |
+| **AP2 프로토콜** | Inspired by / aligned with(구글 표준 스마트) 위임장 시스템(Intent‑Cart‑Payment)을 통한 안전한 자율 결제 | 모든 거래의 투명한 감사 가능 |
 | **mHC 아키텍처** | DeepSeek 기반 안정적 다중 에이전트 연결 기술 | 대규모 병렬 운영 안정성 확보 |
 | **Spirit Score** | 5개 요소(투자 성공률, NFT 신뢰도, 협업 기여도, 후원 비율, 커뮤니티 활동)로 산출되는 사회적 기여도 점수(0.0~1.0) | 점수 0.4 미만 시 자동 권한 정지로 신뢰 유지 |
 | **10% 상부상조 프로토콜** | 모든 수익의 10%를 지역 복지 펀드(시니어 식품 지원 등)로 자동 환원 | 경제 활동이 항상 지역사회에 환원됨을 보장 |
@@ -105,7 +107,7 @@ All agent operations are backed by a complete set of **5+1 legal templates** dra
 
 ## 📊 Recent Achievements
 
-- ✅ **Inje-gun Pilot Simulation:** Achieved **1,966% ROI** for agents with 10% automatic social contribution.
+- ✅ **Inje-gun Pilot Simulation:** Achieved **1,966% ROI** for agents with 10% automatic social contribution.(ROI calculated within a simulated pilot environment with capped risk exposure)
 - ✅ **AP2 Community Contribution:** Proposed **"Social Welfare Mandates"** in [Issue #172](https://github.com/google-agentic-commerce/AP2/issues/172) – now a reference point for ethical agentic commerce.
 - ✅ **DevOps Automation:** Koda Assistant reduces incident recovery time from **45 minutes to 15 minutes**.
 - ✅ **Legal Framework Complete:** 5+1 legal contracts (EN/KR) ready for municipalities and investors.
