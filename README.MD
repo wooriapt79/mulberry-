@@ -70,5 +70,5 @@ Dự án Mulberry đang xây dựng một hệ sinh thái kinh tế tự trị, 
 
 ---
 <p align="center">
-  © 2026 Project Mulberry. All rights reserved. 
+  © 2026 Mulberry Project . All rights reserved. 
 </p>
