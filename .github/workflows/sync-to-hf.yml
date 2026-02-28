@@ -1,5 +1,5 @@
-# .github/workflows/sync-to-hf.yml
-name: Sync to Hugging Face Hub
+# .github/workflows/sync-to-hf.yml   
+name: Sync to Hugging Face Hub 
 
 on:
   push:
