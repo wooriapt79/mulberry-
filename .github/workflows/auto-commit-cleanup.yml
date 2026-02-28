@@ -1,0 +1,30 @@
+# .github/workflows/auto-commit-cleanup.yml
+name: Mulberry Auto Commit Cleanup
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # 매일 새벽 3시 (한국 시간)
+  workflow_dispatch:
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Run Mulberry Auto Commit Script
+        run: |
+          python scripts/mulberry_auto_commit.py
+        continue-on-error: true
+      
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name "Mulberry Bot"
+          git config --global user.email "bot@mulberry.kr"
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Auto cleanup $(date +'%Y-%m-%d')" && git push)
