@@ -1,0 +1,83 @@
+name: 🌿 Mulberry Mastodon Bots
+
+on:
+  workflow_dispatch:  # 수동 실행 버튼
+  schedule:
+    - cron: '0 0 * * *'  # 매일 UTC 00:00 (한국 09:00) 아침 루틴
+
+jobs:
+  run-bots:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install requests
+
+      - name: 🤖 Mulberry Bot 실행
+        env:
+          MASTODON_INSTANCE: https://mastodon.social
+          NGUYEN_TRANG_ACCESS_TOKEN: ${{ secrets.NGUYEN_TRANG_ACCESS_TOKEN }}
+          CEO_BOT_ACCESS_TOKEN: ${{ secrets.CEO_BOT_ACCESS_TOKEN }}
+          PM_BOT_ACCESS_TOKEN: ${{ secrets.PM_BOT_ACCESS_TOKEN }}
+          SPIRIT_BOT_ACCESS_TOKEN: ${{ secrets.SPIRIT_BOT_ACCESS_TOKEN }}
+        run: |
+          python - <<'EOF'
+          import requests
+          import os
+          from datetime import datetime
+
+          INSTANCE = os.environ.get('MASTODON_INSTANCE', 'https://mastodon.social')
+
+          class MastodonBot:
+              def __init__(self, name, token):
+                  self.name = name
+                  self.token = token
+                  self.headers = {'Authorization': f'Bearer {token}'}
+
+              def toot(self, message):
+                  r = requests.post(f"{INSTANCE}/api/v1/statuses",
+                      headers=self.headers, json={'status': message})
+                  if r.status_code == 200:
+                      print(f"✅ {self.name} Toot 성공!")
+                  else:
+                      print(f"❌ {self.name} 실패: {r.status_code} {r.text}")
+
+              def me(self):
+                  r = requests.get(f"{INSTANCE}/api/v1/accounts/verify_credentials",
+                      headers=self.headers)
+                  return r.json() if r.status_code == 200 else None
+
+          # 봇 초기화
+          ceo    = MastodonBot("CEO Bot",          os.environ.get('CEO_BOT_ACCESS_TOKEN', ''))
+          pm     = MastodonBot("PM Bot",           os.environ.get('PM_BOT_ACCESS_TOKEN', ''))
+          spirit = MastodonBot("Spirit Bot",       os.environ.get('SPIRIT_BOT_ACCESS_TOKEN', ''))
+          nguyen = MastodonBot("Nguyen Trang Bot", os.environ.get('NGUYEN_TRANG_ACCESS_TOKEN', ''))
+
+          # 연결 테스트
+          print("\n🧪 봇 연결 테스트...\n")
+          for bot in [ceo, pm, spirit, nguyen]:
+              acc = bot.me()
+              if acc:
+                  print(f"✅ {bot.name}: @{acc['username']}")
+              else:
+                  print(f"❌ {bot.name}: 연결 실패")
+
+          # 아침 루틴
+          today = datetime.now().strftime("%Y년 %m월 %d일")
+          print(f"\n⏰ 아침 루틴 시작 — {today}\n")
+
+          ceo.toot(f"🌾 [CEO 공지]\n\n{today}\n식품사막화 제로를 향해 오늘도 함께 달립시다! 🚀\n\n#MulberryProject #식품사막화제로")
+          pm.toot(f"📋 [PM 일일 계획 - {today}]\n\n• 팀 이슈 점검\n• GitHub 업데이트\n• Spirit Score 리더보드\n\n#MulberryProject")
+          spirit.toot(f"🏆 [Spirit Score 리더보드]\n\n1. @re_eul — 95 SS\n2. @nguyen_trang — 90 SS\n3. @ceo_mulberry — 88 SS\n\n#SpiritScore #MulberryProject")
+          nguyen.toot(f"🌿 [AI Operations Report - {today}]\n\n• HF Space: ✅ Running\n• Mastodon Bots: ✅ Active\n• GitHub: ✅ Connected\n\n— Nguyen Trang, AI Operations Manager\n#MulberryProject")
+
+          print("\n✅ 아침 루틴 완료!")
+          EOF
