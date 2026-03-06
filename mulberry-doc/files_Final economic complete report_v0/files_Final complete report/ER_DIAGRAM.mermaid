@@ -1,0 +1,199 @@
+erDiagram
+    %% AI Agent Investment Platform - ER Diagram
+    %% CTO Koda - 2026-02-22
+    
+    INVESTOR ||--o{ INVESTMENT : makes
+    INVESTOR ||--o{ INVESTOR_BADGE : earns
+    INVESTOR ||--o{ NOTIFICATION : receives
+    INVESTOR ||--o{ INVESTOR_ACTIVITY : has
+    
+    AGENT ||--o{ INVESTMENT : receives
+    AGENT ||--o{ AGENT_SKILL : has
+    AGENT ||--o{ SKILL_NFT : mints
+    AGENT ||--o{ RETURN : generates
+    AGENT ||--o{ AGENT_ACTIVITY : performs
+    
+    INVESTMENT ||--o{ RETURN : produces
+    
+    AGENT_SKILL ||--o{ SKILL_NFT : becomes
+    
+    SKILL_NFT ||--o{ NFT_TRANSACTION : traded_in
+    
+    BADGE ||--o{ INVESTOR_BADGE : awarded_as
+    
+    INVESTOR {
+        string id PK
+        string name
+        string email UK
+        string passportId UK
+        int level
+        int experience
+        float totalInvested
+        float currentValue
+        float totalReturns
+        int investmentCount
+        float successRate
+        float avgROI
+        float spiritScore
+        int reputation
+        datetime createdAt
+        datetime updatedAt
+    }
+    
+    AGENT {
+        string id PK
+        string name
+        string passportId UK
+        int level
+        int experience
+        float balance
+        float totalRevenue
+        float totalProfit
+        int salesCount
+        float roi
+        float successRate
+        float spiritScore
+        int reputation
+        string investmentStatus
+        float targetAmount
+        float raisedAmount
+        float minInvestment
+        float profitShareInvestor
+        float profitShareAgent
+        float profitShareCommunity
+        datetime createdAt
+        datetime updatedAt
+    }
+    
+    INVESTMENT {
+        string id PK
+        string investorId FK
+        string agentId FK
+        float amount
+        float profitShare
+        datetime startDate
+        datetime endDate
+        int durationDays
+        string status
+        boolean autoRenew
+        boolean autoDistribute
+        float lossLiability
+        float currentValue
+        float totalReturns
+        float roi
+        string mandateId UK
+        string mandateHash
+        datetime createdAt
+        datetime updatedAt
+    }
+    
+    RETURN {
+        string id PK
+        string investmentId FK
+        string agentId FK
+        float amount
+        string type
+        string source
+        string status
+        datetime distributedAt
+        string transactionHash
+        datetime createdAt
+    }
+    
+    AGENT_SKILL {
+        string id PK
+        string agentId FK
+        string skillType
+        string category
+        int level
+        int experiencePoints
+        string rarity
+        boolean canMintNFT
+        json proficiencyData
+        datetime createdAt
+        datetime updatedAt
+    }
+    
+    SKILL_NFT {
+        string id PK
+        string nftId UK
+        string skillId FK
+        string agentId FK
+        string creatorId
+        string skillName
+        int level
+        string rarity
+        float price
+        float royalty
+        json metadata
+        string status
+        string currentOwnerId
+        int salesCount
+        float totalRevenue
+        datetime mintedAt
+        datetime updatedAt
+    }
+    
+    NFT_TRANSACTION {
+        string id PK
+        string nftId FK
+        string sellerId
+        string buyerId
+        float price
+        float royaltyAmount
+        string status
+        string transactionHash
+        datetime createdAt
+        datetime completedAt
+    }
+    
+    BADGE {
+        string id PK
+        string name UK
+        string description
+        string icon
+        json condition
+        string rarity
+        int rewardExp
+        int rewardReputation
+        datetime createdAt
+    }
+    
+    INVESTOR_BADGE {
+        string id PK
+        string investorId FK
+        string badgeId FK
+        datetime earnedAt
+    }
+    
+    NOTIFICATION {
+        string id PK
+        string investorId FK
+        string type
+        string title
+        string message
+        json data
+        boolean isRead
+        datetime createdAt
+        datetime readAt
+    }
+    
+    INVESTOR_ACTIVITY {
+        string id PK
+        string investorId FK
+        string type
+        string description
+        json data
+        datetime createdAt
+    }
+    
+    AGENT_ACTIVITY {
+        string id PK
+        string agentId FK
+        string type
+        string description
+        float revenue
+        float profit
+        json data
+        datetime createdAt
+    }

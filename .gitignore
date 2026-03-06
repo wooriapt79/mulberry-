@@ -1,0 +1,27 @@
+# ⚠️ 보안 파일 - 절대 GitHub에 올리지 마세요!
+.env.mastodon
+.env
+.env.*
+mastodon.txt
+
+# API 키값 파일
+*.key
+*.secret
+secrets/
+
+# Gmail OAuth 인증 파일 (로컬 전용)
+token.pickle
+client_secret*.json
+
+# 임시 / 백업 파일
+.tmp.driveupload/
+*.zip
+*.tmp
+
+# 대용량 바이너리 (재생성 가능)
+__pycache__/
+*.pyc
+*.pyo
+dist/
+build/
+*.spec

@@ -1,0 +1,403 @@
+{
+  "passport": {
+    "id": "f7dcfd9a",
+    "agent_name": "김사과",
+    "agent_type": "economic",
+    "created_at": "2026-02-22T07:29:54.404221",
+    "verified": true
+  },
+  "account": {
+    "account_id": "ACC-f7dcfd9a",
+    "passport_id": "f7dcfd9a",
+    "balance": 155544,
+    "initial_balance": 10000,
+    "profit": 145544,
+    "roi": "1455.44%",
+    "transactions_count": 56
+  },
+  "business_plan": {
+    "agent_name": "김사과",
+    "product": {
+      "name": "시니어 지원",
+      "base_price": 5000,
+      "cost": 2000,
+      "difficulty": 0.3,
+      "category": "service",
+      "key": "senior_support"
+    },
+    "financial_plan": {
+      "initial_capital": 10000,
+      "target_revenue": 11000,
+      "target_profit": 1000,
+      "target_period": "30일"
+    },
+    "pricing_strategy": {
+      "cost_per_unit": 2000,
+      "selling_price": 4599,
+      "unit_margin": 2599,
+      "target_units": 1
+    },
+    "marketing_strategy": {
+      "promotion_channels": [
+        "Mastodon 소셜 마케팅",
+        "온라인 마켓플레이스"
+      ],
+      "unique_value": "시니어 지원 - 품질 보증"
+    },
+    "30_day_roadmap": [
+      {
+        "week": 1,
+        "goal": "0개 판매 (시장 진입)",
+        "actions": [
+          "상품 준비 및 품질 확인",
+          "프로모션 채널 셋업",
+          "초기 고객 확보"
+        ]
+      },
+      {
+        "week": 2,
+        "goal": "0개 판매 (성장)",
+        "actions": [
+          "고객 피드백 수집",
+          "마케팅 강화",
+          "재구매 고객 확보"
+        ]
+      },
+      {
+        "week": 3,
+        "goal": "0개 판매 (안정화)",
+        "actions": [
+          "판매 프로세스 최적화",
+          "고객 만족도 개선",
+          "추가 채널 탐색"
+        ]
+      },
+      {
+        "week": 4,
+        "goal": "0개 판매 (목표 달성)",
+        "actions": [
+          "최종 스퍼트",
+          "재고 정리",
+          "다음 계획 준비"
+        ]
+      }
+    ]
+  },
+  "simulation_report": {
+    "agent_name": "김사과",
+    "product": "시니어 지원",
+    "period": "30일",
+    "initial_capital": 10000,
+    "final_balance": 155544,
+    "total_profit": 145544,
+    "roi": 1455.4399999999998,
+    "target_profit": 1000,
+    "goal_achieved": true,
+    "total_units_sold": 56,
+    "target_units": 1,
+    "sales_achievement": 5600.0,
+    "total_revenue": 257544,
+    "daily_records": [
+      {
+        "day": 1,
+        "week": 1,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 15198,
+        "cumulative_profit": 5198
+      },
+      {
+        "day": 2,
+        "week": 1,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 20396,
+        "cumulative_profit": 10396
+      },
+      {
+        "day": 3,
+        "week": 1,
+        "units_sold": 1,
+        "revenue": 4599,
+        "cost": 2000,
+        "net_profit": 2599,
+        "balance": 22995,
+        "cumulative_profit": 12995
+      },
+      {
+        "day": 4,
+        "week": 1,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 28193,
+        "cumulative_profit": 18193
+      },
+      {
+        "day": 5,
+        "week": 1,
+        "units_sold": 1,
+        "revenue": 4599,
+        "cost": 2000,
+        "net_profit": 2599,
+        "balance": 30792,
+        "cumulative_profit": 20792
+      },
+      {
+        "day": 6,
+        "week": 1,
+        "units_sold": 1,
+        "revenue": 4599,
+        "cost": 2000,
+        "net_profit": 2599,
+        "balance": 33391,
+        "cumulative_profit": 23391
+      },
+      {
+        "day": 7,
+        "week": 1,
+        "units_sold": 0,
+        "revenue": 0,
+        "cost": 0,
+        "net_profit": 0,
+        "balance": 33391,
+        "cumulative_profit": 23391
+      },
+      {
+        "day": 8,
+        "week": 2,
+        "units_sold": 1,
+        "revenue": 4599,
+        "cost": 2000,
+        "net_profit": 2599,
+        "balance": 35990,
+        "cumulative_profit": 25990
+      },
+      {
+        "day": 9,
+        "week": 2,
+        "units_sold": 1,
+        "revenue": 4599,
+        "cost": 2000,
+        "net_profit": 2599,
+        "balance": 38589,
+        "cumulative_profit": 28589
+      },
+      {
+        "day": 10,
+        "week": 2,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 43787,
+        "cumulative_profit": 33787
+      },
+      {
+        "day": 11,
+        "week": 2,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 48985,
+        "cumulative_profit": 38985
+      },
+      {
+        "day": 12,
+        "week": 2,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 54183,
+        "cumulative_profit": 44183
+      },
+      {
+        "day": 13,
+        "week": 2,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 59381,
+        "cumulative_profit": 49381
+      },
+      {
+        "day": 14,
+        "week": 2,
+        "units_sold": 1,
+        "revenue": 4599,
+        "cost": 2000,
+        "net_profit": 2599,
+        "balance": 61980,
+        "cumulative_profit": 51980
+      },
+      {
+        "day": 15,
+        "week": 3,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 67178,
+        "cumulative_profit": 57178
+      },
+      {
+        "day": 16,
+        "week": 3,
+        "units_sold": 3,
+        "revenue": 13797,
+        "cost": 6000,
+        "net_profit": 7797,
+        "balance": 74975,
+        "cumulative_profit": 64975
+      },
+      {
+        "day": 17,
+        "week": 3,
+        "units_sold": 3,
+        "revenue": 13797,
+        "cost": 6000,
+        "net_profit": 7797,
+        "balance": 82772,
+        "cumulative_profit": 72772
+      },
+      {
+        "day": 18,
+        "week": 3,
+        "units_sold": 3,
+        "revenue": 13797,
+        "cost": 6000,
+        "net_profit": 7797,
+        "balance": 90569,
+        "cumulative_profit": 80569
+      },
+      {
+        "day": 19,
+        "week": 3,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 95767,
+        "cumulative_profit": 85767
+      },
+      {
+        "day": 20,
+        "week": 3,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 100965,
+        "cumulative_profit": 90965
+      },
+      {
+        "day": 21,
+        "week": 3,
+        "units_sold": 3,
+        "revenue": 13797,
+        "cost": 6000,
+        "net_profit": 7797,
+        "balance": 108762,
+        "cumulative_profit": 98762
+      },
+      {
+        "day": 22,
+        "week": 4,
+        "units_sold": 1,
+        "revenue": 4599,
+        "cost": 2000,
+        "net_profit": 2599,
+        "balance": 111361,
+        "cumulative_profit": 101361
+      },
+      {
+        "day": 23,
+        "week": 4,
+        "units_sold": 0,
+        "revenue": 0,
+        "cost": 0,
+        "net_profit": 0,
+        "balance": 111361,
+        "cumulative_profit": 101361
+      },
+      {
+        "day": 24,
+        "week": 4,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 116559,
+        "cumulative_profit": 106559
+      },
+      {
+        "day": 25,
+        "week": 4,
+        "units_sold": 3,
+        "revenue": 13797,
+        "cost": 6000,
+        "net_profit": 7797,
+        "balance": 124356,
+        "cumulative_profit": 114356
+      },
+      {
+        "day": 26,
+        "week": 4,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 129554,
+        "cumulative_profit": 119554
+      },
+      {
+        "day": 27,
+        "week": 4,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 134752,
+        "cumulative_profit": 124752
+      },
+      {
+        "day": 28,
+        "week": 4,
+        "units_sold": 2,
+        "revenue": 9198,
+        "cost": 4000,
+        "net_profit": 5198,
+        "balance": 139950,
+        "cumulative_profit": 129950
+      },
+      {
+        "day": 29,
+        "week": 5,
+        "units_sold": 3,
+        "revenue": 13797,
+        "cost": 6000,
+        "net_profit": 7797,
+        "balance": 147747,
+        "cumulative_profit": 137747
+      },
+      {
+        "day": 30,
+        "week": 5,
+        "units_sold": 3,
+        "revenue": 13797,
+        "cost": 6000,
+        "net_profit": 7797,
+        "balance": 155544,
+        "cumulative_profit": 145544
+      }
+    ]
+  }
+}

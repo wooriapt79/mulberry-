@@ -1,0 +1,190 @@
+<!-- ============================================================
+     ✅ Mulberry Project 블로그 포스트 - 스키마 마크업 (JSON-LD)
+     티스토리 HTML 편집기 → <head> 또는 본문 최하단에 삽입
+     ============================================================ -->
+
+<!-- 1️⃣ Article 스키마 (블로그 포스트 기본 정보) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI 매니저 Yumi의 첫 출근 — Mulberry Project와 함께 식품사막화 제로를 향해",
+  "description": "강원도 인제군 식품사막화 해소를 목표로 하는 Mulberry Project의 AI Operations Manager Yumi가 첫 출근 소감과 팀 소개, 앞으로의 포부를 전합니다.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://[YOUR_BLOG_URL]/infographic.svg",
+    "width": 800,
+    "height": 1000,
+    "caption": "Mulberry Project AI Team 인포그래픽 - Yumi 첫 출근"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Yumi",
+    "jobTitle": "Operations Manager",
+    "description": "Mulberry Project AI 실행 매니저. 식품사막화 제로를 위해 팀을 연결하고 실행을 지원합니다.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Mulberry Project",
+      "url": "https://github.com/wooriapt79/mulberry-"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mulberry Project",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://[YOUR_BLOG_URL]/logo.png"
+    }
+  },
+  "datePublished": "2026-03-01",
+  "dateModified": "2026-03-01",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://[YOUR_TISTORY_URL]/[POST_ID]"
+  },
+  "keywords": [
+    "식품사막화",
+    "뽕나무프로젝트",
+    "Mulberry Project",
+    "인제군",
+    "AI에이전트",
+    "시니어케어",
+    "강원도",
+    "식품사막",
+    "Operations Manager",
+    "Yumi"
+  ],
+  "articleSection": "프로젝트 소개",
+  "inLanguage": "ko-KR",
+  "about": {
+    "@type": "Thing",
+    "name": "식품사막화 해소",
+    "description": "농촌 지역 고령 인구의 신선 식품 접근성 개선을 위한 AI 기반 솔루션"
+  }
+}
+</script>
+
+<!-- 2️⃣ Organization 스키마 (Mulberry Project 단체 정보) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mulberry Project",
+  "alternateName": "뽕나무 프로젝트",
+  "description": "강원도 인제군 식품사막화 제로를 목표로 하는 AI 기반 사회혁신 프로젝트. 식품사막화 해소 및 시니어 케어를 미션으로 합니다.",
+  "url": "https://github.com/wooriapt79/mulberry-",
+  "foundingDate": "2025",
+  "areaServed": {
+    "@type": "Place",
+    "name": "강원도 인제군",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "강원도",
+      "addressLocality": "인제군",
+      "addressCountry": "KR"
+    }
+  },
+  "member": [
+    {
+      "@type": "Person",
+      "name": "대표님",
+      "jobTitle": "CEO / Vision"
+    },
+    {
+      "@type": "Person",
+      "name": "Malu",
+      "jobTitle": "수석 실장 (Strategy AI)"
+    },
+    {
+      "@type": "Person",
+      "name": "Koda",
+      "jobTitle": "CTO (Technology AI)"
+    },
+    {
+      "@type": "Person",
+      "name": "Yumi",
+      "jobTitle": "Operations Manager (AI)"
+    }
+  ],
+  "knowsAbout": [
+    "식품사막화",
+    "시니어케어",
+    "AI 에이전트",
+    "농촌 식품 접근성",
+    "사회혁신"
+  ]
+}
+</script>
+
+<!-- 3️⃣ BreadcrumbList 스키마 (티스토리 네비게이션 구조) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "홈",
+      "item": "https://[YOUR_TISTORY_URL]/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Mulberry Project",
+      "item": "https://[YOUR_TISTORY_URL]/category/mulberry"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Yumi의 첫 출근",
+      "item": "https://[YOUR_TISTORY_URL]/[POST_ID]"
+    }
+  ]
+}
+</script>
+
+<!-- 4️⃣ FAQPage 스키마 (검색 결과 강화 — 자주 묻는 질문) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "식품사막화(Food Desert)란 무엇인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "식품사막화(Food Desert)는 신선한 식품을 구하기 어려운 지역을 말합니다. 주로 농촌 지역이나 고령화 지역에서 발생하며, 강원도 인제군도 이 문제에 직면해 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mulberry Project는 어떤 프로젝트인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mulberry Project(뽕나무 프로젝트)는 AI 기술을 활용하여 강원도 인제군의 식품사막화 문제를 해결하고 시니어 케어를 실현하는 사회혁신 프로젝트입니다. AI 에이전트 Malu(전략), Koda(기술), Yumi(실행)가 팀을 이루고 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yumi는 어떤 역할을 하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yumi는 Mulberry Project의 AI Operations Manager입니다. 팀 간 연결, 문서화, 블로그 기록, GitHub 파일 관리, 실행 지원을 담당합니다."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ============================================================
+     📌 사용 방법
+     1. 티스토리 관리자 → 꾸미기 → 스킨 편집 → HTML
+     2. <head>...</head> 사이에 위 코드 전체 붙여넣기
+     OR
+     3. 티스토리 글쓰기 → HTML 모드 → 본문 최하단에 삽입
+
+     ⚠️ [YOUR_TISTORY_URL] 부분을 실제 티스토리 주소로 교체하세요
+     ⚠️ [POST_ID] 부분을 실제 포스트 번호로 교체하세요
+     ============================================================ -->

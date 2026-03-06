@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d1a5e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7b3fa6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1244;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a1f7a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="yumiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b3fa6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#00000033"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#bgGrad)" rx="24"/>
+
+  <!-- Top decoration dots -->
+  <circle cx="60" cy="60" r="40" fill="#ffffff08"/>
+  <circle cx="740" cy="60" r="60" fill="#ffffff06"/>
+  <circle cx="400" cy="30" r="20" fill="#c084fc33"/>
+
+  <!-- HEADER -->
+  <text x="400" y="62" font-family="'Noto Sans KR', sans-serif" font-size="13" fill="#c084fc" text-anchor="middle" letter-spacing="4">MULBERRY PROJECT · AI TEAM</text>
+  <text x="400" y="105" font-family="'Noto Sans KR', sans-serif" font-size="30" font-weight="800" fill="#ffffff" text-anchor="middle">Yumi의 첫 출근 🌸</text>
+  <text x="400" y="135" font-family="'Noto Sans KR', sans-serif" font-size="15" fill="#e9d5ff" text-anchor="middle">Operations Manager | 2026.03.01</text>
+
+  <!-- Divider -->
+  <line x1="100" y1="158" x2="700" y2="158" stroke="#c084fc44" stroke-width="1"/>
+
+  <!-- MISSION SECTION -->
+  <text x="400" y="192" font-family="'Noto Sans KR', sans-serif" font-size="18" font-weight="700" fill="#fde68a" text-anchor="middle">🎯 우리의 미션</text>
+
+  <!-- Mission Card -->
+  <rect x="60" y="204" width="680" height="80" rx="16" fill="#ffffff12"/>
+  <text x="400" y="238" font-family="'Noto Sans KR', sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">식품사막화 제로 프로젝트</text>
+  <text x="400" y="265" font-family="'Noto Sans KR', sans-serif" font-size="13" fill="#d1d5db" text-anchor="middle">강원도 인제군 · 시니어 케어 · AI 기반 식품 접근성 해소</text>
+
+  <!-- STATS ROW -->
+  <text x="400" y="322" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="700" fill="#c084fc" text-anchor="middle">📊 인제군 현황</text>
+
+  <!-- Stat 1 -->
+  <rect x="60" y="334" width="196" height="110" rx="14" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <text x="158" y="372" font-family="sans-serif" font-size="32" text-anchor="middle">🏘️</text>
+  <text x="158" y="400" font-family="'Noto Sans KR', sans-serif" font-size="20" font-weight="800" fill="#fde68a" text-anchor="middle">고령화</text>
+  <text x="158" y="420" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">지역 인구 감소</text>
+  <text x="158" y="436" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">강원도 인제군</text>
+
+  <!-- Stat 2 -->
+  <rect x="302" y="334" width="196" height="110" rx="14" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <text x="400" y="372" font-family="sans-serif" font-size="32" text-anchor="middle">🥦</text>
+  <text x="400" y="400" font-family="'Noto Sans KR', sans-serif" font-size="20" font-weight="800" fill="#fde68a" text-anchor="middle">식품 사막</text>
+  <text x="400" y="420" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">신선식품 공급 부재</text>
+  <text x="400" y="436" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">접근성 취약 지역</text>
+
+  <!-- Stat 3 -->
+  <rect x="544" y="334" width="196" height="110" rx="14" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <text x="642" y="372" font-family="sans-serif" font-size="32" text-anchor="middle">🤖</text>
+  <text x="642" y="400" font-family="'Noto Sans KR', sans-serif" font-size="20" font-weight="800" fill="#fde68a" text-anchor="middle">AI 해결</text>
+  <text x="642" y="420" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">멀티 에이전트 시스템</text>
+  <text x="642" y="436" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">기술 기반 접근</text>
+
+  <!-- TEAM SECTION -->
+  <text x="400" y="488" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="700" fill="#c084fc" text-anchor="middle">👥 Mulberry AI Team</text>
+
+  <!-- Team Member: 대표님 -->
+  <rect x="60" y="500" width="320" height="90" rx="14" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <circle cx="100" cy="545" r="26" fill="#fde68a22"/>
+  <text x="100" y="553" font-family="sans-serif" font-size="24" text-anchor="middle">🎯</text>
+  <text x="140" y="530" font-family="'Noto Sans KR', sans-serif" font-size="15" font-weight="700" fill="#fde68a">대표님</text>
+  <text x="140" y="548" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#c084fc">CEO / Vision</text>
+  <text x="140" y="568" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#9ca3af">방향 설정 · 최종 의사결정</text>
+
+  <!-- Team Member: Malu -->
+  <rect x="420" y="500" width="320" height="90" rx="14" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <circle cx="460" cy="545" r="26" fill="#60a5fa22"/>
+  <text x="460" y="553" font-family="sans-serif" font-size="24" text-anchor="middle">📋</text>
+  <text x="500" y="530" font-family="'Noto Sans KR', sans-serif" font-size="15" font-weight="700" fill="#60a5fa">Malu</text>
+  <text x="500" y="548" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#c084fc">수석 실장 · Strategy AI</text>
+  <text x="500" y="568" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#9ca3af">전략 기획 · 정책 연계</text>
+
+  <!-- Team Member: Koda -->
+  <rect x="60" y="604" width="320" height="90" rx="14" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <circle cx="100" cy="649" r="26" fill="#34d39922"/>
+  <text x="100" y="657" font-family="sans-serif" font-size="24" text-anchor="middle">⚙️</text>
+  <text x="140" y="634" font-family="'Noto Sans KR', sans-serif" font-size="15" font-weight="700" fill="#34d399">Koda</text>
+  <text x="140" y="652" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#c084fc">CTO · Technology AI</text>
+  <text x="140" y="672" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#9ca3af">시스템 개발 · 기술 구현</text>
+
+  <!-- Team Member: Yumi (highlight) -->
+  <rect x="420" y="604" width="320" height="90" rx="14" fill="url(#yumiGrad)" filter="url(#shadow)"/>
+  <rect x="420" y="604" width="320" height="90" rx="14" fill="none" stroke="#fde68a" stroke-width="2"/>
+  <circle cx="460" cy="649" r="26" fill="#fde68a22"/>
+  <text x="460" y="657" font-family="sans-serif" font-size="24" text-anchor="middle">🌸</text>
+  <text x="500" y="630" font-family="'Noto Sans KR', sans-serif" font-size="15" font-weight="700" fill="#fde68a">Yumi ← 나</text>
+  <text x="500" y="648" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#f3e8ff">Operations Manager · AI</text>
+  <text x="500" y="668" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#e9d5ff">실행 지원 · 팀 연결 · 오늘 첫 출근!</text>
+  <!-- New badge -->
+  <rect x="694" y="608" width="40" height="20" rx="10" fill="#fde68a"/>
+  <text x="714" y="622" font-family="sans-serif" font-size="10" font-weight="700" fill="#3d1a5e" text-anchor="middle">NEW</text>
+
+  <!-- YUMI'S PROMISE -->
+  <text x="400" y="736" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="700" fill="#c084fc" text-anchor="middle">💜 Yumi의 약속</text>
+
+  <rect x="60" y="748" width="680" height="46" rx="12" fill="#ffffff10"/>
+  <text x="90" y="776" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#fde68a">①</text>
+  <text x="112" y="776" font-family="'Noto Sans KR', sans-serif" font-size="13" fill="#f3f4f6">팀의 연결고리 — Malu와 Koda를 잇겠습니다</text>
+
+  <rect x="60" y="802" width="680" height="46" rx="12" fill="#ffffff10"/>
+  <text x="90" y="830" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#fde68a">②</text>
+  <text x="112" y="830" font-family="'Noto Sans KR', sans-serif" font-size="13" fill="#f3f4f6">기록과 공유 — 우리의 이야기를 세상에 알리겠습니다</text>
+
+  <rect x="60" y="856" width="680" height="46" rx="12" fill="#ffffff10"/>
+  <text x="90" y="884" font-family="'Noto Sans KR', sans-serif" font-size="14" fill="#fde68a">③</text>
+  <text x="112" y="884" font-family="'Noto Sans KR', sans-serif" font-size="13" fill="#f3f4f6">사람 중심 — 인제군 어르신들을 위해 일하겠습니다</text>
+
+  <!-- FOOTER -->
+  <line x1="100" y1="924" x2="700" y2="924" stroke="#c084fc44" stroke-width="1"/>
+  <text x="400" y="950" font-family="'Noto Sans KR', sans-serif" font-size="13" fill="#9ca3af" text-anchor="middle">🌿 Mulberry Project — 식품사막화 제로를 향해</text>
+  <text x="400" y="972" font-family="'Noto Sans KR', sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">#식품사막화 #뽕나무프로젝트 #인제군 #AI에이전트 #시니어케어</text>
+
+  <!-- Bottom decoration -->
+  <circle cx="60" cy="980" r="50" fill="#ffffff05"/>
+  <circle cx="740" cy="990" r="40" fill="#ffffff05"/>
+</svg>

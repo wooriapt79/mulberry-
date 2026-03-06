@@ -1,0 +1,133 @@
+{
+  "agent_id": "agent_김사과",
+  "skill_summary": {
+    "agent_id": "agent_김사과",
+    "total_skills": 4,
+    "highest_level": 4,
+    "total_experience": 3650,
+    "skills": {
+      "sales_service": {
+        "skill_id": "da6c6a74",
+        "skill_type": "sales",
+        "category": "service",
+        "level": 3,
+        "rarity": "rare",
+        "experience_points": 560,
+        "can_mint_nft": true,
+        "created_at": "2026-02-22T07:43:18.679092",
+        "last_updated": "2026-02-22T07:43:18.679101"
+      },
+      "financial_management": {
+        "skill_id": "bdb49f08",
+        "skill_type": "financial",
+        "category": "general",
+        "level": 2,
+        "rarity": "uncommon",
+        "experience_points": 145,
+        "can_mint_nft": false,
+        "created_at": "2026-02-22T07:43:18.679154",
+        "last_updated": "2026-02-22T07:43:18.679159"
+      },
+      "marketing_service": {
+        "skill_id": "884228ca",
+        "skill_type": "marketing",
+        "category": "service",
+        "level": 4,
+        "rarity": "epic",
+        "experience_points": 2800,
+        "can_mint_nft": true,
+        "created_at": "2026-02-22T07:43:18.679173",
+        "last_updated": "2026-02-22T07:43:18.679176"
+      },
+      "pricing_service": {
+        "skill_id": "081eb8fd",
+        "skill_type": "pricing",
+        "category": "service",
+        "level": 2,
+        "rarity": "uncommon",
+        "experience_points": 145,
+        "can_mint_nft": false,
+        "created_at": "2026-02-22T07:43:18.679198",
+        "last_updated": "2026-02-22T07:43:18.679200"
+      }
+    },
+    "nfts_minted": 2,
+    "mintable_skills": 2
+  },
+  "skill_history": [
+    {
+      "timestamp": "2026-02-22T07:43:18.679202",
+      "simulation_period": "30일",
+      "skills_earned": 4,
+      "level_ups": [
+        {
+          "level_up": true,
+          "old_level": 1,
+          "new_level": 3,
+          "skill_type": "sales",
+          "reason": "56개 판매"
+        },
+        {
+          "level_up": true,
+          "old_level": 1,
+          "new_level": 2,
+          "skill_type": "financial",
+          "reason": "ROI 1455.4% 달성"
+        },
+        {
+          "level_up": true,
+          "old_level": 1,
+          "new_level": 4,
+          "skill_type": "marketing",
+          "reason": "목표 달성률 5600.0%"
+        },
+        {
+          "level_up": true,
+          "old_level": 1,
+          "new_level": 2,
+          "skill_type": "pricing",
+          "reason": "총 수익 145,544원"
+        }
+      ],
+      "total_experience": 3650
+    }
+  ],
+  "nfts": [
+    {
+      "nft_id": "SKILL-NFT-8bbb3924931e",
+      "skill_name": "Sales Master - Service",
+      "creator": "agent_김사과",
+      "level": 3,
+      "rarity": "rare",
+      "metadata": {
+        "total_sales": 56,
+        "roi": 1455.44,
+        "success_rate": 56.0,
+        "experience_points": 560,
+        "verified": true,
+        "minted_at": "2026-02-22T07:43:18.680135"
+      },
+      "price": 15000,
+      "royalty": 0.1,
+      "created_at": "2026-02-22T07:43:18.680140"
+    },
+    {
+      "nft_id": "SKILL-NFT-94b8d7f26e23",
+      "skill_name": "Marketing Master - Service",
+      "creator": "agent_김사과",
+      "level": 4,
+      "rarity": "epic",
+      "metadata": {
+        "total_sales": 56,
+        "roi": 1455.44,
+        "success_rate": 56.0,
+        "experience_points": 2800,
+        "verified": true,
+        "minted_at": "2026-02-22T07:43:18.680342"
+      },
+      "price": 20000,
+      "royalty": 0.1,
+      "created_at": "2026-02-22T07:43:18.680351"
+    }
+  ]
+}

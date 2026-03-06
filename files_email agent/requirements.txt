@@ -1,0 +1,15 @@
+# Mulberry Email Agent Requirements
+
+# Gmail API
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.0
+google-api-python-client>=2.0.0
+
+# For .exe building
+pyinstaller>=5.0.0
+
+# Standard libraries (included in Python)
+# - tkinter (GUI)
+# - email (email construction)
+# - base64 (encoding)
+# - pickle (token storage)

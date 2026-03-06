@@ -1,0 +1,11 @@
+# Mulberry GitHub Pusher Dependencies
+# Python 3.8+
+
+# Environment variable management
+python-dotenv==1.0.0
+
+# Optional: Better Git interface
+GitPython==3.1.40
+
+# Install:
+# pip install -r requirements.txt --break-system-packages

@@ -1,0 +1,8 @@
+# Mulberry Social-Agentic Commerce Demo
+# Hugging Face Space Dependencies
+
+# Gradio for interactive demo
+gradio==4.44.0
+
+# No additional dependencies needed for simulation
+# All functionality is self-contained in app.py

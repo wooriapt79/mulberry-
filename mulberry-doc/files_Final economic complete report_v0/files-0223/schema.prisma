@@ -1,0 +1,591 @@
+// prisma/schema.prisma
+// AI Agent Investment Platform Database Schema
+// Mulberry Project - CTO Koda
+// Date: 2026-02-22
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================
+// 1. 투자자 (Investor)
+// ============================================
+
+model Investor {
+  id              String    @id @default(cuid())
+  name            String
+  email           String?   @unique
+  passportId      String?   @unique  // AP2 Passport 연동
+  
+  // 레벨 시스템
+  level           Int       @default(1)
+  experience      Int       @default(0)
+  
+  // 재무 정보
+  totalInvested   Float     @default(0)
+  currentValue    Float     @default(0)
+  totalReturns    Float     @default(0)
+  
+  // 통계
+  investmentCount Int       @default(0)
+  successRate     Float     @default(0)
+  avgROI          Float     @default(0)
+  
+  // 신뢰도
+  spiritScore     Float     @default(0.5)
+  reputation      Int       @default(0)
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  lastLoginAt     DateTime?
+  
+  // Relations
+  investments     Investment[]
+  badges          InvestorBadge[]
+  notifications   Notification[]
+  activities      InvestorActivity[]
+  
+  @@index([email])
+  @@index([level])
+  @@index([spiritScore])
+}
+
+// ============================================
+// 2. AI Agent (확장)
+// ============================================
+
+model Agent {
+  id              String    @id @default(cuid())
+  name            String
+  passportId      String    @unique  // AP2 Passport
+  
+  // 레벨 및 스킬
+  level           Int       @default(1)
+  experience      Int       @default(0)
+  
+  // 재무 정보
+  balance         Float     @default(10000)  // 현재 잔액
+  totalRevenue    Float     @default(0)
+  totalProfit     Float     @default(0)
+  
+  // 성과 지표
+  salesCount      Int       @default(0)
+  roi             Float     @default(0)
+  successRate     Float     @default(0)
+  
+  // 신뢰도
+  spiritScore     Float     @default(0.5)
+  reputation      Int       @default(0)
+  
+  // 투자 관련
+  investmentStatus  String  @default("seeking")  // seeking, funded, operating, matured
+  targetAmount      Float   @default(0)
+  raisedAmount      Float   @default(0)
+  minInvestment     Float   @default(100000)
+  
+  // 투자 조건
+  profitShareInvestor  Float  @default(0.7)  // 투자자 70%
+  profitShareAgent     Float  @default(0.2)  // Agent 20%
+  profitShareCommunity Float  @default(0.1)  // 지역사회 10%
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  // Relations
+  skills          AgentSkill[]
+  investments     Investment[]
+  returns         Return[]
+  nfts            SkillNFT[]
+  activities      AgentActivity[]
+  
+  @@index([passportId])
+  @@index([level])
+  @@index([investmentStatus])
+  @@index([spiritScore])
+}
+
+// ============================================
+// 3. 투자 (Investment)
+// ============================================
+
+model Investment {
+  id              String    @id @default(cuid())
+  
+  // 투자자 및 Agent
+  investorId      String
+  agentId         String
+  
+  // 투자 금액
+  amount          Float
+  
+  // 수익 배분율
+  profitShare     Float     @default(0.7)  // 투자자 몫
+  
+  // 계약 조건
+  startDate       DateTime  @default(now())
+  endDate         DateTime?
+  durationDays    Int       @default(365)
+  
+  // 상태
+  status          String    @default("active")  // active, matured, withdrawn, cancelled
+  
+  // 옵션
+  autoRenew       Boolean   @default(false)
+  autoDistribute  Boolean   @default(true)
+  lossLiability   Float     @default(0)  // 손실 책임 (0 = 없음)
+  
+  // 성과
+  currentValue    Float     @default(0)
+  totalReturns    Float     @default(0)
+  roi             Float     @default(0)
+  
+  // AP2 Mandate
+  mandateId       String?   @unique
+  mandateHash     String?
+  
+  // Relations
+  mandate         AP2Mandate? @relation(fields: [mandateId], references: [mandateId])
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  maturedAt       DateTime?
+  
+  // Relations
+  investor        Investor  @relation(fields: [investorId], references: [id])
+  agent           Agent     @relation(fields: [agentId], references: [id])
+  returns         Return[]
+  
+  @@index([investorId])
+  @@index([agentId])
+  @@index([status])
+  @@index([startDate])
+}
+
+// ============================================
+// 4. 수익 배분 (Return)
+// ============================================
+
+model Return {
+  id              String    @id @default(cuid())
+  
+  // 투자 및 Agent
+  investmentId    String
+  agentId         String
+  
+  // 금액
+  amount          Float
+  
+  // 유형
+  type            String    // dividend, royalty, nft_sale, skill_license
+  
+  // 출처
+  source          String?   // 어떤 활동에서 발생했는지
+  
+  // 상태
+  status          String    @default("pending")  // pending, distributed, failed
+  
+  // 배분 정보
+  distributedAt   DateTime?
+  transactionHash String?
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  
+  // Relations
+  investment      Investment @relation(fields: [investmentId], references: [id])
+  agent           Agent      @relation(fields: [agentId], references: [id])
+  
+  @@index([investmentId])
+  @@index([agentId])
+  @@index([status])
+  @@index([distributedAt])
+}
+
+// ============================================
+// 5. Agent 스킬 (AgentSkill)
+// ============================================
+
+model AgentSkill {
+  id              String    @id @default(cuid())
+  
+  // Agent
+  agentId         String
+  
+  // 스킬 정보
+  skillType       String    // sales, marketing, pricing, financial, agriculture, etc.
+  category        String    // knowledge, agriculture, digital, service
+  
+  // 레벨 및 경험치
+  level           Int       @default(1)
+  experiencePoints Int      @default(0)
+  
+  // 희귀도
+  rarity          String    @default("common")  // common, uncommon, rare, epic, legendary
+  
+  // NFT 발행 가능 여부
+  canMintNFT      Boolean   @default(false)
+  
+  // 숙련도 데이터 (JSON)
+  proficiencyData Json?
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  // Relations
+  agent           Agent     @relation(fields: [agentId], references: [id])
+  nfts            SkillNFT[]
+  
+  @@unique([agentId, skillType, category])
+  @@index([agentId])
+  @@index([level])
+  @@index([rarity])
+}
+
+// ============================================
+// 6. 스킬 NFT (SkillNFT)
+// ============================================
+
+model SkillNFT {
+  id              String    @id @default(cuid())
+  nftId           String    @unique  // blockchain NFT ID
+  
+  // 스킬 및 Agent
+  skillId         String
+  agentId         String
+  creatorId       String    // Agent ID
+  
+  // NFT 정보
+  skillName       String
+  skillType       String    // PM 제안: 정규화 (검색용)
+  category        String    // PM 제안: 정규화 (검색용)
+  level           Int
+  rarity          String
+  
+  // 가격
+  price           Float
+  royalty         Float     @default(0.1)  // 10%
+  
+  // 메타데이터 (성과 데이터 포함)
+  metadata        Json
+  
+  // PM 제안: 주요 성과 지표 정규화
+  totalSales      Int       @default(0)    // 메타데이터에서 추출
+  avgROI          Float     @default(0)    // 메타데이터에서 추출
+  successRate     Float     @default(0)    // 메타데이터에서 추출
+  
+  // 상태
+  status          String    @default("listed")  // listed, sold, delisted
+  
+  // 소유권
+  currentOwnerId  String?
+  
+  // 판매 정보
+  salesCount      Int       @default(0)
+  totalRevenue    Float     @default(0)
+  
+  // 메타데이터
+  mintedAt        DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  // Relations
+  skill           AgentSkill @relation(fields: [skillId], references: [id])
+  agent           Agent      @relation(fields: [agentId], references: [id])
+  transactions    NFTTransaction[]
+  
+  @@index([agentId])
+  @@index([status])
+  @@index([rarity])
+  @@index([price])
+  @@index([skillType, category])  // PM 제안: 복합 인덱스
+  @@index([level])
+}
+
+// ============================================
+// 7. NFT 거래 (NFTTransaction)
+// ============================================
+
+model NFTTransaction {
+  id              String    @id @default(cuid())
+  
+  // NFT
+  nftId           String
+  
+  // 거래 당사자
+  sellerId        String
+  buyerId         String
+  
+  // 금액
+  price           Float
+  royaltyAmount   Float     @default(0)
+  
+  // 상태
+  status          String    @default("pending")  // pending, completed, failed
+  
+  // 블록체인
+  transactionHash String?
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  completedAt     DateTime?
+  
+  // Relations
+  nft             SkillNFT  @relation(fields: [nftId], references: [id])
+  
+  @@index([nftId])
+  @@index([buyerId])
+  @@index([sellerId])
+  @@index([status])
+}
+
+// ============================================
+// 8. 배지 (Badge)
+// ============================================
+
+model Badge {
+  id              String    @id @default(cuid())
+  
+  // 배지 정보
+  name            String    @unique
+  description     String
+  icon            String
+  
+  // 획득 조건 (JSON)
+  condition       Json      // 예: {"type": "first_investment", "threshold": 1}
+  
+  // 희귀도
+  rarity          String    @default("common")
+  
+  // 보상 (선택)
+  rewardExp       Int       @default(0)
+  rewardReputation Int      @default(0)
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  
+  // Relations
+  investors       InvestorBadge[]
+  
+  @@index([rarity])
+}
+
+// ============================================
+// 9. 투자자 배지 (Many-to-Many)
+// ============================================
+
+model InvestorBadge {
+  id              String    @id @default(cuid())
+  
+  investorId      String
+  badgeId         String
+  
+  earnedAt        DateTime  @default(now())
+  
+  // Relations
+  investor        Investor  @relation(fields: [investorId], references: [id])
+  badge           Badge     @relation(fields: [badgeId], references: [id])
+  
+  @@unique([investorId, badgeId])
+  @@index([investorId])
+  @@index([badgeId])
+}
+
+// ============================================
+// 10. 알림 (Notification)
+// ============================================
+
+model Notification {
+  id              String    @id @default(cuid())
+  
+  // 수신자
+  investorId      String
+  
+  // 알림 정보
+  type            String    // investment_return, level_up, badge_earned, agent_update
+  title           String
+  message         String
+  
+  // 데이터 (JSON)
+  data            Json?
+  
+  // 상태
+  isRead          Boolean   @default(false)
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  readAt          DateTime?
+  
+  // Relations
+  investor        Investor  @relation(fields: [investorId], references: [id])
+  
+  @@index([investorId])
+  @@index([isRead])
+  @@index([createdAt])
+}
+
+// ============================================
+// 11. 투자자 활동 (InvestorActivity)
+// ============================================
+
+model InvestorActivity {
+  id              String    @id @default(cuid())
+  
+  investorId      String
+  
+  // 활동 정보
+  type            String    // investment_created, return_received, badge_earned, level_up
+  description     String
+  
+  // 데이터 (JSON)
+  data            Json?
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  
+  // Relations
+  investor        Investor  @relation(fields: [investorId], references: [id])
+  
+  @@index([investorId])
+  @@index([type])
+  @@index([createdAt])
+}
+
+// ============================================
+// 12. Agent 활동 (AgentActivity)
+// ============================================
+
+model AgentActivity {
+  id              String    @id @default(cuid())
+  
+  agentId         String
+  
+  // 활동 정보
+  type            String    // sale, skill_level_up, nft_minted, investment_received
+  description     String
+  
+  // 재무 정보
+  revenue         Float     @default(0)
+  profit          Float     @default(0)
+  
+  // 데이터 (JSON)
+  data            Json?
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  
+  // Relations
+  agent           Agent     @relation(fields: [agentId], references: [id])
+  
+  @@index([agentId])
+  @@index([type])
+  @@index([createdAt])
+}
+
+// ============================================
+// 13. 리더보드 (Leaderboard)
+// ============================================
+
+model Leaderboard {
+  id              String    @id @default(cuid())
+  
+  // 유형
+  type            String    // investor, agent
+  period          String    // daily, weekly, monthly, all_time
+  
+  // 순위
+  entityId        String    // Investor ID or Agent ID
+  entityName      String
+  
+  rank            Int
+  score           Float     // ROI, total returns, etc.
+  
+  // 메타데이터
+  periodStart     DateTime
+  periodEnd       DateTime
+  updatedAt       DateTime  @updatedAt
+  
+  @@unique([type, period, entityId])
+  @@index([type, period, rank])
+}
+
+// ============================================
+// 14. 감사 로그 (AuditLog) - PM 제안
+// ============================================
+
+model AuditLog {
+  id              String    @id @default(cuid())
+  
+  // 사용자 정보
+  userId          String?   // Investor ID or Agent ID
+  userType        String?   // investor, agent, admin
+  
+  // 액션 정보
+  action          String    // INVESTMENT_CREATED, NFT_PURCHASED, etc.
+  entityType      String    // Investment, SkillNFT, Return, etc.
+  entityId        String
+  
+  // 변경 내역
+  oldValue        Json?
+  newValue        Json?
+  
+  // 메타데이터
+  ipAddress       String?
+  userAgent       String?
+  
+  // 타임스탬프
+  createdAt       DateTime  @default(now())
+  
+  @@index([userId])
+  @@index([action])
+  @@index([entityType, entityId])
+  @@index([createdAt])
+}
+
+// ============================================
+// 15. AP2 Mandate (별도 테이블) - PM 제안
+// ============================================
+
+model AP2Mandate {
+  id              String    @id @default(cuid())
+  mandateId       String    @unique  // AP2 프로토콜 ID
+  
+  // 계약 당사자
+  creatorId       String
+  creatorType     String    // investor, agent
+  
+  // 계약 내용
+  mandateType     String    // investment, skill_transfer, collaboration
+  conditions      Json      // 계약 조건
+  
+  // 서명
+  signature       String
+  signedAt        DateTime
+  
+  // 상태
+  status          String    @default("active")  // active, executed, expired, cancelled
+  expiresAt       DateTime?
+  
+  // 실행 정보
+  executedAt      DateTime?
+  executionResult Json?
+  
+  // 메타데이터
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  // Relations
+  investments     Investment[]
+  
+  @@index([mandateId])
+  @@index([creatorId])
+  @@index([status])
+  @@index([expiresAt])
+}
