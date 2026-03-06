@@ -41,7 +41,7 @@
 
 ### 2. `.env` 파일 (보안 설정)
 ```ini
-GITHUB_TOKEN=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
+GITHUB_TOKEN=[REDACTED]
 GITHUB_REPO=wooriapt79/mulberry-
 GITHUB_BRANCH=main
 GITHUB_USER_NAME=Koda CTO
@@ -305,7 +305,7 @@ def check_git_status(self):
 ### 1. 보안
 ```python
 # ❌ 나쁜 예
-token = "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"
+token = "[REDACTED]"
 
 # ✅ 좋은 예
 from dotenv import load_dotenv

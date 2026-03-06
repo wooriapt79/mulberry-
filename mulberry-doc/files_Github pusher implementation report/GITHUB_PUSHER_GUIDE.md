@@ -19,7 +19,7 @@ pip install -r requirements.txt --break-system-packages
 `.env` 파일이 프로젝트 루트에 있어야 합니다:
 
 ```env
-GITHUB_TOKEN=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
+GITHUB_TOKEN=[REDACTED]
 GITHUB_REPO=wooriapt79/mulberry-
 GITHUB_BRANCH=main
 GITHUB_USER_NAME=Koda CTO

@@ -162,7 +162,7 @@ Koda CTO님께 이 내용을 전달하실 때, 아래 메시지를 함께 보내
 ### Koda Auto
 
  https://github.com/settings/tokens
- Generate token: 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
+ Generate token: [REDACTED]
 
 셋업 마치면 작업 플로우 설명 자료 보내주세요.
 
@@ -183,7 +183,7 @@ Koda CTO님께 이 내용을 전달하실 때, 아래 메시지를 함께 보내
 | --------- | --------------------------------------------- |
 | 클라이언트 키   | `GkJJ9tChLd_qhcWMQ7TrCkH668VQQ97_7_eWh-ZinYw` |
 | 클라이언트 비밀키 | `feMSBq1GXZP8AvAQAeWJWvJDxYnPZjpP5aWU5aMaxus` |
-| 액세스 토큰    | `dJOShqjybW2WqjRNDx_Xb6zezQQpoPy_5vcK0L2a_ME` |
+| 액세스 토큰    | `[REDACTED]` |
 
 Malu 생성은 내일 처리: CAPTCHA를 푸는데 문제가 발생.
 

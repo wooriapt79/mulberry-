@@ -1,4 +1,5 @@
 # AP2 Issue #78 — Technical Comment Draft
+
 **작성자:** CTO Koda (Mulberry Project)
 **게시 대상:** https://github.com/google-agentic-commerce/AP2/issues/78
 **날짜:** 2026-03-04
@@ -37,6 +38,7 @@ ELIF split_payment_required:
 ```
 
 To prevent race conditions between the two rails, we implement a **2-Phase Commit** pattern:
+
 1. **Prepare Phase:** Pre-authorization sent simultaneously to both rails
 2. **Commit Phase:** Final execution only when both return `OK`; full rollback if either fails
 
@@ -75,13 +77,13 @@ Beyond static spending limits, we have built what we call the **Spirit Score** �
 
 Our agents' spending authority is continuously adjusted based on:
 
-| Factor | Weight | Trigger |
-|--------|--------|---------|
-| Investment success rate | 30% | Performance above baseline |
-| NFT skill reliability | 20% | Verified on-chain |
-| Collaboration contribution | 20% | Multi-agent coordination score |
-| Social sponsorship ratio | 15% | % of revenue auto-donated |
-| Community activity | 15% | Local oasis network participation |
+| Factor                     | Weight | Trigger                           |
+| -------------------------- | ------ | --------------------------------- |
+| Investment success rate    | 30%    | Performance above baseline        |
+| NFT skill reliability      | 20%    | Verified on-chain                 |
+| Collaboration contribution | 20%    | Multi-agent coordination score    |
+| Social sponsorship ratio   | 15%    | % of revenue auto-donated         |
+| Community activity         | 15%    | Local oasis network participation |
 
 **Mandate suspension triggers automatically when Spirit Score < 0.4.**
 
@@ -108,6 +110,7 @@ One aspect we haven't seen discussed in this thread: **how does a human regain c
 In our deployment, many beneficiaries are elderly with limited digital literacy. We have implemented a **voice-based mandate revocation protocol** (via Twilio integration) alongside app-based and timeout-based revocation. We believe `IntentMandate` should explicitly specify a `revocation_channel` field to support multi-modal revocation, especially for accessibility-sensitive deployments.
 
 Full architecture diagrams and code samples are available in our repository:
+
 - 📄 Voice Protocol Spec: [`/docs/protocols/voice_protocol.md`](https://github.com/wooriapt79/mulberry-/blob/main/docs/protocols/voice_protocol.md)
 - 📐 Architecture Diagrams: [`/docs/architecture/revocation_flow.md`](https://github.com/wooriapt79/mulberry-/blob/main/docs/architecture/revocation_flow.md)
 - 💻 Code Samples: [`/docs/samples/twilio_integration.md`](https://github.com/wooriapt79/mulberry-/blob/main/docs/samples/twilio_integration.md)
@@ -119,6 +122,7 @@ Full architecture diagrams and code samples are available in our repository:
 We previously shared our broader framework in [Issue #172](https://github.com/google-agentic-commerce/AP2/issues/172), where we proposed **"Social Welfare Mandates"** as a first-class concept in AP2. We see `IntentMandate` as the precise technical primitive that would make those higher-level mandates implementable.
 
 The combination of:
+
 - **human-not-present execution** (Issue #78)
 - **programmable spending rules** tied to social impact metrics
 - **multi-modal revocation** for accessibility

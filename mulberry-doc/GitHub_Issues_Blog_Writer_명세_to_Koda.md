@@ -43,7 +43,7 @@ PyGithub>=1.59.0
 ```python
 # 토큰 로컬 저장 (token_github.json)
 {
-  "github_token": "ghp_xxxxxxxxxxxx",
+  "github_token": "[REDACTED_EXAMPLE]",
   "repo": "wooriapt79/mulberry-"
 }
 ```

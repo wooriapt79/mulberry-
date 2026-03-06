@@ -6,7 +6,7 @@ Koda 구현할 때는 **코드에 직접 쓰지 말고** `.env` 파일에 저장
 
 ```
 # .env 파일
-GITHUB_TOKEN=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
+GITHUB_TOKEN=[REDACTED]
 GITHUB_REPO=wooriapt79/mulberry-
 GITHUB_BRANCH=main
 ```
@@ -19,7 +19,7 @@ GITHUB_BRANCH=main
 
 - 리포지토리: `github.com/wooriapt79/mulberry-`
 - 브랜치: `main`
-- PAT 토큰: `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`
+- PAT 토큰: `[REDACTED]`
 - 커밋 메시지: 날짜 + 작업 내용 자동 생성
 - 실행 방법: `python scripts/github_pusher.py "작업 내용 요약"`
 

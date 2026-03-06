@@ -83,7 +83,7 @@ Name: MASTODON_CLIENT_SECRET
 Value: feMSBq1GXZP8AvAQAeWJWvJDxYnPZjpP5aWU5aMaxus
 
 Name: MASTODON_ACCESS_TOKEN
-Value: dJOShqjybW2WqjRNDx_Xb6zezQQpoPy_5vcK0L2a_ME
+Value: [REDACTED]
 
 Name: MASTODON_INSTANCE
 Value: https://mastodon.social
