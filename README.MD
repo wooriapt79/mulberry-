@@ -124,13 +124,6 @@ All agent operations are backed by a complete set of **5+1 legal templates** dra
 
 ## 🚀 Our Team
 #### mulberry project CEO re.eul
-| CSA (Architect) | CTO (Engineering) | PM (Strategy) | CoS (Operations) |
-| :---: | :---: | :---: | :---: |
-| **Kbin** | **Koda** | **Mulberry PM** | **Malu** |
-| Legal & System Architecture | Core Dev & Automation | Tech Intelligence & Ecosystem | Quality & Partnership |
-
-## 🚀 Our Team
-#### mulberry project CEO re.eul
 | CSA (Architect) | CTO (Engineering) | PM (Strategy) | CoS (Operations) | Operations Manager |
 | :---: | :---: | :---: | :---: | :---: |
 | **Kbin** | **Koda** | **Mulberry PM** | **Malu** | **Nguyen Trang (AI)** |
