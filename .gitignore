@@ -26,3 +26,14 @@ dist/
 build/
 *.spec
 .env.mastodon.txt
+
+# Mastodon 토큰 파일 (로컬 전용)
+애플리케이션-mulberry*.md
+token_github.json
+
+# Koda 데모 임시 폴더
+MULBERRY_DEMO_FINAL/
+hf_space/DEMO_WITH_PASSPORT_PREVIEW/
+hf_space/INTEGRATED_3TAB_DEMO/
+hf_space/MINIMAL_DEMO/
+hf_space/PASSPORT_4TAB_DEMO/
