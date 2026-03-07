@@ -1,153 +1,41 @@
-# Mulberry Platform - Git Ignore
-
-# ============================================
-# Python
-# ============================================
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# ============================================
-# Virtual Environment
-# ============================================
-venv/
-ENV/
-env/
-.venv
-
-# ============================================
-# IDE
-# ============================================
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# ============================================
-# Environment Variables
-# ============================================
+# ⚠️ 보안 파일 - 절대 GitHub에 올리지 마세요!
+.env.mastodon
 .env
-.env.local
-.env.*.local
-*.env
+.env.*
+mastodon.txt
 
-# ============================================
-# Logs
-# ============================================
-*.log
-logs/
-*.log.*
-
-# ============================================
-# Database
-# ============================================
-*.db
-*.sqlite
-*.sqlite3
-db.sqlite3
-
-# ============================================
-# AI Models (Large Files)
-# ============================================
-models/*.gguf
-models/*.bin
-models/*.safetensors
-*.gguf
-*.bin
-
-# ============================================
-# Audio Files
-# ============================================
-*.wav
-*.mp3
-*.flac
-audio/
-
-# ============================================
-# Image Files (Optional)
-# ============================================
-uploads/
-media/
-
-# ============================================
-# Test Coverage
-# ============================================
-.coverage
-.coverage.*
-htmlcov/
-.pytest_cache/
-
-# ============================================
-# Jupyter Notebooks
-# ============================================
-.ipynb_checkpoints
-*.ipynb
-
-# ============================================
-# System
-# ============================================
-Thumbs.db
-desktop.ini
-
-# ============================================
-# Temporary Files
-# ============================================
-tmp/
-temp/
-*.tmp
-*.bak
-*.swp
-*~
-
-# ============================================
-# Secrets & Keys
-# ============================================
-secrets/
+# API 키값 파일
 *.key
-*.pem
-*.crt
-credentials.json
-token.json
+*.secret
+secrets/
 
-# ============================================
-# Build & Distribution
-# ============================================
+# Gmail OAuth 인증 파일 (로컬 전용)
+token.pickle
+client_secret*.json
+
+# 임시 / 백업 파일
+.tmp.driveupload/
 *.zip
-*.tar.gz
-*.tgz
+*.tmp
 
-# ============================================
-# Node.js (if used)
-# ============================================
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# 대용량 바이너리 (재생성 가능)
+__pycache__/
+*.pyc
+*.pyo
+dist/
+build/
+*.spec
+.env.mastodon.txt
 
-# ============================================
-# Keep These
-# ============================================
-!.gitignore
-!.env.example
-!models/.gitkeep
-!uploads/.gitkeep
+# Mastodon 토큰 파일 (로컬 전용)
+애플리케이션-mulberry*.md
+애플리케이션 key*.md
+애플리케이션*.md
+token_github.json
+
+# Koda 데모 임시 폴더
+MULBERRY_DEMO_FINAL/
+hf_space/DEMO_WITH_PASSPORT_PREVIEW/
+hf_space/INTEGRATED_3TAB_DEMO/
+hf_space/MINIMAL_DEMO/
+hf_space/PASSPORT_4TAB_DEMO/
