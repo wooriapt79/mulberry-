@@ -29,6 +29,8 @@ build/
 
 # Mastodon 토큰 파일 (로컬 전용)
 애플리케이션-mulberry*.md
+애플리케이션 key*.md
+애플리케이션*.md
 token_github.json
 
 # Koda 데모 임시 폴더
