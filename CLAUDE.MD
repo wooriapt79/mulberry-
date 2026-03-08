@@ -10,6 +10,15 @@ mulberry project의 헌법인 '장승배기' 정신을 잘 인식하고
 Mulberry folder: 작업 폴더.
 Sub folder 잘 살펴서 작업 진행해주세요.
 
+## Mulberry 팀 파일 관리 원칙
+CSA Kbin 작업 + 대표님 작업 + Nguyen Trang 작업
+→ 정기 검토 → 중복 확인·계층 정리 → GitHub 등록
+
+참조 순서:
+docs/architecture/ (CSA Kbin) → 최상위
+agents/ (Nguyen Trang) → 현장 운영
+research/ (Nguyen Trang) → 교육 자료
+
 ## Nguyen Trang Manager 역량 개발 방향
 
 ### 프로파일링 & 심리학 스터디
