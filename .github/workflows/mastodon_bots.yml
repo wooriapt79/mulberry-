@@ -4,12 +4,12 @@ on:
   workflow_dispatch:  # 수동 실행 버튼
   schedule:
     - cron: '0 0 * * *'  # 매일 UTC 00:00 (한국 09:00) 아침 루틴
-  env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # 이 줄을 추가합니다.
+  
 jobs:
   run-bots:
     runs-on: ubuntu-latest
-
+  env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # 이 줄을 추가합니다.
     steps:
       - name: Checkout
         uses: actions/checkout@v4
