@@ -1,0 +1,8 @@
+[flake8]
+exclude =
+    mulberry-agent-system-v3,
+    Initial commit - Spirit Score v1.0.0,
+    mulberry-doc,
+    team-reports,
+    .git
+max-line-length = 120
