@@ -1,0 +1,13 @@
+[flake8]
+exclude =
+    mulberry-agent-system-v3,
+    mulberry-doc,
+    team-reports,
+    .git,
+    __pycache__,
+    *.egg-info
+
+per-file-ignores =
+    **/api.py:F824
+
+max-line-length = 120
