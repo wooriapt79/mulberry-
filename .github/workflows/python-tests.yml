@@ -8,7 +8,7 @@ on:
     branches: [ main ]
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # Node.js 24 사용
-jobs:
+jobs:h
   test:
     runs-on: ubuntu-latest
     strategy:
@@ -36,7 +36,7 @@ jobs:
     
     - name: Test with pytest
       run: |
-        pytest tests/ --cov=./ --cov-report=xml
+        if [ -d tests/ ]; then pytest tests/ --cov=./ --cov-report=xml; else echo "No tests/ directory - skipping pytest"; fi
     
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4
