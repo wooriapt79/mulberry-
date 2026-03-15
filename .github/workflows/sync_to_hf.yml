@@ -30,6 +30,7 @@ jobs:
           cd hf_space
 
           git init
+          git checkout -b main
           git remote add hf "https://re-eul:${HF_TOKEN}@huggingface.co/spaces/re-eul/mulberry-demo"
           git add .
           git commit -m "🌿 Sync from GitHub: $(date +'%Y-%m-%d %H:%M')"

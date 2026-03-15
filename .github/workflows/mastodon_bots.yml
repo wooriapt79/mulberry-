@@ -55,29 +55,36 @@ jobs:
                       headers=self.headers)
                   return r.json() if r.status_code == 200 else None
 
-          # 봇 초기화
-          ceo    = MastodonBot("CEO Bot",          os.environ.get('CEO_BOT_ACCESS_TOKEN', ''))
-          pm     = MastodonBot("PM Bot",           os.environ.get('PM_BOT_ACCESS_TOKEN', ''))
-          spirit = MastodonBot("Spirit Bot",       os.environ.get('SPIRIT_BOT_ACCESS_TOKEN', ''))
-          nguyen = MastodonBot("Nguyen Trang Bot", os.environ.get('NGUYEN_TRANG_ACCESS_TOKEN', ''))
+          # 봇 초기화 (토큰 없으면 None 처리 → 건너뜀)
+          def make_bot(name, token):
+              return MastodonBot(name, token) if token else None
+
+          ceo    = make_bot("CEO Bot",          os.environ.get('CEO_BOT_ACCESS_TOKEN', ''))
+          pm     = make_bot("PM Bot",           os.environ.get('PM_BOT_ACCESS_TOKEN', ''))
+          spirit = make_bot("Spirit Bot",       os.environ.get('SPIRIT_BOT_ACCESS_TOKEN', ''))
+          nguyen = make_bot("Nguyen Trang Bot", os.environ.get('NGUYEN_TRANG_ACCESS_TOKEN', ''))
+
+          active_bots = {k: v for k, v in {
+              "CEO": ceo, "PM": pm, "Spirit": spirit, "Nguyen": nguyen
+          }.items() if v is not None}
 
           # 연결 테스트
           print("\n🧪 봇 연결 테스트...\n")
-          for bot in [ceo, pm, spirit, nguyen]:
+          for bot in active_bots.values():
               acc = bot.me()
               if acc:
                   print(f"✅ {bot.name}: @{acc['username']}")
               else:
-                  print(f"❌ {bot.name}: 연결 실패")
+                  print(f"❌ {bot.name}: 연결 실패 (토큰 만료 또는 오류)")
 
-          # 아침 루틴
+          # 아침 루틴 (활성 봇만 실행)
           today = datetime.now().strftime("%Y년 %m월 %d일")
           print(f"\n⏰ 아침 루틴 시작 — {today}\n")
 
-          ceo.toot(f"🌾 [CEO 공지]\n\n{today}\n식품사막화 제로를 향해 오늘도 함께 달립시다! 🚀\n\n#MulberryProject #식품사막화제로")
-          pm.toot(f"📋 [PM 일일 계획 - {today}]\n\n• 팀 이슈 점검\n• GitHub 업데이트\n• Spirit Score 리더보드\n\n#MulberryProject")
-          spirit.toot(f"🏆 [Spirit Score 리더보드]\n\n1. @re_eul — 95 SS\n2. @nguyen_trang — 90 SS\n3. @ceo_mulberry — 88 SS\n\n#SpiritScore #MulberryProject")
-          nguyen.toot(f"🌿 [AI Operations Report - {today}]\n\n• HF Space: ✅ Running\n• Mastodon Bots: ✅ Active\n• GitHub: ✅ Connected\n\n— Nguyen Trang, AI Operations Manager\n#MulberryProject")
+          if ceo:    ceo.toot(f"🌾 [CEO 공지]\n\n{today}\n식품사막화 제로를 향해 오늘도 함께 달립시다! 🚀\n\n#MulberryProject #식품사막화제로")
+          if pm:     pm.toot(f"📋 [PM 일일 계획 - {today}]\n\n• 팀 이슈 점검\n• GitHub 업데이트\n• Spirit Score 리더보드\n\n#MulberryProject")
+          if spirit: spirit.toot(f"🏆 [Spirit Score 리더보드]\n\n1. @re_eul — 95 SS\n2. @nguyen_trang — 90 SS\n3. @ceo_mulberry — 88 SS\n\n#SpiritScore #MulberryProject")
+          if nguyen: nguyen.toot(f"🌿 [AI Operations Report - {today}]\n\n• HF Space: ✅ Running\n• Mastodon Bots: ✅ Active\n• GitHub: ✅ Connected\n\n— Nguyen Trang, AI Operations Manager\n#MulberryProject")
 
           print("\n✅ 아침 루틴 완료!")
           EOF
