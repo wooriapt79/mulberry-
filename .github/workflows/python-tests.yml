@@ -8,7 +8,7 @@ on:
     branches: [ main ]
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # Node.js 24 사용
-jobs:h
+jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
