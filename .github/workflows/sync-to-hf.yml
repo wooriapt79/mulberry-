@@ -21,11 +21,20 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
+          if [ -z "${HF_TOKEN}" ]; then
+            echo "❌ HF_TOKEN secret이 설정되지 않았습니다."
+            exit 1
+          fi
+
           git config --global user.email "ci@mulberry-project.ai"
           git config --global user.name "Mulberry CI"
+          git config --global init.defaultBranch main
+
           cd hf_space
           git init
+          git checkout -b main
           git remote add hf "https://re-eul:${HF_TOKEN}@huggingface.co/spaces/re-eul/mulberry-demo"
           git add .
-          git commit -m "Sync from GitHub"
+          git commit -m "🌿 Sync from GitHub: $(date +'%Y-%m-%d %H:%M')"
           git push hf main --force
+          echo "✅ HF Space 동기화 완료"
