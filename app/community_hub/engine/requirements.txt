@@ -1,0 +1,13 @@
+# 🌿 Mulberry Community Hub — Agent Engine
+# Requirements
+# Generated: 2026-03-17
+
+# Core
+flask>=2.3.0
+pandas>=2.0.0
+
+# Optional: production server (Flask 대신 사용)
+gunicorn>=21.2.0
+
+# Optional: CORS support (프론트엔드 연동 시)
+flask-cors>=4.0.0
