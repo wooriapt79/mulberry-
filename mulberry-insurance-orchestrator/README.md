@@ -56,7 +56,7 @@ mulberry-insurance-orchestrator/
     ```
 
 4.  **Set up environment variables:**
-    Create a `.env` file in the root directory and populate it with your configuration. An example `.env` file is provided in the project structure for reference (it's created by the colab notebook).
+    Create a `.env` file in the root directory and populate it with your configuration. An example `.env` file is provided in the project structure for reference.
 
     ```ini
     APP_NAME="Mulberry Insurance Orchestrator Dev"
