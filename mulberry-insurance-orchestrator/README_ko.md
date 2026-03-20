@@ -56,7 +56,7 @@ mulberry-insurance-orchestrator/
     ```
 
 4.  **환경 변수 설정:**
-    루트 디렉토리에 `.env` 파일을 생성하고 구성 정보를 입력합니다. 참조를 위해 `.env` 파일 예시가 프로젝트 구조에 제공됩니다 (colab 노트북에 의해 생성됩니다).
+    루트 디렉토리에 `.env` 파일을 생성하고 구성 정보를 입력합니다. 참조를 위해 `.env` 파일 예시가 프로젝트 구조에 제공됩니다.
 
     ```ini
     APP_NAME="Mulberry Insurance Orchestrator Dev"
