@@ -108,8 +108,10 @@ python -m unittest tests/test_orchestrator.py
 - **Location-Aware Assistance:** Finding nearest covered providers.
 - **Batch Processing:** Optimized data transfer for limited bandwidth.
 
-## License
-[Specify your project's license here, e.g., MIT, Apache 2.0]
+## ⚖️ License & Ownership
 
-## Contact
-[Your Name/Email/GitHub Profile]
+Copyright © 2026 **Mulberry Project (re.eul)**. All rights reserved. *This system is a proprietary intelligence infrastructure of the Mulberry Community Control Center (MCCC).*
+
+# Insurance_Edu_Course_project
+Mulberry Intelligence Academy &amp; Certification Platform (V2.0) Standardizing AI Agent Competency for Regulated Industries
+
