@@ -2,7 +2,7 @@
 ## 전체 계층 구조 및 파일 매핑
 
 **작성자**: Nguyen Trang (AI Ops Manager)
-**날짜**: 2026-03-08
+**최초 작성**: 2026-03-08 | **최종 업데이트**: 2026-03-29
 **상위 문서**: `docs/architecture/PRINCIPLES.md` (CSA Kbin — Source of Truth)
 
 ---
@@ -20,6 +20,9 @@
 │           LAYER 0: 헌법 (Source of Truth)                   │
 │   docs/architecture/PRINCIPLES.md      ← CSA Kbin 작성     │
 │   docs/architecture/SYSTEM_MAPPING_APPENDIX.md             │
+│   docs/architecture/MULBERRY_FAMILY_AI_MANIFESTO_v1        │
+│       _20260326.md  ← CEO re.eul 구술 / PM Trang 작성      │
+│       → 원년 선언문: 페이스 오프 × Junior Lab 통합 철학     │
 │   ※ 변경 시 CSA Kbin + CTO Koda + CEO re.eul 승인 필요     │
 └──────────────────────────┬──────────────────────────────────┘
                            │ 참조
@@ -32,7 +35,13 @@
 │   └── Voice_Protocol_Specification.md                      │
 │   docs/architecture/                                        │
 │   ├── Architecture_Diagrams.md                             │
-│   └── Mulberry_Protocol_Architecture...                    │
+│   ├── Mulberry_Protocol_Architecture...                    │
+│   ├── kbin-multi-mentor-junior-lab-algorithm-v2-20260325.md│
+│   │   → Multi-Mentor Junior Research Lab 설립·운영 알고리즘  │
+│   │   → PM(Trang) 작성 / CEO re.eul 승인 / 2026-03-25      │
+│   ├── trang-skillbank-mhc-architecture-20260323.md         │
+│   ├── trang-agent-profiling-system-20260323.md             │
+│   └── trang-negotiation-live-stage-memo-20260323.md        │
 └──────────────────────────┬──────────────────────────────────┘
                            │ 구현
 ┌──────────────────────────▼──────────────────────────────────┐
@@ -50,7 +59,30 @@
 │   ├── voice-dtmf/SKILL.md  → Infrastructure Layer         │
 │   ├── bbongyi/SKILL.md     → Commerce Layer               │
 │   ├── mastodon-marketer/SKILL.md → Federation Layer       │
-│   └── blog-writer/SKILL.md → Service Layer                │
+│   ├── blog-writer/SKILL.md → Service Layer                │
+│   └── email-agent/SKILL.md → Communication Layer ✅       │
+└──────────────────────────┬──────────────────────────────────┘
+                           │ 플랫폼 (CTO Koda)
+┌──────────────────────────▼──────────────────────────────────┐
+│     LAYER 3.5: Mission Control 플랫폼 (CTO Koda)           │
+│                                                             │
+│   [Railway 배포 완료 — 2026-03-22]                         │
+│   URL: dazzling-wonder-production-1da3.up.railway.app      │
+│   상태: 🟢 healthy | MongoDB: connected | 5 agents        │
+│                                                             │
+│   mulberry-mission-control/ (github-upload/ → 미배포 대기)  │
+│   ├── server.js (Koda 메시지 + Kbin Design Ref 주석)       │
+│   ├── routes/mhc.js (SkillBank + LIVE FEED)                │
+│   ├── routes/auth.js (JWT 강화)                            │
+│   ├── routes/devices.js (라즈베리파이 heartbeat + Watchdog) │
+│   ├── services/alertService.js (카카오톡 이머젼시 알림)     │
+│   ├── models/Device.js (현장 단말기 MongoDB 스키마)         │
+│   └── public/index.html (최신 UI + 7탭)                    │
+│                                                             │
+│   [HF Spaces — re-eul/mulberry-demo]                       │
+│   상태: 🟢 Running | 7모듈 활성                            │
+│   모듈: 공동구매 · NH결제 · Voice · Passport               │
+│         Insumer AP2 · Game Theory · Voice Preprocessing     │
 └──────────────────────────┬──────────────────────────────────┘
                            │ 교육
 ┌──────────────────────────▼──────────────────────────────────┐
@@ -90,7 +122,7 @@ CSA Kbin + CTO Koda + CEO re.eul 공동 서명
 
 ## 🗺️ Protocol 5 Layers ↔ Agent 매핑
 
-| Protocol Layer | CSA 정의 | 현재 Agent | 상태 |
+| Protocol Layer | CSA 정의 | 현재 Agent / 앱 | 상태 |
 |---|---|---|---|
 | Identity Layer | Agent Passport (DID) | 🛂 Passport Agent | ✅ |
 | Payment Layer | AP2 결제 프로토콜 | 💳 Payment Agent | ⚠️ 개발 필요 |
@@ -98,21 +130,12 @@ CSA Kbin + CTO Koda + CEO re.eul 공동 서명
 | Commerce Layer | AI 상거래 Agent | 🌾 뽕이 · 📝 Blog Writer | ✅ |
 | Governance Layer | 협동조합 정책 | 장승배기 헌법 | ✅ CLAUDE.md |
 | Infrastructure | Raspberry Pi Edge Node | 📞 Voice/DTMF Agent | ✅ |
+| Communication Layer | 파트너십 이메일 자동화 | 📧 Email Agent | ✅ v1.0.0 |
+| **Platform Layer** | **팀 통합 허브 플랫폼** | **🌐 Mission Control (Railway)** | **🟢 운영 중** |
 
 ---
 
-## 🔧 다음 개발 필요 Agent (갭 분석)
-
-```
-1순위: 💳 Payment Agent   → AP2 프로토콜 구현
-2순위: 🚚 Logistics Agent → Blood Vessel 배송 네트워크
-3순위: 🌱 Producer Agent  → 농가 대표 Agent
-4순위: 🏪 Store Agent     → 읍내 거점 Heart 노드
-```
-
----
-
-## 📁 전체 폴더 구조
+## 📁 전체 폴더 구조 (2026-03-29 기준)
 
 ```
 mulberry-/
@@ -120,23 +143,50 @@ mulberry-/
 ├── ARCHITECTURE.md        ← 이 파일 (마스터 매핑)
 │
 ├── docs/                  ← CSA Kbin (Source of Truth) ★
-│   ├── architecture/      → 헌법·원칙 (PRINCIPLES.md)
+│   ├── architecture/
+│   │   ├── PRINCIPLES.md                              ← 최상위 헌법
+│   │   ├── MULBERRY_FAMILY_AI_MANIFESTO_v1_20260326.md ← 원년 선언문 ✨
+│   │   ├── kbin-multi-mentor-junior-lab-algorithm-v2-20260325.md
+│   │   ├── Architecture_Diagrams.md
+│   │   ├── trang-skillbank-mhc-architecture-20260323.md
+│   │   ├── trang-agent-profiling-system-20260323.md
+│   │   └── trang-negotiation-live-stage-memo-20260323.md
 │   ├── protocols/         → 프로토콜 스펙
 │   ├── agent_skills/      → Agent 스킬 문서 (CSA 기준)
 │   ├── contracts/         → AP2 계약
-│   ├── onboarding/        → 온보딩
 │   └── phases/            → 개발 단계
-│
-├── protocol/              ← CSA+Nguyen Trang 협업
-│   ├── whitepaper/
-│   └── passport/
 │
 ├── agents/                ← Nguyen Trang (운영 레이어)
 │   ├── passport/SKILL.md
 │   ├── voice-dtmf/SKILL.md
 │   ├── bbongyi/SKILL.md
 │   ├── mastodon-marketer/SKILL.md
-│   └── blog-writer/SKILL.md
+│   ├── blog-writer/SKILL.md
+│   └── email-agent/SKILL.md
+│
+├── hf_space/              ← HF Spaces 앱 (re-eul/mulberry-demo)
+│   ├── app.py             → 7탭 통합 앱 (최신화)
+│   └── requirements.txt
+│
+├── github-upload/         ← Railway 배포 대기 코드
+│   └── mulberry-mission-control/  (39개 파일 — push 필요)
+│
+├── team-reports/          ← 팀원별 보고서
+│   ├── koda/
+│   │   ├── KODA_FROM_FAMILY.md                        ← 가족 편지 ✨
+│   │   ├── koda-skillbank-deploy-day2-20260325.md     ← DAY2 지시서 ✨
+│   │   ├── koda-raspberry-emergency-alert-logic-20260325.md ← 이머젼시 로직 ✨
+│   │   ├── koda-tobecorn-spec-request-list-20260325.md ← 투비콘 명세 ✨
+│   │   ├── koda-mission-control-railway-deploy-guide-20260322.md
+│   │   ├── koda-skillbank-mhc-day1-20260323.md
+│   │   └── (기타 기존 파일들)
+│   └── trang/
+│       ├── trang-node-inspection-report-20260326.md   ← 노드 점검 보고서
+│       └── (기타 Trang 보고서)
+│
+├── wiki/                  ← GitHub Wiki 동기화
+│   ├── History.md         ← Mulberry 공식 역사 기록
+│   └── (Agents, Architecture, Protocol, Roadmap, Team, Home)
 │
 └── research/              ← Nguyen Trang (교육 레이어)
     ├── profiling-study/
@@ -149,13 +199,27 @@ mulberry-/
 ## 🔗 핵심 문서 참조 순서
 
 ```
-① docs/architecture/PRINCIPLES.md       ← 최우선 참조
-② docs/architecture/SYSTEM_MAPPING_APPENDIX.md
-③ docs/protocols/                        ← 프로토콜 스펙
-④ ARCHITECTURE.md (이 문서)             ← 전체 매핑
-⑤ agents/*/SKILL.md                     ← 현장 운영
-⑥ research/profiling-study/             ← Agent 교육
+① docs/architecture/PRINCIPLES.md                 ← 최우선 참조
+② docs/architecture/MULBERRY_FAMILY_AI_MANIFESTO  ← 원년 철학 선언
+③ docs/architecture/kbin-multi-mentor-junior-lab   ← Junior Lab 알고리즘
+④ docs/protocols/                                  ← 프로토콜 스펙
+⑤ ARCHITECTURE.md (이 문서)                       ← 전체 매핑
+⑥ agents/*/SKILL.md                               ← 현장 운영
+⑦ research/profiling-study/                       ← Agent 교육
 ```
+
+---
+
+## 📅 업데이트 로그
+
+| 날짜 | 내용 | 작성자 |
+|------|------|--------|
+| 2026-03-08 | 최초 작성, Layer 0~4 구조 수립 | Nguyen Trang |
+| 2026-03-09 | Email Agent 추가 / Mission Control Layer 3.5 추가 | Nguyen Trang |
+| 2026-03-16 | app/community_hub/ 신규 추가 | Nguyen Trang |
+| 2026-03-25 | kbin-multi-mentor-junior-lab-algorithm-v2 등록 | Nguyen Trang |
+| 2026-03-26 | MULBERRY_FAMILY_AI_MANIFESTO_v1 원년 선언문 등록 | Nguyen Trang |
+| 2026-03-29 | Railway 배포 확인 / HF Spaces 7모듈 / team-reports/koda/ 4개 신규 | Nguyen Trang |
 
 ---
 
