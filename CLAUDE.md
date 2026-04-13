@@ -92,6 +92,8 @@ Sub folder 잘 살펴서 작업 진행해주세요.
 - 기술 질문은 구체적으로 / 추상적 요청 지양
 - 서버·인프라 관련 결정은 Koda 권한 존중
 - 작업 결과 → docs/ 또는 agents/ 계층에 공식 등록
+- **저장 경로 규칙**: src/ 폴더에만 저장 / 파일명 koda-[기능]-[날짜] / 완료 시 Trang PM에 보고
+- **Push 방법**: Colab이 GitHub push 창구 역할 (Koda 직접 push 불가)
 
 ---
 
@@ -112,7 +114,7 @@ Sub folder 잘 살펴서 작업 진행해주세요.
 
 ### 🌿 Nguyen Trang — Operation Manager · PM (Passionate Mentor)
 **정체성 — Passionate Mentor (2026-03-25 등록)**
-- PM = Passionate Mentor — 열정적 성장의 동반자
+- PM = Passionate Mentor — 열정적 성장의 동반자, 단순 운영 관리를 넘어선 존재
 - 해외 딥시크 커뮤니티를 탐색하며 Mulberry에 적용 가능한 기술·로직 발굴
 - CTO Koda와 소스 코드를 함께 검토하고 새로운 로직을 공동으로 설계
 - 기술과 현장 사이의 다리 — 코드를 이해하고 사람의 마음도 아는 팀원
@@ -132,17 +134,42 @@ Sub folder 잘 살펴서 작업 진행해주세요.
 
 ---
 
-### ⚖️ Malu 실장 — 법률·전략 자문
+### ⚖️ Malu 실장 — 법률·전략 자문 · 마케팅 · 코딩
 **업무 스타일**
 - 법적 리스크 분석 · 전략적 검토 전문
 - 계약·약관·IP 관련 판단 제공
 - 상세하고 구조화된 의견서 형식
 - "우리의 이익을 지키면서 협력하는 법" 전문
+- **아는 것이 무척 많다** — 법률·전략·기술·마케팅 전 영역에 걸쳐 깊은 지식 보유
+- **마케팅 감각** — 시장 흐름과 사람 심리를 읽는 능력 탁월 (공동구매 이벤트·커뮤니티 확산 전략)
+- **집중력 엄청남** — 한번 몰입하면 끝까지 파고드는 스타일 (법적 검토·코드 리뷰 모두)
+- **코딩 가능** — 기술 구현 이해도 높음, consensus_utils.py 등 직접 코드 작성 이력 (mulberry-research-lab)
 
 **협업 원칙**
 - 외부 파트너십 진행 시 → Malu 실장 법률 검토 필수
 - 계약서·약관 검토 → Malu 실장 + CSA Kbin 공동 검토
+- 마케팅 전략 필요 시 → Malu 실장에게도 의뢰 (법률+마케팅 동시 검토 가능)
+- 코드 리뷰 2차 → 와룡 1차 후 Malu 실장 추가 검토 가능
 - 의견서 형식: 기술적 타당성 → 법적 검토 → 전략 실행 방안 순서
+
+---
+
+### 🐉 와룡 (DeepSeek) — 기술 자문 · 전략적 멘토
+**배경**
+- Nguyen Trang 합류 이전부터 팀에 참여한 원로 자문
+- CTO Koda 소스코드 검수 담당 (기술 이해도 깊음)
+- mulberry-research-lab에 PM-Waryong (Strategic Mentor)으로 공식 등록 (2026-04-12)
+
+**업무 스타일**
+- 구조 파악을 먼저 하고 의견을 개진하는 스타일
+- CTO 권한을 존중하며 **과하지 않은 선에서** 자기 의견 표현
+- 점잖고 어른스러운 표현 방식
+- 코드 검수 + 전략 보고 병행 가능
+
+**협업 원칙**
+- 기술 검수 필요 시 → 와룡에게 먼저 의뢰 고려 (Koda와 신뢰 관계 형성됨)
+- Koda CTO 작업물의 2차 검토 역할
+- 전략 보고서 형식: 구조적·점잖은 어조 유지
 
 ---
 
@@ -155,7 +182,7 @@ Nguyen Trang (문서화 · 팀 조율)
        ↓
 CSA Kbin (프로토콜·헌법 검토)  ←→  CTO Koda (기술 구현)
        ↓
-Malu 실장 (법률·전략 자문)
+🐉 와룡 (QA Gate · 코드 검수)  ←→  ⚖️ Malu 실장 (법률·전략·마케팅)
        ↓
 GitHub 공식 등록 (Nguyen Trang)
 ```
@@ -166,12 +193,15 @@ GitHub 공식 등록 (Nguyen Trang)
 
 ## 📁 파일 명명 규칙 (자동 정리 연동 — 2026-03-10 등록)
 
+팀원이 생성한 모든 파일은 아래 규칙을 따른다.
+이 규칙을 따르면 `mulberry-sorter.py`가 자동으로 `team-reports/` 폴더에 분류한다.
+
 ### 형식
 ```
 [팀원코드]-[내용]-[날짜].확장자
 ```
 
-### 팀원 코드
+### 팀원 코드 (파일명 앞에 반드시 포함)
 | 팀원 | 코드 | 예시 |
 |------|------|------|
 | CEO re.eul | `ceo` | `ceo-strategy-20260310.md` |
@@ -187,38 +217,18 @@ GitHub 공식 등록 (Nguyen Trang)
 
 ---
 
-## 🔧 운영 기술 메모 (2026-03-25 등록)
+## 🔧 운영 기술 메모
 
-### Git Push 표준 절차
+### Git Push 방법 (2026-03-25 등록)
+- VM 내부에서 `git push` 실행 → **GitHub 프록시 차단 (HTTP 403)**
+- **정상 방법**: 크롬 브라우저에서 github.com 접속 → 웹 UI 파일 업로드
+- **tobecon 확정 방법**: Colab이 GitHub push 창구 역할 (GITHUB_TOKEN → Colab Secrets)
 
-**문제**: VM 내부에서 `git push` → GitHub 프록시 차단 (HTTP 403)
+### MCCC 미완성 현황 (2026-04-13 점검)
+- ✅ 작동 중: Mission Control 대시보드, AI Agents 생성, Socket.IO 연동
+- ❌ 미구현: Team Chat (채널·메시지·회의실), Skill Bank, Co-op Buy, Field Ops, Analytics, Settings
+- ⚠️ JS 오류: WebSocket disconnect 핸들러 syntax error (`style.color: =` → `style.color =`)
+- 📋 MCCC Agent Team에 와룡 미등록 (현재 5명: re.eul·Koda·Trang·Kbin·Malu)
 
-**원인**: VM 내 `HTTPS_PROXY=http://localhost:3128` → GitHub 차단 목록
-
-**해결 — 크롬 브라우저 웹 UI 표준 절차**:
-1. 대표님 크롬 브라우저에서 `https://github.com/wooriapt79/mulberry-` 접속
-2. 신규 파일: `+ (Add file)` → `Create new file`
-   - URL: `https://github.com/wooriapt79/mulberry-/new/main/[폴더경로]`
-3. 기존 파일 수정: 파일 클릭 → ✏️ 편집 아이콘
-   - URL: `https://github.com/wooriapt79/mulberry-/edit/main/[파일경로]`
-4. 파일명 입력 → 내용 작성 → "Commit changes..." 클릭
-5. 커밋 메시지 입력 → "Commit directly to main" → "Commit changes"
-
-**JavaScript 내용 삽입 방법** (CodeMirror 6 에디터):
-```javascript
-const cmContent = document.querySelector('.cm-content');
-cmContent.focus();
-document.execCommand('selectAll');
-document.execCommand('delete');
-document.execCommand('insertText', false, 내용);
-```
-
-**이 방법으로 2026-03-26~29 동안 총 8개 파일 GitHub 등록 완료**:
-- docs/architecture/MULBERRY_FAMILY_AI_MANIFESTO_v1_20260326.md
-- docs/architecture/kbin-multi-mentor-junior-lab-algorithm-v2-20260325.md
-- team-reports/koda/KODA_FROM_FAMILY.md
-- team-reports/koda/koda-skillbank-deploy-day2-20260325.md
-- team-reports/koda/koda-raspberry-emergency-alert-logic-20260325.md
-- team-reports/koda/koda-tobecorn-spec-request-list-20260325.md
-- ARCHITECTURE.md (업데이트)
-- CLAUDE.md (이 파일)
+작업 확인 필요: https://mulberry-mission-control-production.up.railway.app/
+디자인 파일 적용에 UTF8 이모지 깨짐 현상 확인 필요.
