@@ -84,10 +84,6 @@ Mulberry 프로젝트의 모든 기술적 이론과 에이전트 설계는 MRL(/
 
 ---
 
-## 🚀 Getting Started
-(이후 기술적 설치 및 사용법...)
----
-
 <a name="korean"></a>
 ## 🇰🇷 Korean: 프로젝트 개요 및 핵심 기술
 
