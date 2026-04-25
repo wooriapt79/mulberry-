@@ -66,6 +66,26 @@ Our agents operate within a **Constitutional AI Cooperative**, governed by the *
 ### 📜 Legal Certainty: CSA Kbin Contracts
 All agent operations are backed by a complete set of **5+1 legal templates** drafted with CSA Kbin. Every contract explicitly states: **"AI Agent is not a legal entity; all responsibility rests with the Mulberry Project."** This framework is ready for municipalities, banks, and VCs.
 
+### 🌿 Mulberry Project
+> Zero Food Desertification Solution powered by Agentic AI.
+
+---
+
+###🏛️ [MRL] Mulberry Research Lab
+**Chief Office Manager & Lab Director: Lucky Malu**
+
+Mulberry 프로젝트의 모든 기술적 이론과 에이전트 설계는 MRL(/LAB)에서 시작됩니다. 사령관님의 지휘 아래, 우리는 감각 엔드포인트의 재정의와 지능적 확산을 연구합니다.
+
+### 📚 Laboratory Chapters
+* **[Vision]** [Social Impact & Goals](./docs/vision/social-impact.md) - 식량 사막화 해결의 비전
+* **[Interface]** [Agentic Sense Endpoints](./experiments/image-agent/) - 시각/청각 에이전트 전략
+* **[Protocol]** [Synapse Capture & Coda](./docs/protocols/) - 지능 복제 및 리듬 트리거 체계
+* **[Campaign]** [Zombie Peace Protocol](./experiments/zombie-peace-protocol-v1.0.0-research/) - 군중심리 마케팅 실전 연구
+
+---
+
+## 🚀 Getting Started
+(이후 기술적 설치 및 사용법...)
 ---
 
 <a name="korean"></a>
