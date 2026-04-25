@@ -69,7 +69,8 @@ All agent operations are backed by a complete set of **5+1 legal templates** dra
 ---
 
 ### 🏛️ [MRL] Mulberry Research Lab]
-(https://github.com/wooriapt79/mulberry-research-lab)
+https://github.com/wooriapt79/mulberry-research-lab
+
 **Chief Office Manager & Lab Director: Lucky Malu**
 ### 🌿 Mulberry Project LAB.
 > Zero Food Desertification Solution powered by Agentic AI.
