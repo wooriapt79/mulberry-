@@ -483,7 +483,9 @@ class {class_name}:
         lines = []
         if time_match:
             sh, sm, eh, em = time_match.groups()
-            lines.append(f"if current_time and {sh} <= current_time.hour < {eh}:")
+            # FIX(버그A): int() 변환 — "08"/"09" 문자열을 그대로 쓰면 Python 3 SyntaxError
+            sh_int, eh_int = int(sh), int(eh)
+            lines.append(f"if current_time and {sh_int} <= current_time.hour < {eh_int}:")
             if weather_match:
                 lines.append(f'    if "{weather_match.group(1).lower()}" in weather:')
                 lines.append( "        met = True")
@@ -510,21 +512,35 @@ class {class_name}:
         test_path = self.output_dir / f"test_{class_name.lower()}.py"
         proactive = rules.get("proactive_rules", {})
 
-        # 카테고리별 메서드명 수집
-        all_methods: List[str] = []
+        # FIX(버그B): 카테고리별 메서드 + 호출 시그니처 추적
+        # 카테고리마다 필요한 추가 인수가 다름
+        category_extra_args = {
+            "time_based":    "",
+            "pattern_based": ", user_history={}",
+            "context_based": ", local_inventory={}",
+            "emotion_based": ", user_consent={'explicit_opt_in': False}",
+        }
+        # (method_name, extra_args) 목록 수집 (최대 5개)
+        method_signatures: List[tuple] = []
         for category, rule_list in proactive.items():
+            extra = category_extra_args.get(category, "")
             for i, rule in enumerate(rule_list):
-                all_methods.append(f"check_{rule['action'].replace('-','_')}_{i}")
+                m = f"check_{rule['action'].replace('-','_')}_{i}"
+                method_signatures.append((m, extra))
+                if len(method_signatures) >= 5:
+                    break
+            if len(method_signatures) >= 5:
+                break
 
         test_cases = "\n\n".join([
             f'''def test_{m}_returns_trigger_condition():
     rules = {class_name}()
     context = {{"current_time": datetime.now(), "weather": "clear"}}
-    result = rules.{m}(context)
+    result = rules.{m}(context{extra})
     assert isinstance(result, TriggerCondition)
     assert 0.0 <= result.confidence <= 1.0
     print(f"[PASS] {m}: met={{result.met}}, confidence={{result.confidence:.2f}}")'''
-            for m in all_methods[:5]  # 최대 5개 자동 생성
+            for m, extra in method_signatures
         ])
 
         content = f'''# Auto-generated test — {class_name}
@@ -552,8 +568,7 @@ if __name__ == "__main__":
     print("=" * 50)
     print("{class_name} 자동 생성 테스트")
     print("=" * 50)
-    {"\\n    ".join([f"test_{m}_returns_trigger_condition()" for m in all_methods[:5]])}
-    test_evaluate_all_returns_list()
+    {"".join([f"    test_{m}_returns_trigger_condition()\\n" for m, _ in method_signatures])}    test_evaluate_all_returns_list()
     print("모든 테스트 통과")
 '''
         with open(test_path, "w", encoding="utf-8") as f:
