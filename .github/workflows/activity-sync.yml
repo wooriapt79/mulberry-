@@ -1,0 +1,103 @@
+name: "U0001F310 Mulberry Activity Sync"
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch activity and update files
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PYEOF'
+          import json, urllib.request, os, re
+          from datetime import datetime, timezone
+
+          TOKEN = os.environ["GITHUB_TOKEN"]
+          OWNER = "wooriapt79"
+          REPOS = [
+              ("mulberry-research-lab", "Research LAB"),
+              ("mulberry_memory_bank",  "Memory BANK"),
+              ("mulberry-open-api",     "Open API"),
+              ("Mulberry-Agent-Team-Formation-System", "MATF"),
+          ]
+
+          def gh(path):
+              req = urllib.request.Request(
+                  f"https://api.github.com{path}",
+                  headers={"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github.v3+json"}
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=10) as r:
+                      return json.loads(r.read())
+              except Exception as e:
+                  print(f"[WARN] {path}: {e}")
+                  return []
+
+          now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+          digest = [f"# Mulberry Ecosystem Activity Digest\n\n> Last updated: **{now}**\n\n---\n\n"]
+
+          for repo, label in REPOS:
+              issues  = gh(f"/repos/{OWNER}/{repo}/issues?state=open&per_page=3&sort=updated")
+              commits = gh(f"/repos/{OWNER}/{repo}/commits?per_page=3")
+              repo_url = f"https://github.com/{OWNER}/{repo}"
+              digest.append(f"## {label} ([{repo}]({repo_url}))\n\n")
+              if issues and isinstance(issues, list):
+                  digest.append("**Open Issues:**\n")
+                  for i in issues[:3]:
+                      digest.append(f"- [{i['title']}]({i['html_url']}) #{i['number']}\n")
+                  digest.append("\n")
+              if commits and isinstance(commits, list):
+                  digest.append("**Recent Commits:**\n")
+                  for c in commits[:3]:
+                      msg = c['commit']['message'].split('\n')[0][:70]
+                      sha = c['sha'][:7]
+                      url = f"{repo_url}/commit/{c['sha']}"
+                      digest.append(f"- [`{sha}`]({url}) {msg}\n")
+                  digest.append("\n")
+              digest.append(f"---\n\n")
+
+          with open("ACTIVITY_DIGEST.md", "w") as f:
+              f.writelines(digest)
+
+          dashboard = "<!-- ACTIVITY_DASHBOARD_START -->\n"
+          dashboard += "## Mulberry Ecosystem — Live Hub\n\n"
+          dashboard += f"> Auto-updated: {now}\n\n"
+          dashboard += "| Repo | Role |\n|------|------|\n"
+          for repo, label in REPOS:
+              url = f"https://github.com/{OWNER}/{repo}"
+              dashboard += f"| [{label}]({url}) | {repo} |\n"
+          dashboard += "\n-> Full activity log: [ACTIVITY_DIGEST.md](./ACTIVITY_DIGEST.md)\n"
+          dashboard += "<!-- ACTIVITY_DASHBOARD_END -->\n"
+
+          with open("README.md", "r") as f:
+              readme = f.read()
+
+          if "<!-- ACTIVITY_DASHBOARD_START -->" in readme:
+              readme = re.sub(r'<!-- ACTIVITY_DASHBOARD_START -->.*?<!-- ACTIVITY_DASHBOARD_END -->', dashboard, readme, flags=re.DOTALL)
+          else:
+              idx = readme.find('\n')
+              readme = readme[:idx+1] + '\n' + dashboard + '\n' + readme[idx+1:]
+
+          with open("README.md", "w") as f:
+              f.write(readme)
+
+          print(f"Done: {now}")
+          PYEOF
+
+      - name: Commit and Push
+        run: |
+          git config user.name "Mulberry-ActivityBot"
+          git config user.email "activity-bot@mulberry.ai"
+          git add ACTIVITY_DIGEST.md README.md
+          git diff --staged --quiet || git commit -m "chore: daily activity sync $(date -u '+%Y-%m-%d')"
+          git push
