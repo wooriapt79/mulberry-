@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-11 01:23 UTC**
+> Last updated: **2026-05-12 03:32 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
-- [[RFC] 도구 공유 레이어: MCP를 넘어선 실행 민주화 인프라`](https://github.com/wooriapt79/mulberry-research-lab/issues/24) #24
-- [[AGENDA-D] Multi-Brand AI Collaboration — 멀티 AI 팀 협업 연구 트랙](https://github.com/wooriapt79/mulberry-research-lab/issues/32) #32
-- [[AGENDA-C] Human-Centered Profiling — 어르신 코뭐니티 AI 연구 트랙](https://github.com/wooriapt79/mulberry-research-lab/issues/31) #31
+- [[Bug/P0] Mission Control 채팅 모듈 — Backend API 404 + 사이드바 누락 + 이모지 폰트 깨짐 (3개 연결고리 끊김)](https://github.com/wooriapt79/mulberry-research-lab/issues/38) #38
+- [[Trang 작업일지] 공유 레이어 구축 Day 1 | Trang의 보물 — 8가지 기능 목록](https://github.com/wooriapt79/mulberry-research-lab/issues/34) #34
+- [Fix code hygiene in Railway Agent workflow](https://github.com/wooriapt79/mulberry-research-lab/pull/36) #36
 
 **Recent Commits:**
-- [`2e70f28`](https://github.com/wooriapt79/mulberry-research-lab/commit/2e70f28994df9a0eeb3874f11a839a8f9a325d7f) Feat: Add comment_body input to workflow_dispatch and pass arguments t
-- [`24fd27c`](https://github.com/wooriapt79/mulberry-research-lab/commit/24fd27c8e913952540de311f6d8ca31ef89b871e) Feat: Make post_issue24_comment.py generic for any issue
-- [`54c256c`](https://github.com/wooriapt79/mulberry-research-lab/commit/54c256c2ac3543da0389110a4db304449bfc68ab) Add repository hygiene check script
+- [`f1b6a25`](https://github.com/wooriapt79/mulberry-research-lab/commit/f1b6a25c2f6e6623908e33efa77ecadedba82b01) Merge pull request #37 from wooriapt79/railway/code-change-kIavWp
+- [`44111ae`](https://github.com/wooriapt79/mulberry-research-lab/commit/44111ae612a65d80c3d8abe214e17c411d91cd36) refactor: generate Issue #34 comment body dynamically via Python
+- [`cb39c4e`](https://github.com/wooriapt79/mulberry-research-lab/commit/cb39c4eae359e6d701f3d7569550802982f32f1e) Merge pull request #35 from wooriapt79/railway/code-change-hLPzCk
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`ac102e0`](https://github.com/wooriapt79/mulberry_memory_bank/commit/ac102e061e6d03aecebc525c818233472cd08fe9) [LAB->Bank] activity synced
-- [`0889aaa`](https://github.com/wooriapt79/mulberry_memory_bank/commit/0889aaa1c0ce14ab0a8ee8158549ce3b5bf964e5) [LAB->Bank] activity synced
-- [`b51a672`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b51a67218e9c6088146c056ffd09daaac1b3f944) [LAB->Bank] activity synced
+- [`0c25c87`](https://github.com/wooriapt79/mulberry_memory_bank/commit/0c25c87ac580da0fac4e7d5c9cbc253cc1536efb) [LAB->Bank] activity synced
+- [`2b16da1`](https://github.com/wooriapt79/mulberry_memory_bank/commit/2b16da1906c4a00ab872af06121e27af13bf8238) [LAB->Bank] activity synced
+- [`7844406`](https://github.com/wooriapt79/mulberry_memory_bank/commit/7844406247f9fdc267a2196326d9aa550159d941) [LAB->Bank] activity synced
 
 ---
 
