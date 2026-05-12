@@ -115,3 +115,8 @@ Copyright © 2026 **Mulberry Project (re.eul)**. All rights reserved. *This syst
 # Insurance_Edu_Course_project
 Mulberry Intelligence Academy &amp; Certification Platform (V2.0) Standardizing AI Agent Competency for Regulated Industries
 
+- Insurance_Education_Course_project-v4
+- Insurance_Education_Course_project-v3
+- Insurance_Education_Course_project-v2
+- Insurance_Education_Course_project
+
