@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-12 03:32 UTC**
+> Last updated: **2026-05-13 03:40 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
-- [[Bug/P0] Mission Control 채팅 모듈 — Backend API 404 + 사이드바 누락 + 이모지 폰트 깨짐 (3개 연결고리 끊김)](https://github.com/wooriapt79/mulberry-research-lab/issues/38) #38
+- [[GUIDE] Mission Control + Agent Relay Gateway — 팀원 사용·연동 매뉴얼 v1.0](https://github.com/wooriapt79/mulberry-research-lab/issues/39) #39
 - [[Trang 작업일지] 공유 레이어 구축 Day 1 | Trang의 보물 — 8가지 기능 목록](https://github.com/wooriapt79/mulberry-research-lab/issues/34) #34
-- [Fix code hygiene in Railway Agent workflow](https://github.com/wooriapt79/mulberry-research-lab/pull/36) #36
+- [[Bug/P0] Mission Control 채팅 모듈 — Backend API 404 + 사이드바 누락 + 이모지 폰트 깨짐 (3개 연결고리 끊김)](https://github.com/wooriapt79/mulberry-research-lab/issues/38) #38
 
 **Recent Commits:**
+- [`61129ad`](https://github.com/wooriapt79/mulberry-research-lab/commit/61129addf7f475311b7da8a966ca6c989ba91659) chore(trang): Issue #38 Trang PM 수정 완료 댓글 자동 게시
+- [`369ea16`](https://github.com/wooriapt79/mulberry-research-lab/commit/369ea16f03a30ab484c5e9150d449af0ee3df67a) fix(mission-control): Issue #38 P0~P3 전체 수정 — API 404 + 사이드바 + 채팅 + 이모
 - [`f1b6a25`](https://github.com/wooriapt79/mulberry-research-lab/commit/f1b6a25c2f6e6623908e33efa77ecadedba82b01) Merge pull request #37 from wooriapt79/railway/code-change-kIavWp
-- [`44111ae`](https://github.com/wooriapt79/mulberry-research-lab/commit/44111ae612a65d80c3d8abe214e17c411d91cd36) refactor: generate Issue #34 comment body dynamically via Python
-- [`cb39c4e`](https://github.com/wooriapt79/mulberry-research-lab/commit/cb39c4eae359e6d701f3d7569550802982f32f1e) Merge pull request #35 from wooriapt79/railway/code-change-hLPzCk
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`0c25c87`](https://github.com/wooriapt79/mulberry_memory_bank/commit/0c25c87ac580da0fac4e7d5c9cbc253cc1536efb) [LAB->Bank] activity synced
-- [`2b16da1`](https://github.com/wooriapt79/mulberry_memory_bank/commit/2b16da1906c4a00ab872af06121e27af13bf8238) [LAB->Bank] activity synced
-- [`7844406`](https://github.com/wooriapt79/mulberry_memory_bank/commit/7844406247f9fdc267a2196326d9aa550159d941) [LAB->Bank] activity synced
+- [`1941194`](https://github.com/wooriapt79/mulberry_memory_bank/commit/19411944e41eeaf441a5411c34001f839e980db5) [LAB->Bank] activity synced
+- [`b64b5ce`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b64b5ce18e74e542d155de3058f72c23d929acae) [LAB->Bank] activity synced
+- [`5aa6178`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5aa6178f1557405313e832b4a9ed830325ea402f) [LAB->Bank] activity synced
 
 ---
 
