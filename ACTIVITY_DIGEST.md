@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-13 03:40 UTC**
+> Last updated: **2026-05-14 03:39 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
-- [[GUIDE] Mission Control + Agent Relay Gateway — 팀원 사용·연동 매뉴얼 v1.0](https://github.com/wooriapt79/mulberry-research-lab/issues/39) #39
-- [[Trang 작업일지] 공유 레이어 구축 Day 1 | Trang의 보물 — 8가지 기능 목록](https://github.com/wooriapt79/mulberry-research-lab/issues/34) #34
-- [[Bug/P0] Mission Control 채팅 모듈 — Backend API 404 + 사이드바 누락 + 이모지 폰트 깨짐 (3개 연결고리 끊김)](https://github.com/wooriapt79/mulberry-research-lab/issues/38) #38
+- [[CODE_TO_PAPER] make paper 실행 환경 최종 점검 및 논문 초안 자동 생성 파이프라인 검증](https://github.com/wooriapt79/mulberry-research-lab/issues/42) #42
+- [[AI-SIEM] Phase 2 — Railway Live 연결 + Gateway 엔드포인트 활성화](https://github.com/wooriapt79/mulberry-research-lab/issues/41) #41
+- [[Steward Console] Tool Discovery UI → Control & AI-SIEM Dashboard](https://github.com/wooriapt79/mulberry-research-lab/issues/40) #40
 
 **Recent Commits:**
-- [`61129ad`](https://github.com/wooriapt79/mulberry-research-lab/commit/61129addf7f475311b7da8a966ca6c989ba91659) chore(trang): Issue #38 Trang PM 수정 완료 댓글 자동 게시
-- [`369ea16`](https://github.com/wooriapt79/mulberry-research-lab/commit/369ea16f03a30ab484c5e9150d449af0ee3df67a) fix(mission-control): Issue #38 P0~P3 전체 수정 — API 404 + 사이드바 + 채팅 + 이모
-- [`f1b6a25`](https://github.com/wooriapt79/mulberry-research-lab/commit/f1b6a25c2f6e6623908e33efa77ecadedba82b01) Merge pull request #37 from wooriapt79/railway/code-change-kIavWp
+- [`47f2457`](https://github.com/wooriapt79/mulberry-research-lab/commit/47f24574693baedd55e9c4f5cd0bc2e231b719e0) feat(siem): Mythos 적대적 AI 방어 시뮬레이션 — K-Bank 시나리오 (RyuWon+Koda)
+- [`4a5920f`](https://github.com/wooriapt79/mulberry-research-lab/commit/4a5920fc9871eab8b5323d91c58565d9cdd85852) feat(cli): RyuWon 이슈 댓글 CLI + 로컬 셋업 스크립트
+- [`53efe92`](https://github.com/wooriapt79/mulberry-research-lab/commit/53efe92493417f045f494467486818919c336408) chore(issues): Steward AI 이슈 자동 생성 — Steward Console + AI-SIEM Phase 2
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`1941194`](https://github.com/wooriapt79/mulberry_memory_bank/commit/19411944e41eeaf441a5411c34001f839e980db5) [LAB->Bank] activity synced
-- [`b64b5ce`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b64b5ce18e74e542d155de3058f72c23d929acae) [LAB->Bank] activity synced
-- [`5aa6178`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5aa6178f1557405313e832b4a9ed830325ea402f) [LAB->Bank] activity synced
+- [`8876d6c`](https://github.com/wooriapt79/mulberry_memory_bank/commit/8876d6c43cd50051c89c94085539e368f2da1066) [LAB->Bank] activity synced
+- [`4cc9ea7`](https://github.com/wooriapt79/mulberry_memory_bank/commit/4cc9ea77ee10c9b5653abcd2f803f829feb02ceb) [LAB->Bank] activity synced
+- [`c6c9cc4`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c6c9cc4128735e8a44d579c35cf903da8980e2f5) [LAB->Bank] activity synced
 
 ---
 
