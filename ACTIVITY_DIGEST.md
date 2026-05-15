@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-14 03:39 UTC**
+> Last updated: **2026-05-15 03:42 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[Steward Console] Tool Discovery UI → Control & AI-SIEM Dashboard](https://github.com/wooriapt79/mulberry-research-lab/issues/40) #40
 
 **Recent Commits:**
-- [`47f2457`](https://github.com/wooriapt79/mulberry-research-lab/commit/47f24574693baedd55e9c4f5cd0bc2e231b719e0) feat(siem): Mythos 적대적 AI 방어 시뮬레이션 — K-Bank 시나리오 (RyuWon+Koda)
-- [`4a5920f`](https://github.com/wooriapt79/mulberry-research-lab/commit/4a5920fc9871eab8b5323d91c58565d9cdd85852) feat(cli): RyuWon 이슈 댓글 CLI + 로컬 셋업 스크립트
-- [`53efe92`](https://github.com/wooriapt79/mulberry-research-lab/commit/53efe92493417f045f494467486818919c336408) chore(issues): Steward AI 이슈 자동 생성 — Steward Console + AI-SIEM Phase 2
+- [`53bcccc`](https://github.com/wooriapt79/mulberry-research-lab/commit/53bccccd4c0304a423827d02b4cddb74e6d96edd) ci: 팀 다음 단계 이슈 자동 생성 워크플로우
+- [`45919df`](https://github.com/wooriapt79/mulberry-research-lab/commit/45919df4fff2b7341b2feb9f33284c3d9442ebaa) feat: #35 Agent 권한 승인 시스템 구현 + Koda 작업 보고서
+- [`1cc5e38`](https://github.com/wooriapt79/mulberry-research-lab/commit/1cc5e3840210aa3057e6eed7be798fe4fee98187) feat: #40 #41 #42 — GET /v1/tools 풀 필드, AI-SIEM 라우터, requirements 업데이트
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
+- [`695c3c8`](https://github.com/wooriapt79/mulberry_memory_bank/commit/695c3c8d7475d348341af4e88f8aef49918ae1f9) [LAB->Bank] activity synced
 - [`8876d6c`](https://github.com/wooriapt79/mulberry_memory_bank/commit/8876d6c43cd50051c89c94085539e368f2da1066) [LAB->Bank] activity synced
 - [`4cc9ea7`](https://github.com/wooriapt79/mulberry_memory_bank/commit/4cc9ea77ee10c9b5653abcd2f803f829feb02ceb) [LAB->Bank] activity synced
-- [`c6c9cc4`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c6c9cc4128735e8a44d579c35cf903da8980e2f5) [LAB->Bank] activity synced
 
 ---
 
