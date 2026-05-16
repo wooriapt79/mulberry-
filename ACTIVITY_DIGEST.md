@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-15 03:42 UTC**
+> Last updated: **2026-05-16 03:27 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
-- [[CODE_TO_PAPER] make paper 실행 환경 최종 점검 및 논문 초안 자동 생성 파이프라인 검증](https://github.com/wooriapt79/mulberry-research-lab/issues/42) #42
-- [[AI-SIEM] Phase 2 — Railway Live 연결 + Gateway 엔드포인트 활성화](https://github.com/wooriapt79/mulberry-research-lab/issues/41) #41
-- [[Steward Console] Tool Discovery UI → Control & AI-SIEM Dashboard](https://github.com/wooriapt79/mulberry-research-lab/issues/40) #40
+- [[공유레이어] Image Agent 광고 시장 진입 모듈 설계 (BTS 컴백 등 글로벌 이벤트 타겟)](https://github.com/wooriapt79/mulberry-research-lab/issues/45) #45
+- [[README 개편] Mulberry Research Lab 대문 업그레이드 + 전 세계 보도자료 발송 (Malu 실장 책임)](https://github.com/wooriapt79/mulberry-research-lab/issues/48) #48
+- [[안정화] Mission Control 모듈 전체 점검 및 수정 — Koda 담당](https://github.com/wooriapt79/mulberry-research-lab/issues/49) #49
 
 **Recent Commits:**
-- [`53bcccc`](https://github.com/wooriapt79/mulberry-research-lab/commit/53bccccd4c0304a423827d02b4cddb74e6d96edd) ci: 팀 다음 단계 이슈 자동 생성 워크플로우
-- [`45919df`](https://github.com/wooriapt79/mulberry-research-lab/commit/45919df4fff2b7341b2feb9f33284c3d9442ebaa) feat: #35 Agent 권한 승인 시스템 구현 + Koda 작업 보고서
-- [`1cc5e38`](https://github.com/wooriapt79/mulberry-research-lab/commit/1cc5e3840210aa3057e6eed7be798fe4fee98187) feat: #40 #41 #42 — GET /v1/tools 풀 필드, AI-SIEM 라우터, requirements 업데이트
+- [`603324b`](https://github.com/wooriapt79/mulberry-research-lab/commit/603324b46432a431fc3fd5248d89120298ea6b4a) Add AI-SIEM module to mission controlfeat(ui): Issue #49 P2 -- AI-SIEM
+- [`6a2c41d`](https://github.com/wooriapt79/mulberry-research-lab/commit/6a2c41dceaa911e76336408b734d2f55ffddad52) fix(gateway): Issue #49 P1 -- /api/health + /v1/tools endpoint added
+- [`3ee946c`](https://github.com/wooriapt79/mulberry-research-lab/commit/3ee946c2603705f8c808e276bfc6e52c4c883055) ci: Koda 담당 이슈 #40 #41 #44 완료 보고 + 결과 보고서 링크 댓글
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`695c3c8`](https://github.com/wooriapt79/mulberry_memory_bank/commit/695c3c8d7475d348341af4e88f8aef49918ae1f9) [LAB->Bank] activity synced
-- [`8876d6c`](https://github.com/wooriapt79/mulberry_memory_bank/commit/8876d6c43cd50051c89c94085539e368f2da1066) [LAB->Bank] activity synced
-- [`4cc9ea7`](https://github.com/wooriapt79/mulberry_memory_bank/commit/4cc9ea77ee10c9b5653abcd2f803f829feb02ceb) [LAB->Bank] activity synced
+- [`261f6e2`](https://github.com/wooriapt79/mulberry_memory_bank/commit/261f6e2a084d55928d509555fdfc2ef5bf4a2f19) [LAB->Bank] activity synced
+- [`5367416`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5367416679ad7b499a7dc4843a22e9fc1e1415d5) [LAB->Bank] activity synced
+- [`ca9496c`](https://github.com/wooriapt79/mulberry_memory_bank/commit/ca9496cf7ed13ff7c5f12a09dddf4ba09a0e0c12) [LAB->Bank] activity synced
 
 ---
 
