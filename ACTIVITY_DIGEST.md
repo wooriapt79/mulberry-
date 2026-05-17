@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-16 03:27 UTC**
+> Last updated: **2026-05-17 03:41 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [[Test] pulse_daemon_async.py v2.0 Railway 상시 가동 및 비동기 성능 검증](https://github.com/wooriapt79/mulberry-research-lab/issues/51) #51
+- [[Kickoff] Mulberry SDK Pulse Daemon v1.0 기본 구조 설계 및 파일 생성](https://github.com/wooriapt79/mulberry-research-lab/issues/50) #50
 - [[공유레이어] Image Agent 광고 시장 진입 모듈 설계 (BTS 컴백 등 글로벌 이벤트 타겟)](https://github.com/wooriapt79/mulberry-research-lab/issues/45) #45
-- [[README 개편] Mulberry Research Lab 대문 업그레이드 + 전 세계 보도자료 발송 (Malu 실장 책임)](https://github.com/wooriapt79/mulberry-research-lab/issues/48) #48
-- [[안정화] Mission Control 모듈 전체 점검 및 수정 — Koda 담당](https://github.com/wooriapt79/mulberry-research-lab/issues/49) #49
 
 **Recent Commits:**
-- [`603324b`](https://github.com/wooriapt79/mulberry-research-lab/commit/603324b46432a431fc3fd5248d89120298ea6b4a) Add AI-SIEM module to mission controlfeat(ui): Issue #49 P2 -- AI-SIEM
-- [`6a2c41d`](https://github.com/wooriapt79/mulberry-research-lab/commit/6a2c41dceaa911e76336408b734d2f55ffddad52) fix(gateway): Issue #49 P1 -- /api/health + /v1/tools endpoint added
-- [`3ee946c`](https://github.com/wooriapt79/mulberry-research-lab/commit/3ee946c2603705f8c808e276bfc6e52c4c883055) ci: Koda 담당 이슈 #40 #41 #44 완료 보고 + 결과 보고서 링크 댓글
+- [`f6dc2d5`](https://github.com/wooriapt79/mulberry-research-lab/commit/f6dc2d57bdf5e576f444921afb58dffcf2ba62f1) koda: RyuWon Qwen 위생 테스트 결과 보고 — 토큰 대기로 보류
+- [`34f7361`](https://github.com/wooriapt79/mulberry-research-lab/commit/34f7361f250dd6b3b6a308171e3fe95d1ab3f23b) koda: agent-gateway — RyuWon Qwen 위생 테스트 엔드포인트 추가
+- [`12edfb8`](https://github.com/wooriapt79/mulberry-research-lab/commit/12edfb8fe69f77e750265440896747a17d26628c) Add Pulse Daemon with async heartbeat and logging
 
 ---
 
@@ -26,23 +26,23 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`261f6e2`](https://github.com/wooriapt79/mulberry_memory_bank/commit/261f6e2a084d55928d509555fdfc2ef5bf4a2f19) [LAB->Bank] activity synced
-- [`5367416`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5367416679ad7b499a7dc4843a22e9fc1e1415d5) [LAB->Bank] activity synced
-- [`ca9496c`](https://github.com/wooriapt79/mulberry_memory_bank/commit/ca9496cf7ed13ff7c5f12a09dddf4ba09a0e0c12) [LAB->Bank] activity synced
+- [`2e4ea78`](https://github.com/wooriapt79/mulberry_memory_bank/commit/2e4ea784407d4ff54150f3ee90387e31c014585f) [LAB->Bank] activity synced
+- [`22b6597`](https://github.com/wooriapt79/mulberry_memory_bank/commit/22b65978db124b3a845d4ba7a24571d79e154508) [LAB->Bank] activity synced
+- [`cf158e4`](https://github.com/wooriapt79/mulberry_memory_bank/commit/cf158e490e51d0b65e76da9b9215834244cff15c) [LAB->Bank] activity synced
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
+- [Fix: Remove typo 'h' from server.js line 249](https://github.com/wooriapt79/mulberry-open-api/pull/19) #19
+- [Fix: Remove typo 'h' from server.js line 249](https://github.com/wooriapt79/mulberry-open-api/pull/18) #18
 - [[작업지시] Koda CTO — 2026-04-30 스프린트 (P0: 메뉴배포+이모지 / P1: 채팅+Jr.교육 / P2: ImageAgent+3Repo)](https://github.com/wooriapt79/mulberry-open-api/issues/17) #17
-- [[선언] 설계 원칙 제1조 — Mulberry Agent는 단순한 서비스 제공자가 아니라 우리 사회의 구성원이다](https://github.com/wooriapt79/mulberry-open-api/issues/16) #16
-- [Fix: Add root path handler to serve Team Chat UI](https://github.com/wooriapt79/mulberry-open-api/pull/11) #11
 
 **Recent Commits:**
-- [`6c9a08b`](https://github.com/wooriapt79/mulberry-open-api/commit/6c9a08b54d6dba4da523a9238d0a2ca91a2d1c29) fix: UTF-8 encoding + Railway deploy trigger (v3.2.1)
-- [`f77f3b2`](https://github.com/wooriapt79/mulberry-open-api/commit/f77f3b27dccd5c62b8648655e86872cb12c49cfe) fix: 상단 메뉴 복원 — MissionControlModules + renderMainNavigation + window.
-- [`d834460`](https://github.com/wooriapt79/mulberry-open-api/commit/d834460a1757f25d8937c1f57d0414e600890bcc) Merge pull request #14 from wooriapt79/wooriapt79-patch-1
+- [`304dbfb`](https://github.com/wooriapt79/mulberry-open-api/commit/304dbfbdcf16f8ab8eff96191e63c425f39d67b4) Merge pull request #20 from wooriapt79/railway/code-change-7Nylfi
+- [`6d6ea67`](https://github.com/wooriapt79/mulberry-open-api/commit/6d6ea670ed67c30655bad5f3fd9319f2d6e3448a) fix: remove stray 'h' character from server.js line 249
+- [`5564557`](https://github.com/wooriapt79/mulberry-open-api/commit/55645577aad1131888d31ac281c6b7c12cd700a3) trang: server.js v3.2.2 — /v1/tools endpoint 필드 추가 (agent-gateway URL 
 
 ---
 
