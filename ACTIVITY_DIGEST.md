@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-18 03:56 UTC**
+> Last updated: **2026-05-19 03:50 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
-- [[P3] Mission Control Chat 구현 — Socket.IO 실시간 통신 + A2A 프로토콜](https://github.com/wooriapt79/mulberry-research-lab/issues/53) #53
-- [[공유레이어] Agent 권한 승인 시스템 설계 — approval_engine + approval_scanner](https://github.com/wooriapt79/mulberry-research-lab/issues/54) #54
-- [[공유레이어] Image Agent 광고 시장 진입 모듈 설계 (BTS 컴백 등 글로벌 이벤트 타겟)](https://github.com/wooriapt79/mulberry-research-lab/issues/45) #45
+- [📢 [Proposal] Mulberry Briefing Room (Repo-RAG 기반 외부 브리핑 모듈)](https://github.com/wooriapt79/mulberry-research-lab/issues/64) #64
+- [[Aria · 일반 문의] 이 연구소 소개를 부탁해 -무엇을 하는 연구소인가..?](https://github.com/wooriapt79/mulberry-research-lab/issues/62) #62
+- [[Aria · 일반 문의] 테스트- Wayong](https://github.com/wooriapt79/mulberry-research-lab/issues/61) #61
 
 **Recent Commits:**
-- [`56b9fdd`](https://github.com/wooriapt79/mulberry-research-lab/commit/56b9fddb5c667da6a2c2749d8ef1081529649954) koda: 문화적 이해도 기반 위생 로직 기획안 — Issue #52
-- [`3addfb8`](https://github.com/wooriapt79/mulberry-research-lab/commit/3addfb8e897f27f8f6d604e26f1049357d360941) koda: README 업그레이드 기획안 작성
-- [`ab8d76a`](https://github.com/wooriapt79/mulberry-research-lab/commit/ab8d76abee19e827a17805b701a436548d1626a1) koda: Lynn LAB 참여 시스템 v3.1 작업 완료 보고서
+- [`4e13f14`](https://github.com/wooriapt79/mulberry-research-lab/commit/4e13f14d51cf807a2adca04dcbaaede38a44a3ab) fix(malu): GEMINI_API_KEY secret 이름 수정
+- [`8d53652`](https://github.com/wooriapt79/mulberry-research-lab/commit/8d53652d41309f04d33f24c1376a1716c6ddb8d5) fix(pages): memory_bank submodule 제거 — GitHub Pages 빌드 오류 수정
+- [`184c0cb`](https://github.com/wooriapt79/mulberry-research-lab/commit/184c0cbe3a482b49390baa3bca66d55b994642c8) fix(brand): 방문객 UI 타 브랜드 노출 전면 제거 + Trang 브리핑 파일
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`ac76989`](https://github.com/wooriapt79/mulberry_memory_bank/commit/ac7698906547e34d98e4c59daad7ed74a909bee5) [LAB->Bank] activity synced
-- [`5790a1d`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5790a1d3be9bc40c71c7956cd8affb1bfcf837bd) [LAB->Bank] activity synced
-- [`3eeb1e3`](https://github.com/wooriapt79/mulberry_memory_bank/commit/3eeb1e39381f15407faba0d3605376e74c943c1f) [LAB->Bank] activity synced
+- [`868ad13`](https://github.com/wooriapt79/mulberry_memory_bank/commit/868ad13a7f40aaa0e4d0f8fc065105ed6678b579) [LAB->Bank] activity synced
+- [`470ca1e`](https://github.com/wooriapt79/mulberry_memory_bank/commit/470ca1e884fcfe7b527913e01d649592911f649d) [LAB->Bank] activity synced
+- [`1cdc936`](https://github.com/wooriapt79/mulberry_memory_bank/commit/1cdc9365a09c00bb5ca08cae783cb1e451457bfc) style: README.md status updated by Lynn
 
 ---
 
