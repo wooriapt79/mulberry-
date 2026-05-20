@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-19 03:50 UTC**
+> Last updated: **2026-05-20 03:50 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
-- [📢 [Proposal] Mulberry Briefing Room (Repo-RAG 기반 외부 브리핑 모듈)](https://github.com/wooriapt79/mulberry-research-lab/issues/64) #64
-- [[Aria · 일반 문의] 이 연구소 소개를 부탁해 -무엇을 하는 연구소인가..?](https://github.com/wooriapt79/mulberry-research-lab/issues/62) #62
-- [[Aria · 일반 문의] 테스트- Wayong](https://github.com/wooriapt79/mulberry-research-lab/issues/61) #61
+- [[Malu Agent 검증] P2 체크리스트 항목 7 — @Malu-Agent 응답 테스트](https://github.com/wooriapt79/mulberry-research-lab/issues/60) #60
+- [🎵 [NEWS] Claude for Small Business & Mulberry Project 🎵](https://github.com/wooriapt79/mulberry-research-lab/issues/68) #68
+- [🏛️ Operational Sync Post-Commit (Issue #66 Breakdown)](https://github.com/wooriapt79/mulberry-research-lab/issues/67) #67
 
 **Recent Commits:**
-- [`4e13f14`](https://github.com/wooriapt79/mulberry-research-lab/commit/4e13f14d51cf807a2adca04dcbaaede38a44a3ab) fix(malu): GEMINI_API_KEY secret 이름 수정
-- [`8d53652`](https://github.com/wooriapt79/mulberry-research-lab/commit/8d53652d41309f04d33f24c1376a1716c6ddb8d5) fix(pages): memory_bank submodule 제거 — GitHub Pages 빌드 오류 수정
-- [`184c0cb`](https://github.com/wooriapt79/mulberry-research-lab/commit/184c0cbe3a482b49390baa3bca66d55b994642c8) fix(brand): 방문객 UI 타 브랜드 노출 전면 제거 + Trang 브리핑 파일
+- [`828a061`](https://github.com/wooriapt79/mulberry-research-lab/commit/828a0618830db8f76aa03f751ea0e9b3227337f2) Merge pull request #69 from wooriapt79/railway/code-change-X70cfD
+- [`6d89f6d`](https://github.com/wooriapt79/mulberry-research-lab/commit/6d89f6db43cb0d4d7f307f5a2da5af57c44f306e) fix: handle None target_agent in socketio_server chat_send()
+- [`af3edd1`](https://github.com/wooriapt79/mulberry-research-lab/commit/af3edd103374838dd425ec76c92d477b7cc222a8) feat(p3-phase2): A2A 실제 LLM 호출 구현 — Claude·Gemini·DeepSeek
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`868ad13`](https://github.com/wooriapt79/mulberry_memory_bank/commit/868ad13a7f40aaa0e4d0f8fc065105ed6678b579) [LAB->Bank] activity synced
-- [`470ca1e`](https://github.com/wooriapt79/mulberry_memory_bank/commit/470ca1e884fcfe7b527913e01d649592911f649d) [LAB->Bank] activity synced
-- [`1cdc936`](https://github.com/wooriapt79/mulberry_memory_bank/commit/1cdc9365a09c00bb5ca08cae783cb1e451457bfc) style: README.md status updated by Lynn
+- [`fe12175`](https://github.com/wooriapt79/mulberry_memory_bank/commit/fe12175c2b1f99d97025875e0f6a3b35ce6ef3c4) [LAB->Bank] activity synced
+- [`ffd525f`](https://github.com/wooriapt79/mulberry_memory_bank/commit/ffd525f4cf695efd07dacd888f1a697ea33db8d7) [LAB->Bank] activity synced
+- [`defcdb0`](https://github.com/wooriapt79/mulberry_memory_bank/commit/defcdb0907922c97e86cfeac03dac1409124d044) [LAB->Bank] activity synced
 
 ---
 
