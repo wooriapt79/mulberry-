@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-21 03:59 UTC**
+> Last updated: **2026-05-22 03:55 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [💬 [aria query] 식품사막화 제로 프로적트](https://github.com/wooriapt79/mulberry-research-lab/issues/70) #70
 - [[Malu Agent 검증] P2 체크리스트 항목 7 — @Malu-Agent 응답 테스트](https://github.com/wooriapt79/mulberry-research-lab/issues/60) #60
 - [🎵 [NEWS] Claude for Small Business & Mulberry Project 🎵](https://github.com/wooriapt79/mulberry-research-lab/issues/68) #68
-- [🏛️ Operational Sync Post-Commit (Issue #66 Breakdown)](https://github.com/wooriapt79/mulberry-research-lab/issues/67) #67
 
 **Recent Commits:**
-- [`828a061`](https://github.com/wooriapt79/mulberry-research-lab/commit/828a0618830db8f76aa03f751ea0e9b3227337f2) Merge pull request #69 from wooriapt79/railway/code-change-X70cfD
-- [`6d89f6d`](https://github.com/wooriapt79/mulberry-research-lab/commit/6d89f6db43cb0d4d7f307f5a2da5af57c44f306e) fix: handle None target_agent in socketio_server chat_send()
-- [`af3edd1`](https://github.com/wooriapt79/mulberry-research-lab/commit/af3edd103374838dd425ec76c92d477b7cc222a8) feat(p3-phase2): A2A 실제 LLM 호출 구현 — Claude·Gemini·DeepSeek
+- [`9a6cfbd`](https://github.com/wooriapt79/mulberry-research-lab/commit/9a6cfbd08177c82d45229d11975e710171ef76a6) fix(lynn): heartbeat 항상 커밋되도록 수정 — run_id + git add -f
+- [`317b12d`](https://github.com/wooriapt79/mulberry-research-lab/commit/317b12d08b88cd9edf0f0e9ae06c595c4789f310) fix(lynn): claude-3-haiku-20240307 → claude-haiku-4-5-20251001 (404 de
+- [`937154b`](https://github.com/wooriapt79/mulberry-research-lab/commit/937154b96bd5c831d3bfdc9985ed9f7db7628f7a) Update trang-mulberry-physics-monitor-v2-20260521.py
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`fe12175`](https://github.com/wooriapt79/mulberry_memory_bank/commit/fe12175c2b1f99d97025875e0f6a3b35ce6ef3c4) [LAB->Bank] activity synced
-- [`ffd525f`](https://github.com/wooriapt79/mulberry_memory_bank/commit/ffd525f4cf695efd07dacd888f1a697ea33db8d7) [LAB->Bank] activity synced
-- [`defcdb0`](https://github.com/wooriapt79/mulberry_memory_bank/commit/defcdb0907922c97e86cfeac03dac1409124d044) [LAB->Bank] activity synced
+- [`c7b2b13`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c7b2b13e219f145f99d1df67760588ccaab797fc) [LAB->Bank] activity synced
+- [`809d43a`](https://github.com/wooriapt79/mulberry_memory_bank/commit/809d43acb4e1a2d3a0f6e4c8631c421f89e86683) fix(lynn): Push 403 해결 — remote URL에 Mulberry_CONTROL_TOKEN 명시 주입
+- [`2cbce02`](https://github.com/wooriapt79/mulberry_memory_bank/commit/2cbce02ab617a1b47eae9860456e579ab0bfe3a7) fix(lynn): BANK 레포 heartbeat 항상 커밋되도록 수정 — run_id + git add -f
 
 ---
 
