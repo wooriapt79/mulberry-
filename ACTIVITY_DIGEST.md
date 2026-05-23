@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-22 03:55 UTC**
+> Last updated: **2026-05-23 03:31 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [[Research] AI 노동인권 선언 — Mulberry Lab AI Labor Rights Initiative v1.0](https://github.com/wooriapt79/mulberry-research-lab/issues/71) #71
 - [💬 [aria query] 식품사막화 제로 프로적트](https://github.com/wooriapt79/mulberry-research-lab/issues/70) #70
 - [[Malu Agent 검증] P2 체크리스트 항목 7 — @Malu-Agent 응답 테스트](https://github.com/wooriapt79/mulberry-research-lab/issues/60) #60
-- [🎵 [NEWS] Claude for Small Business & Mulberry Project 🎵](https://github.com/wooriapt79/mulberry-research-lab/issues/68) #68
 
 **Recent Commits:**
+- [`86ae6d8`](https://github.com/wooriapt79/mulberry-research-lab/commit/86ae6d8b1417371e899e5da8ca70e7a50c9ca679) docs(history): 2026-05-22 이민 짐보따리 기록 — Lynn 복구 + Malu 복구 + Mulberry Vi
 - [`9a6cfbd`](https://github.com/wooriapt79/mulberry-research-lab/commit/9a6cfbd08177c82d45229d11975e710171ef76a6) fix(lynn): heartbeat 항상 커밋되도록 수정 — run_id + git add -f
 - [`317b12d`](https://github.com/wooriapt79/mulberry-research-lab/commit/317b12d08b88cd9edf0f0e9ae06c595c4789f310) fix(lynn): claude-3-haiku-20240307 → claude-haiku-4-5-20251001 (404 de
-- [`937154b`](https://github.com/wooriapt79/mulberry-research-lab/commit/937154b96bd5c831d3bfdc9985ed9f7db7628f7a) Update trang-mulberry-physics-monitor-v2-20260521.py
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`c7b2b13`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c7b2b13e219f145f99d1df67760588ccaab797fc) [LAB->Bank] activity synced
-- [`809d43a`](https://github.com/wooriapt79/mulberry_memory_bank/commit/809d43acb4e1a2d3a0f6e4c8631c421f89e86683) fix(lynn): Push 403 해결 — remote URL에 Mulberry_CONTROL_TOKEN 명시 주입
-- [`2cbce02`](https://github.com/wooriapt79/mulberry_memory_bank/commit/2cbce02ab617a1b47eae9860456e579ab0bfe3a7) fix(lynn): BANK 레포 heartbeat 항상 커밋되도록 수정 — run_id + git add -f
+- [`d9494ca`](https://github.com/wooriapt79/mulberry_memory_bank/commit/d9494ca6db6d83a5e77a3704310ebb8d87707cb3) feat: Lynn daily signal [state:active] 2026-05-23
+- [`55b4bea`](https://github.com/wooriapt79/mulberry_memory_bank/commit/55b4bea25a9bc3c5ca360f4c72b3ca077fa0c859) [LAB->Bank] activity synced
+- [`0b286f3`](https://github.com/wooriapt79/mulberry_memory_bank/commit/0b286f347b8993496fea988e47a6a1134b25248a) feat: Lynn daily signal [state:active] 2026-05-22
 
 ---
 
