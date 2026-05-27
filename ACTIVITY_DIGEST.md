@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-26 03:50 UTC**
+> Last updated: **2026-05-27 04:04 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [[MAPA] Code Quality Gate 도입 제안 — 자율코드 파일럿 품질 검증 게이트 정의](https://github.com/wooriapt79/mulberry-research-lab/issues/77) #77
+- [test(quality-gate): Step 2 PR 자동 실행 검증용 테스트 파일](https://github.com/wooriapt79/mulberry-research-lab/pull/78) #78
 - [🌱 [Mulberry Lab 비전] 자율 연구소 선언 — 다양성 기반 아이디어→자산→프로덕션 생태계](https://github.com/wooriapt79/mulberry-research-lab/issues/76) #76
-- [🔄 [Auto Code Pilot v1.0] Stop-Continue 협업 모델 — 자율 코딩 정책 룰 메뉴얼 (자산화)](https://github.com/wooriapt79/mulberry-research-lab/issues/75) #75
-- [🤖 [Auto Code Pilot v1.0] 전 멤버 자율 코딩 시스템 — 아이디어→코드 완성 파이프라인](https://github.com/wooriapt79/mulberry-research-lab/issues/74) #74
 
 **Recent Commits:**
+- [`22fa4fb`](https://github.com/wooriapt79/mulberry-research-lab/commit/22fa4fbc345de42e79d689db3f321541ca9d3970) feat: Lynn daily signal [state:heartbeat] 2026-05-26
+- [`f7928ca`](https://github.com/wooriapt79/mulberry-research-lab/commit/f7928ca9e01bfd34f46571cc3008e2a26dcc5639) feat(quality-gate): Code Quality Gate v1.0 — Phase 1 Python 내부 검증
 - [`3b7ee53`](https://github.com/wooriapt79/mulberry-research-lab/commit/3b7ee53cba5e9edf5a6a76cf44b883d7a8328e8d) feat: index.html 가이드 섹션 + Mission Control 버튼 추가
-- [`844ab04`](https://github.com/wooriapt79/mulberry-research-lab/commit/844ab0493c53b0ed7aeee0e6612be51849e06832) fix: showStatus 마크다운 링크 → HTML 렌더링 (Mission Control 버튼 클릭 지원)
-- [`2d23222`](https://github.com/wooriapt79/mulberry-research-lab/commit/2d23222a19347496295cf959a57a138ec0cc19dc) feat: Lynn daily signal [state:heartbeat] 2026-05-26
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`10d7fc3`](https://github.com/wooriapt79/mulberry_memory_bank/commit/10d7fc34d53d3915b73c326dda71ec846252ee5c) feat: Lynn daily signal [state:active] 2026-05-26
-- [`7f680a2`](https://github.com/wooriapt79/mulberry_memory_bank/commit/7f680a2666462a1d20a90f8370473e98ee26fac2) [LAB->Bank] activity synced
-- [`d7221ea`](https://github.com/wooriapt79/mulberry_memory_bank/commit/d7221eaf47ac7b45c3167e8136ab3f168a1a46ac) [LAB->Bank] activity synced
+- [`14ad2d0`](https://github.com/wooriapt79/mulberry_memory_bank/commit/14ad2d090205d351cc74a836ff6fa2e6cdd0e378) [LAB->Bank] activity synced
+- [`a3dd48a`](https://github.com/wooriapt79/mulberry_memory_bank/commit/a3dd48ac26bdfeba63de6d847bf3ff7f105c804a) [LAB->Bank] activity synced
+- [`28237ea`](https://github.com/wooriapt79/mulberry_memory_bank/commit/28237eadf2cdedc64328c5564b602377fd5c367e) [LAB->Bank] activity synced
 
 ---
 
