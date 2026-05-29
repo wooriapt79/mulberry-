@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-28 03:52 UTC**
+> Last updated: **2026-05-29 03:54 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [🌱 [Mulberry Lab 비전] 자율 연구소 선언 — 다양성 기반 아이디어→자산→프로덕션 생태계](https://github.com/wooriapt79/mulberry-research-lab/issues/76) #76
 
 **Recent Commits:**
+- [`37b9687`](https://github.com/wooriapt79/mulberry-research-lab/commit/37b9687e37885654c417b0d1a4aad07fff596623) feat: Lynn daily signal [state:heartbeat] 2026-05-29
 - [`b28c103`](https://github.com/wooriapt79/mulberry-research-lab/commit/b28c10358639e0bc1fc6294d9f86f53b785926b0) feat: Lynn daily signal [state:heartbeat] 2026-05-27
 - [`ebaee47`](https://github.com/wooriapt79/mulberry-research-lab/commit/ebaee476600a983f3b156b3bea60ba3968d39e7b) fix(workflow): create-team-next-issues YAML 문법 오류 수정 — JS 템플릿 리터럴 → en
-- [`e432e44`](https://github.com/wooriapt79/mulberry-research-lab/commit/e432e44621629720f9efd8c66675737b0e40f940) fix(workflow): koda-completion/issue-comments YAML 문법 오류 수정 — body env
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
+- [`a91f4b9`](https://github.com/wooriapt79/mulberry_memory_bank/commit/a91f4b9e65de159fae272faa77ee61ca52c5a615) feat: Lynn daily signal [state:active] 2026-05-29
 - [`2a49cad`](https://github.com/wooriapt79/mulberry_memory_bank/commit/2a49cad6b72c1a93a1a797dcce698fac1d526b93) feat: Lynn daily signal [state:active] 2026-05-28
 - [`cbb285b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/cbb285b22d3f282b7770a0832407795a8b43b113) [LAB->Bank] activity synced
-- [`7bf96c6`](https://github.com/wooriapt79/mulberry_memory_bank/commit/7bf96c63840b83e251f6343e3643efb303f80eeb) [LAB->Bank] activity synced
 
 ---
 
