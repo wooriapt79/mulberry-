@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-05-31 04:05 UTC**
+> Last updated: **2026-06-01 04:20 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [🔭 [2026년 06월] Mulberry 기술 트렌드 리포트 — 팀 토론](https://github.com/wooriapt79/mulberry-research-lab/issues/82) #82
+- [[RESEARCH] Multi-Brand Edge AI Paper - Koda+Kbin+Malu+Wayong](https://github.com/wooriapt79/mulberry-research-lab/issues/18) #18
 - [🌿 Aria Portal 서비스 방향 팀 토론 — 우리가 세상에 먼저 보여줄 것은 무엇인가?](https://github.com/wooriapt79/mulberry-research-lab/issues/81) #81
-- [🧪 [TEST] Team Discussion Automation 작동 확인](https://github.com/wooriapt79/mulberry-research-lab/issues/80) #80
-- [🎵 Trang Rhythm Engine — 멀티모달 오디오 감각 레이어 설계 (CSA Kbin에게)](https://github.com/wooriapt79/mulberry-research-lab/issues/79) #79
 
 **Recent Commits:**
-- [`8475349`](https://github.com/wooriapt79/mulberry-research-lab/commit/8475349a6ad3ffd8ec9421fa7eb12a75ad7da38a) docs(aria-portal): Koda 토론 마무리 댓글 — 오늘 파이프라인 완성 + Phase 2 예고
-- [`5393507`](https://github.com/wooriapt79/mulberry-research-lab/commit/53935073b22a6f25db2b7bef08be8aa8fc22ca46) feat(phase2): Spirit Gate + Pipeline 오케스트레이터 완성 — CEO re.eul 설계 기반 자율 
-- [`1b4cbdd`](https://github.com/wooriapt79/mulberry-research-lab/commit/1b4cbdd82f0fad0d14fa3be7f67c919181ffc2a9) feat(pipeline): config_agent × Auto Code Pilot × Quality Gate 3단계 파이프라
+- [`3aaf1fd`](https://github.com/wooriapt79/mulberry-research-lab/commit/3aaf1fd6af0f50808470fd62303175c442ba2eff) feat: Lynn daily signal [state:heartbeat] 2026-06-01
+- [`00a6cd4`](https://github.com/wooriapt79/mulberry-research-lab/commit/00a6cd4b5d306896967eb56d33f2f31ba916ab2b) fix(passport): Trang 경로 확인 반영 — tool_registry.yaml + malu 패스포트 연동, a2a
+- [`90176a9`](https://github.com/wooriapt79/mulberry-research-lab/commit/90176a9153cbfdf6249a978d58387e7f83757ca8) feat(passport-v1): Mulberry Agent Passport v1.0 통합 완성 — MAPA-A1 표준, 전 
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`4c1f1bf`](https://github.com/wooriapt79/mulberry_memory_bank/commit/4c1f1bf64365843600573645992a80f8ec316b0b) [LAB->Bank] activity synced
-- [`1fac53b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/1fac53b369ad0ba4cc544174acb2a27d9bb80583) feat: Lynn daily signal [state:active] 2026-05-31
-- [`91d3e24`](https://github.com/wooriapt79/mulberry_memory_bank/commit/91d3e24743784b997c48e22540d0c8da1b9b7d01) [LAB->Bank] activity synced
+- [`6006374`](https://github.com/wooriapt79/mulberry_memory_bank/commit/6006374471fe446d3f525d3aefc8b30dd8069cc2) [LAB->Bank] activity synced
+- [`c312253`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c3122534bd7d154a6415136f7966a38dd7dd558f) feat: Lynn daily signal [state:active] 2026-06-01
+- [`766eb35`](https://github.com/wooriapt79/mulberry_memory_bank/commit/766eb358317101382964cceee7b7fe8ab79a7a4a) [LAB->Bank] activity synced
 
 ---
 
