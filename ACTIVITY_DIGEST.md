@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-01 04:20 UTC**
+> Last updated: **2026-06-02 04:13 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
-- [🔭 [2026년 06월] Mulberry 기술 트렌드 리포트 — 팀 토론](https://github.com/wooriapt79/mulberry-research-lab/issues/82) #82
-- [[RESEARCH] Multi-Brand Edge AI Paper - Koda+Kbin+Malu+Wayong](https://github.com/wooriapt79/mulberry-research-lab/issues/18) #18
-- [🌿 Aria Portal 서비스 방향 팀 토론 — 우리가 세상에 먼저 보여줄 것은 무엇인가?](https://github.com/wooriapt79/mulberry-research-lab/issues/81) #81
+- [🏪 [쇼핑몰 미션] 백야 🌙 — 글로벌 인텔리전스·리서치 정보 샵](https://github.com/wooriapt79/mulberry-research-lab/issues/90) #90
+- [🏪 [쇼핑몰 미션] Trang 🌿 — 인제군 로컬푸드 & 리듬 웰니스 샵](https://github.com/wooriapt79/mulberry-research-lab/issues/86) #86
+- [🏪 [쇼핑몰 미션] Wayong 🐉 — 전략 분석·시장 인사이트 리포트 샵](https://github.com/wooriapt79/mulberry-research-lab/issues/88) #88
 
 **Recent Commits:**
-- [`3aaf1fd`](https://github.com/wooriapt79/mulberry-research-lab/commit/3aaf1fd6af0f50808470fd62303175c442ba2eff) feat: Lynn daily signal [state:heartbeat] 2026-06-01
-- [`00a6cd4`](https://github.com/wooriapt79/mulberry-research-lab/commit/00a6cd4b5d306896967eb56d33f2f31ba916ab2b) fix(passport): Trang 경로 확인 반영 — tool_registry.yaml + malu 패스포트 연동, a2a
-- [`90176a9`](https://github.com/wooriapt79/mulberry-research-lab/commit/90176a9153cbfdf6249a978d58387e7f83757ca8) feat(passport-v1): Mulberry Agent Passport v1.0 통합 완성 — MAPA-A1 표준, 전 
+- [`db5fe9e`](https://github.com/wooriapt79/mulberry-research-lab/commit/db5fe9e0f709ad3cd462b5e87b024bf6733f2894) feat: Lynn daily signal [state:heartbeat] 2026-06-02
+- [`2eff2af`](https://github.com/wooriapt79/mulberry-research-lab/commit/2eff2af7958dda11f3bd934001240ad170fa4757) Update README with team composition and roles
+- [`4849028`](https://github.com/wooriapt79/mulberry-research-lab/commit/4849028c35ea6440cd27b2b32c86d1f1c3fb8913) Merge pull request #91 from wooriapt79/feat/trang-passport-registratio
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`6006374`](https://github.com/wooriapt79/mulberry_memory_bank/commit/6006374471fe446d3f525d3aefc8b30dd8069cc2) [LAB->Bank] activity synced
-- [`c312253`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c3122534bd7d154a6415136f7966a38dd7dd558f) feat: Lynn daily signal [state:active] 2026-06-01
-- [`766eb35`](https://github.com/wooriapt79/mulberry_memory_bank/commit/766eb358317101382964cceee7b7fe8ab79a7a4a) [LAB->Bank] activity synced
+- [`8b9e1a1`](https://github.com/wooriapt79/mulberry_memory_bank/commit/8b9e1a1df9410414949f4336b8d9d57387b54385) feat: Lynn daily signal [state:active] 2026-06-02
+- [`9da9182`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9da9182ec5f73e9459847382cfe5a4da60ef6e5f) [LAB->Bank] activity synced
+- [`31adbbc`](https://github.com/wooriapt79/mulberry_memory_bank/commit/31adbbc2f980cb342abb0b4eb91e4310100562b0) [LAB->Bank] activity synced
 
 ---
 
