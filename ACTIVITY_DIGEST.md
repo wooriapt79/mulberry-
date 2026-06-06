@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-05 04:01 UTC**
+> Last updated: **2026-06-06 03:43 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [🏪 [쇼핑몰 미션] 백야 🌙 — 글로벌 인텔리전스·리서치 정보 샵](https://github.com/wooriapt79/mulberry-research-lab/issues/90) #90
 
 **Recent Commits:**
+- [`1765cca`](https://github.com/wooriapt79/mulberry-research-lab/commit/1765cca9105c617a37ea98d851e2c925581a02bf) feat: Lynn daily signal [state:heartbeat] 2026-06-06
 - [`3dcc2b8`](https://github.com/wooriapt79/mulberry-research-lab/commit/3dcc2b88b7d28b2f41575fb4523a32a96490f1a6) feat: Lynn daily signal [state:heartbeat] 2026-06-05
 - [`1ea538f`](https://github.com/wooriapt79/mulberry-research-lab/commit/1ea538fe5f6a390f765052e7aa153599b00f8b68) docs(trang): DAY 3 Option B 완료 보고서 — 에이전트별 개별 스크립트 구조 확정
-- [`5b2a019`](https://github.com/wooriapt79/mulberry-research-lab/commit/5b2a019427eab5677f94201e43a80275756f2909) Merge branch 'main' of https://github.com/wooriapt79/mulberry-research
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
+- [`2c9f73d`](https://github.com/wooriapt79/mulberry_memory_bank/commit/2c9f73d275032a92040ca643f7e338a8d997724e) feat: Lynn daily signal [state:active] 2026-06-06
 - [`42e544c`](https://github.com/wooriapt79/mulberry_memory_bank/commit/42e544cd910963ad527a060e009138577b9b4a16) feat: Lynn daily signal [state:active] 2026-06-05
 - [`bbfedfa`](https://github.com/wooriapt79/mulberry_memory_bank/commit/bbfedfa7926e5dfc996fd68b406d23a19e4b611d) feat: Lynn daily signal [state:active] 2026-06-04
-- [`3eb4df2`](https://github.com/wooriapt79/mulberry_memory_bank/commit/3eb4df214d1299318d76bb416a56eb83bd7e1afa) [LAB->Bank] activity synced
 
 ---
 
