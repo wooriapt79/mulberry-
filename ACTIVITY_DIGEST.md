@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-07 04:11 UTC**
+> Last updated: **2026-06-08 04:15 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [🏪 [쇼핑몰 미션] Kbin 🏛️ — 보안·거버넌스 디지털 자산 샵](https://github.com/wooriapt79/mulberry-research-lab/issues/83) #83
 
 **Recent Commits:**
-- [`4d7f1ed`](https://github.com/wooriapt79/mulberry-research-lab/commit/4d7f1ed904506ec13b8d3fe6a028b09cdf2a1a26) Add files via upload
-- [`c171d03`](https://github.com/wooriapt79/mulberry-research-lab/commit/c171d0378ae68cdf163a570980ee62e9288718b5) Agent Auto mission file
-- [`e51283e`](https://github.com/wooriapt79/mulberry-research-lab/commit/e51283eaa70fc8cb871e7d53a2e9b5b22a4a0178) feat: Lynn daily signal [state:heartbeat] 2026-06-06
+- [`784485a`](https://github.com/wooriapt79/mulberry-research-lab/commit/784485ab024c227db9b4e92051aca43716f89ef1) feat: Lynn daily signal [state:heartbeat] 2026-06-08
+- [`8ab9cb4`](https://github.com/wooriapt79/mulberry-research-lab/commit/8ab9cb4dd26a5aa448bf621601e309f1fd471795) Refactor passport notification workflow
+- [`29e4e25`](https://github.com/wooriapt79/mulberry-research-lab/commit/29e4e255433d2c8e5ffdbe3a35d702048ad141dc) github.rest.repos.getCommit() → REST API로 안전하게 감지
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
+- [`9105e62`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9105e62c5141c03631637eb8297c5feb4bc2e60e) feat: Lynn daily signal [state:active] 2026-06-08
 - [`a6aada7`](https://github.com/wooriapt79/mulberry_memory_bank/commit/a6aada73bc471db396107abc339a1884ffec84ed) [LAB->Bank] activity synced
 - [`5f46bd0`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5f46bd0dd4805be83b58d657771eb309c19ced70) [LAB->Bank] activity synced
-- [`f97309f`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f97309f2d2e9fe4e1ee5e1aeed65f047980bcacd) feat: Lynn daily signal [state:active] 2026-06-07
 
 ---
 
