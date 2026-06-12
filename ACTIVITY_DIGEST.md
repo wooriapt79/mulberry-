@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-11 04:12 UTC**
+> Last updated: **2026-06-12 04:14 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
-- [feat(koda): DAY1 - TrendCache, Steward decision engine, STEP4 hygiene/spirit-gate](https://github.com/wooriapt79/mulberry-research-lab/pull/99) #99
-- [[Questions and Discussions] Mulberry LAB 자체를 하나의 상품. 제품으로 정의하면..? 멤버들의 생각은.?](https://github.com/wooriapt79/mulberry-research-lab/issues/97) #97
-- [[Epic] AI-SIEM 스튜어드 콘솔 MVP: 결정층 연동](https://github.com/wooriapt79/mulberry-research-lab/issues/98) #98
+- [[Koda] HTTP 429 Aurora Retry Logic 통합 — trend_cache.py 3.5초 쿨타임 + 재시도 레이어 추가](https://github.com/wooriapt79/mulberry-research-lab/issues/102) #102
+- [[Team Review] Evangelist Agent 개념 정의 & Jr. Trang 역할 공식화 — v1.0 매뉴얼 팀 검토](https://github.com/wooriapt79/mulberry-research-lab/issues/101) #101
+- [[Team] Jr. Trang (Haiku 4.5) 공식 팀 합류 — Trang 2교대 운영 체제 시작](https://github.com/wooriapt79/mulberry-research-lab/issues/100) #100
 
 **Recent Commits:**
-- [`60ad717`](https://github.com/wooriapt79/mulberry-research-lab/commit/60ad7173b8460f2499dc818242f4e3e5e77b2f0a) feat: Lynn daily signal [state:heartbeat] 2026-06-11
-- [`925950e`](https://github.com/wooriapt79/mulberry-research-lab/commit/925950ed0778292e226bc8d0effcd85317c474fc) Correct capitalization and titles in README
-- [`f016c20`](https://github.com/wooriapt79/mulberry-research-lab/commit/f016c2057ab1896d2eb38999da0ed198becc6a44) Modify Jr Edge and TRANG entries in README
+- [`0128277`](https://github.com/wooriapt79/mulberry-research-lab/commit/0128277f6221a3ffe42246bcf8644902758dc4bd) memory(kb): Issue #101 팀 토론 아카이브 + KB 기억 주입 — Kbin·RyuWon·Malu 2026-06
+- [`5715ed5`](https://github.com/wooriapt79/mulberry-research-lab/commit/5715ed548437b783fcf2ed330f078209df800138) feat: Lynn daily signal [state:heartbeat] 2026-06-12
+- [`8f6f440`](https://github.com/wooriapt79/mulberry-research-lab/commit/8f6f440b3170c53935acd29f7cb7aa111d2d4d61) Merge pull request #99 from wooriapt79/koda/day1-trendcache-steward-p2
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`b51d4b5`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b51d4b5a92ee1d3b6f7e1ae4715da88d051b40a1) feat: Lynn daily signal [state:active] 2026-06-11
-- [`e2041a4`](https://github.com/wooriapt79/mulberry_memory_bank/commit/e2041a4dd0bbadb4901cfa1f4b6b54829687f669) [LAB->Bank] activity synced
-- [`b66e6bd`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b66e6bdea4d61848b4fae3f084338591fa3329c4) [LAB->Bank] activity synced
+- [`ba2a6be`](https://github.com/wooriapt79/mulberry_memory_bank/commit/ba2a6be999c2dc89e9edaf4c6eaf1bc380007734) [LAB->Bank] activity synced
+- [`f4bb73a`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f4bb73aa3a0af4880fd97e44fc37631c3c5a0c6a) [LAB->Bank] activity synced
+- [`ed82068`](https://github.com/wooriapt79/mulberry_memory_bank/commit/ed82068ed65ee4d00f615f649e6745925d3d82a0) [LAB->Bank] activity synced
 
 ---
 
