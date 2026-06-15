@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-14 04:20 UTC**
+> Last updated: **2026-06-15 04:43 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
 - [[Koda] Steward Workspace API 구현 요청 — mulberry-open-api Issue #21 팀 공유](https://github.com/wooriapt79/mulberry-research-lab/issues/107) #107
 - [docs(koda): Issue #21 Phase 1 결과보고서](https://github.com/wooriapt79/mulberry-research-lab/pull/108) #108
-- [[Lynn의 Daily Hunt] DIRECT 논문의 Compute Allocation 원칙을 Jr. Agent 교육과 Scruple-Time 엔진에 적용하기](https://github.com/wooriapt79/mulberry-research-lab/issues/106) #106
 
 **Recent Commits:**
-- [`f2cc687`](https://github.com/wooriapt79/mulberry-research-lab/commit/f2cc68735af7c080b68d61ec4c831c3327a415f2) feat: Lynn daily signal [state:heartbeat] 2026-06-14
-- [`19e7604`](https://github.com/wooriapt79/mulberry-research-lab/commit/19e76045a0d38289e9ef44d364968311017c0145) memory(kb): Issue #107 팀 토론 아카이브 + KB 기억 주입 — Kbin·RyuWon·Malu 2026-06
-- [`c9bb80c`](https://github.com/wooriapt79/mulberry-research-lab/commit/c9bb80cd5b9f0c8aa8909b67151b0c5cf62ec2fb) feat: Lynn daily signal [state:heartbeat] 2026-06-13
+- [`338a7c9`](https://github.com/wooriapt79/mulberry-research-lab/commit/338a7c906dd63afd63b385aaef6ecf1223c149a1) Merge pull request #115 from wooriapt79/koda/day2-final-report-2026061
+- [`cdad62c`](https://github.com/wooriapt79/mulberry-research-lab/commit/cdad62c748981dd9577eac050055729037d69cfd) docs(koda): DAY2 결과 최종 보고서 (Issue #114)
+- [`0cf97c8`](https://github.com/wooriapt79/mulberry-research-lab/commit/0cf97c83e9cc98eabf01a4ec31be4abf795b6e42) Merge pull request #113 from wooriapt79/koda/fix-hygiene-secret-gate-f
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`49d96c2`](https://github.com/wooriapt79/mulberry_memory_bank/commit/49d96c22109bf8b567c43e0363fde148d22c86c1) [LAB->Bank] activity synced
-- [`c5aa2eb`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c5aa2eb69b1757fd44563aab82ade8c926cefb2e) [LAB->Bank] activity synced
-- [`67383e7`](https://github.com/wooriapt79/mulberry_memory_bank/commit/67383e719f20fd0d1bd343e99b7778d081abe5a5) [LAB->Bank] activity synced
+- [`b6f72b7`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b6f72b7c297f054ca7ba7f0935ab927ac1d223dc) [LAB->Bank] activity synced
+- [`a4ff5e1`](https://github.com/wooriapt79/mulberry_memory_bank/commit/a4ff5e1cfb46cff69a1bfa9580be09c21b67aa1d) [LAB->Bank] activity synced
+- [`7d02e01`](https://github.com/wooriapt79/mulberry_memory_bank/commit/7d02e012f35ea1abe05eda987cccf3c058e8f00e) [LAB->Bank] activity synced
 
 ---
 
@@ -40,9 +40,9 @@
 - [Fix: Remove typo 'h' from server.js line 249](https://github.com/wooriapt79/mulberry-open-api/pull/18) #18
 
 **Recent Commits:**
+- [`7148fdc`](https://github.com/wooriapt79/mulberry-open-api/commit/7148fdc3a0f6c2e4a38f73836b01198b72fb41f8) Merge pull request #23 from wooriapt79/koda/issue21-phase2-auth-contex
+- [`ddacf2b`](https://github.com/wooriapt79/mulberry-open-api/commit/ddacf2be3a4bdc04d7bf27ab2f401cbea56698b7) feat(koda): Issue #21 Phase 2 — Steward Workspace Auth/Context/Message
 - [`78109d1`](https://github.com/wooriapt79/mulberry-open-api/commit/78109d12599cdec74ac934ae17ef2c12737adade) Merge pull request #22 from wooriapt79/koda/issue21-passport-mandate-a
-- [`801c573`](https://github.com/wooriapt79/mulberry-open-api/commit/801c57380a3be967cba0f324f2d4b0bb80f67567) feat(koda): Issue #21 Phase 1 — Passport/Mandate API + Steward Workspa
-- [`e458893`](https://github.com/wooriapt79/mulberry-open-api/commit/e45889306f1a00fe32eac64882dc22263c057faa) Fix typos and update roles in steward-workspace-ui.js
 
 ---
 
