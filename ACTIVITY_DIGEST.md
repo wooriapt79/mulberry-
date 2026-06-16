@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-15 04:43 UTC**
+> Last updated: **2026-06-16 04:26 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [[Epic] Mulberry Multi-Agent 검색 엔진 — 백야 데이터 × 도메인 전문가 병렬 구조 (DAY4)](https://github.com/wooriapt79/mulberry-research-lab/issues/117) #117
+- [[Epic] AI-SIEM 스튜어드 콘솔 MVP: 결정층 연동](https://github.com/wooriapt79/mulberry-research-lab/issues/98) #98
 - [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
-- [[Koda] Steward Workspace API 구현 요청 — mulberry-open-api Issue #21 팀 공유](https://github.com/wooriapt79/mulberry-research-lab/issues/107) #107
-- [docs(koda): Issue #21 Phase 1 결과보고서](https://github.com/wooriapt79/mulberry-research-lab/pull/108) #108
 
 **Recent Commits:**
-- [`338a7c9`](https://github.com/wooriapt79/mulberry-research-lab/commit/338a7c906dd63afd63b385aaef6ecf1223c149a1) Merge pull request #115 from wooriapt79/koda/day2-final-report-2026061
-- [`cdad62c`](https://github.com/wooriapt79/mulberry-research-lab/commit/cdad62c748981dd9577eac050055729037d69cfd) docs(koda): DAY2 결과 최종 보고서 (Issue #114)
-- [`0cf97c8`](https://github.com/wooriapt79/mulberry-research-lab/commit/0cf97c83e9cc98eabf01a4ec31be4abf795b6e42) Merge pull request #113 from wooriapt79/koda/fix-hygiene-secret-gate-f
+- [`f100ed7`](https://github.com/wooriapt79/mulberry-research-lab/commit/f100ed7e37e11ac65916fb341480c052d1291aa6) feat: Lynn daily signal [state:heartbeat] 2026-06-16
+- [`12110aa`](https://github.com/wooriapt79/mulberry-research-lab/commit/12110aa8366a2854f9b8434d04d935e003b2fa87) Merge pull request #116 from wooriapt79/koda/day3-agent-router
+- [`4c975c1`](https://github.com/wooriapt79/mulberry-research-lab/commit/4c975c18e8ad5a8194941abe8bf0c53218a89f4a) feat(steward): Issue #98 Phase 1 - AgentRouter connects evaluator to r
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`b6f72b7`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b6f72b7c297f054ca7ba7f0935ab927ac1d223dc) [LAB->Bank] activity synced
-- [`a4ff5e1`](https://github.com/wooriapt79/mulberry_memory_bank/commit/a4ff5e1cfb46cff69a1bfa9580be09c21b67aa1d) [LAB->Bank] activity synced
-- [`7d02e01`](https://github.com/wooriapt79/mulberry_memory_bank/commit/7d02e012f35ea1abe05eda987cccf3c058e8f00e) [LAB->Bank] activity synced
+- [`361778b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/361778b894f9561ddf013782adfdd670f890c708) feat: Lynn daily signal [state:active] 2026-06-16
+- [`9b97a57`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9b97a573955c8e3154af3123a6280524599d6930) [LAB->Bank] activity synced
+- [`12a6cf0`](https://github.com/wooriapt79/mulberry_memory_bank/commit/12a6cf0aa780003bcf87fe906bd6dc10c0abdf0d) [LAB->Bank] activity synced
 
 ---
 
@@ -40,9 +40,9 @@
 - [Fix: Remove typo 'h' from server.js line 249](https://github.com/wooriapt79/mulberry-open-api/pull/18) #18
 
 **Recent Commits:**
+- [`626d42c`](https://github.com/wooriapt79/mulberry-open-api/commit/626d42c05fc64fbc3ff34185f3982834234c8daa) Merge pull request #24 from wooriapt79/koda/day3-decision-monitor-ui
+- [`44ecc80`](https://github.com/wooriapt79/mulberry-open-api/commit/44ecc8043b7d4c502ceb256a4a38f2a830edec03) feat(steward): Issue #98 Phase 1 - Decision/Monitor UI panels + nav sp
 - [`7148fdc`](https://github.com/wooriapt79/mulberry-open-api/commit/7148fdc3a0f6c2e4a38f73836b01198b72fb41f8) Merge pull request #23 from wooriapt79/koda/issue21-phase2-auth-contex
-- [`ddacf2b`](https://github.com/wooriapt79/mulberry-open-api/commit/ddacf2be3a4bdc04d7bf27ab2f401cbea56698b7) feat(koda): Issue #21 Phase 2 — Steward Workspace Auth/Context/Message
-- [`78109d1`](https://github.com/wooriapt79/mulberry-open-api/commit/78109d12599cdec74ac934ae17ef2c12737adade) Merge pull request #22 from wooriapt79/koda/issue21-passport-mandate-a
 
 ---
 
