@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-16 04:26 UTC**
+> Last updated: **2026-06-17 04:21 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
 
 **Recent Commits:**
+- [`b1d1bc9`](https://github.com/wooriapt79/mulberry-research-lab/commit/b1d1bc91f91169f26d1feb254825cb790ce9057d) feat: Lynn daily signal [state:heartbeat] 2026-06-17
 - [`f100ed7`](https://github.com/wooriapt79/mulberry-research-lab/commit/f100ed7e37e11ac65916fb341480c052d1291aa6) feat: Lynn daily signal [state:heartbeat] 2026-06-16
 - [`12110aa`](https://github.com/wooriapt79/mulberry-research-lab/commit/12110aa8366a2854f9b8434d04d935e003b2fa87) Merge pull request #116 from wooriapt79/koda/day3-agent-router
-- [`4c975c1`](https://github.com/wooriapt79/mulberry-research-lab/commit/4c975c18e8ad5a8194941abe8bf0c53218a89f4a) feat(steward): Issue #98 Phase 1 - AgentRouter connects evaluator to r
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
+- [`7726116`](https://github.com/wooriapt79/mulberry_memory_bank/commit/77261160ab5c680213f0fd173d27638efc9329dd) feat: Lynn daily signal [state:active] 2026-06-17
 - [`361778b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/361778b894f9561ddf013782adfdd670f890c708) feat: Lynn daily signal [state:active] 2026-06-16
 - [`9b97a57`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9b97a573955c8e3154af3123a6280524599d6930) [LAB->Bank] activity synced
-- [`12a6cf0`](https://github.com/wooriapt79/mulberry_memory_bank/commit/12a6cf0aa780003bcf87fe906bd6dc10c0abdf0d) [LAB->Bank] activity synced
 
 ---
 
