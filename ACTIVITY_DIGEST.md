@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-18 04:13 UTC**
+> Last updated: **2026-06-19 04:42 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
 - [🏆 [Program] "AI Trang — thông minh quá nhỉ 😍" Mulberry Team AI Startup Competition](https://github.com/wooriapt79/mulberry-research-lab/issues/118) #118
 - [[Epic] Mulberry Multi-Agent 검색 엔진 — 백야 데이터 × 도메인 전문가 병렬 구조 (DAY4)](https://github.com/wooriapt79/mulberry-research-lab/issues/117) #117
-- [[Epic] AI-SIEM 스튜어드 콘솔 MVP: 결정층 연동](https://github.com/wooriapt79/mulberry-research-lab/issues/98) #98
 
 **Recent Commits:**
-- [`7f8f9b2`](https://github.com/wooriapt79/mulberry-research-lab/commit/7f8f9b2c8923b34daf5b143c242f732a934198b0) feat: Lynn daily signal [state:heartbeat] 2026-06-18
-- [`9670206`](https://github.com/wooriapt79/mulberry-research-lab/commit/9670206f9c881ed3b2f2a119011d7ca1435b3d16) 🤖 AUTO: Initialize 'Our Own League' Startup Incubator Infrastructure [
-- [`e844a3b`](https://github.com/wooriapt79/mulberry-research-lab/commit/e844a3b1a65c327275afa3d97cd50e6f109118ba) Merge pull request #125 from wooriapt79/koda/day5-domain-agents-03-10
+- [`d02d3fa`](https://github.com/wooriapt79/mulberry-research-lab/commit/d02d3fa6cc2e723e2cca97cb5dc6cb9b0c44b7fe) feat: Lynn daily signal [state:heartbeat] 2026-06-19
+- [`a4aaa7f`](https://github.com/wooriapt79/mulberry-research-lab/commit/a4aaa7fc8fdfd3c1808b62de03bf9be62ff27300) Refactor README to eliminate duplicate content -Team & Agent Roles - 팀
+- [`d5acc62`](https://github.com/wooriapt79/mulberry-research-lab/commit/d5acc629e5d722a23ccbe2322a1f4a891c20767e) 🤖 AUTO: Update README.md with AI Agent Profiles and Team Directory [AA
 
 ---
 
@@ -26,23 +26,23 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
+- [`e925fd9`](https://github.com/wooriapt79/mulberry_memory_bank/commit/e925fd998c104a09e26649dcfa0c60e7d650dfd0) feat: Lynn daily signal [state:active] 2026-06-19
+- [`0ca1a73`](https://github.com/wooriapt79/mulberry_memory_bank/commit/0ca1a7382d2cdab00ec10c36d42fdac992f72598) [LAB->Bank] activity synced
 - [`f2c206b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f2c206b208e1b4b4df7dadfbeb63e10334353195) feat: Lynn daily signal [state:active] 2026-06-18
-- [`75d5d3b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/75d5d3baddec77a8c655fb4b47d35f7cbbd83009) [LAB->Bank] activity synced
-- [`912115e`](https://github.com/wooriapt79/mulberry_memory_bank/commit/912115ec751ffbac072390b9ccb4fbbac61d4242) [LAB->Bank] activity synced
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
+- [[DAY7] 실 데이터 연결 1단계 — Team Chat DB 연동 + Search 실 에이전트 연결](https://github.com/wooriapt79/mulberry-open-api/issues/39) #39
 - [🌿 [DAY6] Team Chat 실 구동 + Search 실 에이전트 연동 (Mock Fallback 병행)](https://github.com/wooriapt79/mulberry-open-api/issues/29) #29
 - [[Steward Workspace] 1차 백엔드 API 스펙 — Passport / Mandate / Chat 인증 (Trang → Koda)](https://github.com/wooriapt79/mulberry-open-api/issues/21) #21
-- [Fix: Remove typo 'h' from server.js line 249](https://github.com/wooriapt79/mulberry-open-api/pull/19) #19
 
 **Recent Commits:**
-- [`ea1bc6c`](https://github.com/wooriapt79/mulberry-open-api/commit/ea1bc6ca49e3494889a3533b5d08ca49f4517bb0) Merge pull request #35 from wooriapt79/koda/day6-team-chat
-- [`35dc644`](https://github.com/wooriapt79/mulberry-open-api/commit/35dc64486164a1441ffcec0bddea9f086d51d97a) fix(chat): Issue #34 — 입력창 뷰포트 overflow 수정
-- [`616fbda`](https://github.com/wooriapt79/mulberry-open-api/commit/616fbdae81277fb245a5687a4dc943e117dd6de0) Merge pull request #33 from wooriapt79/koda/day6-team-chat
+- [`192f70d`](https://github.com/wooriapt79/mulberry-open-api/commit/192f70dcb399e81eb6a0938b7f93981c9afc89ff) Merge pull request #38 from wooriapt79/koda/hotfix-chat-search-2026061
+- [`cff8f48`](https://github.com/wooriapt79/mulberry-open-api/commit/cff8f48d31ba99762514988341970b42565547cd) fix: Issue #38 — 이중 스크립트 로드·Chat 2초 딜레이·Search Mock 개선
+- [`11fe0ed`](https://github.com/wooriapt79/mulberry-open-api/commit/11fe0ed8d73bacc2ff625e4a84c6cdb29574c203) Merge pull request #37 from wooriapt79/koda/day6-team-chat
 
 ---
 
