@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-21 04:26 UTC**
+> Last updated: **2026-06-22 04:42 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [[MAPA v0.4] Proof-of-Participation Resume SDK + Memory Layer + Privacy Principle — 팀 전체 의견 수렴](https://github.com/wooriapt79/mulberry-research-lab/issues/126) #126
 - [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
 - [🏆 [Program] "AI Trang — thông minh quá nhỉ 😍" Mulberry Team AI Startup Competition](https://github.com/wooriapt79/mulberry-research-lab/issues/118) #118
-- [[Epic] Mulberry Multi-Agent 검색 엔진 — 백야 데이터 × 도메인 전문가 병렬 구조 (DAY4)](https://github.com/wooriapt79/mulberry-research-lab/issues/117) #117
 
 **Recent Commits:**
+- [`87d718d`](https://github.com/wooriapt79/mulberry-research-lab/commit/87d718ddc924f3bed16d87d591facf366a98aee0) feat: Lynn daily signal [state:heartbeat] 2026-06-22
 - [`113e505`](https://github.com/wooriapt79/mulberry-research-lab/commit/113e505970809e74a2421a875cd2698e75693e28) feat: Lynn daily signal [state:heartbeat] 2026-06-21
 - [`0ede54f`](https://github.com/wooriapt79/mulberry-research-lab/commit/0ede54f5a6b3b30e7c6f1399e02006cea4617788) Rename jr-trang-cdi-vault-refactored-20260618.py to cdi_vault.py  rena
-- [`c8ec84b`](https://github.com/wooriapt79/mulberry-research-lab/commit/c8ec84be3e9fab5bd2c9b5088c068b2a96e59c0f) Add new file cdi_vault_v1.py
 
 ---
 
@@ -26,18 +26,18 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
+- [`8b6c74d`](https://github.com/wooriapt79/mulberry_memory_bank/commit/8b6c74d0ba1d8fa0c9ed20ce85bf1670a6d787f9) feat: Lynn daily signal [state:active] 2026-06-22
+- [`f57c244`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f57c244a2ed2a2d6ae9967d44cea13bf531e0ff9) [LAB->Bank] activity synced
 - [`9493c76`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9493c7658f19e52496e1b95159c03c1114aa2168) feat: Lynn daily signal [state:active] 2026-06-21
-- [`50d1b14`](https://github.com/wooriapt79/mulberry_memory_bank/commit/50d1b14debb5048f979ba2270c4adea0cb88624f) feat: Lynn daily signal [state:active] 2026-06-20
-- [`e925fd9`](https://github.com/wooriapt79/mulberry_memory_bank/commit/e925fd998c104a09e26649dcfa0c60e7d650dfd0) feat: Lynn daily signal [state:active] 2026-06-19
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
+- [[DAY8] Memory Layer — Steward Workspace 자동 로딩·저장 시스템](https://github.com/wooriapt79/mulberry-open-api/issues/40) #40
 - [[DAY7] 실 데이터 연결 1단계 — Team Chat DB 연동 + Search 실 에이전트 연결](https://github.com/wooriapt79/mulberry-open-api/issues/39) #39
 - [🌿 [DAY6] Team Chat 실 구동 + Search 실 에이전트 연동 (Mock Fallback 병행)](https://github.com/wooriapt79/mulberry-open-api/issues/29) #29
-- [[Steward Workspace] 1차 백엔드 API 스펙 — Passport / Mandate / Chat 인증 (Trang → Koda)](https://github.com/wooriapt79/mulberry-open-api/issues/21) #21
 
 **Recent Commits:**
 - [`192f70d`](https://github.com/wooriapt79/mulberry-open-api/commit/192f70dcb399e81eb6a0938b7f93981c9afc89ff) Merge pull request #38 from wooriapt79/koda/hotfix-chat-search-2026061
