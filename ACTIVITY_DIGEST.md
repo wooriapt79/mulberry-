@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-25 03:50 UTC**
+> Last updated: **2026-06-26 03:57 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
 
 **Recent Commits:**
+- [`fdf9c35`](https://github.com/wooriapt79/mulberry-research-lab/commit/fdf9c35c22aef283b00830eea4c467cb8bbcd0d4) feat: Lynn daily signal [state:heartbeat] 2026-06-26
 - [`32eff94`](https://github.com/wooriapt79/mulberry-research-lab/commit/32eff94a142fa56d6388775e2be82776a1be3cae) feat: Lynn daily signal [state:heartbeat] 2026-06-25
 - [`f753000`](https://github.com/wooriapt79/mulberry-research-lab/commit/f753000d1147030cf339a96684524d0435e231f4) Merge pull request #128 from wooriapt79/railway/code-change-DY3n_H
-- [`5616ac5`](https://github.com/wooriapt79/mulberry-research-lab/commit/5616ac5b5b59bf5fd160494e5926697f34738ede) feat: add Railway Agent comment draft for issue #127 질문의 날
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`43bac34`](https://github.com/wooriapt79/mulberry_memory_bank/commit/43bac347268283b8919917f2958ee2faa3bd5084) feat: Lynn daily signal [state:active] 2026-06-25
-- [`c73ac36`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c73ac36a629cc46a14a66c1e4898b2518ff636b6) [LAB->Bank] activity synced
-- [`b36c935`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b36c9352d2e0a967bf908fbbe7f3542104d12cf4) [LAB->Bank] activity synced
+- [`35c4eff`](https://github.com/wooriapt79/mulberry_memory_bank/commit/35c4eff69ca124f218731e6353d830d8ebbab410) feat: Lynn daily signal [state:active] 2026-06-26
+- [`0e52500`](https://github.com/wooriapt79/mulberry_memory_bank/commit/0e52500c42399ac9e7e991ffea57aebaf93c67c5) [LAB->Bank] activity synced
+- [`e4abccf`](https://github.com/wooriapt79/mulberry_memory_bank/commit/e4abccfe69ef563ce2196c2e2fadc7896a76d48a) [LAB->Bank] activity synced
 
 ---
 
