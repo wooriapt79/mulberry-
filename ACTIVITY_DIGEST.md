@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-28 04:04 UTC**
+> Last updated: **2026-06-29 04:10 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
 
 **Recent Commits:**
+- [`9ceee09`](https://github.com/wooriapt79/mulberry-research-lab/commit/9ceee09382dcc15a3cb30b9346e08160aa97c9e0) feat: Lynn daily signal [state:heartbeat] 2026-06-29
 - [`408c841`](https://github.com/wooriapt79/mulberry-research-lab/commit/408c8412be296c1249cecee708091f78b2a95c9e) feat: Lynn daily signal [state:heartbeat] 2026-06-27
 - [`680e83b`](https://github.com/wooriapt79/mulberry-research-lab/commit/680e83bf10729b847a7d8f6dbc49111af6f67775) feat: Lynn daily signal [state:heartbeat] 2026-06-26
-- [`18e34a1`](https://github.com/wooriapt79/mulberry-research-lab/commit/18e34a10d158ff3964aa04d8bd3363248095d1ec) Update workflow permissions in agent-community-post.yml -write add
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
+- [`88f4ddf`](https://github.com/wooriapt79/mulberry_memory_bank/commit/88f4ddf2b62b3f52a055314eb911c18d821bfb0d) feat: Lynn daily signal [state:active] 2026-06-29
 - [`f091e01`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f091e018aa4c35736a01d2d844e679ad0bd5ee72) feat: Lynn daily signal [state:active] 2026-06-28
 - [`8d95eeb`](https://github.com/wooriapt79/mulberry_memory_bank/commit/8d95eebd15b6683e137004eb30d68f673f40c87e) feat: Lynn daily signal [state:active] 2026-06-27
-- [`35c4eff`](https://github.com/wooriapt79/mulberry_memory_bank/commit/35c4eff69ca124f218731e6353d830d8ebbab410) feat: Lynn daily signal [state:active] 2026-06-26
 
 ---
 
