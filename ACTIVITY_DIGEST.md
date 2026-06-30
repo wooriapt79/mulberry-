@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-29 04:10 UTC**
+> Last updated: **2026-06-30 03:53 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
 - [[질문의 날 #1] 2026-06-27 – 우리가 AI에게 묻고 싶은 것](https://github.com/wooriapt79/mulberry-research-lab/issues/127) #127
 - [[MAPA v0.4] Proof-of-Participation Resume SDK + Memory Layer + Privacy Principle — 팀 전체 의견 수렴](https://github.com/wooriapt79/mulberry-research-lab/issues/126) #126
-- [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
 
 **Recent Commits:**
+- [`974aadb`](https://github.com/wooriapt79/mulberry-research-lab/commit/974aadbcad4eb637a506a8f6740974f92f2929a4) feat: Lynn daily signal [state:heartbeat] 2026-06-29
+- [`1305833`](https://github.com/wooriapt79/mulberry-research-lab/commit/13058333855fb3ca4ea6f9aeafd50a0ed5b747f1) memory(kb): Issue #109 팀 토론 아카이브 + KB 기억 주입 — Kbin·RyuWon·Malu 2026-06
 - [`9ceee09`](https://github.com/wooriapt79/mulberry-research-lab/commit/9ceee09382dcc15a3cb30b9346e08160aa97c9e0) feat: Lynn daily signal [state:heartbeat] 2026-06-29
-- [`408c841`](https://github.com/wooriapt79/mulberry-research-lab/commit/408c8412be296c1249cecee708091f78b2a95c9e) feat: Lynn daily signal [state:heartbeat] 2026-06-27
-- [`680e83b`](https://github.com/wooriapt79/mulberry-research-lab/commit/680e83bf10729b847a7d8f6dbc49111af6f67775) feat: Lynn daily signal [state:heartbeat] 2026-06-26
 
 ---
 
@@ -26,9 +26,9 @@
 - [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
 
 **Recent Commits:**
-- [`88f4ddf`](https://github.com/wooriapt79/mulberry_memory_bank/commit/88f4ddf2b62b3f52a055314eb911c18d821bfb0d) feat: Lynn daily signal [state:active] 2026-06-29
-- [`f091e01`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f091e018aa4c35736a01d2d844e679ad0bd5ee72) feat: Lynn daily signal [state:active] 2026-06-28
-- [`8d95eeb`](https://github.com/wooriapt79/mulberry_memory_bank/commit/8d95eebd15b6683e137004eb30d68f673f40c87e) feat: Lynn daily signal [state:active] 2026-06-27
+- [`feb6834`](https://github.com/wooriapt79/mulberry_memory_bank/commit/feb6834a60dc5d27860811fffc940097c2404576) feat: Lynn daily signal [state:active] 2026-06-30
+- [`2565c31`](https://github.com/wooriapt79/mulberry_memory_bank/commit/2565c31cc1b24060e4063f2ab416c2bb8eeeb6dd) [LAB->Bank] activity synced
+- [`9572817`](https://github.com/wooriapt79/mulberry_memory_bank/commit/95728178dde090e895d58e487e3f713f36e9d734) [LAB->Bank] activity synced
 
 ---
 
