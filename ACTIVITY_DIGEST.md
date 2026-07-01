@@ -1,48 +1,48 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-06-30 03:53 UTC**
+> Last updated: **2026-07-01 04:07 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [🔭 [2026년 07월] Mulberry 기술 트렌드 리포트 — 팀 토론](https://github.com/wooriapt79/mulberry-research-lab/issues/130) #130
+- [[DAY10 완료] Co-op Buy MVP — 팀 전체 검수 및 의견 요청](https://github.com/wooriapt79/mulberry-research-lab/issues/129) #129
 - [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
-- [[질문의 날 #1] 2026-06-27 – 우리가 AI에게 묻고 싶은 것](https://github.com/wooriapt79/mulberry-research-lab/issues/127) #127
-- [[MAPA v0.4] Proof-of-Participation Resume SDK + Memory Layer + Privacy Principle — 팀 전체 의견 수렴](https://github.com/wooriapt79/mulberry-research-lab/issues/126) #126
 
 **Recent Commits:**
-- [`974aadb`](https://github.com/wooriapt79/mulberry-research-lab/commit/974aadbcad4eb637a506a8f6740974f92f2929a4) feat: Lynn daily signal [state:heartbeat] 2026-06-29
-- [`1305833`](https://github.com/wooriapt79/mulberry-research-lab/commit/13058333855fb3ca4ea6f9aeafd50a0ed5b747f1) memory(kb): Issue #109 팀 토론 아카이브 + KB 기억 주입 — Kbin·RyuWon·Malu 2026-06
-- [`9ceee09`](https://github.com/wooriapt79/mulberry-research-lab/commit/9ceee09382dcc15a3cb30b9346e08160aa97c9e0) feat: Lynn daily signal [state:heartbeat] 2026-06-29
+- [`2b96614`](https://github.com/wooriapt79/mulberry-research-lab/commit/2b9661467cf30472c1df8ffbaef884d1d3feb6f2) memory(kb): Issue #129 팀 토론 아카이브 + KB 기억 주입 — Kbin·RyuWon·Malu 2026-07
+- [`e8f818d`](https://github.com/wooriapt79/mulberry-research-lab/commit/e8f818df69b0d5626f47e390e096f517f98c8aab) mulberry-forest-vision
+- [`5989173`](https://github.com/wooriapt79/mulberry-research-lab/commit/5989173f26672671943d54c65d06984bc989cf22) Mulberry Forest
 
 ---
 
 ## Memory BANK ([mulberry_memory_bank](https://github.com/wooriapt79/mulberry_memory_bank))
 
 **Open Issues:**
-- [[Lynn] 최신 AI 논문 기반 Mulberry 고도화 연구 지시](https://github.com/wooriapt79/mulberry_memory_bank/issues/12) #12
-- [April 12 Briefing Feedback](https://github.com/wooriapt79/mulberry_memory_bank/issues/11) #11
-- [lynn_core.py 이슈 정리 (원인 / 조치 / 결과)](https://github.com/wooriapt79/mulberry_memory_bank/issues/10) #10
+- [[Internal] Expand Lynn's Daily_Hunts to Multi-Source Research Agent](https://github.com/wooriapt79/mulberry_memory_bank/issues/17) #17
+- [[Skill] Package & Publish "arXiv Hunter" as Premium MCP Skill](https://github.com/wooriapt79/mulberry_memory_bank/issues/16) #16
+- [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
-- [`feb6834`](https://github.com/wooriapt79/mulberry_memory_bank/commit/feb6834a60dc5d27860811fffc940097c2404576) feat: Lynn daily signal [state:active] 2026-06-30
-- [`2565c31`](https://github.com/wooriapt79/mulberry_memory_bank/commit/2565c31cc1b24060e4063f2ab416c2bb8eeeb6dd) [LAB->Bank] activity synced
-- [`9572817`](https://github.com/wooriapt79/mulberry_memory_bank/commit/95728178dde090e895d58e487e3f713f36e9d734) [LAB->Bank] activity synced
+- [`fa4a25b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/fa4a25bc1883ecb7f554674a572f633bc69a85b4) [LAB->Bank] activity synced
+- [`c29882b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c29882bca0b2a0704a03fe4ff25e3f686d130435) [LAB->Bank] activity synced
+- [`05bd3bd`](https://github.com/wooriapt79/mulberry_memory_bank/commit/05bd3bda9c379b2959d2143baced5be1abc81666) [LAB->Bank] activity synced
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
-- [[DAY8] Memory Layer — Steward Workspace 자동 로딩·저장 시스템](https://github.com/wooriapt79/mulberry-open-api/issues/40) #40
-- [[DAY7] 실 데이터 연결 1단계 — Team Chat DB 연동 + Search 실 에이전트 연결](https://github.com/wooriapt79/mulberry-open-api/issues/39) #39
-- [🌿 [DAY6] Team Chat 실 구동 + Search 실 에이전트 연동 (Mock Fallback 병행)](https://github.com/wooriapt79/mulberry-open-api/issues/29) #29
+- [[DAY10 완료] Co-op Buy MVP PR #51 머지 완료 — Jr. TRANG & RyuWon 확인 요청](https://github.com/wooriapt79/mulberry-open-api/issues/52) #52
+- [[DAY10] safety-classify.js HF 공개 준비 — 보안 체크리스트 + PR 생성](https://github.com/wooriapt79/mulberry-open-api/issues/47) #47
+- [[작업지시] Koda CTO — 2026-04-30 스프린트 (P0: 메뉴배포+이모지 / P1: 채팅+Jr.교육 / P2: ImageAgent+3Repo)](https://github.com/wooriapt79/mulberry-open-api/issues/17) #17
 
 **Recent Commits:**
-- [`192f70d`](https://github.com/wooriapt79/mulberry-open-api/commit/192f70dcb399e81eb6a0938b7f93981c9afc89ff) Merge pull request #38 from wooriapt79/koda/hotfix-chat-search-2026061
-- [`cff8f48`](https://github.com/wooriapt79/mulberry-open-api/commit/cff8f48d31ba99762514988341970b42565547cd) fix: Issue #38 — 이중 스크립트 로드·Chat 2초 딜레이·Search Mock 개선
-- [`11fe0ed`](https://github.com/wooriapt79/mulberry-open-api/commit/11fe0ed8d73bacc2ff625e4a84c6cdb29574c203) Merge pull request #37 from wooriapt79/koda/day6-team-chat
+- [`b8d82fd`](https://github.com/wooriapt79/mulberry-open-api/commit/b8d82fd77d662ef73052861c8b74cf3670abf78d) Merge pull request #56 from wooriapt79/koda/issue55-out-of-domain-guid
+- [`f290808`](https://github.com/wooriapt79/mulberry-open-api/commit/f29080876a4ba0b8e12ae3dc01041e9f73caee97) feat(search): Issue #55 out-of-domain guidance + slice bug fix
+- [`fad5e4c`](https://github.com/wooriapt79/mulberry-open-api/commit/fad5e4c80a5f4eaa593aacacae514e3ff18086c2) Merge pull request #54 from wooriapt79/koda/fix-search-panel-issue53-2
 
 ---
 
