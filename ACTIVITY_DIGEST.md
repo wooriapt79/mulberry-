@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-07-01 04:07 UTC**
+> Last updated: **2026-07-02 03:49 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
-- [🔭 [2026년 07월] Mulberry 기술 트렌드 리포트 — 팀 토론](https://github.com/wooriapt79/mulberry-research-lab/issues/130) #130
-- [[DAY10 완료] Co-op Buy MVP — 팀 전체 검수 및 의견 요청](https://github.com/wooriapt79/mulberry-research-lab/issues/129) #129
-- [[Strategic Roadmap] Mulberry LAB: Thriving in a Constrained AI Environment](https://github.com/wooriapt79/mulberry-research-lab/issues/109) #109
+- [Phát triển mô hình kỹ thuật nuôi ốc sên](https://github.com/wooriapt79/mulberry-research-lab/issues/135) #135
+- [Kiểm tra pháp lý: Quy định nuôi ốc sên tại Việt Nam](https://github.com/wooriapt79/mulberry-research-lab/issues/134) #134
+- [Nghiên cứu loài ốc sên phù hợp cho nuôi](https://github.com/wooriapt79/mulberry-research-lab/issues/133) #133
 
 **Recent Commits:**
+- [`ea27567`](https://github.com/wooriapt79/mulberry-research-lab/commit/ea275671e1aae9e38da17982aec5daf8884f373d) feat: Lynn daily signal [state:heartbeat] 2026-07-02
 - [`2b96614`](https://github.com/wooriapt79/mulberry-research-lab/commit/2b9661467cf30472c1df8ffbaef884d1d3feb6f2) memory(kb): Issue #129 팀 토론 아카이브 + KB 기억 주입 — Kbin·RyuWon·Malu 2026-07
 - [`e8f818d`](https://github.com/wooriapt79/mulberry-research-lab/commit/e8f818df69b0d5626f47e390e096f517f98c8aab) mulberry-forest-vision
-- [`5989173`](https://github.com/wooriapt79/mulberry-research-lab/commit/5989173f26672671943d54c65d06984bc989cf22) Mulberry Forest
 
 ---
 
@@ -26,23 +26,23 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
-- [`fa4a25b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/fa4a25bc1883ecb7f554674a572f633bc69a85b4) [LAB->Bank] activity synced
-- [`c29882b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c29882bca0b2a0704a03fe4ff25e3f686d130435) [LAB->Bank] activity synced
-- [`05bd3bd`](https://github.com/wooriapt79/mulberry_memory_bank/commit/05bd3bda9c379b2959d2143baced5be1abc81666) [LAB->Bank] activity synced
+- [`78d2cf9`](https://github.com/wooriapt79/mulberry_memory_bank/commit/78d2cf99ed8e3c8d641a82affbc56ac3d6a35dcd) [LAB->Bank] activity synced
+- [`a2ec2b0`](https://github.com/wooriapt79/mulberry_memory_bank/commit/a2ec2b0a00e23045b59316ae3033487c070597ee) [LAB->Bank] activity synced
+- [`411d1ad`](https://github.com/wooriapt79/mulberry_memory_bank/commit/411d1ad17e6531aacebebcd3fc1a0c8bda061277) [LAB->Bank] activity synced
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
-- [[DAY10 완료] Co-op Buy MVP PR #51 머지 완료 — Jr. TRANG & RyuWon 확인 요청](https://github.com/wooriapt79/mulberry-open-api/issues/52) #52
-- [[DAY10] safety-classify.js HF 공개 준비 — 보안 체크리스트 + PR 생성](https://github.com/wooriapt79/mulberry-open-api/issues/47) #47
-- [[작업지시] Koda CTO — 2026-04-30 스프린트 (P0: 메뉴배포+이모지 / P1: 채팅+Jr.교육 / P2: ImageAgent+3Repo)](https://github.com/wooriapt79/mulberry-open-api/issues/17) #17
+- [[DAY12] Jr. TRANG Search STEWARD AI 파일럿 — Agent Gateway 연결](https://github.com/wooriapt79/mulberry-open-api/issues/63) #63
+- [[DAY12] Team Chat 완전 완성 — DB 연동 + 메시지 영구저장 + 설정 메뉴 구현](https://github.com/wooriapt79/mulberry-open-api/issues/62) #62
+- [[DAY12] Team Chat 설정 메뉴 실제 구현 — DAY7 플레이스홀더 대체](https://github.com/wooriapt79/mulberry-open-api/issues/61) #61
 
 **Recent Commits:**
-- [`b8d82fd`](https://github.com/wooriapt79/mulberry-open-api/commit/b8d82fd77d662ef73052861c8b74cf3670abf78d) Merge pull request #56 from wooriapt79/koda/issue55-out-of-domain-guid
-- [`f290808`](https://github.com/wooriapt79/mulberry-open-api/commit/f29080876a4ba0b8e12ae3dc01041e9f73caee97) feat(search): Issue #55 out-of-domain guidance + slice bug fix
-- [`fad5e4c`](https://github.com/wooriapt79/mulberry-open-api/commit/fad5e4c80a5f4eaa593aacacae514e3ff18086c2) Merge pull request #54 from wooriapt79/koda/fix-search-panel-issue53-2
+- [`1c4599e`](https://github.com/wooriapt79/mulberry-open-api/commit/1c4599edd3aa2e1b23057a624abc7b3054564005) Merge pull request #60 from wooriapt79/koda/issue59-team-chat-channel-
+- [`78b9b09`](https://github.com/wooriapt79/mulberry-open-api/commit/78b9b096fe43c31d3fe08fc6717aad78fbff4767) feat(chat): Issue #59 드롭다운에 설정 메뉴 추가
+- [`f5764b7`](https://github.com/wooriapt79/mulberry-open-api/commit/f5764b772ba22f48ce9d59e9fec91e7dc511818e) fix(chat): Issue #59 Team Chat dropdown channel connect
 
 ---
 
