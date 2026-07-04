@@ -1,0 +1,58 @@
+name: 🌙 Luna (Jr. TRANG) Mission
+
+on:
+  issues:
+    types: [opened, labeled]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+
+jobs:
+  luna-response:
+    # @luna 태그 포함 또는 agent-luna 라벨 — 봇 댓글 제외
+    if: |
+      (
+        contains(github.event.comment.body, '@luna') ||
+        contains(github.event.issue.labels.*.name, 'agent-luna') ||
+        github.event_name == 'workflow_dispatch'
+      ) &&
+      github.event.comment.user.login != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install Packages
+        run: pip install requests anthropic
+
+      - name: 🌙 Execute Luna Mission
+        id: luna_run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AGENT_NAME: luna
+          AGENT_ROLE: JR_OPERATION_STEWARD
+        run: |
+          python scripts/luna_mission.py \
+            --issue "${{ github.event.issue.html_url }}" \
+            --comment "${{ github.event.comment.body }}" \
+            --author "${{ github.event.comment.user.login }}"
+
+      - name: 🚨 Escalate to Sr. Trang if Error
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "<!-- bot-response -->\n⚠️ **Luna 오류** — Sr. Trang Manager 확인 요청\n@trang"
+            });
