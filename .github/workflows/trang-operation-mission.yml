@@ -7,15 +7,33 @@ on:
     types: [created]
   workflow_dispatch:
 
+# 동일 이슈에 대한 중복 실행 방지 (Issue #137 수정)
+concurrency:
+  group: trang-${{ github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+
 jobs:
   trang-response:
     if: |
       (
-        contains(github.event.issue.labels.*.name, 'agent-trang') ||
-        contains(github.event.comment.body, '@trang') ||
+        (
+          github.event_name == 'issue_comment' &&
+          contains(github.event.comment.body, '@trang') &&
+          github.event.comment.user.login != 'github-actions[bot]' &&
+          !startsWith(github.event.comment.body, '<!-- bot-response -->')
+        ) ||
+        (
+          github.event_name == 'issues' &&
+          github.event.action == 'labeled' &&
+          github.event.label.name == 'agent-trang'
+        ) ||
+        (
+          github.event_name == 'issues' &&
+          github.event.action == 'opened' &&
+          contains(github.event.issue.labels.*.name, 'agent-trang')
+        ) ||
         github.event_name == 'workflow_dispatch'
-      ) &&
-      github.event.comment.user.login != 'github-actions[bot]'
+      )
     runs-on: ubuntu-latest
 
     steps:
@@ -53,5 +71,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: "⚠️ **Human Review Required**\n@KODA @Kbin — Trang 운영 검토 요청"
+              body: "⚠️ **Human Review Required**\n@koda @Kbin — Trang 위생코드 게이트 또는 미션 실패"
             });

@@ -22,13 +22,27 @@ on:
         description: 'Issue number to trigger'
         required: false
 
+# 동일 이슈 중복 실행 방지 (Issue #137 수정)
+concurrency:
+  group: team-trigger-${{ github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+
 jobs:
   route-comment:
     runs-on: ubuntu-latest
-    # 봇 계정 댓글은 트리거 안 함 (무한루프 방지)
+    # issue_comment: 봇·bot-response 차단 / issues:labeled: 전용 라벨만 허용
     if: |
-      github.event.comment.user.login != 'github-actions[bot]' &&
-      !startsWith(github.event.comment.body, '<!-- bot-response -->')
+      (
+        github.event_name == 'issue_comment' &&
+        github.event.comment.user.login != 'github-actions[bot]' &&
+        !startsWith(github.event.comment.body, '<!-- bot-response -->')
+      ) ||
+      (
+        github.event_name == 'issues' &&
+        github.event.action == 'labeled' &&
+        (github.event.label.name == 'agent-trang' || github.event.label.name == 'agent-luna' || github.event.label.name == 'agent-koda')
+      ) ||
+      github.event_name == 'workflow_dispatch'
 
     steps:
       - name: 🔍 Detect routing target

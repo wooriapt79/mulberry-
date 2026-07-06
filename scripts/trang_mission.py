@@ -46,8 +46,11 @@ BOT_MARKERS = [
     "🔧 **Koda CTO",
     "🤖 AUTO",
     "🤖→👤 AI 대리",
-    "Trang — 운영 계획 검토",
+    "Trang — 운영 계획 검토",   # 구버전 포맷 호환
 ]
+
+# 위생 게이트: 응답이 이 길이 미만이면 빈 응답으로 간주하고 댓글 skip
+MIN_RESPONSE_LENGTH = 30
 
 
 def is_bot_comment(comment_body: str) -> bool:
@@ -57,6 +60,22 @@ def is_bot_comment(comment_body: str) -> bool:
         if marker in comment_body:
             return True
     return False
+
+
+def is_valid_response(response_text: str) -> bool:
+    """위생 게이트 — 빈 응답·인트로만 있는 응답 차단"""
+    if not response_text or len(response_text.strip()) < MIN_RESPONSE_LENGTH:
+        return False
+    # 인트로 템플릿만 있는 경우 차단 (실제 내용이 없는 패턴)
+    hollow_patterns = [
+        "이슈를 검토했습니다. 일정 계획·팀 조율·운영 전략 관점에서 분석합니다.",
+        "댓글 검토 중 오류 발생.",
+    ]
+    stripped = response_text.strip()
+    for pattern in hollow_patterns:
+        if stripped == pattern or stripped.startswith(pattern) and len(stripped) < len(pattern) + 10:
+            return False
+    return True
 
 
 class TrangMission:
@@ -89,6 +108,12 @@ class TrangMission:
             return {"status": "SKIPPED", "reason": "bot_marker"}
 
         response_text = self._call_claude_api(comment_body, issue_url)
+
+        # 위생 게이트 — 빈 응답이면 댓글 skip
+        if not is_valid_response(response_text):
+            logging.warning("⚠️ 위생 게이트 차단 — 응답 내용이 없거나 너무 짧음. 댓글 등록 skip.")
+            return {"status": "SKIPPED", "reason": "hygiene_gate_empty_response"}
+
         comment = self._format_comment(response_text)
 
         self._post_github_comment(issue_url, comment)
