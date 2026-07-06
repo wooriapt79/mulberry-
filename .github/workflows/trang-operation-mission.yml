@@ -1,0 +1,75 @@
+name: 🌿 Trang Operation Mission
+
+on:
+  issues:
+    types: [opened, labeled]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+
+# 동일 이슈에 대한 중복 실행 방지 (Issue #137 수정)
+concurrency:
+  group: trang-${{ github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  trang-response:
+    if: |
+      (
+        (
+          github.event_name == 'issue_comment' &&
+          contains(github.event.comment.body, '@trang') &&
+          github.event.comment.user.login != 'github-actions[bot]' &&
+          !startsWith(github.event.comment.body, '<!-- bot-response -->')
+        ) ||
+        (
+          github.event_name == 'issues' &&
+          github.event.action == 'labeled' &&
+          github.event.label.name == 'agent-trang'
+        ) ||
+        (
+          github.event_name == 'issues' &&
+          github.event.action == 'opened' &&
+          contains(github.event.issue.labels.*.name, 'agent-trang')
+        ) ||
+        github.event_name == 'workflow_dispatch'
+      )
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install Packages
+        run: pip install requests pyyaml python-dotenv anthropic
+
+      - name: 🌿 Execute Trang Operation Mission
+        id: trang_run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AGENT_NAME: trang
+          AGENT_ROLE: OPERATION_MANAGER
+        run: |
+          python scripts/trang_mission.py \
+            --issue "${{ github.event.issue.html_url }}" \
+            --comment "${{ github.event.comment.body }}" \
+            --author "${{ github.event.comment.user.login }}"
+
+      - name: 🚨 Escalate if Review Needed
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "⚠️ **Human Review Required**\n@koda @Kbin — Trang 위생코드 게이트 또는 미션 실패"
+            });
