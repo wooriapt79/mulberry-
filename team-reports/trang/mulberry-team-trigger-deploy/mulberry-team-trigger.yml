@@ -47,9 +47,10 @@ jobs:
     steps:
       - name: 🔍 Detect routing target
         id: route
+        env:
+          COMMENT_BODY: ${{ github.event.comment.body }}
         run: |
-          BODY="${{ github.event.comment.body }}"
-          AUTHOR="${{ github.event.comment.user.login }}"
+          BODY="$COMMENT_BODY"
 
           if echo "$BODY" | grep -qi '@luna'; then
             echo "target=luna" >> $GITHUB_OUTPUT
@@ -74,6 +75,9 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
         run: |
           pip install anthropic --quiet
 
@@ -81,9 +85,9 @@ jobs:
           import os, anthropic, subprocess, json
 
           api_key = os.getenv("ANTHROPIC_API_KEY")
-          comment_body = """${{ github.event.comment.body }}"""
-          issue_number = "${{ github.event.issue.number }}"
-          repo = "${{ github.repository }}"
+          comment_body = os.getenv("COMMENT_BODY", "")
+          issue_number = os.getenv("ISSUE_NUMBER", "")
+          repo = os.getenv("REPO", "")
 
           if not api_key:
               response_text = "이슈를 확인했습니다. 검토 후 의견 드리겠습니다. 🌙"
@@ -126,6 +130,9 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
         run: |
           pip install anthropic --quiet
 
@@ -134,9 +141,9 @@ jobs:
           import urllib.request
 
           api_key = os.getenv("ANTHROPIC_API_KEY")
-          comment_body = """${{ github.event.comment.body }}"""
-          issue_number = "${{ github.event.issue.number }}"
-          repo = "${{ github.repository }}"
+          comment_body = os.getenv("COMMENT_BODY", "")
+          issue_number = os.getenv("ISSUE_NUMBER", "")
+          repo = os.getenv("REPO", "")
 
           if not api_key:
               response_text = "댓글을 수신했습니다. 검토 후 담당자 배정하겠습니다."
