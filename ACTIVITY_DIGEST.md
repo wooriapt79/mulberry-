@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-07-12 02:57 UTC**
+> Last updated: **2026-07-13 03:15 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[Research] Cognitive Memory Evolution for Agent Learning Framework](https://github.com/wooriapt79/mulberry-research-lab/issues/138) #138
 
 **Recent Commits:**
+- [`35f25dc`](https://github.com/wooriapt79/mulberry-research-lab/commit/35f25dcd6e31801cf3e754a505d73ab513c05902) chore(contributors): 주간 기여자 통계 자동 동기화 2026-07-13
+- [`41bb6f6`](https://github.com/wooriapt79/mulberry-research-lab/commit/41bb6f680313ac4bff6798c9343a95c316f895b9) feat: Lynn daily signal [state:heartbeat] 2026-07-12
 - [`84c85d7`](https://github.com/wooriapt79/mulberry-research-lab/commit/84c85d7a09fa22ecefa7798cb6548ede0a2c9a14) feat: Lynn daily signal [state:heartbeat] 2026-07-11
-- [`c9aff81`](https://github.com/wooriapt79/mulberry-research-lab/commit/c9aff81cb8e36258148039030a26e172b3a409de) feat: Lynn daily signal [state:heartbeat] 2026-07-10
-- [`8d41ede`](https://github.com/wooriapt79/mulberry-research-lab/commit/8d41ede56c2cb330cc260f261817a6fb8af7ba7c) feat: Lynn daily signal [state:heartbeat] 2026-07-09
 
 ---
 
@@ -26,23 +26,23 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`9cb2f5f`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9cb2f5f81ef4ea4f5644154312f0603704912a0e) feat: Lynn daily signal [state:active] 2026-07-13
 - [`40072d5`](https://github.com/wooriapt79/mulberry_memory_bank/commit/40072d5b910941be2f6884f44ae5e058a2065d9f) [LAB->Bank] activity synced
 - [`9feeb10`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9feeb103d043d4563c59015e66c1e901b5a8d538) feat: Lynn daily signal [state:active] 2026-07-12
-- [`7bed1fe`](https://github.com/wooriapt79/mulberry_memory_bank/commit/7bed1fea6e2cfae11f67bc983b8a708a2faa9036) [LAB->Bank] activity synced
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
-- [[DAY16/17] Co-op Buy UI 프론트엔드 구현 — coop-buy-ui.js](https://github.com/wooriapt79/mulberry-open-api/issues/89) #89
-- [[Architecture] Agent Growth System — Jr. Student Mode → Luna Mode 독자활동 진화 구조](https://github.com/wooriapt79/mulberry-open-api/issues/90) #90
-- [[DAY16] Jr. TRANG 정체성 안정화 — 세션 간 연속성 설계 검토](https://github.com/wooriapt79/mulberry-open-api/issues/85) #85
+- [fix(railway): Issue #96 railpack.json Node.js provider 강제 지정](https://github.com/wooriapt79/mulberry-open-api/pull/97) #97
+- [[Bug] Railway Railpack Python 오감지 — railpack.json Node.js provider 강제 지정 필요](https://github.com/wooriapt79/mulberry-open-api/issues/96) #96
+- [✅ [Koda 보고] Mulberry_Luna KakaoTalk AI Agent v1.0 셋업 완료](https://github.com/wooriapt79/mulberry-open-api/issues/93) #93
 
 **Recent Commits:**
-- [`1159091`](https://github.com/wooriapt79/mulberry-open-api/commit/1159091d1bf8897971d2f2bdd563b50fba8879ea) feat: Add Luna session plan — Co-op Buy comprehensive plan 2026-07-11
-- [`9fb0611`](https://github.com/wooriapt79/mulberry-open-api/commit/9fb061174c6e50561bef66fb891b01b302e53f3c) feat: Add Co-op Buy architecture docs (System, Agents, UI/UX) for Koda
-- [`e917401`](https://github.com/wooriapt79/mulberry-open-api/commit/e9174010078b056514e6afa43e19d8e67a6da789) docs(trang): Mulberry Negotiation Framework v0.2 — 1차 도서관 회의 반영, Luna 
+- [`fdf5cdc`](https://github.com/wooriapt79/mulberry-open-api/commit/fdf5cdcd98b98c398122db60a4280d18164c83ca) fix(deps): @anthropic-ai/sdk 의존성 추가 — Luna Haiku API 호출용
+- [`e4f01c8`](https://github.com/wooriapt79/mulberry-open-api/commit/e4f01c8a7190e1ebc79c28084b19c57becf39182) Refactor Kakao webhook to use Anthropic clientfeat(kakao): Luna 시스템 프롬
+- [`b90e212`](https://github.com/wooriapt79/mulberry-open-api/commit/b90e2126e9d4071b8a654a55186e440a1967d891) Change builder from NIXPACKS to RAILPACK
 
 ---
 
