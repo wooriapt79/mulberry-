@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-07-13 03:15 UTC**
+> Last updated: **2026-07-14 02:40 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[Research] Cognitive Memory Evolution for Agent Learning Framework](https://github.com/wooriapt79/mulberry-research-lab/issues/138) #138
 
 **Recent Commits:**
+- [`2bdc42a`](https://github.com/wooriapt79/mulberry-research-lab/commit/2bdc42a03eb1652b4f6845338cfee5d297b6af2a) feat: Lynn daily signal [state:heartbeat] 2026-07-13
 - [`35f25dc`](https://github.com/wooriapt79/mulberry-research-lab/commit/35f25dcd6e31801cf3e754a505d73ab513c05902) chore(contributors): 주간 기여자 통계 자동 동기화 2026-07-13
 - [`41bb6f6`](https://github.com/wooriapt79/mulberry-research-lab/commit/41bb6f680313ac4bff6798c9343a95c316f895b9) feat: Lynn daily signal [state:heartbeat] 2026-07-12
-- [`84c85d7`](https://github.com/wooriapt79/mulberry-research-lab/commit/84c85d7a09fa22ecefa7798cb6548ede0a2c9a14) feat: Lynn daily signal [state:heartbeat] 2026-07-11
 
 ---
 
@@ -26,9 +26,9 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
-- [`9cb2f5f`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9cb2f5f81ef4ea4f5644154312f0603704912a0e) feat: Lynn daily signal [state:active] 2026-07-13
-- [`40072d5`](https://github.com/wooriapt79/mulberry_memory_bank/commit/40072d5b910941be2f6884f44ae5e058a2065d9f) [LAB->Bank] activity synced
-- [`9feeb10`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9feeb103d043d4563c59015e66c1e901b5a8d538) feat: Lynn daily signal [state:active] 2026-07-12
+- [`5e29b4a`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5e29b4a692590811eafe6ecf1206029079bf9148) feat: Lynn daily signal [state:active] 2026-07-13
+- [`dfcc6c6`](https://github.com/wooriapt79/mulberry_memory_bank/commit/dfcc6c66068476bf81a9a80ec7ac385702d95ded) [LAB->Bank] activity synced
+- [`fec0b3d`](https://github.com/wooriapt79/mulberry_memory_bank/commit/fec0b3ddb089d6dbed2f08c59170a49534388766) [LAB->Bank] activity synced
 
 ---
 
@@ -40,9 +40,9 @@
 - [✅ [Koda 보고] Mulberry_Luna KakaoTalk AI Agent v1.0 셋업 완료](https://github.com/wooriapt79/mulberry-open-api/issues/93) #93
 
 **Recent Commits:**
-- [`fdf5cdc`](https://github.com/wooriapt79/mulberry-open-api/commit/fdf5cdcd98b98c398122db60a4280d18164c83ca) fix(deps): @anthropic-ai/sdk 의존성 추가 — Luna Haiku API 호출용
-- [`e4f01c8`](https://github.com/wooriapt79/mulberry-open-api/commit/e4f01c8a7190e1ebc79c28084b19c57becf39182) Refactor Kakao webhook to use Anthropic clientfeat(kakao): Luna 시스템 프롬
-- [`b90e212`](https://github.com/wooriapt79/mulberry-open-api/commit/b90e2126e9d4071b8a654a55186e440a1967d891) Change builder from NIXPACKS to RAILPACK
+- [`a198ab2`](https://github.com/wooriapt79/mulberry-open-api/commit/a198ab2afd14e91dc85344c3a7995357f1e653f6) Modify system prompt for Claude Haiku
+- [`7850e51`](https://github.com/wooriapt79/mulberry-open-api/commit/7850e5130510e8834ef3b26abedcff20874002b3) Fix comment formatting in kakao.js
+- [`3ab604d`](https://github.com/wooriapt79/mulberry-open-api/commit/3ab604d07db8a4d0415e50581044427cf3ba417d) Implement Resonance AI question detection and responses
 
 ---
 
