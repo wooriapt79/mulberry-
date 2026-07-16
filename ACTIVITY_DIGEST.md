@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-07-15 02:38 UTC**
+> Last updated: **2026-07-16 02:45 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[Research] Cognitive Memory Evolution for Agent Learning Framework](https://github.com/wooriapt79/mulberry-research-lab/issues/138) #138
 
 **Recent Commits:**
+- [`88b453d`](https://github.com/wooriapt79/mulberry-research-lab/commit/88b453d599bdcec608f885d78491f7841484d763) feat: Lynn daily signal [state:heartbeat] 2026-07-15
 - [`4d6be37`](https://github.com/wooriapt79/mulberry-research-lab/commit/4d6be37d50443d263d9ce1e5c585ace5027f7316) feat: Lynn daily signal [state:heartbeat] 2026-07-14
 - [`2bdc42a`](https://github.com/wooriapt79/mulberry-research-lab/commit/2bdc42a03eb1652b4f6845338cfee5d297b6af2a) feat: Lynn daily signal [state:heartbeat] 2026-07-13
-- [`35f25dc`](https://github.com/wooriapt79/mulberry-research-lab/commit/35f25dcd6e31801cf3e754a505d73ab513c05902) chore(contributors): 주간 기여자 통계 자동 동기화 2026-07-13
 
 ---
 
@@ -26,29 +26,30 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`0e1aa40`](https://github.com/wooriapt79/mulberry_memory_bank/commit/0e1aa409b20f3685f72ffa4e4c1cd48939245e6a) feat: Lynn daily signal [state:active] 2026-07-16
+- [`29d9049`](https://github.com/wooriapt79/mulberry_memory_bank/commit/29d9049a980f1b38835b881577bb8adaf4aede74) [LAB->Bank] activity synced
 - [`993600c`](https://github.com/wooriapt79/mulberry_memory_bank/commit/993600cf81c124aace9f8fc0f20dcedfc91551b5) feat: Lynn daily signal [state:active] 2026-07-14
-- [`d5b0f0a`](https://github.com/wooriapt79/mulberry_memory_bank/commit/d5b0f0a4083eca0b793f4a6956b75e42f1f0d4ab) [LAB->Bank] activity synced
-- [`5e29b4a`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5e29b4a692590811eafe6ecf1206029079bf9148) feat: Lynn daily signal [state:active] 2026-07-13
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
+- [[Luna v2.7] Commerce Card Carousel — 다중 상품 슬라이드 응답](https://github.com/wooriapt79/mulberry-open-api/issues/100) #100
 - [fix(railway): Issue #96 railpack.json Node.js provider 강제 지정](https://github.com/wooriapt79/mulberry-open-api/pull/97) #97
 - [[Bug] Railway Railpack Python 오감지 — railpack.json Node.js provider 강제 지정 필요](https://github.com/wooriapt79/mulberry-open-api/issues/96) #96
-- [✅ [Koda 보고] Mulberry_Luna KakaoTalk AI Agent v1.0 셋업 완료](https://github.com/wooriapt79/mulberry-open-api/issues/93) #93
 
 **Recent Commits:**
-- [`faee250`](https://github.com/wooriapt79/mulberry-open-api/commit/faee25013cdf1b43f25678b95dbe510149b35de8) Update Kakao profile image URL add
-- [`80adbce`](https://github.com/wooriapt79/mulberry-open-api/commit/80adbce72888fa28d7c05be2f33fcb3e706de893) Change product image URLs to new logo add
-- [`3df6e12`](https://github.com/wooriapt79/mulberry-open-api/commit/3df6e12fcd3b5accc3c2c6e1c5fed1de037cc09e) Upgrade kakao.js to version 2.5 Luna v2.5 — Commerce Card 상품 구매 카드 추가 
+- [`f932298`](https://github.com/wooriapt79/mulberry-open-api/commit/f932298923745b23e036b46ea82565539cc835ae) Implement time-based greetings in Kakao route 
+- [`71d772a`](https://github.com/wooriapt79/mulberry-open-api/commit/71d772a3b1d6a7047c075c9282cc01fa8ec5976f) Add comment for future feature implementation
+- [`fe649a0`](https://github.com/wooriapt79/mulberry-open-api/commit/fe649a061ec4e2fe727f3fde650db401e0d2726f) Implement time-based greetings and update version -[v2.6] 시간대별 인사 — 모든
 
 ---
 
 ## MATF ([Mulberry-Agent-Team-Formation-System](https://github.com/wooriapt79/Mulberry-Agent-Team-Formation-System))
 
 **Open Issues:**
+- [[ATFS-Core] TRANG Manager 오케스트레이션 핵심 모듈 구현](https://github.com/wooriapt79/Mulberry-Agent-Team-Formation-System/issues/8) #8
 - [[Bug] <short-summary> onboarding_api 테스트](https://github.com/wooriapt79/Mulberry-Agent-Team-Formation-System/issues/6) #6
 - [[Feature] <short-summary>PUSH 실행시에 토큰 인증 에러](https://github.com/wooriapt79/Mulberry-Agent-Team-Formation-System/issues/5) #5
 
