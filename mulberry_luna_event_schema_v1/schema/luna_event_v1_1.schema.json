@@ -1,0 +1,250 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mulberry.example/schema/luna-event-v1.1.json",
+  "title": "Mulberry Luna Common Event v1.1",
+  "description": "Mulberry Worker Network 표준 이벤트 스키마 v1.1 — CSA Kbin 설계 반영 (Issue #9 / 2026-07-20)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "task_id",
+    "timestamp",
+    "channel",
+    "agent",
+    "event_type",
+    "status",
+    "input_summary"
+  ],
+  "properties": {
+
+    "schema_version": {
+      "type": "string",
+      "const": "1.1",
+      "description": "스키마 버전 — Schema Migration 추적용 required 필드"
+    },
+
+    "event_id": {
+      "type": "string",
+      "minLength": 8,
+      "description": "이벤트 고유 ID (예: EVT-20260720-000001)"
+    },
+
+    "task_id": {
+      "type": "string",
+      "minLength": 8,
+      "description": "연관 태스크 ID — 멀티 Agent 체인 추적용"
+    },
+
+    "parent_event_id": {
+      "type": ["string", "null"],
+      "description": "상위 이벤트 ID — handoff 체인 구성 시 사용"
+    },
+
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 형식 (예: 2026-07-20T09:00:00+09:00)"
+    },
+
+    "channel": {
+      "type": "string",
+      "enum": ["kakao", "cowork", "search", "web", "api", "internal"],
+      "description": "수신 채널. agent=human이면 기본 internal 권장 (카카오 직접 상담 시 kakao 허용)"
+    },
+
+    "agent": {
+      "type": "string",
+      "enum": ["kakao_luna", "search_luna", "cowork_luna", "gateway", "human"],
+      "description": "처리 주체 Agent"
+    },
+
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "message_received",
+        "intent_detected",
+        "search_requested",
+        "search_completed",
+        "handoff_requested",
+        "human_approval_requested",
+        "human_approval_received",
+        "response_generated",
+        "response_sent",
+        "feedback_received",
+        "error",
+        "task_completed"
+      ]
+    },
+
+    "status": {
+      "type": "string",
+      "enum": [
+        "received",
+        "processing",
+        "success",
+        "partial",
+        "failed",
+        "refused",
+        "escalated",
+        "completed"
+      ]
+    },
+
+    "session_id": {
+      "type": ["string", "null"],
+      "description": "채널 세션 추적 ID"
+    },
+
+    "user_ref": {
+      "type": ["string", "null"],
+      "description": "사용자 참조 ID — 해시 또는 내부 ID 사용 (개인정보 최소화)"
+    },
+
+    "intent": {
+      "type": ["string", "null"],
+      "description": "감지된 사용자 의도 (예: product_inquiry, coop_request)"
+    },
+
+    "raw_input": {
+      "type": ["string", "null"],
+      "maxLength": 4096,
+      "description": "원문 입력 — 개인정보 마스킹 적용 후 저장. AI 학습 데이터 활용 (v1.1 신규)"
+    },
+
+    "input_summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096,
+      "description": "AI 요약본 — 개인정보 최소화 처리. v1.0 대비 1000 → 4096자 확대"
+    },
+
+    "output_summary": {
+      "type": ["string", "null"],
+      "maxLength": 4096,
+      "description": "출력 요약. v1.0 대비 2000 → 4096자 확대"
+    },
+
+    "tool": {
+      "type": ["string", "null"],
+      "description": "사용된 도구명"
+    },
+
+    "next_agent": {
+      "type": ["string", "null"],
+      "enum": ["kakao_luna", "search_luna", "cowork_luna", "human", null],
+      "description": "다음 처리 Agent — handoff_requested 이벤트에서 사용"
+    },
+
+    "failure_category": {
+      "type": ["string", "null"],
+      "enum": ["SEARCH", "API", "NETWORK", "PAYMENT", "USER", "SYSTEM", null],
+      "description": "실패 대분류 (v1.1 신규). failure_code와 함께 2단계 체계 구성"
+    },
+
+    "failure_code": {
+      "type": ["string", "null"],
+      "description": "실패 세부 코드 (v1.1: enum 고정 → 자유 확장). 예: SEARCH_TIMEOUT, API_429, PAYMENT_DECLINED, OUT_OF_STOCK"
+    },
+
+    "human_approval_required": {
+      "type": "boolean",
+      "default": false,
+      "description": "사람 승인 필요 여부 (결제·계약·환불 등)"
+    },
+
+    "workflow_id": {
+      "type": ["string", "null"],
+      "description": "워크플로우 고유 ID (예: WF-20260720-COOP-001). 동일 워크플로우 이벤트 묶음 추적 (v1.1 신규)"
+    },
+
+    "step_no": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "description": "워크플로우 내 현재 단계 번호 (1, 2, 3...) (v1.1 신규)"
+    },
+
+    "step_name": {
+      "type": ["string", "null"],
+      "description": "단계명 (예: 메시지수신, 상품조회, 가격확인, 주문확정) (v1.1 신규)"
+    },
+
+    "delegated_from": {
+      "type": ["string", "null"],
+      "enum": ["kakao_luna", "search_luna", "cowork_luna", "gateway", "human", null],
+      "description": "이 이벤트를 위임한 Agent (v1.1 신규)"
+    },
+
+    "delegated_to": {
+      "type": ["string", "null"],
+      "enum": ["kakao_luna", "search_luna", "cowork_luna", "gateway", "human", null],
+      "description": "다음으로 위임할 Agent (v1.1 신규)"
+    },
+
+    "confidence": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "AI 응답 신뢰도 (0.0~1.0). v1.0 metadata → 최상위 필드로 격상 (v1.1)"
+    },
+
+    "response_time_ms": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "응답 처리 시간 (ms). v1.0 metadata → 최상위 필드로 격상 (v1.1)"
+    },
+
+    "adapter_version": {
+      "type": ["string", "null"],
+      "description": "채널 어댑터 버전. v1.0 metadata → 최상위 필드로 격상 (v1.1)"
+    },
+
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "플랫폼별 확장 데이터 (자유 확장 허용)",
+      "properties": {
+        "locale": {
+          "type": "string",
+          "description": "예: ko-KR, en-US, vi-VN"
+        },
+        "source_message_type": {
+          "type": "string",
+          "description": "예: text, image, button, file"
+        },
+        "platform_version": {
+          "type": "string",
+          "description": "플랫폼 또는 앱 버전"
+        },
+        "client": {
+          "type": "string",
+          "description": "클라이언트 식별자 (예: kakao-openbuilder, cowork-desktop)"
+        },
+        "message_length": {
+          "type": "integer",
+          "description": "원문 메시지 길이 (chars)"
+        },
+        "attachments": {
+          "type": "integer",
+          "description": "첨부 파일 수"
+        },
+        "retry_count": {
+          "type": "integer",
+          "description": "재시도 횟수"
+        },
+        "language": {
+          "type": "string",
+          "description": "감지된 언어 코드 (예: ko, vi, id)"
+        },
+        "timezone": {
+          "type": "string",
+          "description": "사용자 타임존 (예: Asia/Seoul)"
+        },
+        "model": {
+          "type": "string",
+          "description": "사용된 AI 모델명"
+        }
+      }
+    }
+  }
+}
