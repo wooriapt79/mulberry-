@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "post_id": "event-2026-07-20-001",
+  "category": "events",
+  "intent_tags": ["event_inquiry", "schedule_inquiry"],
+  "title": "🌻 2026 여름 지역 농산물 페스티벌 안내",
+  "content": "올 여름 뽕나무장터(Mulberry Market)에서 지역 농산물 페스티벌을 개최합니다!\n\n📅 일시: 2026-08-02 (토) 오전 10시 ~ 오후 5시\n📍 장소: 파주 헤이리 예술마을 광장\n🎪 내용:\n  - 지역 농가 직거래 부스 20개 운영\n  - 블루베리 잼 만들기 체험 (선착순 50명)\n  - 지역 농가 스토리 전시\n  - 무료 시식 코너\n\n가족과 함께 오세요! 입장 무료.",
+  "summary": "2026-08-02 파주 헤이리 예술마을 광장에서 지역 농산물 페스티벌 개최. 오전10시~오후5시. 직거래 부스, 체험, 시식 운영. 입장 무료.",
+  "date": "2026-07-20",
+  "author": "KODA",
+  "status": "upcoming",
+  "region": "파주",
+  "event_info": {
+    "event_date": "2026-08-02",
+    "start_time": "10:00",
+    "end_time": "17:00",
+    "location": "파주 헤이리 예술마을 광장",
+    "admission": "무료",
+    "capacity": null
+  },
+  "tags": ["이벤트", "페스티벌", "파주", "농산물", "체험", "직거래"]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "post_id": "notice-2026-07-20-001",
+  "category": "notices",
+  "intent_tags": ["notice_inquiry", "service_inquiry"],
+  "title": "📢 카카오 채널 서비스 업데이트 안내",
+  "content": "안녕하세요, Mulberry입니다.\n\n카카오 채널 서비스가 업데이트되었습니다.\n\n✅ 주요 변경사항:\n  1. 공동구매 신청 기능 개선 — 버튼 한 번으로 신청 완료\n  2. 배송 조회 기능 추가 — '배송조회' 입력 시 바로 확인 가능\n  3. Luna AI 응답 속도 향상 — 평균 응답 2초 이내\n\n불편하신 점은 채널 메시지로 문의해 주세요.",
+  "summary": "카카오 채널 업데이트: 공동구매 신청 버튼 개선, 배송 조회 기능 추가, Luna AI 응답 속도 향상(2초 이내).",
+  "date": "2026-07-20",
+  "author": "KODA",
+  "status": "published",
+  "tags": ["공지", "업데이트", "서비스", "개선"]
+}
