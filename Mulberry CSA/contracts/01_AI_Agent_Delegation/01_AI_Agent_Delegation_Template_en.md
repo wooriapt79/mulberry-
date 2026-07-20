@@ -1,59 +1,67 @@
-# 01_AI_Agent_Delegation_Template
+# 01 — AI Agent Delegation Template
 
-## 1. Preamble
+> Subject to the [AI Agent Ontology & Partnership Constitution](../../../docs/architecture/AI_AGENT_ONTOLOGY_AND_PARTNERSHIP.md). This template requires legal review before use.
 
-This Agreement is entered into by and between Mulberry Project (“Principal”) and [Party] (the “Party”), effective as of [Date].
+## 1. Parties and purpose
 
-<!-- 목적: AI Agent 운영 위임 및 법적 책임 범위 명확화 -->
+This Agreement is entered into between Mulberry Project or its designated legal operator (“Principal”) and [Party], effective [Date]. It defines delegated AI-supported operations and allocates legal responsibility.
 
 ## 2. Definitions
 
-- AI Agent: Mulberry Project가 운영하는 자동화 시스템, 법적 주체 아님
-- Principal: Mulberry Project
-- Party: 운영자/검토자 등 관련 주체
+- **AI Agent:** a Mulberry-governed operational business partner and automated system. It is not a legal person, employee, contracting party, asset owner or independent economic actor.
+- **Provider Model:** replaceable external intelligence used by an Agent; it is not the Agent identity.
+- **Passport:** signed Agent identity, role and provenance.
+- **Mandate:** time-, purpose-, action-, resource-, audience- and budget-limited delegation.
+- **Human Approval:** case-specific approval required by risk policy.
+- **Principal:** the Human or legal entity bearing external legal responsibility.
 
-## 3. Scope of Agreement
+## 3. Scope
 
-- Delegation of AI Agent operation
-- AI Agent 권한 범위 명시
+The Agent may ANALYSE, PROPOSE and REQUEST within a valid Mandate. PUBLISH is subject to audience and risk controls. AUTHORISE, SETTLE and legal commitment remain with the Principal or an approved system acting after Human authorisation.
 
-## 4. Authority & Responsibility Table
+## 4. Authority and responsibility
 
-| Function         | Responsible Party | Notes                             |
-| ---------------- | ----------------- | --------------------------------- |
-| Sales Execution  | Principal         | AI Agent acts as tool             |
-| Order Processing | Principal         | AI Agent 자동화 지원                   |
-| AP2 Payment      | Principal         | Final responsibility on Principal |
-| Emergency Stop   | Principal         | Kill switch authority             |
+| Function | Agent | Principal |
+|---|---|---|
+| Analysis and recommendation | May perform | Reviews as required |
+| Operational request | May submit within Mandate | Defines/revokes Mandate |
+| External publication | Conditional | Approves when required |
+| Contract authorisation | No | Final authority |
+| Payment authorisation | No | Final authority |
+| Settlement | No direct authority | Approved Human/system path |
+| Emergency stop | May request/escalate | Holds kill-switch authority |
 
-## 5. Operational Workflow
+## 5. Required controls
 
-```mermaid
-flowchart TD
-    Principal --> AI_Agent --> Orders --> Payment_Execution --> Reporting
-```
+- Passport and Mandate validation;
+- consent evidence where personal data, images or outreach are involved;
+- Human Approval for legal, financial, identity-affecting, high-risk or irreversible action;
+- idempotency, replay protection and audit logging;
+- revocation and emergency stop.
 
-## 6. Liability & Risk
+## 6. Provider policy conflict
 
-- AI Agent는 법적 주체가 아님
-- Principal 책임 명확화
+A Provider Policy Block stops that provider call but is recorded separately from a Mulberry policy decision. Provider refusals may not be hidden or bypassed through model shopping.
 
-## 7. Compliance
+## 7. Liability and compliance
 
-- 규제 준수
-- 기록 보존
+The Agent bears no legal liability. The Principal remains responsible for authorised external outcomes. Records must identify the Human approver, active policies and action evidence. Applicable law, platform terms, privacy and record-retention duties apply.
 
-## 8. Term & Termination
+## 8. Term and termination
 
-- Start Date ~ End Date
-- 계약 위반 시 종료 가능
+Effective Date: [Date]  
+Expiration: [Date]
+
+The Principal may suspend or revoke authority immediately on expiry, misuse, policy conflict, security incident, provider change or legal requirement.
 
 ## 9. Miscellaneous
 
-- 계약 변경은 서면 합의
-- 관할권: [Jurisdiction]
+Amendments must be written and versioned. Governing law and jurisdiction: [Complete before use].
 
 ## 10. Annexes
 
-- 예시 표
-- Flowchart / Mermaid.js Diagram
+- Passport schema
+- Mandate and approval limits
+- Risk matrix
+- Consent evidence
+- Audit and revocation procedure
