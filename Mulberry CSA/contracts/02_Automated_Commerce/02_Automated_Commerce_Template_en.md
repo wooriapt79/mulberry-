@@ -1,66 +1,59 @@
-# 02_Automated_Commerce_Template
+# 02 — Automated Commerce Template
 
-## 1. Preamble
+> Subject to the [AI Agent Ontology & Partnership Constitution](../../../docs/architecture/AI_AGENT_ONTOLOGY_AND_PARTNERSHIP.md). This template requires Korean commerce, privacy and consumer-law review before use.
 
-This Agreement is made between Mulberry Project (“Principal”) and [Supplier/Store] (the “Party”), effective as of [Date].
+## 1. Parties and purpose
 
-<!-- 목적: AI Agent를 통한 자동화 주문 및 상거래 대행 정의 -->
+This Agreement is made between Mulberry Project or its designated legal operator (“Principal”) and [Supplier/Store] (“Supplier”), effective [Date]. It governs AI-supported orders, inventory checks, promotions and fulfilment.
 
 ## 2. Definitions
 
-- AI Agent: Mulberry Project 운영 자동화 시스템, 법적 주체 아님
-- Principal: Mulberry Project
-- Party: 상점, 협동조합, 매장 등 공급자
-- Order: 공동구매 또는 매장 주문
+- **AI Agent:** Mulberry-governed operational business partner without legal personhood or independent contracting/payment authority.
+- **Order Request:** an Agent-generated request that is not binding until required validation and authorisation complete.
+- **Mandate:** the customer-approved limits on goods, counterparty, price, quantity, location, time and action.
+- **Supplier:** the party responsible for inventory, product information, fulfilment, correction and applicable consumer duties.
 
-## 3. Scope of Services
+## 3. Permitted flow
 
-- Automated order placement
-- Inventory management support
-- Price & discount rules automation
+1. Agent ANALYSES user demand and supplier information.
+2. Agent PROPOSES candidates, disclosing source, uncertainty, sponsorship and checked time.
+3. Agent REQUESTS quote or order within Mandate.
+4. Supplier confirms stock, price and terms.
+5. Human/system validates consent, cancellation, total price and approval.
+6. Approved payment/settlement proceeds outside the Agent’s direct authority.
 
-## 4. Order Processing & Automation Rules Table
+## 4. Responsibility
 
-| Function           | Responsible Party | Notes                                     |
-| ------------------ | ----------------- | ----------------------------------------- |
-| Order Placement    | Principal         | AI Agent triggers but Principal executes  |
-| Stock Verification | Party             | Supplier must update inventory            |
-| Discount/Promotion | Principal         | AI Agent applies according to rules       |
-| Cancellation       | Party             | Supplier responsible for error correction |
+| Function | Responsible party | Requirement |
+|---|---|---|
+| Demand analysis | Agent/Principal | Minimise personal data |
+| Stock and product accuracy | Supplier | Timestamped confirmation |
+| Price/discount rules | Principal + Supplier | No hidden manipulation |
+| Order request | Agent | Valid Passport and Mandate |
+| Contract/payment approval | Principal/Customer | Human approval as required |
+| Fulfilment/correction | Supplier | Consumer-law compliance |
+| Audit/kill switch | Principal | Required |
 
-## 5. Operational Workflow
+## 5. Data, consent and outreach
 
-```mermaid
-flowchart TD
-    AI_Agent --> Order_Placement --> Supplier --> Confirmation --> Principal
-```
+Images, personal data and unsolicited outreach require valid consent evidence stating purpose, audience, expiry and revocation. Provider-generated content must be reviewed according to publication risk.
 
-## 6. Data & Reporting
+## 6. Provider models
 
-- Data sharing for order fulfillment
-- Reporting intervals and format
+Provider recommendations are supplier inputs, not verified facts. Provider Policy Blocks are recorded separately and may not be bypassed by hidden model rotation.
 
-## 7. Liability & Risk
+## 7. Liability and compliance
 
-- AI Agent is not a legal entity
-- Principal responsible for automation errors
+The Agent is not a legal entity. Principal and Supplier responsibilities must be allocated for automation errors, inaccurate inventory, cancellation, refunds, privacy and platform rules.
 
-## 8. Term & Termination
+## 8. Termination and miscellaneous
 
-- Contract duration: Start Date ~ End Date
-- Termination clauses for breach or operational failure
+Authority expires on [Date] and may be revoked immediately. Amendments must be written and versioned. Governing law/jurisdiction: [Complete before use].
 
-## 9. Compliance
+## 9. Annexes
 
-- Public procurement rules if connected to local government
-- Record keeping
-
-## 10. Miscellaneous
-
-- Amendments must be in writing
-- Governing law: [Jurisdiction]
-
-## 11. Annexes
-
-- Example tables
-- Workflow diagram / Mermaid.js diagram
+- Product/order schema
+- Mandate limits
+- Cancellation/refund rules
+- Consent and publication matrix
+- Audit and incident procedure
