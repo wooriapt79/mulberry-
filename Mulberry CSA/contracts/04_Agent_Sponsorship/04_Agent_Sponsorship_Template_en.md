@@ -1,68 +1,47 @@
-# 04_Agent_Sponsorship_Template
+# 04 — Agent Sponsorship Template
 
-## 1. Preamble
+> Subject to the [AI Agent Ontology & Partnership Constitution](../../../docs/architecture/AI_AGENT_ONTOLOGY_AND_PARTNERSHIP.md). This template requires donation, welfare, tax and privacy review before use.
 
-This Agreement is entered into between Mulberry Project (“Principal”) and [Sponsor/Supporter] (the “Party”), effective as of [Date].
+## 1. Parties and purpose
 
-<!-- 목적: AI Agent 활동 기반 사회적 가치 후원 및 지원 구조 정의 -->
+This Agreement is entered into between Mulberry Project or its designated legal operator (“Principal”) and [Sponsor/Supporter] (“Sponsor”), effective [Date]. It supports social-impact activity coordinated through an AI Agent.
 
 ## 2. Definitions
 
-- AI Agent: Mulberry Project 운영 자동화 시스템, 법적 주체 아님
-- Principal: Mulberry Project
-- Party: 후원자 또는 사회지원 참여자
-- Agent Passport: AI Agent 활동 신뢰 점수 / 성과 지표
+- **AI Agent:** Mulberry-governed operational business partner without legal personhood, asset ownership or independent economic authority.
+- **Sponsor:** a person/entity providing support without direct operational command over the Agent.
+- **Agent Passport:** signed identity and provenance; not ownership or an investment asset.
+- **Beneficiary:** the intended recipient under applicable consent and welfare rules.
 
-## 3. Scope of Agreement
+## 3. Relationship
 
-- Sponsorship of social impact activities executed through AI Agent
-- Reporting and transparency of AI Agent activities
-- Conditional allocation of funds to beneficiaries (e.g., seniors, vulnerable groups)
+Sponsorship does not create ownership of an Agent, employment, partnership-at-law, securities interest, guaranteed return or authority to command an Agent outside Mulberry governance.
 
-## 4. Sponsorship Authority & Use Table
+## 4. Responsibility
 
-| Function        | Responsible Party | Notes                                        |
-| --------------- | ----------------- | -------------------------------------------- |
-| Fund Allocation | Principal         | Based on AI Agent activity outcomes          |
-| Reporting       | Principal         | Provide activity report to Sponsor           |
-| Data Privacy    | Principal         | Use non-identifiable data only               |
-| Emergency Stop  | Principal         | Suspend disbursement if irregularities occur |
+| Function | Responsible party | Requirement |
+|---|---|---|
+| Fund receipt/allocation | Principal | Approved account and controls |
+| Activity analysis/report draft | Agent | Mandate and data minimisation |
+| Final disbursement | Principal/Human | Human authorisation |
+| Beneficiary eligibility/consent | Principal | Documented evidence |
+| Reporting | Principal | Transparent, non-misleading |
+| Emergency stop | Principal | Required |
 
-## 5. Operational Workflow
+## 5. Data and reporting
 
-```mermaid
-flowchart TD
-    Sponsor --> Funding --> AI_Agent_Activity --> Beneficiary --> Reporting --> Sponsor
-```
+Use the minimum personal data. Public stories, images or outreach require purpose-, audience- and time-specific consent. Reports must separate verified facts, Agent analysis and Human decisions.
 
-## 6. Data & Reporting
+## 6. Provider models
 
-- Regular reports to sponsors
-- Non-identifiable personal data only
-- Transparency in fund allocation
+A Provider Model is a replaceable supplier, not the sponsored Agent identity. Provider refusals are logged separately and may not be bypassed through policy shopping.
 
-## 7. Liability & Risk
+## 7. Liability and compliance
 
-- AI Agent is not a legal entity
-- Principal responsible for activity outcomes and fund usage
-- Sponsor has no operational authority
+The Agent is not a legal entity and bears no legal liability. Principal remains responsible for fund use and authorised outcomes. Sponsor has no operational authority unless separately and lawfully granted.
 
-## 8. Compliance
+## 8. Termination and annexes
 
-- Adherence to donation and social welfare regulations
-- Record keeping for audit
+Misuse, consent failure, policy breach or legal change permits immediate suspension. Complete governing law and jurisdiction before use.
 
-## 9. Term & Termination
-
-- Effective Date ~ Expiration Date
-- Termination clauses for misuse or breach
-
-## 10. Miscellaneous
-
-- Written amendments only
-- Governing law: [Jurisdiction]
-
-## 11. Annexes
-
-- Example tables of fund allocation
-- Flowchart / Mermaid.js Diagram
+Annexes should include allocation rules, approval matrix, beneficiary consent, audit procedure and complaints/refund handling.
