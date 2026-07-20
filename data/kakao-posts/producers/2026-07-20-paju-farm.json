@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "post_id": "producer-2026-07-20-001",
+  "category": "producers",
+  "intent_tags": ["producer_inquiry", "product_inquiry"],
+  "title": "🌱 이번 주 생산자 소개 — 파주팜 김민준 농부",
+  "content": "이번 주 Mulberry 공동구매의 주인공, 파주팜 김민준 농부님을 소개합니다.\n\n\"15년째 블루베리를 키웠어요. 농약 없이 자연 그대로 키운 블루베리라 자신 있습니다.\"\n\n🌿 농장 정보:\n  - 위치: 경기도 파주시 탄현면\n  - 재배 방식: 무농약 친환경 재배\n  - 재배 경력: 15년\n  - 인증: GAP 우수농산물 인증\n\n직접 수확해서 당일 발송합니다.",
+  "summary": "파주팜 김민준 농부. 경기도 파주 탄현면. 15년 경력 무농약 블루베리. GAP 우수농산물 인증. 당일 수확 발송.",
+  "date": "2026-07-20",
+  "author": "KODA",
+  "status": "published",
+  "region": "파주",
+  "producer_info": {
+    "name": "김민준",
+    "farm_name": "파주팜",
+    "location": "경기도 파주시 탄현면",
+    "method": "무농약 친환경",
+    "career_years": 15,
+    "certification": "GAP 우수농산물"
+  },
+  "tags": ["생산자", "파주", "블루베리", "친환경", "무농약"]
+}

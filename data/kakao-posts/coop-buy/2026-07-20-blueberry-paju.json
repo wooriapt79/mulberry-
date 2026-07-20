@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "post_id": "coop-2026-07-20-001",
+  "category": "coop-buy",
+  "intent_tags": ["coop_request", "product_inquiry"],
+  "title": "파주 블루베리 공동구매 안내 🫐",
+  "content": "이번 주 파주 직거래 블루베리 공동구매를 진행합니다.\n\n📦 상품: 파주팜 블루베리 2kg 박스\n💰 정상가: 35,000원\n🎉 공동구매가: 24,500원 (30% 할인)\n👥 목표 인원: 50명 (현재 47명)\n📅 마감: 2026-07-22 자정\n\n참여 신청은 카카오 채널 '소식' 메뉴 또는 공동구매 링크를 이용해주세요.",
+  "summary": "파주 블루베리 2kg 공동구매. 정상가 35,000원 → 공동구매가 24,500원(30% 할인). 목표 50명 중 현재 47명. 마감 2026-07-22.",
+  "date": "2026-07-20",
+  "author": "KODA",
+  "status": "active",
+  "region": "파주",
+  "product": {
+    "name": "파주팜 블루베리 2kg",
+    "normal_price": 35000,
+    "coop_price": 24500,
+    "discount_rate": 0.30,
+    "unit": "2kg 박스"
+  },
+  "coop_info": {
+    "target_count": 50,
+    "current_count": 47,
+    "deadline": "2026-07-22T23:59:59+09:00",
+    "link": "https://pf.kakao.com/_mulberry/coop/2026-07-20-001"
+  },
+  "tags": ["블루베리", "파주", "공동구매", "과일", "직거래"]
+}
