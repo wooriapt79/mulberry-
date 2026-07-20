@@ -1,68 +1,63 @@
-# 03_AP2_Smart_Mandate_Template
+# 03 — AP2 Smart Mandate Template
 
-## 1. Preamble
+> Subject to the [AI Agent Ontology & Partnership Constitution](../../../docs/architecture/AI_AGENT_ONTOLOGY_AND_PARTNERSHIP.md). AP2 is a legal and technical firewall, not autonomous Agent payment authority. Qualified financial/legal review is required.
 
-This Agreement is entered into between Mulberry Project (“Principal”) and [AP2 Service Provider] (the “Party”), effective as of [Date].
+## 1. Parties and purpose
 
-<!-- 목적: AI Agent 기반 조건부 자동 결제 및 책임 범위 명확화 -->
+This Agreement is entered into between Mulberry Project or its designated legal operator (“Principal”) and [AP2 Service Provider] (“Provider”), effective [Date]. It governs conditional payment requests, Human authorisation, settlement and audit.
 
 ## 2. Definitions
 
-- AI Agent: Mulberry Project가 운영하는 자동화 시스템, 법적 주체 아님
-- Principal: Mulberry Project
-- Party: AP2 결제 시스템 제공자
-- Conditional Payment: 사전에 정의된 조건 충족 시 자동 결제
+- **AI Agent:** Mulberry-governed operational business partner without legal personhood, wallet ownership or payment authority.
+- **Payment Request:** an Agent-generated proposal transmitted for validation; not itself an authorisation.
+- **Smart Mandate:** signed limits covering purpose, action, counterparty, resource, amount, call count and expiry.
+- **Human Approval:** specific approval bound to the exact Mandate, payment request and amount.
+- **Settlement:** final movement of funds by an authorised payment/financial system.
 
-## 3. Scope of Agreement
+## 3. Separation of authority
 
-- Conditional payment execution by AI Agent
-- Approval rules based on Agent Passport / KPI
-- Transaction logging and reporting
+| Stage | Agent | Principal/AP2 |
+|---|---|---|
+| Analyse/compare | May perform | May review |
+| Generate payment request | Mandate required | Validates |
+| Authorise payment | Prohibited | Human only |
+| Hold credentials/private key | Prohibited | Approved secure system |
+| Settle funds | Prohibited | Approved financial path |
+| Revoke/kill switch | May request | Principal controls |
 
-## 4. Payment Authority & Limits Table
+## 4. Mandatory Mandate fields
 
-| Function            | Responsible Party | Notes                                                  |
-| ------------------- | ----------------- | ------------------------------------------------------ |
-| Payment Execution   | Principal         | AI Agent triggers payment, Principal is final approver |
-| Approval Conditions | Principal         | Agent Passport score / KPI thresholds                  |
-| Payment Limit       | Principal         | Maximum amount per period                              |
-| Emergency Stop      | Principal         | Kill switch authority for abnormal transactions        |
+- subject Agent and Passport;
+- exact purpose/action/resource/counterparty;
+- currency and per-transaction/period ceiling;
+- start, expiry and maximum calls;
+- consent/evidence references;
+- Human-approval threshold;
+- nonce, idempotency and replay controls;
+- revocation and emergency-stop rules.
 
-## 5. Operational Workflow
+Missing fields fail closed.
 
-```mermaid
-flowchart TD
-    AI_Agent --> Conditional_Check --> Payment_Execution --> Logging --> Principal_Review
-```
+## 5. Workflow
 
-## 6. Error Handling & Emergency Procedures
+Agent request → Mandate validation → compliance/risk checks → Human Approval → payment provider authorisation → settlement → immutable/append-only audit → Human review.
 
-- Non-compliant transactions halted automatically
-- Principal notified immediately
-- Logs maintained for auditing
+## 6. Error and conflict states
 
-## 7. Liability & Risk
+The system must distinguish MANDATE_DENY, MULBERRY_POLICY_DENY, PROVIDER_POLICY_BLOCK, LEGAL_REVIEW_REQUIRED, TECHNICAL_FAILURE and ESCALATE_TO_HUMAN. A generic error must not trigger payment or automatic model switching.
 
-- AI Agent is not a legal entity
-- Principal assumes responsibility for all executed payments
-- Party responsible for system stability, not for AI decision logic
+## 7. Liability and compliance
 
-## 8. Compliance
+The Agent bears no legal liability and owns no funds. Principal bears responsibility for authorised instructions; the Provider bears responsibility allocated to payment-system security and availability. Applicable financial, consumer, privacy, AML/KYC and reporting requirements must be completed for the actual jurisdiction.
 
-- Financial regulations and reporting requirements
-- Data retention and privacy obligations
+## 8. Termination
 
-## 9. Term & Termination
+Mandates terminate automatically on expiry, call/amount exhaustion, revocation, security incident, policy change or contract termination.
 
-- Effective Date ~ Expiration Date
-- Termination on breach or system failure
+## 9. Annexes
 
-## 10. Miscellaneous
-
-- Written amendments only
-- Governing law: [Jurisdiction]
-
-## 11. Annexes
-
-- Payment rules table
-- Flowchart / Mermaid.js Diagram
+- Signed Mandate schema
+- Approval schema
+- Risk/amount matrix
+- Audit-event schema
+- Refund, dispute and incident procedure
