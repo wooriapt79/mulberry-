@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-07-19 02:54 UTC**
+> Last updated: **2026-07-20 03:23 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[Research] Cognitive Memory Evolution for Agent Learning Framework](https://github.com/wooriapt79/mulberry-research-lab/issues/138) #138
 
 **Recent Commits:**
-- [`1e3d54f`](https://github.com/wooriapt79/mulberry-research-lab/commit/1e3d54f43425044f5027323c0c0d99b53bdb1da0) feat: Lynn daily signal [state:heartbeat] 2026-07-18
-- [`2fa9db6`](https://github.com/wooriapt79/mulberry-research-lab/commit/2fa9db6c011920a8c4534b9b49554ccff19512ad) feat: Lynn daily signal [state:heartbeat] 2026-07-17
-- [`7ae401c`](https://github.com/wooriapt79/mulberry-research-lab/commit/7ae401c1316870eb8ad63c5e75fa147d93db8880) feat: Lynn daily signal [state:heartbeat] 2026-07-16
+- [`5f37cc2`](https://github.com/wooriapt79/mulberry-research-lab/commit/5f37cc26e13687a2ce59b068f70a5ada10c2f509) Merge pull request #142 from wooriapt79/wooriapt79-patch-1
+- [`052ba43`](https://github.com/wooriapt79/mulberry-research-lab/commit/052ba43915b75637e657e38dd0fe92b2d2add3bc) chore(contributors): 주간 기여자 통계 자동 동기화 2026-07-20
+- [`2331db6`](https://github.com/wooriapt79/mulberry-research-lab/commit/2331db64aed14ca434d691956cf1e882574fc93e) feat(luna-rag): agent-gateway 카카오 webhook → Luna RAG 연동 (Issue #141)
 
 ---
 
@@ -26,9 +26,9 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
-- [`356d005`](https://github.com/wooriapt79/mulberry_memory_bank/commit/356d0058d99e522a53a668bea059f80defc1cb51) feat: Lynn daily signal [state:active] 2026-07-18
-- [`4016126`](https://github.com/wooriapt79/mulberry_memory_bank/commit/40161268d46135b2f8e83903868cca2a99ade1eb) [LAB->Bank] activity synced
-- [`d6b6e62`](https://github.com/wooriapt79/mulberry_memory_bank/commit/d6b6e624246c1c821ea3c64dc5d693dac7127031) feat: Lynn daily signal [state:active] 2026-07-17
+- [`76f41fa`](https://github.com/wooriapt79/mulberry_memory_bank/commit/76f41fa550dd895af821ad3b0b811b525f12fe5a) [LAB->Bank] activity synced
+- [`2140346`](https://github.com/wooriapt79/mulberry_memory_bank/commit/214034696b2a193ecde12c88212da4415d85f618) [LAB->Bank] activity synced
+- [`30ab031`](https://github.com/wooriapt79/mulberry_memory_bank/commit/30ab03115fbfccc6ce88ba7a0c4c54dee5fcf1d3) feat: Lynn daily signal [state:active] 2026-07-20
 
 ---
 
@@ -40,9 +40,9 @@
 - [[Architecture] Agent Growth System — Jr. Student Mode → Luna Mode 독자활동 진화 구조](https://github.com/wooriapt79/mulberry-open-api/issues/90) #90
 
 **Recent Commits:**
-- [`b1fe0dc`](https://github.com/wooriapt79/mulberry-open-api/commit/b1fe0dcc52432a9b36e5ac500ab22860fdfde74a) Merge pull request #115 from wooriapt79/koda/phase4-luna-prompt-input
-- [`584a85b`](https://github.com/wooriapt79/mulberry-open-api/commit/584a85b50c67d80c4c10827e8561618512ff9906) @
-- [`b764a2f`](https://github.com/wooriapt79/mulberry-open-api/commit/b764a2fc4d77781707a23045c621d8f543b10268) Merge pull request #114 from wooriapt79/koda/issue113-luna-channel
+- [`9caba71`](https://github.com/wooriapt79/mulberry-open-api/commit/9caba71ce575573e1effdaf539ca67ecb1879692) Merge pull request #118 from wooriapt79/koda/issue116-phase2-atfs-conn
+- [`ded3bae`](https://github.com/wooriapt79/mulberry-open-api/commit/ded3baece71982ab95b96e86ffe48c7d8e5e6cd7) fix(issue116-phase2): Codex Bot 수정 3건 — node-fetch, 상태검증, XSS
+- [`f2f138c`](https://github.com/wooriapt79/mulberry-open-api/commit/f2f138c15bd4e439cd8c254238b0e6b04942fd84) feat(issue116-phase2): ATFS 실제 연결 + 협상 룸 UI 패널
 
 ---
 
@@ -53,9 +53,9 @@
 - [[Feature] <short-summary>PUSH 실행시에 토큰 인증 에러](https://github.com/wooriapt79/Mulberry-Agent-Team-Formation-System/issues/5) #5
 
 **Recent Commits:**
+- [`e6c242a`](https://github.com/wooriapt79/Mulberry-Agent-Team-Formation-System/commit/e6c242a07562ae2c4d00b040d0354b7b10a04021) Merge pull request #11 from wooriapt79/koda/issue10-railway-entrypoint
+- [`7176ac8`](https://github.com/wooriapt79/Mulberry-Agent-Team-Formation-System/commit/7176ac8764162cd06e7ff089c0dce71287d61435) feat(issue10): Railway 배포 진입점 — main.py + Procfile
 - [`a320a23`](https://github.com/wooriapt79/Mulberry-Agent-Team-Formation-System/commit/a320a2346787edeb887eff3c4765252f3508bfa9) Merge pull request #9 from wooriapt79/koda/issue8-trang-orchestration
-- [`0a7b799`](https://github.com/wooriapt79/Mulberry-Agent-Team-Formation-System/commit/0a7b799b664aec60be1ca7c35453ce3401678a58) feat(orchestration): TrangOrchestrator 핵심 모듈 3개 구현 — Issue #8
-- [`9624754`](https://github.com/wooriapt79/Mulberry-Agent-Team-Formation-System/commit/96247546b30f3d4836010c081ca9788a630578d4) Add feature request issue template
 
 ---
 
