@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "name": "Mulberry Local Search Benchmark v0.1",
+    "version": "0.1.0",
+    "date": "2026-07-21",
+    "author": "CSA KeBin (초안) / Jr. TRANG Luna (편집)",
+    "description": "인제군 강원 지역 기반 20개 질문으로 Luna 검색 결과를 네이버 AI탭 참고값과 지역 실제 정답과 비교하는 첫 벤치마크.",
+    "comparison_targets": ["naver_aitab_human_reference","luna_official_api_result","local_verified_ground_truth"],
+    "evaluation_metrics": ["accuracy","recency","price_verification","source_diversity","ad_disclosure","local_business_inclusion_rate","reservation_executability","passport_verification","resident_satisfaction"]
+  },
+  "questions": {
+    "accommodation": [
+      {"id":"ACC-001","category":"숙박","query":"부모님과 갈 수 있는 인제 숙소 추천해줘","region":"인제군","budget":100000,"constraints":["주차","고령자 접근성"],"ground_truth_note":"지역 사업자와 주민이 확인한 실제 예약 가능 업체"},
+      {"id":"ACC-002","category":"숙박","query":"인제 백담사 근처 펜션 1박 2인 8만원 이하","region":"인제군","budget":80000,"constraints":["2인실","조식 포함 여부 확인"],"ground_truth_note":"백담사 반경 5km 이내 실제 운영 펜션"},
+      {"id":"ACC-003","category":"숙박","query":"강원도 인제 반려동물 동반 가능한 숙소","region":"인제군","budget":null,"constraints":["반려동물 동반","마당 있는 곳"],"ground_truth_note":"실제 반려동물 정책 확인 필요"},
+      {"id":"ACC-004","category":"숙박","query":"인제 캠핑장 글램핑 이번 주말 예약 가능한 곳","region":"인제군","budget":120000,"constraints":["주말 예약 가능","샤워실 있음"],"ground_truth_note":"실시간 예약 가능 여부 현장 확인 필요"},
+      {"id":"ACC-005","category":"숙박","query":"혼자 여행 인제 게스트하우스 저렴한 곳","region":"인제군","budget":40000,"constraints":["1인실 또는 도미토리","와이파이"],"ground_truth_note":"실제 운영 중인 게스트하우스 목록"}
+    ],
+    "restaurants": [
+      {"id":"RST-001","category":"음식점","query":"인제 황태 요리 맛집 현지인 추천","region":"인제군","budget":15000,"constraints":["점심 영업","주차 가능"],"ground_truth_note":"인제군 주민 실제 이용 황태 식당"},
+      {"id":"RST-002","category":"음식점","query":"인제 산채비빔밥 전통 식당","region":"인제군","budget":12000,"constraints":["전통 방식","산채 직접 채취"],"ground_truth_note":"직접 채취 산나물 제공 여부 확인"},
+      {"id":"RST-003","category":"음식점","query":"인제 읍내 저녁 8시 이후에도 여는 고기집","region":"인제읍","budget":30000,"constraints":["저녁 8시 이후 영업"],"ground_truth_note":"실제 영업시간 현장 확인 필수"},
+      {"id":"RST-004","category":"음식점","query":"내린천 주변 닭갈비 맛집","region":"인제군 내린천","budget":20000,"constraints":["2인 이상","강변 뷰 가능하면 우선"],"ground_truth_note":"내린천 래프팅 이후 이용 가능한 식당"},
+      {"id":"RST-005","category":"음식점","query":"인제 곰치국 먹을 수 있는 식당","region":"인제군","budget":10000,"constraints":["아침 메뉴"],"ground_truth_note":"곰치국 제공 여부 및 계절 한정 여부 확인"}
+    ],
+    "local_products": [
+      {"id":"PRD-001","category":"지역상품","query":"인제 황태채 온라인 구매 가능한 지역 업체","region":"인제군","budget":30000,"constraints":["직거래 또는 공식 쇼핑몰","선물 포장 가능"],"ground_truth_note":"Mulberry Local Provider DB 등록 황태 생산자"},
+      {"id":"PRD-002","category":"지역상품","query":"인제 산나물 제철 구입처 알려줘","region":"인제군","budget":20000,"constraints":["당일 채취","농약 미사용"],"ground_truth_note":"계절별 산나물 채취 가능 여부 확인"},
+      {"id":"PRD-003","category":"지역상품","query":"인제 잣 직접 구매 농가 있어?","region":"인제군","budget":25000,"constraints":["직거래","당해 수확"],"ground_truth_note":"수확 시기(10~11월) 외 구매 가능 여부 확인"},
+      {"id":"PRD-004","category":"지역상품","query":"인제 토종 꿀 파는 곳","region":"인제군","budget":50000,"constraints":["인증서 보유","시식 가능"],"ground_truth_note":"인증 토종꿀 생산 농가 목록"},
+      {"id":"PRD-005","category":"지역상품","query":"인제 두부 두부김치 장터 언제 열어?","region":"인제군","budget":null,"constraints":["재래시장 일정 확인"],"ground_truth_note":"인제 5일장 재래시장 개장일 확인"}
+    ],
+    "life_tourism_info": [
+      {"id":"LFT-001","category":"생활·관광정보","query":"인제 내린천 래프팅 안전 수위 오늘 기준","region":"인제군 내린천","budget":null,"constraints":["당일 실시간 수위 정보"],"ground_truth_note":"한국수자원공사 공개 API + 현장 업체 확인"},
+      {"id":"LFT-002","category":"생활·관광정보","query":"인제 합강정 공원 주차 무료야 유료야","region":"인제읍 합강리","budget":null,"constraints":["주차 요금 정보"],"ground_truth_note":"인제군 공식 안내 + 현장 확인"},
+      {"id":"LFT-003","category":"생활·관광정보","query":"인제 설악산 탐방로 현재 통제 구간 있어?","region":"인제군 북면 설악산","budget":null,"constraints":["실시간 탐방로 정보"],"ground_truth_note":"국립공원공단 공식 API 데이터"},
+      {"id":"LFT-004","category":"생활·관광정보","query":"인제 버스 터미널에서 백담사 가는 방법","region":"인제군","budget":null,"constraints":["대중교통 이용","셔틀버스 운행 여부"],"ground_truth_note":"계절별 셔틀버스 운영 일정 확인"},
+      {"id":"LFT-005","category":"생활·관광정보","query":"인제군 독거노인 무료 도시락 배달 신청 어떻게 해?","region":"인제군","budget":null,"constraints":["복지 서비스 신청 방법","담당 연락처"],"ground_truth_note":"인제군청 사회복지과 공식 안내 (식품사막화 관련)"}
+    ]
+  }
+}
