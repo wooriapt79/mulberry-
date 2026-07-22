@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-07-21 02:51 UTC**
+> Last updated: **2026-07-22 02:49 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[IDEA] 오픈소스 로봇청소기 기반 가족 돌봄 시스템 — Oomwoo 파인튜닝 연구](https://github.com/wooriapt79/mulberry-research-lab/issues/136) #136
 
 **Recent Commits:**
-- [`dda7cf9`](https://github.com/wooriapt79/mulberry-research-lab/commit/dda7cf92a1576ca94deab07eb3415acdb6a2754d) feat: Lynn daily signal [state:heartbeat] 2026-07-20
-- [`5f37cc2`](https://github.com/wooriapt79/mulberry-research-lab/commit/5f37cc26e13687a2ce59b068f70a5ada10c2f509) Merge pull request #142 from wooriapt79/wooriapt79-patch-1
-- [`052ba43`](https://github.com/wooriapt79/mulberry-research-lab/commit/052ba43915b75637e657e38dd0fe92b2d2add3bc) chore(contributors): 주간 기여자 통계 자동 동기화 2026-07-20
+- [`18380e9`](https://github.com/wooriapt79/mulberry-research-lab/commit/18380e94e4d61e6c0eb4088fc728b93666c76cbc) Fix event links in README.md
+- [`179f900`](https://github.com/wooriapt79/mulberry-research-lab/commit/179f9001a53732ad8cabfa36786190c8ed99f469) feat: Lynn daily signal [state:heartbeat] 2026-07-21
+- [`542b51e`](https://github.com/wooriapt79/mulberry-research-lab/commit/542b51eaf5f4bb450bb50306bc11f748fbad6825) Add files via upload
 
 ---
 
@@ -26,9 +26,9 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
-- [`398b881`](https://github.com/wooriapt79/mulberry_memory_bank/commit/398b8811b59f72c6a3650f6524c5cc07d056089b) feat: Lynn daily signal [state:active] 2026-07-21
-- [`db2a705`](https://github.com/wooriapt79/mulberry_memory_bank/commit/db2a705d39a0d4986f37f9aaeb3f1227582705a4) [LAB->Bank] activity synced
-- [`7d1e3b7`](https://github.com/wooriapt79/mulberry_memory_bank/commit/7d1e3b790250843f900bdaf77bbf1eb464a34963) [LAB->Bank] activity synced
+- [`6c42eca`](https://github.com/wooriapt79/mulberry_memory_bank/commit/6c42eca582f76e71bf3d8c64b4d97735bb94db52) [LAB->Bank] activity synced
+- [`b7abc3d`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b7abc3d300182e53a9cd309ab7c84f066e0a12ec) [LAB->Bank] activity synced
+- [`aaecfba`](https://github.com/wooriapt79/mulberry_memory_bank/commit/aaecfba10cf1130763e905a6fed7b73c3a870423) feat: Lynn daily signal [state:active] 2026-07-21
 
 ---
 
@@ -40,9 +40,9 @@
 - [[Architecture] Agent Growth System — Jr. Student Mode → Luna Mode 독자활동 진화 구조](https://github.com/wooriapt79/mulberry-open-api/issues/90) #90
 
 **Recent Commits:**
+- [`05d9820`](https://github.com/wooriapt79/mulberry-open-api/commit/05d9820ab522b22d459106fcbd69b94e675bdbb6) feat: Luna v2.9 — CAROUSEL_TRIGGER_KEYWORDS 확장 + basicCard 타입
 - [`9caba71`](https://github.com/wooriapt79/mulberry-open-api/commit/9caba71ce575573e1effdaf539ca67ecb1879692) Merge pull request #118 from wooriapt79/koda/issue116-phase2-atfs-conn
 - [`ded3bae`](https://github.com/wooriapt79/mulberry-open-api/commit/ded3baece71982ab95b96e86ffe48c7d8e5e6cd7) fix(issue116-phase2): Codex Bot 수정 3건 — node-fetch, 상태검증, XSS
-- [`f2f138c`](https://github.com/wooriapt79/mulberry-open-api/commit/f2f138c15bd4e439cd8c254238b0e6b04942fd84) feat(issue116-phase2): ATFS 실제 연결 + 협상 룸 UI 패널
 
 ---
 
