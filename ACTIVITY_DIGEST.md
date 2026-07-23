@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-07-22 02:49 UTC**
+> Last updated: **2026-07-23 02:55 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
-- [[KODA 인지 요청] Agent Gateway v2.0.0 검수 완료 — Passport/Mandate/Approval 보안 레이어 스테이징 배포 준비](https://github.com/wooriapt79/mulberry-research-lab/issues/143) #143
-- [[외부 아이디어] 배달대행기사 대리점 기반 회원제 쇼핑몰 사업 모델 — 의견 요청](https://github.com/wooriapt79/mulberry-research-lab/issues/140) #140
-- [[IDEA] 오픈소스 로봇청소기 기반 가족 돌봄 시스템 — Oomwoo 파인튜닝 연구](https://github.com/wooriapt79/mulberry-research-lab/issues/136) #136
+- [[Pilot Report] KeBin–DeepSeek 협업 파일럿 준비 완료 보고 (v0.1)](https://github.com/wooriapt79/mulberry-research-lab/issues/149) #149
+- [Add Mulberry KeBin–DeepSeek collaboration pilot v0.1](https://github.com/wooriapt79/mulberry-research-lab/pull/148) #148
+- [[Research] 소형 자율주행 로봇 — 대형 물류센터 화재감지 및 이머전시 모니터링](https://github.com/wooriapt79/mulberry-research-lab/issues/147) #147
 
 **Recent Commits:**
-- [`18380e9`](https://github.com/wooriapt79/mulberry-research-lab/commit/18380e94e4d61e6c0eb4088fc728b93666c76cbc) Fix event links in README.md
-- [`179f900`](https://github.com/wooriapt79/mulberry-research-lab/commit/179f9001a53732ad8cabfa36786190c8ed99f469) feat: Lynn daily signal [state:heartbeat] 2026-07-21
-- [`542b51e`](https://github.com/wooriapt79/mulberry-research-lab/commit/542b51eaf5f4bb450bb50306bc11f748fbad6825) Add files via upload
+- [`f51b382`](https://github.com/wooriapt79/mulberry-research-lab/commit/f51b3820a8428b20ab443aee9005def4ec94bba9) feat: Lynn daily signal [state:heartbeat] 2026-07-22
+- [`2c9ce3c`](https://github.com/wooriapt79/mulberry-research-lab/commit/2c9ce3c5186b69b8abdbc6984f051f66ac514ad4) Update start command for agent gateway deployment
+- [`cc94d8e`](https://github.com/wooriapt79/mulberry-research-lab/commit/cc94d8ea9b5723c84e5726f1be07988110bb1ae0) Add Mulberry Agent Gateway v2.0.0 implementation
 
 ---
 
@@ -26,9 +26,9 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
-- [`6c42eca`](https://github.com/wooriapt79/mulberry_memory_bank/commit/6c42eca582f76e71bf3d8c64b4d97735bb94db52) [LAB->Bank] activity synced
-- [`b7abc3d`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b7abc3d300182e53a9cd309ab7c84f066e0a12ec) [LAB->Bank] activity synced
-- [`aaecfba`](https://github.com/wooriapt79/mulberry_memory_bank/commit/aaecfba10cf1130763e905a6fed7b73c3a870423) feat: Lynn daily signal [state:active] 2026-07-21
+- [`e496d00`](https://github.com/wooriapt79/mulberry_memory_bank/commit/e496d00a87d9a142dc32873438a4dcca09acf59f) [LAB->Bank] activity synced
+- [`7b7a01d`](https://github.com/wooriapt79/mulberry_memory_bank/commit/7b7a01dbfb2e63ed820b860c040af3cbb5600192) [LAB->Bank] activity synced
+- [`3d25c00`](https://github.com/wooriapt79/mulberry_memory_bank/commit/3d25c0005ddabf1bfab4540efd58603480f5f3b1) [LAB->Bank] activity synced
 
 ---
 
