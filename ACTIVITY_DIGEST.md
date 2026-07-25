@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-07-24 02:49 UTC**
+> Last updated: **2026-07-25 02:48 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[Research] AI 포렌식 — 디지털 포렌식 AI 자동화 연구](https://github.com/wooriapt79/mulberry-research-lab/issues/146) #146
 
 **Recent Commits:**
+- [`2a7587e`](https://github.com/wooriapt79/mulberry-research-lab/commit/2a7587e8c38b4c68e7eda471b84c0f54c36eeb2c) feat: Lynn daily signal [state:heartbeat] 2026-07-24
 - [`f402b99`](https://github.com/wooriapt79/mulberry-research-lab/commit/f402b9938ed748864ef84dbd4ff2c828e5e214d3) feat: Lynn daily signal [state:heartbeat] 2026-07-23
 - [`f51b382`](https://github.com/wooriapt79/mulberry-research-lab/commit/f51b3820a8428b20ab443aee9005def4ec94bba9) feat: Lynn daily signal [state:heartbeat] 2026-07-22
-- [`2c9ce3c`](https://github.com/wooriapt79/mulberry-research-lab/commit/2c9ce3c5186b69b8abdbc6984f051f66ac514ad4) Update start command for agent gateway deployment
 
 ---
 
@@ -26,23 +26,23 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`8d521ef`](https://github.com/wooriapt79/mulberry_memory_bank/commit/8d521ef9f70d2f7015e85d5213fb9b627aef717a) feat: Lynn daily signal [state:active] 2026-07-25
 - [`d535a0a`](https://github.com/wooriapt79/mulberry_memory_bank/commit/d535a0a355da0e3ee02354af0b686f92e17728ac) feat: Lynn daily signal [state:active] 2026-07-24
 - [`6184bee`](https://github.com/wooriapt79/mulberry_memory_bank/commit/6184bee03a94ede1801f50df2715657efd8d369f) [LAB->Bank] activity synced
-- [`5c24d0e`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5c24d0e0b02396d365aa2665bb5919e1c82fea18) [LAB->Bank] activity synced
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
-- [[Bug] jwt.js 모듈 로드 크래시 — JWT_SECRET 누락 시 서버 크래시 수정 필요](https://github.com/wooriapt79/mulberry-open-api/issues/119) #119
 - [✅ [Koda 보고] Mulberry_Luna KakaoTalk AI Agent v1.0 셋업 완료](https://github.com/wooriapt79/mulberry-open-api/issues/93) #93
 - [[DAY16/17] Co-op Buy UI 프론트엔드 구현 — coop-buy-ui.js](https://github.com/wooriapt79/mulberry-open-api/issues/89) #89
+- [[Architecture] Agent Growth System — Jr. Student Mode → Luna Mode 독자활동 진화 구조](https://github.com/wooriapt79/mulberry-open-api/issues/90) #90
 
 **Recent Commits:**
-- [`075afde`](https://github.com/wooriapt79/mulberry-open-api/commit/075afde3109020b7a65734ab0f78f29d2c000a0b) fix: disable auth route to restore Railway deployment
-- [`00a0a2b`](https://github.com/wooriapt79/mulberry-open-api/commit/00a0a2bb036e03a48437e75a741a829a61e87f16) fix(jwt): remove fail-fast startup check — fix Railway deploy crash
-- [`44f63cc`](https://github.com/wooriapt79/mulberry-open-api/commit/44f63cc6fbf1b9a1f7bb5c480393b34f0ab6538e) chore: version 2.0.2 — redeploy trigger (Issue #5)
+- [`ec46435`](https://github.com/wooriapt79/mulberry-open-api/commit/ec464353a2a07a5cfd38f961f4675ac8cc01ccc5) fix(server): server.js 주석 블록 깨짐 수정 — ReferenceError: h is not defined 
+- [`8e1ee8b`](https://github.com/wooriapt79/mulberry-open-api/commit/8e1ee8b82c41876c9046c16866291869c61d3eac) fix(railway): RAILPACK→NIXPACKS 복구 + 깨진 JSON 정리 (배포 오류 수정)
+- [`7a61f8a`](https://github.com/wooriapt79/mulberry-open-api/commit/7a61f8a5fac3e915acf5052eb3c5027b0d37fbf3) fix(railpack): remove railpack.json to enable auto start command detec
 
 ---
 
