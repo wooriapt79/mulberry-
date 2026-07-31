@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-07-30 02:33 UTC**
+> Last updated: **2026-07-31 03:13 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [[KODA 작업 지시] Open Reception v0.4 — Mission Control 연동 + 기능 확장](https://github.com/wooriapt79/mulberry-research-lab/issues/151) #151
 - [[경과보고] Mission Control 로그인 화면 배포 실패 — Issue #5 사후 분석 (2026-07-24)](https://github.com/wooriapt79/mulberry-research-lab/issues/150) #150
 - [[Research] 소형 자율주행 로봇 — 대형 물류센터 화재감지 및 이머전시 모니터링](https://github.com/wooriapt79/mulberry-research-lab/issues/147) #147
-- [[Research] AI 포렌식 — 디지털 포렌식 AI 자동화 연구](https://github.com/wooriapt79/mulberry-research-lab/issues/146) #146
 
 **Recent Commits:**
+- [`f8ea4e6`](https://github.com/wooriapt79/mulberry-research-lab/commit/f8ea4e6525712208a8cdd2d70fa8dd3657d09339) feat: Lynn daily signal [state:heartbeat] 2026-07-30
 - [`13b5481`](https://github.com/wooriapt79/mulberry-research-lab/commit/13b5481faab72a08986dac0856638b35de64f8fe) feat: Lynn daily signal [state:heartbeat] 2026-07-29
 - [`b620fd3`](https://github.com/wooriapt79/mulberry-research-lab/commit/b620fd3fcc2567761f18b86bb54f211a368a0ad3) feat: Lynn daily signal [state:heartbeat] 2026-07-28
-- [`6bd7abb`](https://github.com/wooriapt79/mulberry-research-lab/commit/6bd7abb1bb43b6848c09960ec3a17e7774b5c965) feat: Lynn daily signal [state:heartbeat] 2026-07-27
 
 ---
 
@@ -26,23 +26,23 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`f71eb98`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f71eb98ccc2a3b35e81a02fc298fc2f3e18dfedd) feat: Lynn daily signal [state:active] 2026-07-31
+- [`fbfeb68`](https://github.com/wooriapt79/mulberry_memory_bank/commit/fbfeb68e8c8b1608240b421f494b6a7404b2dada) [LAB->Bank] activity synced
 - [`c81541b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c81541bd2886e949a9d1eec1ab05bb2e6ff26c77) feat: Lynn daily signal [state:active] 2026-07-30
-- [`8680072`](https://github.com/wooriapt79/mulberry_memory_bank/commit/8680072a11ee3a71dcb16c56bdf5f35d15114ba8) feat: Lynn daily signal [state:active] 2026-07-29
-- [`6b8a7a2`](https://github.com/wooriapt79/mulberry_memory_bank/commit/6b8a7a2d7e67e4ba3a10eb4198756d0b04cf113b) feat: Lynn daily signal [state:active] 2026-07-28
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
+- [[Koda] Luna 카카오 채널 카루셀 이미지 교체 — Mulberry 타로카드 비주얼 적용](https://github.com/wooriapt79/mulberry-open-api/issues/130) #130
 - [[Luna] LUNA_SYSTEM_PROMPT v2.0 — AI Inje Initiative 지식 주입](https://github.com/wooriapt79/mulberry-open-api/issues/124) #124
 - [[Luna Kakao] Co-op Buy 카카오 채널 인챗 연동 — 채팅창 이탈 없이 공동구매 완결](https://github.com/wooriapt79/mulberry-open-api/issues/121) #121
-- [✅ [Koda 보고] Mulberry_Luna KakaoTalk AI Agent v1.0 셋업 완료](https://github.com/wooriapt79/mulberry-open-api/issues/93) #93
 
 **Recent Commits:**
-- [`bc46243`](https://github.com/wooriapt79/mulberry-open-api/commit/bc46243ec25107fcd12b393c3c521f7970193327) Merge pull request #125 from wooriapt79/koda/issue124-system-prompt-in
-- [`a91ba49`](https://github.com/wooriapt79/mulberry-open-api/commit/a91ba49b9a0611522d28c3fd451751d144d85302) feat(luna): Issue #124 LUNA_SYSTEM_PROMPT v2.0 — AI Inje Initiative 지식
-- [`eeb005d`](https://github.com/wooriapt79/mulberry-open-api/commit/eeb005dd6312436ce267ecdb346e6157c239a2ca) Merge pull request #123 from wooriapt79/koda/inje-entry-point
+- [`9309e35`](https://github.com/wooriapt79/mulberry-open-api/commit/9309e35325e6aacdfe18e275420473f71b4f3c72) fix(tarot): 이미지 URL v1.2 — Wikimedia Commons Rider-Waite
+- [`311540b`](https://github.com/wooriapt79/mulberry-open-api/commit/311540b5f605c5f8301a9e260ecc14303fda6576) fix(kakao): v3.3 — 타로 핸들러 연동 복구 (isTarotTrigger + isInTarotSession)
+- [`fda94c7`](https://github.com/wooriapt79/mulberry-open-api/commit/fda94c710f266eda9b901de6459134733f16fc7b) Merge branch 'koda/issue126-tarot-image-carousel'
 
 ---
 
