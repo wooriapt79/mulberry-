@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-07-31 03:13 UTC**
+> Last updated: **2026-08-01 03:12 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [🔭 [2026년 08월] Mulberry 기술 트렌드 리포트 — 팀 토론](https://github.com/wooriapt79/mulberry-research-lab/issues/152) #152
 - [[KODA 작업 지시] Open Reception v0.4 — Mission Control 연동 + 기능 확장](https://github.com/wooriapt79/mulberry-research-lab/issues/151) #151
 - [[경과보고] Mission Control 로그인 화면 배포 실패 — Issue #5 사후 분석 (2026-07-24)](https://github.com/wooriapt79/mulberry-research-lab/issues/150) #150
-- [[Research] 소형 자율주행 로봇 — 대형 물류센터 화재감지 및 이머전시 모니터링](https://github.com/wooriapt79/mulberry-research-lab/issues/147) #147
 
 **Recent Commits:**
+- [`479d7d6`](https://github.com/wooriapt79/mulberry-research-lab/commit/479d7d6eef0c12890b3e4b9f9c1aa02730193581) feat: Lynn daily signal [state:heartbeat] 2026-07-31
 - [`f8ea4e6`](https://github.com/wooriapt79/mulberry-research-lab/commit/f8ea4e6525712208a8cdd2d70fa8dd3657d09339) feat: Lynn daily signal [state:heartbeat] 2026-07-30
 - [`13b5481`](https://github.com/wooriapt79/mulberry-research-lab/commit/13b5481faab72a08986dac0856638b35de64f8fe) feat: Lynn daily signal [state:heartbeat] 2026-07-29
-- [`b620fd3`](https://github.com/wooriapt79/mulberry-research-lab/commit/b620fd3fcc2567761f18b86bb54f211a368a0ad3) feat: Lynn daily signal [state:heartbeat] 2026-07-28
 
 ---
 
@@ -26,23 +26,23 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`23e8c6b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/23e8c6bac41d117913ad7b1e5fded4236f29da47) feat: Lynn daily signal [state:active] 2026-08-01
 - [`f71eb98`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f71eb98ccc2a3b35e81a02fc298fc2f3e18dfedd) feat: Lynn daily signal [state:active] 2026-07-31
 - [`fbfeb68`](https://github.com/wooriapt79/mulberry_memory_bank/commit/fbfeb68e8c8b1608240b421f494b6a7404b2dada) [LAB->Bank] activity synced
-- [`c81541b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c81541bd2886e949a9d1eec1ab05bb2e6ff26c77) feat: Lynn daily signal [state:active] 2026-07-30
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
+- [[Koda] UX 버그 수정 + Luna Event Adapter 구조 도입 — display_text / event_payload 분리](https://github.com/wooriapt79/mulberry-open-api/issues/131) #131
 - [[Koda] Luna 카카오 채널 카루셀 이미지 교체 — Mulberry 타로카드 비주얼 적용](https://github.com/wooriapt79/mulberry-open-api/issues/130) #130
 - [[Luna] LUNA_SYSTEM_PROMPT v2.0 — AI Inje Initiative 지식 주입](https://github.com/wooriapt79/mulberry-open-api/issues/124) #124
-- [[Luna Kakao] Co-op Buy 카카오 채널 인챗 연동 — 채팅창 이탈 없이 공동구매 완결](https://github.com/wooriapt79/mulberry-open-api/issues/121) #121
 
 **Recent Commits:**
-- [`9309e35`](https://github.com/wooriapt79/mulberry-open-api/commit/9309e35325e6aacdfe18e275420473f71b4f3c72) fix(tarot): 이미지 URL v1.2 — Wikimedia Commons Rider-Waite
-- [`311540b`](https://github.com/wooriapt79/mulberry-open-api/commit/311540b5f605c5f8301a9e260ecc14303fda6576) fix(kakao): v3.3 — 타로 핸들러 연동 복구 (isTarotTrigger + isInTarotSession)
-- [`fda94c7`](https://github.com/wooriapt79/mulberry-open-api/commit/fda94c710f266eda9b901de6459134733f16fc7b) Merge branch 'koda/issue126-tarot-image-carousel'
+- [`af15efc`](https://github.com/wooriapt79/mulberry-open-api/commit/af15efcc27ed950cee900922294e91ab7ed94fee) fix(tarot): 카드 공개 description 줄바꿈 제거 — 한 줄 표시로 변경
+- [`2ae286f`](https://github.com/wooriapt79/mulberry-open-api/commit/2ae286f9ee2d05ea3665bcfb12f0549367b6e11f) feat(tarot): Issue #130 카루셀 뒷면 이미지 Mulberry 타로카드 비주얼 적용
+- [`0df3774`](https://github.com/wooriapt79/mulberry-open-api/commit/0df37742eed9a1b19dd53ef61afca7968c99ae4a) feat(tarot): Issue #130 카루셀 이미지 Mulberry 타로카드 비주얼로 교체
 
 ---
 
