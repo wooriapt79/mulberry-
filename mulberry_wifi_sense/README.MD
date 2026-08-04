@@ -1,312 +1,66 @@
 # Mulberry WiFi Sense
-## Privacy-first Spatial AI for Human Safety
+## Privacy-first Spatial Safety Research MVP
 
-> **Mulberry Spatial Safety System**
->
-> Transforming WiFi signals into spatial intelligence through Edge AI,
-> Human Approval, and Auditable Agent Collaboration.
+Mulberry WiFi Sense explores whether WiFi Channel State Information (CSI) can support privacy-conscious observations of presence, movement, and possible safety events without cameras.
 
----
+> AI proposes. Humans decide. Every transition is recorded.
 
-# Vision
+## Current truth
 
-Mulberry WiFi Sense is an Edge AI project that utilizes WiFi Channel State
-Information (CSI) to understand human presence, movement, and safety events
-without relying on cameras.
+This directory is a research simulation, not an emergency-response or medical product. Random CSI and rule thresholds are used in the legacy Python/UI demos. Values such as `0.97` are **uncalibrated simulation scores**, not validated probability, accuracy, or a basis for automatic dispatch.
 
-Our vision is not simply to detect motion.
+See [STATUS.md](STATUS.md) for the boundary between implemented, simulated, planned, and paused work.
 
-Our goal is to build a **Human-Centered Spatial Safety System**
-where AI analyzes signals,
-humans make final decisions,
-and every action remains auditable.
+## Governed event flow
 
----
-
-# Why WiFi Sensing?
-
-Traditional monitoring systems depend on cameras.
-
-However, cameras introduce challenges including
-
-- Privacy concerns
-- Blind spots
-- Low-light limitations
-- Smoke and disaster environments
-- Installation cost
-
-Mulberry WiFi Sense explores an alternative approach.
-
-Instead of recognizing images,
-
-our AI interprets wireless signal changes.
-
-This enables
-
-- Human Presence Detection
-- Motion Analysis
-- Fall Suspicion Detection
-- Indoor Spatial Awareness
-- Privacy-preserving Safety Monitoring
-
----
-
-# Project Philosophy
-
-Mulberry WiFi Sense follows one simple principle.
-
-> AI analyzes.
->
-> Humans approve.
->
-> Everything is recorded.
-
-This philosophy is shared across every Mulberry project.
-
----
-
-# System Architecture
-
+```text
+Explicit consent
+  → CSI observation
+  → candidate safety event
+  → sensor/context review
+  → Steward Human approval or rejection
+  → local dispatch simulation (approved only)
+  → hash-linked audit record
 ```
 
-ESP32 / WiFi AP
-↓
-CSI Collection
-↓
-Edge AI (Raspberry Pi)
-↓
-Motion / Fall Model
-↓
-Event Generation
-↓
-Mulberry Agent Gateway
-↓
-Human Approval
-↓
-AuditChainHead
-↓
-Digital Twin / Dashboard / External Systems
+No live 119 reporting, external messaging, medical diagnosis, or physical dispatch is implemented. The binding research policy is in [governance/HUMAN_APPROVAL_POLICY.md](governance/HUMAN_APPROVAL_POLICY.md).
 
+## v0.2 reference implementation
+
+- `safety_workflow.py`: consent states, candidate events, human decisions, and audit chain.
+- `schemas/wifi_sensing_event.schema.json`: candidate-event contract.
+- `tests/test_safety_workflow.py`: consent, approval, dispatch-simulation, and duplicate-decision tests.
+- `kbin-wifi-sensing-mvp-20260314.py`: legacy consolidated simulation; not the governed production path.
+- `demo_ui.html`: concept demo; all positions, identities, and scores are simulated.
+
+Run the safety workflow tests from this directory:
+
+```bash
+python -m unittest discover -s tests -p 'test_*.py'
 ```
 
----
+## Scope order
 
-# Current MVP
+The first hardware PoC should fix one test setup:
 
-Current repository provides an experimental simulation environment.
-
-Included components
-
-- CSI Reader
-- CSI Collector
-- Motion Detection
-- Fall Detection
-- Multi-modal Sensor
-- Audio + CSI Fusion
-- Privacy Controller
-- Human Identifier (Research)
-- LED Status
-- Emergency Trigger Simulation
-
-Current implementation is intended for
-
-- Research
-- Algorithm Validation
-- UI Demonstration
-- Edge AI Experiments
-
-It is **NOT** intended for emergency response,
-medical diagnosis,
-or production deployment.
-
----
-
-# Project Roadmap
-
-## Phase 1
-
-Simulation MVP
-
-- CSI Simulation
-- Motion Detection
-- Fall Detection
-- Privacy Control
-
----
-
-## Phase 2
-
-Real Hardware
-
-- ESP32 CSI
-- Raspberry Pi Edge
-- Real-time CSI Pipeline
-
----
-
-## Phase 3
-
-Spatial Intelligence
-
-- Indoor Position Estimation
-- Multi-node Fusion
-- Heat Map
-- Digital Twin Integration
-
----
-
-## Phase 4
-
-Mulberry Spatial Safety Platform
-
-- Agent Gateway
-- Human Approval
-- AuditChainHead
-- Event Schema
-- Smart City Integration
-
----
-
-# Agent Formation
-
-## KODA
-
-Technical & Sensing Lead
-
-Responsibilities
-
-- CSI Collection
-- Signal Processing
-- AI Models
-- Edge Optimization
-- Performance Validation
-
----
-
-## TRANG Manager
-
-Validation & Scenario Lead
-
-Responsibilities
-
-- Scenario Design
-- False Positive Analysis
-- Timeline Reconstruction
-- Pilot Planning
-- Operational Validation
-
----
-
-## Helix
-
-Governance Lead
-
-Responsibilities
-
-- Human Approval
-- AI Governance
-- Privacy Policy
-- Safety Rules
-- Expansion Strategy
-
----
-
-## KeBin
-
-Audit & Integration
-
-Responsibilities
-
-- Event Schema
-- AuditChainHead
-- Gateway Integration
-- Data Governance
-- Traceability
-
----
-
-## Luna
-
-Human Interface
-
-Responsibilities
-
-- User Guidance
-- Safety Communication
-- Notification
-- Human Interaction
-
----
-
-# Future Integration
-
-Mulberry WiFi Sense is designed to integrate with
-
-- Mulberry Agent Gateway
-- Raspberry Pi Edge Network
-- Digital Twin Platforms
-- Smart City Infrastructure
-- Public Safety Systems
-- Food Desert Monitoring
-- AI Inje Initiative
-
-The project is intentionally designed as an expandable platform,
-not a standalone sensing application.
-
----
-
-# Repository Structure
-
+```text
+ESP32 CSI nodes → Raspberry Pi 5 Edge → one indoor room
 ```
 
-docs/
-assets/
-hardware/
-demo/
-models/
-gateway/
-events/
-schemas/
-tests/
+Validate presence, movement, sudden change/stillness, repeatability, false positives, latency, consent enforcement, and audit completeness before attempting positioning, 3D integration, or personal identification.
 
-```
+## Privacy and WhoFi boundary
 
----
+SHA-256 hashing does not automatically anonymize a stable biometric signature. Personal identification is therefore a separate high-risk research track and is paused in the governed v0.2 path. Prefer anonymous presence, occupancy count, movement state, and same-session tracking.
 
-# Privacy
+## Team roles
 
-Privacy is a core design principle.
+- KODA: CSI collection, signal processing, edge validation.
+- TRANG Manager: scenarios, false-positive analysis, field validation.
+- Helix: consent, privacy, safety governance.
+- KeBin: event schema, Gateway integration, audit and traceability.
+- Luna: human guidance and approved communication interfaces.
 
-The system is designed to minimize personal information processing.
+## Disclaimer
 
-Recommended deployment includes
-
-- Human Approval
-- Local Edge Processing
-- Explicit User Consent
-- Audit Logging
-- Configurable Data Retention
-
----
-
-# Disclaimer
-
-This repository is an experimental research project.
-
-Current implementation does **NOT**
-
-- replace emergency responders
-- replace medical professionals
-- provide legally certified measurements
-
-Human verification is always required.
-
----
-
-# Mulberry Research Lab
-
-Building Human-Centered Agent Ecosystems
-
-AI analyzes.
-Humans decide.
-Everything is recorded.
+Do not use this repository to replace emergency responders or medical professionals, claim certified measurements, or trigger live emergency action. Human verification is required.
