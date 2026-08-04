@@ -1,4 +1,5 @@
 # Mulberry WiFi Sensing MVP (Minimum Viable Product)
+## Mulberry Spatial Safety System.
 
 이 프로젝트는 WiFi 신호(CSI: Channel State Information)를 활용하여 사람의 움직임 감지, 낙상 감지, 멀티모달 센싱, 그리고 사람 식별 기능을 시뮬레이션하는 MVP(Minimum Viable Product) 버전입니다.
 
