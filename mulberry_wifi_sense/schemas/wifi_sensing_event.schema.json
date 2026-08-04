@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mulberry.example/schemas/wifi-sensing-event.schema.json",
+  "title": "Mulberry WiFi Sensing Candidate Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["eventId", "eventType", "observedAt", "location", "simulationScore", "scoreIsCalibratedProbability", "consentState", "approvalState"],
+  "properties": {
+    "eventId": {"type": "string", "format": "uuid"},
+    "eventType": {"enum": ["presence_observed", "movement_observed", "fall_suspected"]},
+    "observedAt": {"type": "string", "format": "date-time"},
+    "location": {"type": "string", "minLength": 1},
+    "simulationScore": {"type": "number", "minimum": 0, "maximum": 1},
+    "scoreIsCalibratedProbability": {"const": false},
+    "consentState": {"enum": ["requested", "granted", "denied", "revoked", "expired"]},
+    "approvalState": {"enum": ["pending", "approved", "rejected"]}
+  }
+}
