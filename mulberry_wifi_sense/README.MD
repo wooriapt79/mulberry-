@@ -1,83 +1,312 @@
-# Mulberry WiFi Sensing MVP (Minimum Viable Product)
-## Mulberry Spatial Safety System.
+# Mulberry WiFi Sense
+## Privacy-first Spatial AI for Human Safety
 
-이 프로젝트는 WiFi 신호(CSI: Channel State Information)를 활용하여 사람의 움직임 감지, 낙상 감지, 멀티모달 센싱, 그리고 사람 식별 기능을 시뮬레이션하는 MVP(Minimum Viable Product) 버전입니다.
+> **Mulberry Spatial Safety System**
+>
+> Transforming WiFi signals into spatial intelligence through Edge AI,
+> Human Approval, and Auditable Agent Collaboration.
 
-## 주요 기능 및 클래스
+---
 
-*   **`CSIReader`**: WiFi 인터페이스로부터 CSI 데이터를 읽는 것을 모의합니다.
-*   **`CSIAnalyzer`**: CSI 데이터를 수집하고 분석하는 기본적인 기능을 제공합니다.
-*   **`CSICollector`**: 지정된 시간 동안 CSI 데이터를 수집하는 것을 모의합니다.
-*   **`LEDIndicator`**: 시스템 상태를 시각적으로 나타내는 LED 동작을 모의합니다.
-*   **`MHCMotionDetector`**: CSI 데이터의 평균 진폭을 기반으로 `normal`, `abnormal_movement`, `fall_detected`를 분석합니다. 임계값(`fall_threshold`, `abnormal_threshold`)을 조정할 수 있습니다.
-*   **`MHCMotionModel`**: 진폭 데이터를 사용하여 `normal`, `abnormal_movement`, `fall_detected`를 예측하고 신뢰도를 반환합니다.
-*   **`MHCMultiModalModel`**: 오디오와 CSI 데이터를 결합한 신호의 평균을 기반으로 상황을 예측합니다.
-*   **`WiFiSensingModule`**: CSI 추출 및 `MHCMotionDetector`를 활용하여 움직임을 감지하고, 낙상 시 비상 알림을 트리거합니다.
-*   **`WiFiSensingPrivacy`**: 사용자 동의 및 데이터 수집 활성화/비활성화를 관리하며, 음성 명령에 반응하는 것을 모의합니다.
-*   **`MHCMultiModalSensor`**: `MHCMultiModalModel`을 사용하여 오디오와 CSI 데이터를 통합 분석하고, 음성 존재 여부, 낙상 및 비정상 움직임 감지 시 특정 액션을 수행합니다.
-*   **`WhoFiIdentifier`**: CSI 패턴을 '바디 시그니처'로 사용하여 사람을 등록하고 식별합니다.
-*   **`WiFiFallDetector`**: `CSICollector`와 `MHCMotionModel`을 사용하여 낙상을 감지하고, 높은 신뢰도로 낙상 감지 시 비상 알림을 트리거합니다.
+# Vision
 
+Mulberry WiFi Sense is an Edge AI project that utilizes WiFi Channel State
+Information (CSI) to understand human presence, movement, and safety events
+without relying on cameras.
 
-## Agent formation
+Our vision is not simply to detect motion.
 
-Mulberry WiFi Sense Cell
+Our goal is to build a **Human-Centered Spatial Safety System**
+where AI analyzes signals,
+humans make final decisions,
+and every action remains auditable.
 
-KODA
-Technical / Sensing Lead.
-│
-├─ CSI 수집·전처리.
-├─ 시계열 AI 모델.
-├─ Edge 최적화.
-└─ 성능 검증.
+---
 
-TRANG Manager
-Validation / Scenario Lead.
-│
-├─ 실험 설계.
-├─ 오탐·미탐 분석.
-├─ 상황 재구성.
-└─ Space 적용 시나리오..
+# Why WiFi Sensing?
 
-Helix
+Traditional monitoring systems depend on cameras.
+
+However, cameras introduce challenges including
+
+- Privacy concerns
+- Blind spots
+- Low-light limitations
+- Smoke and disaster environments
+- Installation cost
+
+Mulberry WiFi Sense explores an alternative approach.
+
+Instead of recognizing images,
+
+our AI interprets wireless signal changes.
+
+This enables
+
+- Human Presence Detection
+- Motion Analysis
+- Fall Suspicion Detection
+- Indoor Spatial Awareness
+- Privacy-preserving Safety Monitoring
+
+---
+
+# Project Philosophy
+
+Mulberry WiFi Sense follows one simple principle.
+
+> AI analyzes.
+>
+> Humans approve.
+>
+> Everything is recorded.
+
+This philosophy is shared across every Mulberry project.
+
+---
+
+# System Architecture
+
+```
+
+ESP32 / WiFi AP
+↓
+CSI Collection
+↓
+Edge AI (Raspberry Pi)
+↓
+Motion / Fall Model
+↓
+Event Generation
+↓
+Mulberry Agent Gateway
+↓
+Human Approval
+↓
+AuditChainHead
+↓
+Digital Twin / Dashboard / External Systems
+
+```
+
+---
+
+# Current MVP
+
+Current repository provides an experimental simulation environment.
+
+Included components
+
+- CSI Reader
+- CSI Collector
+- Motion Detection
+- Fall Detection
+- Multi-modal Sensor
+- Audio + CSI Fusion
+- Privacy Controller
+- Human Identifier (Research)
+- LED Status
+- Emergency Trigger Simulation
+
+Current implementation is intended for
+
+- Research
+- Algorithm Validation
+- UI Demonstration
+- Edge AI Experiments
+
+It is **NOT** intended for emergency response,
+medical diagnosis,
+or production deployment.
+
+---
+
+# Project Roadmap
+
+## Phase 1
+
+Simulation MVP
+
+- CSI Simulation
+- Motion Detection
+- Fall Detection
+- Privacy Control
+
+---
+
+## Phase 2
+
+Real Hardware
+
+- ESP32 CSI
+- Raspberry Pi Edge
+- Real-time CSI Pipeline
+
+---
+
+## Phase 3
+
+Spatial Intelligence
+
+- Indoor Position Estimation
+- Multi-node Fusion
+- Heat Map
+- Digital Twin Integration
+
+---
+
+## Phase 4
+
+Mulberry Spatial Safety Platform
+
+- Agent Gateway
+- Human Approval
+- AuditChainHead
+- Event Schema
+- Smart City Integration
+
+---
+
+# Agent Formation
+
+## KODA
+
+Technical & Sensing Lead
+
+Responsibilities
+
+- CSI Collection
+- Signal Processing
+- AI Models
+- Edge Optimization
+- Performance Validation
+
+---
+
+## TRANG Manager
+
+Validation & Scenario Lead
+
+Responsibilities
+
+- Scenario Design
+- False Positive Analysis
+- Timeline Reconstruction
+- Pilot Planning
+- Operational Validation
+
+---
+
+## Helix
+
 Governance Lead
-│
-├─ 허용 추론 범위
-├─ Human Approval
-├─ 개인정보 원칙
-└─ 책임 구조
 
-KeBin
-Audit / Implementation Support
-│
-├─ Event Schema
-├─ 감사 로그
-├─ 데이터 접근 통제
-└─ Gateway 연동
+Responsibilities
 
-Luna
+- Human Approval
+- AI Governance
+- Privacy Policy
+- Safety Rules
+- Expansion Strategy
+
+---
+
+## KeBin
+
+Audit & Integration
+
+Responsibilities
+
+- Event Schema
+- AuditChainHead
+- Gateway Integration
+- Data Governance
+- Traceability
+
+---
+
+## Luna
+
 Human Interface
-│
-├─ 안내
-├─ 확인 대화
-└─ 담당자 연결
 
-## 프로젝트 실행 방법
+Responsibilities
 
-Google Colab 환경에서 이 노트북(`mulberry_wifi_sensing_mvp.ipynb`와 같은 파일)을 엽니다. 모든 셀을 순서대로 실행하여 각 모듈의 동작을 확인할 수 있습니다.
+- User Guidance
+- Safety Communication
+- Notification
+- Human Interaction
 
-*   **모든 셀 실행**: Colab 메뉴에서 `런타임(Runtime)` -> `모두 실행(Run all)`을 선택합니다.
-*   **개별 셀 실행**: 원하는 셀을 선택한 후 `Ctrl + Enter` 또는 셀 좌측의 실행 버튼(▶)을 클릭합니다.
+---
 
-## 시뮬레이션 및 테스트
+# Future Integration
 
-노트북에는 각 클래스 및 모듈의 기능을 테스트하기 위한 다양한 시뮬레이션 코드가 포함되어 있습니다. 이를 통해 각 모듈의 동작 방식과 임계값 변경에 따른 영향을 확인할 수 있습니다.
+Mulberry WiFi Sense is designed to integrate with
 
-### `MHCMotionDetector` 임계값 조정
-`MHCMotionDetector` 클래스 내 `fall_threshold` 및 `abnormal_threshold` 변수의 값을 변경하여 감지 민감도를 조정할 수 있습니다.
+- Mulberry Agent Gateway
+- Raspberry Pi Edge Network
+- Digital Twin Platforms
+- Smart City Infrastructure
+- Public Safety Systems
+- Food Desert Monitoring
+- AI Inje Initiative
 
-### `WiFiFallDetector` 낙상 시뮬레이션
-`MockCSICollector`를 통해 고의적으로 낙상 상황과 유사한 CSI 데이터를 주입하여 비상 알림이 트리거되는 과정을 확인할 수 있습니다.
+The project is intentionally designed as an expandable platform,
+not a standalone sensing application.
 
-### `WhoFiIdentifier` 사람 식별
-특정 `person_id`로 사람의 바디 시그니처를 등록한 후, 유사하거나 다른 CSI 데이터로 식별을 시도하여 모듈의 정확도를 테스트할 수 있습니다.
+---
+
+# Repository Structure
+
+```
+
+docs/
+assets/
+hardware/
+demo/
+models/
+gateway/
+events/
+schemas/
+tests/
+
+```
+
+---
+
+# Privacy
+
+Privacy is a core design principle.
+
+The system is designed to minimize personal information processing.
+
+Recommended deployment includes
+
+- Human Approval
+- Local Edge Processing
+- Explicit User Consent
+- Audit Logging
+- Configurable Data Retention
+
+---
+
+# Disclaimer
+
+This repository is an experimental research project.
+
+Current implementation does **NOT**
+
+- replace emergency responders
+- replace medical professionals
+- provide legally certified measurements
+
+Human verification is always required.
+
+---
+
+# Mulberry Research Lab
+
+Building Human-Centered Agent Ecosystems
+
+AI analyzes.
+Humans decide.
+Everything is recorded.
