@@ -24,20 +24,20 @@
 Mulberry WiFi Sense Cell
 
 KODA
-Technical / Sensing Lead
+Technical / Sensing Lead.
 │
-├─ CSI 수집·전처리
-├─ 시계열 AI 모델
-├─ Edge 최적화
-└─ 성능 검증
+├─ CSI 수집·전처리.
+├─ 시계열 AI 모델.
+├─ Edge 최적화.
+└─ 성능 검증.
 
 TRANG Manager
-Validation / Scenario Lead
+Validation / Scenario Lead.
 │
-├─ 실험 설계
-├─ 오탐·미탐 분석
-├─ 상황 재구성
-└─ Space 적용 시나리오
+├─ 실험 설계.
+├─ 오탐·미탐 분석.
+├─ 상황 재구성.
+└─ Space 적용 시나리오..
 
 Helix
 Governance Lead
