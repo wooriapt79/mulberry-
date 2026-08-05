@@ -51,6 +51,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Legacy safety boundary: these research-only capabilities stay off.
+WHOFI_ENABLED = False
+LEGACY_EXTERNAL_ACTIONS_ENABLED = False
+
 __all__ = [
     # exceptions
     "MHCApiError",
@@ -343,6 +347,11 @@ class MHCClient:
         """HTTP POST with retry + exponential backoff.
         MVP stub: requests 미설치 또는 mock_mode=True 시 stub 응답 반환.
         """
+        if not LEGACY_EXTERNAL_ACTIONS_ENABLED:
+            raise PermissionError(
+                "legacy external actions are disabled; use safety_workflow.py and recorded Human Approval"
+            )
+
         if self._mock_mode or not _REQUESTS_AVAILABLE:
             logger.info(
                 f"[MHCClient][STUB] POST {endpoint} "
@@ -449,7 +458,9 @@ class WiFiSensingModule:
         self.motion_detector = MHCMotionDetector()
 
     def alert_emergency(self) -> None:
-        logger.warning("[EMERGENCY] Fall detected. Alert triggered.")
+        raise PermissionError(
+            "legacy emergency path is disabled; create a governed candidate event"
+        )
 
     def run_once(self) -> str:
         csi_data = self.csi_extractor.read_csi()
@@ -485,7 +496,9 @@ class MHCMultiModalSensor:
         logger.info(f"[TTS] {message}")
 
     def trigger_emergency(self) -> None:
-        logger.warning("[EMERGENCY] Multimodal emergency trigger")
+        raise PermissionError(
+            "legacy emergency path is disabled; create a governed candidate event"
+        )
 
     def is_speech_present(self, audio_stream: List[float]) -> bool:
         """오디오 스트림에 음성 존재 여부 판단.
@@ -602,6 +615,8 @@ class WhoFiIdentifier:
         return max(0.0, 1.0 - distance)
 
     def enroll_person(self, person_id: str, seconds: int = 5) -> None:
+        if not WHOFI_ENABLED:
+            raise PermissionError("WhoFi enrollment is disabled in the governed MVP")
         csi_patterns = self.csi_analyzer.collect_for_duration(seconds)
         signature = self.extract_biometric_features(csi_patterns)
         self.body_signature_db[person_id] = signature
@@ -630,6 +645,9 @@ class WhoFiIdentifier:
             이전: threshold 초과 첫 번째 매칭 즉시 반환 → 다중 등록자 오인식
             수정: 전체 스캔 후 최고 유사도 매칭 반환
         """
+        if not WHOFI_ENABLED:
+            raise PermissionError("WhoFi identification is disabled in the governed MVP")
+
         best_match: str = "unknown"
         best_similarity: float = 0.0
 
@@ -658,7 +676,9 @@ class WiFiFallDetector:
         self.motion_analyzer = MHCMotionModel()
 
     def trigger_emergency(self) -> None:
-        logger.warning("[EMERGENCY] WiFi fall detector triggered")
+        raise PermissionError(
+            "legacy emergency path is disabled; create a governed candidate event"
+        )
 
     def extract_amplitude(self, csi_stream: List[List[float]]) -> List[float]:
         return [sum(frame) / len(frame) for frame in csi_stream if frame]
@@ -681,48 +701,11 @@ class WiFiFallDetector:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def demo() -> None:
-    print("\n=== 1. Privacy Control ===")
-    privacy = WiFiSensingPrivacy()
-    privacy.request_consent()
-    privacy.toggle_collection("움직임 감지 켜줘")
-
-    print("\n=== 2. WiFi Sensing Module ===")
-    sensing = WiFiSensingModule()
-    sensing.run(iterations=3, sleep_sec=0.05)
-
-    print("\n=== 3. Multimodal Sensor (with MHCClient stub) ===")
-    mhc_client = MHCClient(api_key="demo_key", mock_mode=True)
-    multimodal = MHCMultiModalSensor(mhc_client=mhc_client)
-    audio_stream = [random.random() for _ in range(32)]
-    csi_stream = [random.random() for _ in range(64)]
-    multimodal.analyze(audio_stream, csi_stream, person_id="senior_01", location="living_room")
-
-    print("\n=== 4. WhoFi Identifier (best-match + SHA-256) ===")
-    identifier = WhoFiIdentifier(mhc_client=mhc_client)
-    identifier.enroll_person("senior_01")
-    sample = identifier.body_signature_db["senior_01"][:]
-    identified = identifier.identify_person(sample, threshold=0.80)
-    print(f"[WhoFi] identified={identified}")
-
-    print("\n=== 5. Fall Detector ===")
-    fall_detector = WiFiFallDetector()
-    result = fall_detector.detect_fall()
-    print(f"[WiFiFallDetector] label={result.label}, confidence={result.confidence:.2f}")
-
-    print("\n=== 6. Payload Preview ===")
-    sample_result = DetectionResult("fall_detected", 0.97)
-    motion_payload = preprocess_motion_event_data(
-        sample_result, person_id="senior_01", location="living_room"
+    """Legacy executable flows are intentionally disabled."""
+    logger.warning(
+        "Legacy demo disabled: run safety_workflow.py tests and use the governed "
+        "candidate → authenticated Steward Human → audit path."
     )
-    id_payload = preprocess_person_identified_data(
-        person_id="senior_01",
-        signature=sample[:8],  # 미리보기용 앞 8개 요소
-    )
-    print(f"[Motion payload] {json.dumps(motion_payload, ensure_ascii=False, indent=2)}")
-    print(f"[ID payload keys] {list(id_payload.keys())}")
-    print(f"[hashedBiometricSignature] {id_payload['hashedBiometricSignature'][:16]}…")
-
-    print("\n=== Demo Complete ===")
 
 
 if __name__ == "__main__":
