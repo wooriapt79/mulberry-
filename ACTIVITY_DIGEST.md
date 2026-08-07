@@ -1,20 +1,20 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-08-06 02:43 UTC**
+> Last updated: **2026-08-07 02:45 UTC**
 
 ---
 
 ## Research LAB ([mulberry-research-lab](https://github.com/wooriapt79/mulberry-research-lab))
 
 **Open Issues:**
+- [Add Mulberry KeBin–DeepSeek collaboration pilot v0.1](https://github.com/wooriapt79/mulberry-research-lab/pull/148) #148
 - [🔭 [2026년 08월] Mulberry 기술 트렌드 리포트 — 팀 토론](https://github.com/wooriapt79/mulberry-research-lab/issues/152) #152
 - [[KODA 작업 지시] Open Reception v0.4 — Mission Control 연동 + 기능 확장](https://github.com/wooriapt79/mulberry-research-lab/issues/151) #151
-- [[경과보고] Mission Control 로그인 화면 배포 실패 — Issue #5 사후 분석 (2026-07-24)](https://github.com/wooriapt79/mulberry-research-lab/issues/150) #150
 
 **Recent Commits:**
-- [`38f5e43`](https://github.com/wooriapt79/mulberry-research-lab/commit/38f5e434e73fe11b1e0c7151cf6b6c42b55f3160) feat: Lynn daily signal [state:heartbeat] 2026-08-05
-- [`1d559cd`](https://github.com/wooriapt79/mulberry-research-lab/commit/1d559cd9a948af862a40e504527274ee5d6016a4) feat: Lynn daily signal [state:heartbeat] 2026-08-04
-- [`b769033`](https://github.com/wooriapt79/mulberry-research-lab/commit/b769033526bcc1e7be56411ffad42e6069c46640) Add README for Luna Resonance AI package
+- [`af5bba0`](https://github.com/wooriapt79/mulberry-research-lab/commit/af5bba0c53bbb1cf4908ad33cabe29ddde65b0ad) Shorten YAML front matter keys to fix cramped header column in GitHub'
+- [`5ba5827`](https://github.com/wooriapt79/mulberry-research-lab/commit/5ba582790ba03d7a1406319bdcff32b854b2f5cd) feat: Lynn daily signal [state:heartbeat] 2026-08-07
+- [`6fb3db1`](https://github.com/wooriapt79/mulberry-research-lab/commit/6fb3db1b36609160c45eb57439604b52ca978b4e) Fix invalid YAML front matter in Appendix E draft (unescaped colon+quo
 
 ---
 
@@ -26,23 +26,23 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`5cdfb30`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5cdfb30b8984c777f346c0369b12d5df8e1a4db0) feat: Lynn daily signal [state:active] 2026-08-07
 - [`225e5c1`](https://github.com/wooriapt79/mulberry_memory_bank/commit/225e5c13a587ce135f610526fed032ed9b640589) feat: Lynn daily signal [state:active] 2026-08-06
 - [`9f33f67`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9f33f671d9d1422f6fb2e5d69ea8b598ec61fb5f) feat: Lynn daily signal [state:active] 2026-08-05
-- [`e7e8eab`](https://github.com/wooriapt79/mulberry_memory_bank/commit/e7e8eab22e5fca24473cafca0f83d5ad5cdc9c26) feat: Lynn daily signal [state:active] 2026-08-04
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
-- [docs: Issue #135 CLAUDE.md 신규 생성 — PR 머지 절차 공식화](https://github.com/wooriapt79/mulberry-open-api/pull/137) #137
-- [[운영정책] PR 머지 절차 — TRANG Manager 승인 필수 규칙 명시](https://github.com/wooriapt79/mulberry-open-api/issues/135) #135
 - [[BUG] fix(kakao): 공동구매 카루셀 복구 — commit 311540b 유실 코드 복원](https://github.com/wooriapt79/mulberry-open-api/issues/134) #134
+- [[Koda] UX 버그 수정 + Luna Event Adapter 구조 도입 — display_text / event_payload 분리](https://github.com/wooriapt79/mulberry-open-api/issues/131) #131
+- [[Koda] Luna 카카오 채널 카루셀 이미지 교체 — Mulberry 타로카드 비주얼 적용](https://github.com/wooriapt79/mulberry-open-api/issues/130) #130
 
 **Recent Commits:**
+- [`867ad28`](https://github.com/wooriapt79/mulberry-open-api/commit/867ad281258e91942e10a8da07b909042d8cd415) Merge pull request #137 from wooriapt79/koda/issue135-merge-policy
 - [`bd2a2af`](https://github.com/wooriapt79/mulberry-open-api/commit/bd2a2af4f96d87691dd4034f13625a3070f6be33) Merge pull request #136 from wooriapt79/koda/issue134-carousel-restore
-- [`3484eb3`](https://github.com/wooriapt79/mulberry-open-api/commit/3484eb38a4811772ff17ff83edcb5cad4ec751c8) fix(kakao): Issue #134 공동구매 카루셀 복구 — v3.5
-- [`6405dc0`](https://github.com/wooriapt79/mulberry-open-api/commit/6405dc0abfa5b9d45379c0baaebd00b9d7acebee) Merge pull request #133 from wooriapt79/koda/issue132-luna-prompt-fix
+- [`b983607`](https://github.com/wooriapt79/mulberry-open-api/commit/b98360731c14455f1681539f033d848679e49f1d) docs: Issue #135 CLAUDE.md 신규 생성 — PR 머지 절차 공식화
 
 ---
 
