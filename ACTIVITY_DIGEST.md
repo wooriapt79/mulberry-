@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-08-07 02:45 UTC**
+> Last updated: **2026-08-08 01:46 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[KODA 작업 지시] Open Reception v0.4 — Mission Control 연동 + 기능 확장](https://github.com/wooriapt79/mulberry-research-lab/issues/151) #151
 
 **Recent Commits:**
+- [`f3edab1`](https://github.com/wooriapt79/mulberry-research-lab/commit/f3edab1ed4568271c454efaaf114cb537a00851c) feat: Lynn daily signal [state:heartbeat] 2026-08-07
 - [`af5bba0`](https://github.com/wooriapt79/mulberry-research-lab/commit/af5bba0c53bbb1cf4908ad33cabe29ddde65b0ad) Shorten YAML front matter keys to fix cramped header column in GitHub'
 - [`5ba5827`](https://github.com/wooriapt79/mulberry-research-lab/commit/5ba582790ba03d7a1406319bdcff32b854b2f5cd) feat: Lynn daily signal [state:heartbeat] 2026-08-07
-- [`6fb3db1`](https://github.com/wooriapt79/mulberry-research-lab/commit/6fb3db1b36609160c45eb57439604b52ca978b4e) Fix invalid YAML front matter in Appendix E draft (unescaped colon+quo
 
 ---
 
@@ -26,9 +26,9 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`f4c52b5`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f4c52b558d52cf817b2bcf97755f2a3a9260f0a1) feat: Lynn daily signal [state:active] 2026-08-07
 - [`5cdfb30`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5cdfb30b8984c777f346c0369b12d5df8e1a4db0) feat: Lynn daily signal [state:active] 2026-08-07
 - [`225e5c1`](https://github.com/wooriapt79/mulberry_memory_bank/commit/225e5c13a587ce135f610526fed032ed9b640589) feat: Lynn daily signal [state:active] 2026-08-06
-- [`9f33f67`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9f33f671d9d1422f6fb2e5d69ea8b598ec61fb5f) feat: Lynn daily signal [state:active] 2026-08-05
 
 ---
 
