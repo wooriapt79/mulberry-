@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-08-11 01:53 UTC**
+> Last updated: **2026-08-12 02:05 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [Add Mulberry KeBin–DeepSeek collaboration pilot v0.1](https://github.com/wooriapt79/mulberry-research-lab/pull/148) #148
 
 **Recent Commits:**
+- [`5cf41a8`](https://github.com/wooriapt79/mulberry-research-lab/commit/5cf41a8fd7b17fecbadc79173c91d71e372d3e5a) feat: Lynn daily signal [state:heartbeat] 2026-08-11
 - [`febdbd1`](https://github.com/wooriapt79/mulberry-research-lab/commit/febdbd17f2f929e3b8e458749a353a23a08d7e4f) feat: Lynn daily signal [state:heartbeat] 2026-08-10
 - [`1addd70`](https://github.com/wooriapt79/mulberry-research-lab/commit/1addd70c345261c1875fedb64a5aec1acbd9fa1f) feat: Lynn daily signal [state:heartbeat] 2026-08-09
-- [`c23c5b5`](https://github.com/wooriapt79/mulberry-research-lab/commit/c23c5b52564ee212276a8d4baa64946b98b06e29) memory(kb): Issue #155 팀 토론 아카이브 + KB 기억 주입 — Kbin·RyuWon·Malu 2026-08
 
 ---
 
@@ -26,9 +26,9 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`f07884f`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f07884f809b4ca761ce1e8094685e42b37134a26) feat: Lynn daily signal [state:active] 2026-08-11
 - [`123048b`](https://github.com/wooriapt79/mulberry_memory_bank/commit/123048ba67449daa8e630333a46e45044797bd0d) feat: Lynn daily signal [state:active] 2026-08-10
 - [`fd84fd7`](https://github.com/wooriapt79/mulberry_memory_bank/commit/fd84fd70845e8ddf023331f5ccd4205af4b57e4b) feat: Lynn daily signal [state:active] 2026-08-09
-- [`b72c57f`](https://github.com/wooriapt79/mulberry_memory_bank/commit/b72c57f85e1fea9acbc762e5655f175546d0db19) feat: Lynn daily signal [state:active] 2026-08-08
 
 ---
 
