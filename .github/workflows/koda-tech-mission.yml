@@ -15,7 +15,7 @@ jobs:
         contains(github.event.comment.body, '@koda') ||
         github.event_name == 'workflow_dispatch'
       ) &&
-      github.event.comment.user.login != 'github-actions[bot]'
+      github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
@@ -38,10 +38,18 @@ jobs:
           AGENT_NAME: koda
           AGENT_ROLE: CTO
         run: |
+          ISSUE_URL="${{ github.event.issue.html_url }}"
+          COMMENT_BODY="${{ github.event.comment.body }}"
+          AUTHOR="${{ github.event.comment.user.login }}"
+          # issue opened/labeled 이벤트는 comment 없음 — issue body 폴백
+          if [ -z "$COMMENT_BODY" ]; then
+            COMMENT_BODY="${{ github.event.issue.body }}"
+            AUTHOR="${{ github.event.issue.user.login }}"
+          fi
           python scripts/koda_mission.py \
-            --issue "${{ github.event.issue.html_url }}" \
-            --comment "${{ github.event.comment.body }}" \
-            --author "${{ github.event.comment.user.login }}"
+            --issue "$ISSUE_URL" \
+            --comment "$COMMENT_BODY" \
+            --author "$AUTHOR"
 
       - name: 🚨 Escalate if Review Needed
         if: failure()
