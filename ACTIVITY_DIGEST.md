@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-08-26 01:24 UTC**
+> Last updated: **2026-08-27 08:09 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [Koda (CTO) — 기술 트렌드 리뷰: DeepSeek Harness (dsh) 분석](https://github.com/wooriapt79/mulberry-research-lab/issues/160) #160
 
 **Recent Commits:**
+- [`dae43c4`](https://github.com/wooriapt79/mulberry-research-lab/commit/dae43c4bcc5a9f689e16d5a13970d8afcaaafedc) feat: Lynn daily signal [state:heartbeat] 2026-08-27
 - [`ab1eeef`](https://github.com/wooriapt79/mulberry-research-lab/commit/ab1eeefa6dd781eefaa82844c288ddb22783ac18) feat: Lynn daily signal [state:heartbeat] 2026-08-25
 - [`2b5fb75`](https://github.com/wooriapt79/mulberry-research-lab/commit/2b5fb752b8100b0dfd9286e0a104361dab45fdfc) memory(kb): Issue #161 팀 토론 아카이브 + KB 기억 주입 — Kbin·RyuWon·Malu 2026-08
-- [`0c6a4ba`](https://github.com/wooriapt79/mulberry-research-lab/commit/0c6a4bafb6f6632333c3baa92453bfa89a6d55cd) feat: Lynn daily signal [state:heartbeat] 2026-08-24
 
 ---
 
@@ -26,18 +26,18 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`59027af`](https://github.com/wooriapt79/mulberry_memory_bank/commit/59027af4418158ab222e0ec9448bd9dd526c24ac) feat: Lynn daily signal [state:active] 2026-08-27
 - [`f6f8df0`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f6f8df00a732ec95d50bc45a242c025c90f5ea15) feat: Lynn daily signal [state:active] 2026-08-25
 - [`ff37e2d`](https://github.com/wooriapt79/mulberry_memory_bank/commit/ff37e2dadee60ac0d0b730754af165488f022b34) feat: Lynn daily signal [state:active] 2026-08-24
-- [`da7561e`](https://github.com/wooriapt79/mulberry_memory_bank/commit/da7561e89c1ea2e3f2fe310876366bbf2b210158) feat: Lynn daily signal [state:active] 2026-08-23
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
+- [[KODA] /demo/chat 시스템 프롬프트 주입 — Luna 인제 지식베이스](https://github.com/wooriapt79/mulberry-open-api/issues/139) #139
+- [[KeBin] 오픈 리셉션 미팅 데모 UI — 화이트 채팅창 단일 페이지](https://github.com/wooriapt79/mulberry-open-api/issues/138) #138
 - [[BUG] fix(kakao): 공동구매 카루셀 복구 — commit 311540b 유실 코드 복원](https://github.com/wooriapt79/mulberry-open-api/issues/134) #134
-- [[Koda] UX 버그 수정 + Luna Event Adapter 구조 도입 — display_text / event_payload 분리](https://github.com/wooriapt79/mulberry-open-api/issues/131) #131
-- [[Koda] Luna 카카오 채널 카루셀 이미지 교체 — Mulberry 타로카드 비주얼 적용](https://github.com/wooriapt79/mulberry-open-api/issues/130) #130
 
 **Recent Commits:**
 - [`867ad28`](https://github.com/wooriapt79/mulberry-open-api/commit/867ad281258e91942e10a8da07b909042d8cd415) Merge pull request #137 from wooriapt79/koda/issue135-merge-policy
