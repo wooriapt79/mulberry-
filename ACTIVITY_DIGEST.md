@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-08-28 10:12 UTC**
+> Last updated: **2026-08-29 06:11 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [Koda (CTO) — 기술 트렌드 리뷰: DeepSeek Harness (dsh) 분석](https://github.com/wooriapt79/mulberry-research-lab/issues/160) #160
 
 **Recent Commits:**
+- [`012278f`](https://github.com/wooriapt79/mulberry-research-lab/commit/012278f03be7fbfbb32405ba638074ca2cceea4e) feat: Lynn daily signal [state:heartbeat] 2026-08-29
 - [`ebf4f5b`](https://github.com/wooriapt79/mulberry-research-lab/commit/ebf4f5b20a205b8e839f157eee481e6928c6aa3d) feat: Lynn daily signal [state:heartbeat] 2026-08-28
 - [`dae43c4`](https://github.com/wooriapt79/mulberry-research-lab/commit/dae43c4bcc5a9f689e16d5a13970d8afcaaafedc) feat: Lynn daily signal [state:heartbeat] 2026-08-27
-- [`ab1eeef`](https://github.com/wooriapt79/mulberry-research-lab/commit/ab1eeefa6dd781eefaa82844c288ddb22783ac18) feat: Lynn daily signal [state:heartbeat] 2026-08-25
 
 ---
 
@@ -26,23 +26,23 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`11977ac`](https://github.com/wooriapt79/mulberry_memory_bank/commit/11977ac7870b361d270d2503d26718df29b6a9b5) feat: Lynn daily signal [state:active] 2026-08-29
 - [`c13866f`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c13866f4f0a4633aa3c7f1d9444975d98bb21798) feat: Lynn daily signal [state:active] 2026-08-28
 - [`59027af`](https://github.com/wooriapt79/mulberry_memory_bank/commit/59027af4418158ab222e0ec9448bd9dd526c24ac) feat: Lynn daily signal [state:active] 2026-08-27
-- [`f6f8df0`](https://github.com/wooriapt79/mulberry_memory_bank/commit/f6f8df00a732ec95d50bc45a242c025c90f5ea15) feat: Lynn daily signal [state:active] 2026-08-25
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
-- [[KODA] /demo/chat 시스템 프롬프트 주입 — Luna 인제 지식베이스](https://github.com/wooriapt79/mulberry-open-api/issues/139) #139
-- [[KeBin] 오픈 리셉션 미팅 데모 UI — 화이트 채팅창 단일 페이지](https://github.com/wooriapt79/mulberry-open-api/issues/138) #138
-- [[BUG] fix(kakao): 공동구매 카루셀 복구 — commit 311540b 유실 코드 복원](https://github.com/wooriapt79/mulberry-open-api/issues/134) #134
+- [[KODA] 타로 결과 후 AI 친구 5턴 플로우 구현 — tarot_handler.js + kakao.js](https://github.com/wooriapt79/mulberry-open-api/issues/144) #144
+- [[KODA] 카카오 채널 — 타로 결과 후 "AI 친구와 이야기하기" 버튼 추가 (다시 뽑기와 나란히)](https://github.com/wooriapt79/mulberry-open-api/issues/143) #143
+- [[KODA] Special Reception × 카카오 채널 연동 — /meeting 시스템 프롬프트 카카오 적용](https://github.com/wooriapt79/mulberry-open-api/issues/140) #140
 
 **Recent Commits:**
+- [`78c23c6`](https://github.com/wooriapt79/mulberry-open-api/commit/78c23c6f10d272d27297947b3db80f5a7aaa7d64) Merge pull request #142 from wooriapt79/wooriapt79-patch-3
+- [`a0bb6e5`](https://github.com/wooriapt79/mulberry-open-api/commit/a0bb6e562b4ca233e343ad1ef1e0891c3176970d) feat(luna): 5종 AI 친구 매칭 5턴 플로우 추가 (resonance v3)
 - [`867ad28`](https://github.com/wooriapt79/mulberry-open-api/commit/867ad281258e91942e10a8da07b909042d8cd415) Merge pull request #137 from wooriapt79/koda/issue135-merge-policy
-- [`bd2a2af`](https://github.com/wooriapt79/mulberry-open-api/commit/bd2a2af4f96d87691dd4034f13625a3070f6be33) Merge pull request #136 from wooriapt79/koda/issue134-carousel-restore
-- [`b983607`](https://github.com/wooriapt79/mulberry-open-api/commit/b98360731c14455f1681539f033d848679e49f1d) docs: Issue #135 CLAUDE.md 신규 생성 — PR 머지 절차 공식화
 
 ---
 
