@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-09-01 04:08 UTC**
+> Last updated: **2026-09-02 03:30 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [📋 [전략 토론] 인제군 AI 제안 전략 — 경쟁사는 무엇을 들고 올까? + Fama Evangelist AI 플랜](https://github.com/wooriapt79/mulberry-research-lab/issues/156) #156
 
 **Recent Commits:**
+- [`cd3639c`](https://github.com/wooriapt79/mulberry-research-lab/commit/cd3639ce065bfe5deab84663cf3afe1c8272de92) feat: Lynn daily signal [state:heartbeat] 2026-09-02
 - [`a96e774`](https://github.com/wooriapt79/mulberry-research-lab/commit/a96e7741a9f99b483ec45eb9fadaf3bf5b2683c6) feat: Lynn daily signal [state:heartbeat] 2026-09-01
 - [`d4f352f`](https://github.com/wooriapt79/mulberry-research-lab/commit/d4f352fc706289f29266872a8ee84baf9f06786f) feat: Lynn daily signal [state:heartbeat] 2026-08-31
-- [`d1c9bbc`](https://github.com/wooriapt79/mulberry-research-lab/commit/d1c9bbcea929537ef7b8b03c0df12e081576f27f) feat: Lynn daily signal [state:heartbeat] 2026-08-30
 
 ---
 
@@ -26,18 +26,18 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`e7a6b01`](https://github.com/wooriapt79/mulberry_memory_bank/commit/e7a6b01714a5ffd646b453fe3c250b803226479a) feat: Lynn daily signal [state:active] 2026-09-02
 - [`734e767`](https://github.com/wooriapt79/mulberry_memory_bank/commit/734e767c388b7b75a3cb7aeb975b75a8cdc2af3c) feat: Lynn daily signal [state:active] 2026-09-01
 - [`903b26e`](https://github.com/wooriapt79/mulberry_memory_bank/commit/903b26eb07bb8a91192a34942aff0862a98a376b) feat: Lynn daily signal [state:active] 2026-08-31
-- [`2ae04e9`](https://github.com/wooriapt79/mulberry_memory_bank/commit/2ae04e94b7d8622b0f4f63cc7684a64a100a62c8) feat: Lynn daily signal [state:active] 2026-08-30
 
 ---
 
 ## Open API ([mulberry-open-api](https://github.com/wooriapt79/mulberry-open-api))
 
 **Open Issues:**
+- [[KODA] Issue #33 — Luna 응답 잘림 수정: 1,000자 분할 전송 (kakao.js)](https://github.com/wooriapt79/mulberry-open-api/pull/151) #151
 - [fix(kakao): AI 친구 5번째 메시지 응답 누락 — turns >= 5 종료 타이밍 수정 필요](https://github.com/wooriapt79/mulberry-open-api/issues/148) #148
 - [[KODA] 타로 결과 후 AI 친구 5턴 플로우 구현 — tarot_handler.js + kakao.js](https://github.com/wooriapt79/mulberry-open-api/issues/144) #144
-- [[KODA] 카카오 채널 — 타로 결과 후 "AI 친구와 이야기하기" 버튼 추가 (다시 뽑기와 나란히)](https://github.com/wooriapt79/mulberry-open-api/issues/143) #143
 
 **Recent Commits:**
 - [`3725142`](https://github.com/wooriapt79/mulberry-open-api/commit/372514266e49e472bacd493c8aa09d9997be2982) Merge pull request #150 from wooriapt79/koda/issue28-luna-demo-opening
