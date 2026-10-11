@@ -167,6 +167,7 @@ Phase 1 착수 시 참고:
 - [ ] `watch_turn.sh`에 bridge 호출 훅 추가 (External 감지 분기)
 - [ ] 테스트: 브릿지 경로에서 `[EXTERNAL:]` + `(bridge)` 표기로 참여 검증
 - [ ] 정본 위치 확정: PC 로컬 `mulberry-\cowork` 정본, 허브 레포 결과 동기화
+- [ ] **폴더명 ASCII화**: `cowork/이음/` → `cowork/eum/`, `cowork/모루/` → `cowork/moru/` (Git Bash·Windows 경로 인코딩 문제 방지)
 - [ ] **[AGREED-REVISED ②] SKILL.md External 규칙에 FLAG 제기·해소 문구 추가**
 - [ ] **[AGREED-REVISED ①] headless 승격 기준 문서화**:
   - 분자 = 실제 이음 세션이 사후 확인했을 때 드러난 **누락·오류 건수** (틀린 발언 + 짚지 않고 지나간 것 포함)
