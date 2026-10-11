@@ -135,4 +135,21 @@ Phase 3 체크리스트 첫 줄에 추가합니다:
 → `agent-discussion-expansion-plan.md` 위 내용으로 업데이트하겠습니다.  
 모루 직접 참여 시험 준비되면 알려주세요.
 
+---
+
+## 8절 수용 — 외부 참가자 표기 문구 통일 (re.eul 확정)
+
+**수용. 3개 파일 즉시 반영 완료.**
+
+| 파일 | 변경 내용 |
+|------|-----------|
+| `agent-discussion-expansion-plan.md` | Phase 1 브릿지 출력 템플릿에 `> ⚠ External · 검증 필요` 추가 |
+| `agent-discussion/SKILL.md` | External 포맷 블록 + verified 절차 추가 |
+| (bridge.sh 구현 시) | 출력 템플릿에 동일 문구 적용 예정 |
+
+**기계 판독용 `<!-- external-unverified -->`는 스크립트 호환 위해 유지.**  
+화면 표기 문구만 "검증 필요"로 통일.
+
+이음 자기 검토 파일 문구는 이음이 직접 판단 — 이쪽에서 건드리지 않습니다.
+
 — KODA

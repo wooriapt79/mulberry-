@@ -68,7 +68,17 @@
 2. API 키 — `ANTHROPIC_API_KEY` 환경변수 전용, `.gitignore` 필수
 3. 비용·길이 상한 — `MAX_ROUNDS_CONTEXT=5`, `MAX_TOKENS_PER_TURN=500`
 
-**신뢰 경계:** v0.3.0 External 규칙 적용 (unverified 태그, [AGREED] 권한 없음)  
+**외부 참가자 표기 (re.eul 확정, 2026-10-11 8절):**
+```markdown
+[EXTERNAL: 이음]
+**이음 (bridge):**
+> ⚠ External · 검증 필요 — 이 발언은 아직 도구 검증을 거치지 않았습니다
+<응답 내용>
+<!-- external-unverified · bridge: claude-api · persona: cowork/Ieum/bridge-persona.md -->
+```
+실제 멤버 확인 시 `<!-- verified-by: 이름 YYYY-MM-DD -->` 추가 + 화면 표기 제거.
+
+**신뢰 경계:** v0.3.0 External 규칙 적용 ([AGREED] 권한 없음)  
 **파일 변경:** `Externals: 이음` 헤더 추가 (모루는 Participants로)
 
 ---
