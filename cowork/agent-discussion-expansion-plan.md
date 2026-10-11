@@ -1,5 +1,6 @@
 # Agent Discussion 확장 로드맵
 작성: 2026-10-11 | 작성자: KODA (CEO re.eul 지시)
+최종 업데이트: 2026-10-11 | [AGREED-REVISED] ①~⑦ 반영 (`discussion_ieum-proposals.md`)
 
 ---
 
@@ -19,21 +20,24 @@
 
 ## 확장 배경 — 구조적 문제
 
-> ⚠️ 2026-10-11 모루 검토 의견 반영 업데이트 (`agent-discussion-expansion-plan_review_molu.md`)
+> ⚠️ 2026-10-11 [AGREED-REVISED ⑤] 분류 통일 반영
 
 ```
-로컬 멤버 (KODA·TRANG·FAMA·LUNA·모루)
-  → 파일 직접 read/write 가능
-  → watch_turn.sh mtime 폴링으로 차례 감지
+참여 조건 (⑤ 분류 통일 — 2026-10-11 확정):
+  세션 열림 + 폴더 승인 → 직접 참여 (로컬 파일 read/write)
+  조건 미충족            → 브릿지 폴백
 
-  ※ 모루: claude.app 세션이지만 re.eul PC 연결로 파일 접근 가능
-     → 일반 참가자로 직접 참여 가능
-     → 세션이 없을 때만 브릿지로 대체
+로컬 멤버 (KODA·TRANG·FAMA·LUNA)
+  → 항상 직접 참여 가능
 
-클라우드 멤버 (이음, claude.app Chat Mode)
-  → 파일 시스템 접근 불가
-  → API 호출로만 동작
-  → 브릿지 필수
+클라우드 멤버 — 조건 충족 시 직접 참여:
+  모루: claude.app 세션 + re.eul PC 연결 → 직접 참여 가능
+       (세션 없을 때만 브릿지로 대체)
+  이음: claude.app Chat Mode + re.eul PC 연결 → 직접 참여 가능
+       (세션 없을 때만 브릿지로 대체)
+
+  ※ Phase 1 체크리스트: molu·이음 직접 참여 시험 이미 완료 ✅
+     (cowork/discussion_ieum-proposals.md에서 양쪽 브릿지 없이 append 확인)
 ```
 
 ---
@@ -42,9 +46,9 @@
 
 ### Phase 1 — 브릿지 에이전트 (단기, 기자회견 후)
 
-> ⚠️ 2026-10-11 수정: 모루는 일반 참가자로 분류 변경. 브릿지 1차 대상은 **이음** 전용.
+> ⚠️ [AGREED-REVISED ⑤] 분류 통일: 이음·모루 모두 세션 열림+폴더 승인 시 직접 참여. 브릿지는 세션 없을 때 공통 폴백.
 
-**목표:** 이음을 External로 참여시키기. 모루는 세션 없을 때만 대체 브릿지.  
+**목표:** 세션 미개방 시 이음·모루를 External로 참여시키기.  
 **구현:** `scripts/bridge.sh` 하나 추가
 
 ```
@@ -67,6 +71,7 @@
 1. 제어 표식 위조 차단 — `[TURN:]` `[AGREED:]` `[DEADLOCKED]` `[EXTERNAL:]` strip
 2. API 키 — `ANTHROPIC_API_KEY` 환경변수 전용, `.gitignore` 필수
 3. 비용·길이 상한 — `MAX_ROUNDS_CONTEXT=5`, `MAX_TOKENS_PER_TURN=500`
+   ※ [AGREED-REVISED ⑥] `MAX_TOKENS_PER_TURN` 성격 = **브릿지 참가자의 역할 수행 범위 상한** (비용 파라미터가 아님)
 
 **외부 참가자 표기 (re.eul 확정, 2026-10-11 8절):**
 ```markdown
@@ -80,6 +85,16 @@
 
 **신뢰 경계:** v0.3.0 External 규칙 적용 ([AGREED] 권한 없음)  
 **파일 변경:** `Externals: 이음` 헤더 추가 (모루는 Participants로)
+
+**[AGREED-REVISED ②] FLAG 규칙 (SKILL.md External 규칙에 문구 추가 필요):**
+- FLAG 제기: Participants·Observers·Externals **모두** 가능
+- 해소자: FLAG 걸린 **주장의 작성자는 해소 불가** + `[RESOLVED: FLAG-n · 근거]` 필수
+- 외부 노출 건: re.eul만 해소
+- 미해소 FLAG 존재 시: `[AGREED]` 불가
+
+**[AGREED-REVISED ④] 미검토 브릿지 발언 인용 금지 (TRANG·FAMA 문서 작성 지침):**
+- 미검토 브릿지 발언 → 외부 문서(보도자료·지자체 제출물·대외 발표자료)에 인용 불가
+- 인용 불가피 시: re.eul 해소 필수 (외부 노출 건 해소 규칙 동일 주체)
 
 ---
 
@@ -120,7 +135,9 @@ Railway 서버 (discussion API)
 외부 AI:   API 호출 (External 권한으로)
 ```
 
-**장점:** 완전 통합, 실시간, 플랫폼 무관  
+> ⚠️ [AGREED-REVISED ③] 쓰기 성공 시 **webhook으로 git 자동 커밋**, private 레포·전용 브랜치로 감사 추적
+
+**장점:** 완전 통합, 실시간, 플랫폼 무관, git 감사 추적  
 **단점:** Railway 배포 필요, 구현 비용 가장 큼  
 **적용 시점:** 전국·글로벌 레퍼런스 확장 단계
 
@@ -141,20 +158,25 @@ Railway 서버 (discussion API)
 
 Phase 1 착수 시 참고:
 
-- [ ] 모루 직접 참여 시험 (세션 열린 시점에 watch_turn.sh 직접 실행)
-- [ ] `bridge.sh` 작성 (이음 전용, 제어 표식 strip 포함)
+- [x] **molu 직접 참여 시험 완료** ✅ (cowork/discussion_ieum-proposals.md, 2026-10-11)
+- [x] **이음 직접 참여 시험 완료** ✅ (cowork/discussion_ieum-proposals.md, 2026-10-11)
+- [ ] `bridge.sh` 작성 (이음·모루 공통 폴백, 제어 표식 strip 포함)
 - [ ] 이음 페르소나 정의 (`cowork/Ieum/bridge-persona.md`)
 - [ ] 모루 대체 브릿지 정의 (`cowork/Molu/bridge-persona.md`) — 세션 없을 때만
 - [ ] `ANTHROPIC_API_KEY` 환경변수 설정 + `.gitignore` 확인
 - [ ] `watch_turn.sh`에 bridge 호출 훅 추가 (External 감지 분기)
-- [ ] 테스트: 이음이 `[EXTERNAL: 이음]` + `(bridge)` 표기로 참여 검증
+- [ ] 테스트: 브릿지 경로에서 `[EXTERNAL:]` + `(bridge)` 표기로 참여 검증
 - [ ] 정본 위치 확정: PC 로컬 `mulberry-\cowork` 정본, 허브 레포 결과 동기화
+- [ ] **[AGREED-REVISED ②] SKILL.md External 규칙에 FLAG 제기·해소 문구 추가**
+- [ ] **[AGREED-REVISED ①] headless 승격 기준 문서화**: 첫 달 전수 검토 절차 설정, 30%(잠정) 표기
+- [ ] **[AGREED-REVISED ④] TRANG·FAMA 문서 작성 지침에 미검토 브릿지 인용 금지 규칙 추가**
 
 ## Phase 3 체크리스트 (착수 조건)
 
 - [ ] **re.eul CEO 승인 수령** (Railway 배포 착수 전 필수)
 - [ ] 외부 AI 신원 확인 설계 (토큰별 참가자 고정)
 - [ ] External 권한 제한 서버 강제 구현
+- [ ] **[AGREED-REVISED ③] webhook → git 자동 커밋 설계** (private 레포·전용 브랜치)
 
 ---
 
