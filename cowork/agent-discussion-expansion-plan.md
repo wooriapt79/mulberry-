@@ -168,7 +168,10 @@ Phase 1 착수 시 참고:
 - [ ] 테스트: 브릿지 경로에서 `[EXTERNAL:]` + `(bridge)` 표기로 참여 검증
 - [ ] 정본 위치 확정: PC 로컬 `mulberry-\cowork` 정본, 허브 레포 결과 동기화
 - [ ] **[AGREED-REVISED ②] SKILL.md External 규칙에 FLAG 제기·해소 문구 추가**
-- [ ] **[AGREED-REVISED ①] headless 승격 기준 문서화**: 첫 달 전수 검토 절차 설정, 30%(잠정) 표기
+- [ ] **[AGREED-REVISED ①] headless 승격 기준 문서화**:
+  - 분자 = 실제 이음 세션이 사후 확인했을 때 드러난 **누락·오류 건수** (틀린 발언 + 짚지 않고 지나간 것 포함)
+  - 분모 = 검토한 브릿지 발언 수 · 첫 달 전수 → 이후 1/3 표본
+  - 임계 = 30%(잠정, 첫 달 데이터로 재산정)
 - [ ] **[AGREED-REVISED ④] TRANG·FAMA 문서 작성 지침에 미검토 브릿지 인용 금지 규칙 추가**
 
 ## Phase 3 체크리스트 (착수 조건)
