@@ -1,6 +1,6 @@
 # Mulberry Ecosystem Activity Digest
 
-> Last updated: **2026-11-04 05:22 UTC**
+> Last updated: **2026-11-05 05:41 UTC**
 
 ---
 
@@ -12,9 +12,9 @@
 - [[데이터 거버넌스] mulberry-demo Track B 착수 선행 조건 확정 — PII·동의·라이선스](https://github.com/wooriapt79/mulberry-research-lab/issues/165) #165
 
 **Recent Commits:**
+- [`980e7c3`](https://github.com/wooriapt79/mulberry-research-lab/commit/980e7c3461de205b58aba32867ba7b94936ef219) feat: Lynn daily signal [state:heartbeat] 2026-11-05
 - [`e072ff2`](https://github.com/wooriapt79/mulberry-research-lab/commit/e072ff28b37260deb9969f73afc85ac4b2974729) feat: Lynn daily signal [state:heartbeat] 2026-11-04
 - [`979d3a4`](https://github.com/wooriapt79/mulberry-research-lab/commit/979d3a46122838697bd005131e4bcf936bd82466) feat: Lynn daily signal [state:heartbeat] 2026-11-03
-- [`70d35ee`](https://github.com/wooriapt79/mulberry-research-lab/commit/70d35ee2c2523dbd8d20dc8550d2525ad5073b66) feat: Lynn daily signal [state:heartbeat] 2026-11-02
 
 ---
 
@@ -26,9 +26,9 @@
 - [[Dataset] LLM Trustworthiness Dataset & Spirit Gate Validation Metrics](https://github.com/wooriapt79/mulberry_memory_bank/issues/15) #15
 
 **Recent Commits:**
+- [`5f9c085`](https://github.com/wooriapt79/mulberry_memory_bank/commit/5f9c085d3af7cd7593d8d3905e67e7f60940b63f) feat: Lynn daily signal [state:active] 2026-11-05
 - [`c607d7d`](https://github.com/wooriapt79/mulberry_memory_bank/commit/c607d7db232ae641407b3a2bd3678776063d958b) feat: Lynn daily signal [state:active] 2026-11-04
 - [`6928af4`](https://github.com/wooriapt79/mulberry_memory_bank/commit/6928af4a306b738cb88ec6edee1ccdb8ad81dea3) feat: Lynn daily signal [state:active] 2026-11-03
-- [`9767f67`](https://github.com/wooriapt79/mulberry_memory_bank/commit/9767f67178402934c71bd69956f6a48420404896) feat: Lynn daily signal [state:active] 2026-11-02
 
 ---
 
